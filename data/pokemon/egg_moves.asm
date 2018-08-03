@@ -51,7 +51,7 @@ if !_CRYSTAL
 endc
 	db -1 ; end
 
-RattataEggMoves:
+PoochyenaEggMoves:
 	db SCREECH
 	db FLAME_WHEEL
 	db FURY_SWIPES
@@ -480,7 +480,7 @@ DratiniEggMoves:
 	db SUPERSONIC
 	db -1 ; end
 
-ChikoritaEggMoves:
+TreeckoEggMoves:
 	db VINE_WHIP
 	db LEECH_SEED
 	db COUNTER
@@ -489,7 +489,7 @@ ChikoritaEggMoves:
 	db SWORDS_DANCE
 	db -1 ; end
 
-CyndaquilEggMoves:
+TorchicEggMoves:
 	db FURY_SWIPES
 	db QUICK_ATTACK
 	db REVERSAL
@@ -500,7 +500,7 @@ if _CRYSTAL
 endc
 	db -1 ; end
 
-TotodileEggMoves:
+MudkipEggMoves:
 	db CRUNCH
 	db THRASH
 	db HYDRO_PUMP
@@ -509,7 +509,7 @@ TotodileEggMoves:
 	db ROCK_SLIDE
 	db -1 ; end
 
-SentretEggMoves:
+ZigzagoonEggMoves:
 	db DOUBLE_EDGE
 	db PURSUIT
 	db SLASH

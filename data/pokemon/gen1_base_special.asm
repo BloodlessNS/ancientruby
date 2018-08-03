@@ -10,17 +10,17 @@ KantoMonSpecials:
 	db  50 ; SQUIRTLE
 	db  65 ; WARTORTLE
 	db  85 ; BLASTOISE
-	db  20 ; CATERPIE
-	db  25 ; METAPOD
-	db  80 ; BUTTERFREE
+	db  20 ; WURMPLE
+	db  25 ; SILCOON
+	db  80 ; BEAUTIFLY
 	db  20 ; WEEDLE
-	db  25 ; KAKUNA
-	db  45 ; BEEDRILL
+	db  25 ; CASCOON
+	db  45 ; DUSTOX
 	db  35 ; PIDGEY
 	db  50 ; PIDGEOTTO
 	db  70 ; PIDGEOT
-	db  25 ; RATTATA
-	db  50 ; RATICATE
+	db  25 ; POOCHYENA
+	db  50 ; MIGHTYENA
 	db  31 ; SPEAROW
 	db  61 ; FEAROW
 	db  40 ; EKANS

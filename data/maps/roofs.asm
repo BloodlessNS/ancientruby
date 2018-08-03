@@ -1,6 +1,6 @@
 ; MapGroupRoofs values; Roofs indexes
 	const_def
-	const ROOF_NEW_BARK  ; 0
+	const ROOF_LITTLEROOT  ; 0
 	const ROOF_VIOLET    ; 1
 	const ROOF_AZALEA    ; 2
 	const ROOF_OLIVINE   ; 3
@@ -28,14 +28,14 @@ MapGroupRoofs:
 	db -1             ; 16
 	db -1             ; 17
 	db -1             ; 18
-	db ROOF_NEW_BARK  ; 19 (Silver Cave)
+	db ROOF_LITTLEROOT  ; 19 (Silver Cave)
 	db -1             ; 20
 	db -1             ; 21
 	db ROOF_OLIVINE   ; 22 (Cianwood)
 	db -1             ; 23
-	db ROOF_NEW_BARK  ; 24 (New Bark)
+	db ROOF_LITTLEROOT  ; 24 (Littleroot)
 	db -1             ; 25
-	db ROOF_NEW_BARK  ; 26 (Cherrygrove)
+	db ROOF_LITTLEROOT  ; 26 (Cherrygrove)
 
 Roofs:
 ; entries correspond to ROOF_* constants

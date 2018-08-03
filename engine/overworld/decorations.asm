@@ -1091,7 +1091,7 @@ ToggleMaptileDecorations:
 	lb de, 7, 4
 	ld a, [wDecoPlant]
 	call SetDecorationTile
-	lb de, 6, 0
+	lb de, 2, 0
 	ld a, [wDecoPoster]
 	call SetDecorationTile
 	call SetPosterVisibility

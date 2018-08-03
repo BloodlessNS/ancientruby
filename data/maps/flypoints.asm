@@ -7,7 +7,7 @@ Flypoints:
 ; landmark, spawn point
 	const_def
 ; Johto
-	flypoint NEW_BARK,     NEW_BARK_TOWN
+	flypoint LITTLEROOT,   LITTLEROOT_TOWN
 	flypoint CHERRYGROVE,  CHERRYGROVE_CITY
 	flypoint VIOLET,       VIOLET_CITY
 	flypoint AZALEA,       AZALEA_TOWN

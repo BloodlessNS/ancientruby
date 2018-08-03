@@ -58,8 +58,8 @@ INCBIN "gfx/mail/mew.1bpp"
 MailDragoniteGFX:
 INCBIN "gfx/mail/dragonite.1bpp"
 
-MailSentretGFX:
-INCBIN "gfx/mail/sentret.1bpp"
+MailZigzagoonGFX:
+INCBIN "gfx/mail/zigzagoon.1bpp"
 
 MailUnusedGrassGFX:
 INCBIN "gfx/mail/unused_grass.1bpp"

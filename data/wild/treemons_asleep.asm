@@ -1,12 +1,12 @@
 ; Used by CheckSleepingTreeMon
 
 AsleepTreeMonsNite:
-	db CATERPIE
-	db METAPOD
-	db BUTTERFREE
+	db WURMPLE
+	db SILCOON
+	db BEAUTIFLY
 	db WEEDLE
-	db KAKUNA
-	db BEEDRILL
+	db CASCOON
+	db DUSTOX
 	db SPEAROW
 	db EKANS
 	db EXEGGCUTE

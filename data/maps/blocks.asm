@@ -76,9 +76,6 @@ Route33_Blocks:
 Route45_Blocks:
 	INCBIN "maps/Route45.blk"
 
-Route29_Blocks:
-	INCBIN "maps/Route29.blk"
-
 Route37_Blocks:
 	INCBIN "maps/Route37.blk"
 
@@ -522,9 +519,6 @@ RadioTower4F_Blocks:
 
 RadioTower5F_Blocks:
 	INCBIN "maps/RadioTower5F.blk"
-
-NewBarkTown_Blocks:
-	INCBIN "maps/NewBarkTown.blk"
 
 CherrygroveCity_Blocks:
 	INCBIN "maps/CherrygroveCity.blk"
@@ -1045,3 +1039,15 @@ BetaBlank_Blocks:
 
 GoldenrodDeptStoreRoof_Blocks:
 	INCBIN "maps/GoldenrodDeptStoreRoof.blk"
+
+SECTION "Map Blocks 4", ROMX
+
+MovingTruck_Blocks:
+	INCBIN "maps/MovingTruck.blk"
+	
+LittlerootTown_Blocks:
+	INCBIN "maps/LittlerootTown.blk"
+	
+Route101_Blocks:
+	INCBIN "maps/Route101.blk"
+	

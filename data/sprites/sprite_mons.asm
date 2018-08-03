@@ -11,7 +11,7 @@ SpriteMons:
 	db MAGIKARP
 	db SQUIRTLE
 	db TOGEPI
-	db BUTTERFREE
+	db BEAUTIFLY
 	db DIGLETT
 	db POLIWAG
 	db PIKACHU

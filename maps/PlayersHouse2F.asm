@@ -63,7 +63,7 @@ PlayersHouseRadioScript:
 	pause 45
 	writetext PlayersRadioText3
 	pause 45
-	musicfadeout MUSIC_NEW_BARK_TOWN, 16
+	musicfadeout MUSIC_LITTLEROOT_TOWN, 16
 	writetext PlayersRadioText4
 	pause 45
 	closetext
@@ -79,9 +79,6 @@ PlayersHouseRadioScript:
 	pause 45
 	closetext
 	end
-
-PlayersHouseBookshelfScript:
-	jumpstd picturebookshelf
 
 PlayersHousePCScript:
 	opentext
@@ -112,6 +109,29 @@ PlayersRadioText4:
 	text "#MON!"
 	line "#MON CHANNEL…"
 	done
+	
+PlayersGameCubeScript:
+	jumptext PlayersGameCubeScriptText
+	
+PlayersTVScript:
+	jumptext PlayersTVScriptText
+	
+PlayersGameCubeScriptText:
+	text "It's a Nintendo"
+	line "GameCube"
+
+	para "A Gameboy Advance"
+	line "is connected to"
+	cont "serve as the"
+	cont "controller."
+	done
+	
+PlayersTVScriptText:
+	text "Dad might like"
+	line "this program..."
+	
+	para "better get going!"
+	done
 
 PlayersHouse2F_MapEvents:
 	db 0, 0 ; filler
@@ -121,11 +141,12 @@ PlayersHouse2F_MapEvents:
 
 	db 0 ; coord events
 
-	db 4 ; bg events
-	bg_event  2,  1, BGEVENT_UP, PlayersHousePCScript
-	bg_event  3,  1, BGEVENT_READ, PlayersHouseRadioScript
-	bg_event  5,  1, BGEVENT_READ, PlayersHouseBookshelfScript
-	bg_event  6,  0, BGEVENT_IFSET, PlayersHousePosterScript
+	db 5 ; bg events
+	bg_event  0,  1, BGEVENT_UP, PlayersHousePCScript
+	bg_event  1,  1, BGEVENT_READ, PlayersHouseRadioScript
+	bg_event  2,  0, BGEVENT_IFSET, PlayersHousePosterScript
+	bg_event  3,  1, BGEVENT_READ, PlayersGameCubeScript
+	bg_event  4,  1, BGEVENT_READ, PlayersTVScript
 
 	db 4 ; object events
 	object_event  4,  2, SPRITE_CONSOLE, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, GameConsoleScript, EVENT_PLAYERS_HOUSE_2F_CONSOLE

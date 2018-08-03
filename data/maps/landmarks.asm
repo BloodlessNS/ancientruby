@@ -7,8 +7,8 @@ ENDM
 Landmarks:
 ; entries correspond to constants/landmark_constants.asm
 	landmark   0,   0, SpecialMapName
-	landmark 148, 116, NewBarkTownName
-	landmark 136, 116, Route29Name
+	landmark 52,  116, LittlerootTownName
+	landmark 52,  100,  Route101Name
 	landmark 108, 116, CherrygroveCityName
 	landmark 108,  96, Route30Name
 	landmark 104,  76, Route31Name
@@ -103,7 +103,8 @@ Landmarks:
 	landmark  28,  84, Route28Name
 	landmark 148, 132, FastShipName
 
-NewBarkTownName:     db "NEW BARK¯TOWN@"
+LittlerootTownName:  db "LITTLEROOT¯TOWN@"
+Route101Name         db "ROUTE 101@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
 VioletCityName:      db "VIOLET CITY@"
 AzaleaTownName:      db "AZALEA TOWN@"
@@ -177,7 +178,6 @@ Route25Name:         db "ROUTE 25@"
 Route26Name:         db "ROUTE 26@"
 Route27Name:         db "ROUTE 27@"
 Route28Name:         db "ROUTE 28@"
-Route29Name:         db "ROUTE 29@"
 Route30Name:         db "ROUTE 30@"
 Route31Name:         db "ROUTE 31@"
 Route32Name:         db "ROUTE 32@"

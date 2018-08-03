@@ -24,19 +24,19 @@
 	const CRY_BLASTOISE
 	const CRY_PIDGEOTTO
 	const CRY_WEEDLE
-	const CRY_CATERPIE
+	const CRY_WURMPLE
 	const CRY_EKANS
 	const CRY_FEAROW
 	const CRY_CLEFAIRY
 	const CRY_VENONAT
 	const CRY_LAPRAS
-	const CRY_METAPOD
+	const CRY_SILCOON
 	const CRY_SQUIRTLE
 	const CRY_PARAS
 	const CRY_GROWLITHE
 	const CRY_KRABBY
 	const CRY_PSYDUCK
-	const CRY_RATTATA
+	const CRY_POOCHYENA
 	const CRY_VILEPLUME
 	const CRY_VULPIX
 	const CRY_WEEPINBELL
@@ -50,11 +50,11 @@
 	const CRY_MAREEP
 	const CRY_TOGETIC
 	const CRY_HOOTHOOT
-	const CRY_SENTRET
+	const CRY_ZIGZAGOON
 	const CRY_SLOWKING
-	const CRY_CYNDAQUIL
-	const CRY_CHIKORITA
-	const CRY_TOTODILE
+	const CRY_TORCHIC
+	const CRY_TREECKO
+	const CRY_MUDKIP
 	const CRY_GLIGAR
 	const CRY_CLEFFA
 	const CRY_SLUGMA
@@ -62,7 +62,7 @@
 	const CRY_ENTEI
 	const CRY_WOOPER
 	const CRY_MANTINE
-	const CRY_TYPHLOSION
+	const CRY_BLAZIKEN
 	const CRY_NATU
 	const CRY_TEDDIURSA
 	const CRY_SUNFLORA

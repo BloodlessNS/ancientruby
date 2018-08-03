@@ -1336,12 +1336,12 @@ UnknownText_0x17674f:
 
 	para "I did once, but"
 	line "all I could catch"
-	cont "was a CATERPIE."
+	cont "was a WURMPLE."
 
 	para "But guess what!"
 
 	para "I won with that"
-	line "CATERPIE. Isn't"
+	line "WURMPLE. Isn't"
 	cont "that great?"
 	done
 

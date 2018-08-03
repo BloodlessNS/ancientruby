@@ -17,7 +17,7 @@ EggMovePointers::
 	dw PidgeyEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw RattataEggMoves
+	dw PoochyenaEggMoves
 	dw NoEggMoves
 	dw SpearowEggMoves
 	dw NoEggMoves
@@ -154,16 +154,16 @@ endc
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw ChikoritaEggMoves
+	dw TreeckoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw CyndaquilEggMoves
+	dw TorchicEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw TotodileEggMoves
+	dw MudkipEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw SentretEggMoves
+	dw ZigzagoonEggMoves
 	dw NoEggMoves
 	dw HoothootEggMoves
 	dw NoEggMoves

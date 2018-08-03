@@ -765,7 +765,7 @@ UnknownText_0x6b6b8:
 UnknownText_0x6b6e9:
 	text "JOSH: I heard that"
 	line "somebody won with"
-	cont "a CATERPIE!"
+	cont "a WURMPLE!"
 	done
 
 UnknownText_0x6b71b:

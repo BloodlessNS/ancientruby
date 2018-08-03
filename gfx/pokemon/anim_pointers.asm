@@ -8,17 +8,17 @@ AnimationPointers:
 	dw SquirtleAnimation
 	dw WartortleAnimation
 	dw BlastoiseAnimation
-	dw CaterpieAnimation
-	dw MetapodAnimation
-	dw ButterfreeAnimation
+	dw WurmpleAnimation
+	dw SilcoonAnimation
+	dw BeautiflyAnimation
 	dw WeedleAnimation
-	dw KakunaAnimation
-	dw BeedrillAnimation
+	dw CascoonAnimation
+	dw DustoxAnimation
 	dw PidgeyAnimation
 	dw PidgeottoAnimation
 	dw PidgeotAnimation
-	dw RattataAnimation
-	dw RaticateAnimation
+	dw PoochyenaAnimation
+	dw MightyenaAnimation
 	dw SpearowAnimation
 	dw FearowAnimation
 	dw EkansAnimation
@@ -150,17 +150,17 @@ AnimationPointers:
 	dw DragoniteAnimation
 	dw MewtwoAnimation
 	dw MewAnimation
-	dw ChikoritaAnimation
-	dw BayleefAnimation
-	dw MeganiumAnimation
-	dw CyndaquilAnimation
-	dw QuilavaAnimation
-	dw TyphlosionAnimation
-	dw TotodileAnimation
-	dw CroconawAnimation
-	dw FeraligatrAnimation
-	dw SentretAnimation
-	dw FurretAnimation
+	dw TreeckoAnimation
+	dw GrovyleAnimation
+	dw SceptileAnimation
+	dw TorchicAnimation
+	dw CombuskenAnimation
+	dw BlazikenAnimation
+	dw MudkipAnimation
+	dw MarshtompAnimation
+	dw SwampertAnimation
+	dw ZigzagoonAnimation
+	dw LinooneAnimation
 	dw HoothootAnimation
 	dw NoctowlAnimation
 	dw LedybaAnimation

@@ -7,7 +7,7 @@ ENDM
 SpawnPoints:
 ; entries correspond to SPAWN_* constants
 
-	spawn PLAYERS_HOUSE_2F,            3,  3
+	spawn MOVING_TRUCK,            3,  2
 	spawn VIRIDIAN_POKECENTER_1F,      5,  3
 
 	spawn PALLET_TOWN,                 5,  6
@@ -23,7 +23,7 @@ SpawnPoints:
 	spawn CINNABAR_ISLAND,            11, 12
 	spawn ROUTE_23,                    9,  6
 
-	spawn NEW_BARK_TOWN,              13,  6
+	spawn LITTLEROOT_TOWN,              5,  8
 	spawn CHERRYGROVE_CITY,           29,  4
 	spawn VIOLET_CITY,                31, 26
 	spawn ROUTE_32,                   11, 74

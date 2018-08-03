@@ -706,16 +706,26 @@ GetPlayerOrMonPalettePointer:
 	and a
 	jp nz, GetMonNormalOrShinyPalettePointer
 	ld a, [wPlayerSpriteSetupFlags]
-	bit PLAYERSPRITESETUP_FEMALE_TO_MALE_F, a
+	bit 2, a ; transformed to male
 	jr nz, .male
+	ld hl, Rival1Palette
 	ld a, [wPlayerGender]
 	and a
+	ld a, [wBattleType]
+	cp BATTLETYPE_TUTORIAL
 	jr z, .male
+	ld hl, Rival1Palette
+	jr z, .DudeTutorial
+	ld hl, Rival1Palette
 	ld hl, KrisPalette
 	ret
 
 .male
-	ld hl, PlayerPalette
+	ld hl, Rival1Palette
+	ret
+	
+.DudeTutorial
+	ld hl, Rival1Palette
 	ret
 
 GetFrontpicPalettePointer:

@@ -88,32 +88,32 @@ PlateauRivalBattleCommon:
 	waitbutton
 	closetext
 	setevent EVENT_INDIGO_PLATEAU_POKECENTER_RIVAL
-	checkevent EVENT_GOT_TOTODILE_FROM_ELM
-	iftrue .Totodile
-	checkevent EVENT_GOT_CHIKORITA_FROM_ELM
-	iftrue .Chikorita
-	; Cyndaquil
+	checkevent EVENT_GOT_MUDKIP_FROM_ELM
+	iftrue .Mudkip
+	checkevent EVENT_GOT_TREECKO_FROM_ELM
+	iftrue .Treecko
+	; Torchic
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_SILVER
-	loadtrainer RIVAL2, RIVAL2_2_TOTODILE
+	loadtrainer RIVAL2, RIVAL2_2_MUDKIP
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	jump PlateauRivalPostBattle
 
-.Totodile:
+.Mudkip:
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_SILVER
-	loadtrainer RIVAL2, RIVAL2_2_CHIKORITA
+	loadtrainer RIVAL2, RIVAL2_2_TREECKO
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
 	jump PlateauRivalPostBattle
 
-.Chikorita:
+.Treecko:
 	winlosstext PlateauRivalWinText, PlateauRivalLoseText
 	setlasttalked INDIGOPLATEAUPOKECENTER1F_SILVER
-	loadtrainer RIVAL2, RIVAL2_2_CYNDAQUIL
+	loadtrainer RIVAL2, RIVAL2_2_TORCHIC
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
@@ -158,7 +158,7 @@ TeleportGuyScript:
 	playsound SFX_WARP_TO
 	special FadeOutPalettes
 	waitsfx
-	warp NEW_BARK_TOWN, 13, 6
+	warp LITTLEROOT_TOWN, 13, 6
 	end
 
 .No:

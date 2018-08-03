@@ -25,20 +25,20 @@
 	const CHARMANDER ; 04
 	const CHARMELEON ; 05
 	const CHARIZARD  ; 06
-	const SQUIRTLE   ; 07
+	const SQUIRTLE   ; 07zz
 	const WARTORTLE  ; 08
 	const BLASTOISE  ; 09
-	const CATERPIE   ; 0a
-	const METAPOD    ; 0b
-	const BUTTERFREE ; 0c
+	const WURMPLE   ; 0a
+	const SILCOON    ; 0b
+	const BEAUTIFLY ; 0c
 	const WEEDLE     ; 0d
-	const KAKUNA     ; 0e
-	const BEEDRILL   ; 0f
+	const CASCOON     ; 0e
+	const DUSTOX   ; 0f
 	const PIDGEY     ; 10
 	const PIDGEOTTO  ; 11
 	const PIDGEOT    ; 12
-	const RATTATA    ; 13
-	const RATICATE   ; 14
+	const POOCHYENA    ; 13
+	const MIGHTYENA   ; 14
 	const SPEAROW    ; 15
 	const FEAROW     ; 16
 	const EKANS      ; 17
@@ -171,17 +171,17 @@
 	const MEWTWO     ; 96
 	const MEW        ; 97
 JOHTO_POKEMON EQU const_value
-	const CHIKORITA  ; 98
-	const BAYLEEF    ; 99
-	const MEGANIUM   ; 9a
-	const CYNDAQUIL  ; 9b
-	const QUILAVA    ; 9c
-	const TYPHLOSION ; 9d
-	const TOTODILE   ; 9e
-	const CROCONAW   ; 9f
-	const FERALIGATR ; a0
-	const SENTRET    ; a1
-	const FURRET     ; a2
+	const TREECKO  ; 98
+	const GROVYLE    ; 99
+	const SCEPTILE   ; 9a
+	const TORCHIC  ; 9b
+	const COMBUSKEN    ; 9c
+	const BLAZIKEN ; 9d
+	const MUDKIP   ; 9e
+	const MARSHTOMP   ; 9f
+	const SWAMPERT ; a0
+	const ZIGZAGOON    ; a1
+	const LINOONE     ; a2
 	const HOOTHOOT   ; a3
 	const NOCTOWL    ; a4
 	const LEDYBA     ; a5

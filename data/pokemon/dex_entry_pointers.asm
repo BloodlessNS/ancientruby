@@ -9,17 +9,17 @@ PokedexDataPointerTable:
 	dw SquirtlePokedexEntry
 	dw WartortlePokedexEntry
 	dw BlastoisePokedexEntry
-	dw CaterpiePokedexEntry
-	dw MetapodPokedexEntry
-	dw ButterfreePokedexEntry
+	dw WurmplePokedexEntry
+	dw SilcoonPokedexEntry
+	dw BeautiflyPokedexEntry
 	dw WeedlePokedexEntry
-	dw KakunaPokedexEntry
-	dw BeedrillPokedexEntry
+	dw CascoonPokedexEntry
+	dw DustoxPokedexEntry
 	dw PidgeyPokedexEntry
 	dw PidgeottoPokedexEntry
 	dw PidgeotPokedexEntry
-	dw RattataPokedexEntry
-	dw RaticatePokedexEntry
+	dw PoochyenaPokedexEntry
+	dw MightyenaPokedexEntry
 	dw SpearowPokedexEntry
 	dw FearowPokedexEntry
 	dw EkansPokedexEntry
@@ -151,17 +151,17 @@ PokedexDataPointerTable:
 	dw DragonitePokedexEntry
 	dw MewtwoPokedexEntry
 	dw MewPokedexEntry
-	dw ChikoritaPokedexEntry
-	dw BayleefPokedexEntry
-	dw MeganiumPokedexEntry
-	dw CyndaquilPokedexEntry
-	dw QuilavaPokedexEntry
-	dw TyphlosionPokedexEntry
-	dw TotodilePokedexEntry
-	dw CroconawPokedexEntry
-	dw FeraligatrPokedexEntry
-	dw SentretPokedexEntry
-	dw FurretPokedexEntry
+	dw TreeckoPokedexEntry
+	dw GrovylePokedexEntry
+	dw SceptilePokedexEntry
+	dw TorchicPokedexEntry
+	dw CombuskenPokedexEntry
+	dw BlazikenPokedexEntry
+	dw MudkipPokedexEntry
+	dw MarshtompPokedexEntry
+	dw SwampertPokedexEntry
+	dw ZigzagoonPokedexEntry
+	dw LinoonePokedexEntry
 	dw HoothootPokedexEntry
 	dw NoctowlPokedexEntry
 	dw LedybaPokedexEntry

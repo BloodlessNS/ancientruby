@@ -20,28 +20,28 @@ PokemonPicPointers::
 	dba_pic WartortleBackpic
 	dba_pic BlastoiseFrontpic
 	dba_pic BlastoiseBackpic
-	dba_pic CaterpieFrontpic
-	dba_pic CaterpieBackpic
-	dba_pic MetapodFrontpic
-	dba_pic MetapodBackpic
-	dba_pic ButterfreeFrontpic
-	dba_pic ButterfreeBackpic
+	dba_pic WurmpleFrontpic
+	dba_pic WurmpleBackpic
+	dba_pic SilcoonFrontpic
+	dba_pic SilcoonBackpic
+	dba_pic BeautiflyFrontpic
+	dba_pic BeautiflyBackpic
 	dba_pic WeedleFrontpic
 	dba_pic WeedleBackpic
-	dba_pic KakunaFrontpic
-	dba_pic KakunaBackpic
-	dba_pic BeedrillFrontpic
-	dba_pic BeedrillBackpic
+	dba_pic CascoonFrontpic
+	dba_pic CascoonBackpic
+	dba_pic DustoxFrontpic
+	dba_pic DustoxBackpic
 	dba_pic PidgeyFrontpic
 	dba_pic PidgeyBackpic
 	dba_pic PidgeottoFrontpic
 	dba_pic PidgeottoBackpic
 	dba_pic PidgeotFrontpic
 	dba_pic PidgeotBackpic
-	dba_pic RattataFrontpic
-	dba_pic RattataBackpic
-	dba_pic RaticateFrontpic
-	dba_pic RaticateBackpic
+	dba_pic PoochyenaFrontpic
+	dba_pic PoochyenaBackpic
+	dba_pic MightyenaFrontpic
+	dba_pic MightyenaBackpic
 	dba_pic SpearowFrontpic
 	dba_pic SpearowBackpic
 	dba_pic FearowFrontpic
@@ -304,28 +304,28 @@ PokemonPicPointers::
 	dba_pic MewtwoBackpic
 	dba_pic MewFrontpic
 	dba_pic MewBackpic
-	dba_pic ChikoritaFrontpic
-	dba_pic ChikoritaBackpic
-	dba_pic BayleefFrontpic
-	dba_pic BayleefBackpic
-	dba_pic MeganiumFrontpic
-	dba_pic MeganiumBackpic
-	dba_pic CyndaquilFrontpic
-	dba_pic CyndaquilBackpic
-	dba_pic QuilavaFrontpic
-	dba_pic QuilavaBackpic
-	dba_pic TyphlosionFrontpic
-	dba_pic TyphlosionBackpic
-	dba_pic TotodileFrontpic
-	dba_pic TotodileBackpic
-	dba_pic CroconawFrontpic
-	dba_pic CroconawBackpic
-	dba_pic FeraligatrFrontpic
-	dba_pic FeraligatrBackpic
-	dba_pic SentretFrontpic
-	dba_pic SentretBackpic
-	dba_pic FurretFrontpic
-	dba_pic FurretBackpic
+	dba_pic TreeckoFrontpic
+	dba_pic TreeckoBackpic
+	dba_pic GrovyleFrontpic
+	dba_pic GrovyleBackpic
+	dba_pic SceptileFrontpic
+	dba_pic SceptileBackpic
+	dba_pic TorchicFrontpic
+	dba_pic TorchicBackpic
+	dba_pic CombuskenFrontpic
+	dba_pic CombuskenBackpic
+	dba_pic BlazikenFrontpic
+	dba_pic BlazikenBackpic
+	dba_pic MudkipFrontpic
+	dba_pic MudkipBackpic
+	dba_pic MarshtompFrontpic
+	dba_pic MarshtompBackpic
+	dba_pic SwampertFrontpic
+	dba_pic SwampertBackpic
+	dba_pic ZigzagoonFrontpic
+	dba_pic ZigzagoonBackpic
+	dba_pic LinooneFrontpic
+	dba_pic LinooneBackpic
 	dba_pic HoothootFrontpic
 	dba_pic HoothootBackpic
 	dba_pic NoctowlFrontpic

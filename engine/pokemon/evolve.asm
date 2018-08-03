@@ -86,6 +86,10 @@ EvolveAfterBattle_MasterLoop:
 
 	cp EVOLVE_HAPPINESS
 	jr z, .happiness
+	
+	ld a, b
+	cp EVOLVE_LEVELTIME
+	jp z, .leveltime
 
 ; EVOLVE_STAT
 	ld a, [wTempMonLevel]
@@ -178,6 +182,27 @@ EvolveAfterBattle_MasterLoop:
 	jp z, .dont_evolve_3
 	ld a, [wLinkMode]
 	and a
+	jp nz, .dont_evolve_3
+	jr .proceed
+	
+.leveltime
+	ld a, [hli]
+	ld b, a
+	ld a, [wTempMonLevel]
+	cp b
+	jp c, .dont_evolve_2
+	call IsMonHoldingEverstone
+	jp z, .dont_evolve_2
+	
+	ld a, [hli]
+	cp TR_ANYTIME
+	jr z, .proceed
+	cp TR_MORNDAY
+	jr z, .happiness_daylight
+
+; TR_NITE
+	ld a, [wTimeOfDay]
+	cp NITE_F
 	jp nz, .dont_evolve_3
 	jr .proceed
 

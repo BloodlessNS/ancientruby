@@ -335,3 +335,12 @@ INCBIN "data/tilesets/omanyte_word_room_metatiles.bin"
 
 TilesetAerodactylWordRoomMeta:
 INCBIN "data/tilesets/aerodactyl_word_room_metatiles.bin"
+
+TilesetMovingTruckGFX:
+INCBIN "gfx/tilesets/moving_truck.2bpp.lz"
+
+TilesetMovingTruckMeta:
+INCBIN "data/tilesets/moving_truck_metatiles.bin"
+
+TilesetMovingTruckColl:
+INCLUDE "data/tilesets/moving_truck_collision.asm"

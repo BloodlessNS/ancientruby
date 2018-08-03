@@ -21,7 +21,6 @@ INCLUDE "audio/music/darkcave.asm"
 INCLUDE "audio/music/johtogymbattle.asm"
 INCLUDE "audio/music/championbattle.asm"
 INCLUDE "audio/music/ssaqua.asm"
-INCLUDE "audio/music/newbarktown.asm"
 INCLUDE "audio/music/goldenrodcity.asm"
 INCLUDE "audio/music/vermilioncity.asm"
 INCLUDE "audio/music/titlescreen.asm"
@@ -69,7 +68,6 @@ INCLUDE "audio/music/route30.asm"
 SECTION "Songs 3", ROMX
 
 INCLUDE "audio/music/violetcity.asm"
-INCLUDE "audio/music/route29.asm"
 INCLUDE "audio/music/halloffame.asm"
 INCLUDE "audio/music/healpokemon.asm"
 INCLUDE "audio/music/evolution.asm"
@@ -95,9 +93,6 @@ INCLUDE "audio/music/nationalpark.asm"
 INCLUDE "audio/music/azaleatown.asm"
 INCLUDE "audio/music/cherrygrovecity.asm"
 INCLUDE "audio/music/unioncave.asm"
-INCLUDE "audio/music/johtowildbattle.asm"
-INCLUDE "audio/music/johtowildbattlenight.asm"
-INCLUDE "audio/music/johtotrainerbattle.asm"
 INCLUDE "audio/music/lookyoungster.asm"
 INCLUDE "audio/music/tintower.asm"
 INCLUDE "audio/music/sprouttower.asm"
@@ -139,6 +134,14 @@ INCLUDE "audio/music/mobileadapter.asm"
 SECTION "Extra Songs 2", ROMX
 
 INCLUDE "audio/music/postcredits.asm"
+
+
+SECTION "Hoenn Songs 1", ROMX
+
+INCLUDE "audio/music/littleroottown.asm"
+INCLUDE "audio/music/route101.asm"
+INCLUDE "audio/music/hoennwildbattle.asm"
+INCLUDE "audio/music/hoenntrainerbattle.asm"
 
 
 SECTION "Sound Effects", ROMX

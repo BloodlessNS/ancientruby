@@ -8,17 +8,17 @@ FramesPointers:
 	dw SquirtleFrames
 	dw WartortleFrames
 	dw BlastoiseFrames
-	dw CaterpieFrames
-	dw MetapodFrames
-	dw ButterfreeFrames
+	dw WurmpleFrames
+	dw SilcoonFrames
+	dw BeautiflyFrames
 	dw WeedleFrames
-	dw KakunaFrames
-	dw BeedrillFrames
+	dw CascoonFrames
+	dw DustoxFrames
 	dw PidgeyFrames
 	dw PidgeottoFrames
 	dw PidgeotFrames
-	dw RattataFrames
-	dw RaticateFrames
+	dw PoochyenaFrames
+	dw MightyenaFrames
 	dw SpearowFrames
 	dw FearowFrames
 	dw EkansFrames
@@ -150,17 +150,17 @@ FramesPointers:
 	dw DragoniteFrames
 	dw MewtwoFrames
 	dw MewFrames
-	dw ChikoritaFrames
-	dw BayleefFrames
-	dw MeganiumFrames
-	dw CyndaquilFrames
-	dw QuilavaFrames
-	dw TyphlosionFrames
-	dw TotodileFrames
-	dw CroconawFrames
-	dw FeraligatrFrames
-	dw SentretFrames
-	dw FurretFrames
+	dw TreeckoFrames
+	dw GrovyleFrames
+	dw SceptileFrames
+	dw TorchicFrames
+	dw CombuskenFrames
+	dw BlazikenFrames
+	dw MudkipFrames
+	dw MarshtompFrames
+	dw SwampertFrames
+	dw ZigzagoonFrames
+	dw LinooneFrames
 	dw HoothootFrames
 	dw NoctowlFrames
 	dw LedybaFrames

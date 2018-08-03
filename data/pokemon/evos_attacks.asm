@@ -169,58 +169,60 @@ BlastoiseEvosAttacks:
 	db 68, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-CaterpieEvosAttacks:
-	db EVOLVE_LEVEL, 7, METAPOD
+WurmpleEvosAttacks:
+	db EVOLVE_LEVELTIME, 7 , TR_MORNDAY, SILCOON
+	db EVOLVE_LEVELTIME, 7 , TR_NITE, CASCOON
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, STRING_SHOT
+	db 1, POISON_STING
 	db 0 ; no more level-up moves
 
-MetapodEvosAttacks:
-	db EVOLVE_LEVEL, 10, BUTTERFREE
+SilcoonEvosAttacks:
+	db EVOLVE_LEVEL, 10, BEAUTIFLY
 	db 0 ; no more evolutions
 	db 1, HARDEN
 	db 7, HARDEN
 	db 0 ; no more level-up moves
 
-ButterfreeEvosAttacks:
+BeautiflyEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONFUSION
-	db 10, CONFUSION
-	db 13, POISONPOWDER
-	db 14, STUN_SPORE
-	db 15, SLEEP_POWDER
-	db 18, SUPERSONIC
-	db 23, WHIRLWIND
-	db 28, GUST
-	db 34, PSYBEAM
+	db 1, ABSORB
+	db 10, ABSORB
+	db 13, GUST
+	db 17, STUN_SPORE
+	db 20, MORNING_SUN
+	db 24, MEGA_DRAIN
+	db 27, WHIRLWIND
+	db 38, GIGA_DRAIN
 	db 40, SAFEGUARD
 	db 0 ; no more level-up moves
 
 WeedleEvosAttacks:
-	db EVOLVE_LEVEL, 7, KAKUNA
-	db 0 ; no more evolutions
-	db 1, POISON_STING
-	db 1, STRING_SHOT
-	db 0 ; no more level-up moves
-
-KakunaEvosAttacks:
-	db EVOLVE_LEVEL, 10, BEEDRILL
+	db EVOLVE_LEVEL, 7, CASCOON
 	db 0 ; no more evolutions
 	db 1, HARDEN
 	db 7, HARDEN
 	db 0 ; no more level-up moves
 
-BeedrillEvosAttacks:
+CascoonEvosAttacks:
+	db EVOLVE_LEVEL, 10, DUSTOX
 	db 0 ; no more evolutions
-	db 1, FURY_ATTACK
-	db 10, FURY_ATTACK
-	db 15, FOCUS_ENERGY
-	db 20, TWINEEDLE
-	db 25, RAGE
-	db 30, PURSUIT
-	db 35, PIN_MISSILE
-	db 40, AGILITY
+	db 1, HARDEN
+	db 7, HARDEN
+	db 0 ; no more level-up moves
+
+DustoxEvosAttacks:
+	db 0 ; no more evolutions
+	db 1, CONFUSION
+	db 10, CONFUSION
+	db 13, GUST
+	db 17, PROTECT
+	db 20, MOONLIGHT
+	db 24, PSYBEAM
+	db 27, WHIRLWIND
+	db 31, LIGHT_SCREEN
+	db 38, TOXIC
 	db 0 ; no more level-up moves
 
 PidgeyEvosAttacks:
@@ -266,19 +268,21 @@ PidgeotEvosAttacks:
 	db 61, MIRROR_MOVE
 	db 0 ; no more level-up moves
 
-RattataEvosAttacks:
-	db EVOLVE_LEVEL, 20, RATICATE
+PoochyenaEvosAttacks:
+	db EVOLVE_LEVEL, 18, MIGHTYENA
 	db 0 ; no more evolutions
 	db 1, TACKLE
-	db 1, TAIL_WHIP
+	db 1, SAND_ATTACK
+	db 1, BITE
 	db 7, QUICK_ATTACK
+	db 9, SAND_ATTACK
 	db 13, HYPER_FANG
-	db 20, FOCUS_ENERGY
+	db 20, ROAR
 	db 27, PURSUIT
 	db 34, SUPER_FANG
 	db 0 ; no more level-up moves
 
-RaticateEvosAttacks:
+MightyenaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, TAIL_WHIP
@@ -2069,8 +2073,8 @@ MewEvosAttacks:
 	db 50, ANCIENTPOWER
 	db 0 ; no more level-up moves
 
-ChikoritaEvosAttacks:
-	db EVOLVE_LEVEL, 16, BAYLEEF
+TreeckoEvosAttacks:
+	db EVOLVE_LEVEL, 16, GROVYLE
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
@@ -2084,8 +2088,8 @@ ChikoritaEvosAttacks:
 	db 50, SOLARBEAM
 	db 0 ; no more level-up moves
 
-BayleefEvosAttacks:
-	db EVOLVE_LEVEL, 32, MEGANIUM
+GrovyleEvosAttacks:
+	db EVOLVE_LEVEL, 36, SCEPTILE
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
@@ -2101,7 +2105,7 @@ BayleefEvosAttacks:
 	db 55, SOLARBEAM
 	db 0 ; no more level-up moves
 
-MeganiumEvosAttacks:
+SceptileEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, GROWL
@@ -2117,8 +2121,8 @@ MeganiumEvosAttacks:
 	db 61, SOLARBEAM
 	db 0 ; no more level-up moves
 
-CyndaquilEvosAttacks:
-	db EVOLVE_LEVEL, 14, QUILAVA
+TorchicEvosAttacks:
+	db EVOLVE_LEVEL, 16, COMBUSKEN
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
@@ -2130,8 +2134,8 @@ CyndaquilEvosAttacks:
 	db 46, FLAMETHROWER
 	db 0 ; no more level-up moves
 
-QuilavaEvosAttacks:
-	db EVOLVE_LEVEL, 36, TYPHLOSION
+CombuskenEvosAttacks:
+	db EVOLVE_LEVEL, 36, BLAZIKEN
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
@@ -2144,7 +2148,7 @@ QuilavaEvosAttacks:
 	db 54, FLAMETHROWER
 	db 0 ; no more level-up moves
 
-TyphlosionEvosAttacks:
+BlazikenEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 1, LEER
@@ -2158,8 +2162,8 @@ TyphlosionEvosAttacks:
 	db 60, FLAMETHROWER
 	db 0 ; no more level-up moves
 
-TotodileEvosAttacks:
-	db EVOLVE_LEVEL, 18, CROCONAW
+MudkipEvosAttacks:
+	db EVOLVE_LEVEL, 16, MARSHTOMP
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
@@ -2172,8 +2176,8 @@ TotodileEvosAttacks:
 	db 52, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-CroconawEvosAttacks:
-	db EVOLVE_LEVEL, 30, FERALIGATR
+MarshtompEvosAttacks:
+	db EVOLVE_LEVEL, 36, SWAMPERT
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
@@ -2187,7 +2191,7 @@ CroconawEvosAttacks:
 	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-FeraligatrEvosAttacks:
+SwampertEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, LEER
@@ -2202,8 +2206,8 @@ FeraligatrEvosAttacks:
 	db 58, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
-SentretEvosAttacks:
-	db EVOLVE_LEVEL, 15, FURRET
+ZigzagoonEvosAttacks:
+	db EVOLVE_LEVEL, 20, LINOONE
 	db 0 ; no more evolutions
 	db 1, TACKLE
 	db 5, DEFENSE_CURL
@@ -2214,7 +2218,7 @@ SentretEvosAttacks:
 	db 41, AMNESIA
 	db 0 ; no more level-up moves
 
-FurretEvosAttacks:
+LinooneEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, SCRATCH
 	db 1, DEFENSE_CURL

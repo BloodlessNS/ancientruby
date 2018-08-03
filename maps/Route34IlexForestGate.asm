@@ -1,6 +1,6 @@
 	const_def 2 ; object constants
 	const ROUTE34ILEXFORESTGATE_TEACHER1
-	const ROUTE34ILEXFORESTGATE_BUTTERFREE
+	const ROUTE34ILEXFORESTGATE_BEAUTIFLY
 	const ROUTE34ILEXFORESTGATE_LASS
 	const ROUTE34ILEXFORESTGATE_TEACHER2
 
@@ -65,10 +65,10 @@ Route34IlexForestGateTeacherScript:
 	closetext
 	end
 
-Route34IlexForestGateButterfreeScript:
+Route34IlexForestGateBeautiflyScript:
 	opentext
-	writetext Route34IlexForestGateButterfreeText
-	cry BUTTERFREE
+	writetext Route34IlexForestGateBeautiflyText
+	cry BEAUTIFLY
 	waitbutton
 	closetext
 	end
@@ -115,8 +115,8 @@ Route34IlexForestGateTeacher_ForestIsRestless:
 	line "away right now."
 	done
 
-Route34IlexForestGateButterfreeText:
-	text "BUTTERFREE: Freeh!"
+Route34IlexForestGateBeautiflyText:
+	text "BEAUTIFLY: Freeh!"
 	done
 
 Route34IlexForestGateLassText:
@@ -149,6 +149,6 @@ Route34IlexForestGate_MapEvents:
 
 	db 4 ; object events
 	object_event  9,  3, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateTeacherScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_TEACHER_BEHIND_COUNTER
-	object_event  9,  4, SPRITE_BUTTERFREE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateButterfreeScript, -1
+	object_event  9,  4, SPRITE_BEAUTIFLY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateBeautiflyScript, -1
 	object_event  3,  4, SPRITE_LASS, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateLassScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_LASS
 	object_event  5,  7, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route34IlexForestGateTeacherScript, EVENT_ROUTE_34_ILEX_FOREST_GATE_TEACHER_IN_WALKWAY

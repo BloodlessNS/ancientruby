@@ -63,13 +63,15 @@ elif "\1" == "east"
 endc
 ENDM
 
-	map_attributes NewBarkTown, NEW_BARK_TOWN, $05, WEST | EAST
-	connection west, Route29, ROUTE_29, 0, 0, 9
-	connection east, Route27, ROUTE_27, 0, 0, 9
-
-	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH | EAST
+	
+	map_attributes LittlerootTown, LITTLEROOT_TOWN,$00, NORTH
+	connection north, Route101, ROUTE_101, 0, 0, 10
+	
+	map_attributes Route101, ROUTE_101, $00, SOUTH
+	connection south, LittlerootTown, LITTLEROOT_TOWN, 0, 0, 10
+	
+	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH
 	connection north, Route30, ROUTE_30, 5, 0, 10
-	connection east, Route29, ROUTE_29, 0, 0, 9
 
 	map_attributes VioletCity, VIOLET_CITY, $05, SOUTH | WEST | EAST
 	connection south, Route32, ROUTE_32, 0, 0, 10
@@ -114,17 +116,11 @@ ENDM
 	map_attributes Route26, ROUTE_26, $05, WEST
 	connection west, Route27, ROUTE_27, 45, 0, 9
 
-	map_attributes Route27, ROUTE_27, $35, WEST | EAST
-	connection west, NewBarkTown, NEW_BARK_TOWN, 0, 0, 9
+	map_attributes Route27, ROUTE_27, $35, EAST
 	connection east, Route26, ROUTE_26, -3, 42, 12
 
 	map_attributes Route28, ROUTE_28, $2c, WEST
 	connection west, SilverCaveOutside, SILVER_CAVE_OUTSIDE, -3, 6, 12
-
-	map_attributes Route29, ROUTE_29, $05, NORTH | WEST | EAST
-	connection north, Route46, ROUTE_46, 10, 0, 10
-	connection west, CherrygroveCity, CHERRYGROVE_CITY, 0, 0, 9
-	connection east, NewBarkTown, NEW_BARK_TOWN, 0, 0, 9
 
 	map_attributes Route30, ROUTE_30, $05, NORTH | SOUTH
 	connection north, Route31, ROUTE_31, -3, 7, 13
@@ -191,8 +187,7 @@ ENDM
 	connection north, BlackthornCity, BLACKTHORN_CITY, 0, 0, 13
 	connection west, Route46, ROUTE_46, 36, 0, 12
 
-	map_attributes Route46, ROUTE_46, $05, SOUTH | EAST
-	connection south, Route29, ROUTE_29, -3, 7, 16
+	map_attributes Route46, ROUTE_46, $05, EAST
 	connection east, Route45, ROUTE_45, -3, 33, 12
 
 	map_attributes PewterCity, PEWTER_CITY, $0f, SOUTH | EAST
@@ -661,3 +656,4 @@ ENDM
 	map_attributes Route30BerryHouse, ROUTE_30_BERRY_HOUSE, $00, 0
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
+	map_attributes MovingTruck, MOVING_TRUCK, $00, 0

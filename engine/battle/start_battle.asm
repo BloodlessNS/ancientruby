@@ -75,11 +75,11 @@ PlayBattleMusic:
 	and a
 	jr nz, .kantowild
 
-	ld de, MUSIC_JOHTO_WILD_BATTLE
+	ld de, MUSIC_HOENN_WILD_BATTLE
 	ld a, [wTimeOfDay]
 	cp NITE_F
 	jr nz, .done
-	ld de, MUSIC_JOHTO_WILD_BATTLE_NIGHT
+	ld de, MUSIC_HOENN_WILD_BATTLE
 	jr .done
 
 .kantowild
@@ -118,7 +118,7 @@ PlayBattleMusic:
 	jr nz, .othertrainer
 
 	ld a, [wOtherTrainerID]
-	cp RIVAL2_2_CHIKORITA ; Rival in Indigo Plateau
+	cp RIVAL2_2_TREECKO ; Rival in Indigo Plateau
 	jr c, .done
 	ld de, MUSIC_CHAMPION_BATTLE
 	jr .done
@@ -126,15 +126,15 @@ PlayBattleMusic:
 .othertrainer
 	ld a, [wLinkMode]
 	and a
-	jr nz, .johtotrainer
+	jr nz, .hoenntrainer
 
 	farcall RegionCheck
 	ld a, e
 	and a
 	jr nz, .kantotrainer
 
-.johtotrainer
-	ld de, MUSIC_JOHTO_TRAINER_BATTLE
+.hoenntrainer
+	ld de, MUSIC_HOENN_TRAINER_BATTLE
 	jr .done
 
 .kantotrainer

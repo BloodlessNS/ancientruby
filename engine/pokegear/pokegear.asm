@@ -224,7 +224,7 @@ TownMap_InitCursorAndPlayerIconPositions:
 
 .FastShip:
 	ld [wPokegearMapPlayerIconLandmark], a
-	ld a, NEW_BARK_TOWN
+	ld a, LITTLEROOT_TOWN
 	ld [wPokegearMapCursorLandmark], a
 	ret
 
@@ -573,7 +573,7 @@ PokegearMap_KantoMap:
 
 PokegearMap_JohtoMap:
 	ld d, SILVER_CAVE
-	ld e, NEW_BARK_TOWN
+	ld e, LITTLEROOT_TOWN
 PokegearMap_ContinueMap:
 	ld hl, hJoyLast
 	ld a, [hl]
@@ -663,10 +663,11 @@ PokegearMap_InitPlayerIcon:
 	push af
 	depixel 0, 0
 	ld b, SPRITE_ANIM_INDEX_RED_WALK
+	ld c, 0  ; RED
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_INDEX_BLUE_WALK
+	ld b, SPRITE_ANIM_INDEX_RED_WALK
 .got_gender
 	ld a, b
 	call _InitSpriteAnimStruct
@@ -2285,10 +2286,10 @@ FlyMap:
 .JohtoFlyMap:
 ; Note that .NoKanto should be modified in tandem with this branch
 	push af
-; Start from New Bark Town
-	ld a, FLY_NEW_BARK
+; Start from Littleroot Town
+	ld a, FLY_LITTLEROOT
 	ld [wTownMapPlayerIconLandmark], a
-; Flypoints begin at New Bark Town...
+; Flypoints begin at Littleroot Town...
 	ld [wStartFlypoint], a
 ; ..and end at Silver Cave.
 	ld a, FLY_MT_SILVER
@@ -2335,10 +2336,10 @@ FlyMap:
 .NoKanto:
 ; If Indigo Plateau hasn't been visited, we use Johto's map instead
 
-; Start from New Bark Town
-	ld a, FLY_NEW_BARK
+; Start from Littleroot Town
+	ld a, FLY_LITTLEROOT
 	ld [wTownMapPlayerIconLandmark], a
-; Flypoints begin at New Bark Town...
+; Flypoints begin at Littleroot Town...
 	ld [wStartFlypoint], a
 ; ..and end at Silver Cave
 	ld a, FLY_MT_SILVER
@@ -2567,7 +2568,7 @@ Pokedex_GetArea:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .male
-	inc c ; PAL_OW_BLUE
+	inc c ; PAL_OW_RED
 .male
 	ld a, c
 	ld [hli], a ; attributes
@@ -2780,7 +2781,7 @@ TownMapPlayerIcon:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .got_gender
-	ld b, SPRITE_ANIM_INDEX_BLUE_WALK ; Female
+	ld b, SPRITE_ANIM_INDEX_RED_WALK ; Female
 .got_gender
 	ld a, b
 	call _InitSpriteAnimStruct

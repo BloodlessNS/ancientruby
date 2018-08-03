@@ -5,304 +5,304 @@ JohtoGrassWildMons:
 	map_id SPROUT_TOWER_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 3, POOCHYENA
+	db 4, POOCHYENA
+	db 5, POOCHYENA
+	db 3, POOCHYENA
+	db 6, POOCHYENA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 	; day
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 3, POOCHYENA
+	db 4, POOCHYENA
+	db 5, POOCHYENA
+	db 3, POOCHYENA
+	db 6, POOCHYENA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
 	db 5, GASTLY
-	db 3, RATTATA
+	db 3, POOCHYENA
 	db 6, GASTLY
-	db 5, RATTATA
-	db 5, RATTATA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 
 	map_id SPROUT_TOWER_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 3, POOCHYENA
+	db 4, POOCHYENA
+	db 5, POOCHYENA
+	db 3, POOCHYENA
+	db 6, POOCHYENA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 	; day
-	db 3, RATTATA
-	db 4, RATTATA
-	db 5, RATTATA
-	db 3, RATTATA
-	db 6, RATTATA
-	db 5, RATTATA
-	db 5, RATTATA
+	db 3, POOCHYENA
+	db 4, POOCHYENA
+	db 5, POOCHYENA
+	db 3, POOCHYENA
+	db 6, POOCHYENA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 	; nite
 	db 3, GASTLY
 	db 4, GASTLY
 	db 5, GASTLY
-	db 3, RATTATA
+	db 3, POOCHYENA
 	db 6, GASTLY
-	db 5, RATTATA
-	db 5, RATTATA
+	db 5, POOCHYENA
+	db 5, POOCHYENA
 
 	map_id TIN_TOWER_2F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_3F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_4F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_5F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_6F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_7F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_8F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id TIN_TOWER_9F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; day
-	db 20, RATTATA
-	db 21, RATTATA
-	db 22, RATTATA
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 20, POOCHYENA
+	db 21, POOCHYENA
+	db 22, POOCHYENA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 	; nite
 	db 20, GASTLY
 	db 21, GASTLY
 	db 22, GASTLY
-	db 22, RATTATA
-	db 23, RATTATA
-	db 24, RATTATA
-	db 24, RATTATA
+	db 22, POOCHYENA
+	db 23, POOCHYENA
+	db 24, POOCHYENA
+	db 24, POOCHYENA
 
 	map_id BURNED_TOWER_1F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, RATTATA
+	db 13, POOCHYENA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, POOCHYENA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, POOCHYENA
+	db 15, MIGHTYENA
+	db 15, MIGHTYENA
 	; day
-	db 13, RATTATA
+	db 13, POOCHYENA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, POOCHYENA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, POOCHYENA
+	db 15, MIGHTYENA
+	db 15, MIGHTYENA
 	; nite
-	db 13, RATTATA
+	db 13, POOCHYENA
 	db 14, KOFFING
-	db 15, RATTATA
+	db 15, POOCHYENA
 	db 14, ZUBAT
-	db 15, RATTATA
-	db 15, RATICATE
-	db 15, RATICATE
+	db 15, POOCHYENA
+	db 15, MIGHTYENA
+	db 15, MIGHTYENA
 
 	map_id BURNED_TOWER_B1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 14, KOFFING
 	db 16, KOFFING
 	db 15, ZUBAT
@@ -310,7 +310,7 @@ JohtoGrassWildMons:
 	db 16, KOFFING
 	db 16, WEEZING
 	; day
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 14, KOFFING
 	db 16, KOFFING
 	db 15, ZUBAT
@@ -318,7 +318,7 @@ JohtoGrassWildMons:
 	db 16, KOFFING
 	db 16, WEEZING
 	; nite
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 14, KOFFING
 	db 16, KOFFING
 	db 15, ZUBAT
@@ -333,7 +333,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_F
 	db 14, LEDYBA
 	db 13, PIDGEY
-	db 10, CATERPIE
+	db 10, WURMPLE
 	db 10, WEEDLE
 	db 10, WEEDLE
 	; day
@@ -341,7 +341,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_M
 	db 14, SUNKERN
 	db 13, PIDGEY
-	db 10, CATERPIE
+	db 10, WURMPLE
 	db 10, WEEDLE
 	db 10, WEEDLE
 	; nite
@@ -413,7 +413,7 @@ JohtoGrassWildMons:
 	db 6, GEODUDE
 	db 6, SANDSHREW
 	db 5, ZUBAT
-	db 4, RATTATA
+	db 4, POOCHYENA
 	db 7, ZUBAT
 	db 6, ONIX
 	db 6, ONIX
@@ -421,15 +421,15 @@ JohtoGrassWildMons:
 	db 6, GEODUDE
 	db 6, SANDSHREW
 	db 5, ZUBAT
-	db 4, RATTATA
+	db 4, POOCHYENA
 	db 7, ZUBAT
 	db 6, ONIX
 	db 6, ONIX
 	; nite
 	db 6, GEODUDE
-	db 6, RATTATA
+	db 6, POOCHYENA
 	db 5, WOOPER
-	db 4, RATTATA
+	db 4, POOCHYENA
 	db 7, ZUBAT
 	db 6, ONIX
 	db 6, ONIX
@@ -441,25 +441,25 @@ JohtoGrassWildMons:
 	db 6, ZUBAT
 	db 8, ZUBAT
 	db 8, ONIX
-	db 6, RATTATA
-	db 8, RATTATA
-	db 8, RATTATA
+	db 6, POOCHYENA
+	db 8, POOCHYENA
+	db 8, POOCHYENA
 	; day
 	db 8, GEODUDE
 	db 6, ZUBAT
 	db 8, ZUBAT
 	db 8, ONIX
-	db 6, RATTATA
-	db 8, RATTATA
-	db 8, RATTATA
+	db 6, POOCHYENA
+	db 8, POOCHYENA
+	db 8, POOCHYENA
 	; nite
 	db 8, GEODUDE
 	db 6, ZUBAT
 	db 8, WOOPER
 	db 8, ONIX
-	db 6, RATTATA
-	db 8, RATTATA
-	db 8, RATTATA
+	db 6, POOCHYENA
+	db 8, POOCHYENA
+	db 8, POOCHYENA
 
 	map_id UNION_CAVE_B2F
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -467,7 +467,7 @@ JohtoGrassWildMons:
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 22, ZUBAT
-	db 21, RATICATE
+	db 21, MIGHTYENA
 	db 20, GEODUDE
 	db 23, ONIX
 	db 23, ONIX
@@ -475,7 +475,7 @@ JohtoGrassWildMons:
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 22, ZUBAT
-	db 21, RATICATE
+	db 21, MIGHTYENA
 	db 20, GEODUDE
 	db 23, ONIX
 	db 23, ONIX
@@ -483,7 +483,7 @@ JohtoGrassWildMons:
 	db 22, ZUBAT
 	db 22, GOLBAT
 	db 22, QUAGSIRE
-	db 21, RATICATE
+	db 21, MIGHTYENA
 	db 20, GEODUDE
 	db 23, ONIX
 	db 23, ONIX
@@ -545,18 +545,18 @@ JohtoGrassWildMons:
 	map_id ILEX_FOREST
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
 	; morn
-	db 5, CATERPIE
+	db 5, WURMPLE
 	db 5, WEEDLE
-	db 7, METAPOD
-	db 7, KAKUNA
+	db 7, SILCOON
+	db 7, CASCOON
 	db 7, PIDGEY
 	db 6, PARAS
 	db 6, PARAS
 	; day
-	db 5, CATERPIE
+	db 5, WURMPLE
 	db 5, WEEDLE
-	db 7, METAPOD
-	db 7, KAKUNA
+	db 7, SILCOON
+	db 7, CASCOON
 	db 7, PIDGEY
 	db 6, PARAS
 	db 6, PARAS
@@ -572,52 +572,52 @@ JohtoGrassWildMons:
 	map_id MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 13, ZUBAT
 	db 14, MACHOP
 	db 13, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 16, MIGHTYENA
+	db 16, MIGHTYENA
 	; day
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 13, ZUBAT
 	db 14, MACHOP
 	db 13, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 16, MIGHTYENA
+	db 16, MIGHTYENA
 	; nite
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 13, ZUBAT
 	db 14, MARILL
 	db 13, GOLBAT
 	db 14, GEODUDE
-	db 16, RATICATE
-	db 16, RATICATE
+	db 16, MIGHTYENA
+	db 16, MIGHTYENA
 
 	map_id MOUNT_MORTAR_1F_INSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
 	db 13, GEODUDE
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 15, MACHOP
-	db 14, RATICATE
+	db 14, MIGHTYENA
 	db 15, ZUBAT
 	db 15, GOLBAT
 	db 15, GOLBAT
 	; day
 	db 13, GEODUDE
-	db 14, RATTATA
+	db 14, POOCHYENA
 	db 15, MACHOP
-	db 14, RATICATE
+	db 14, MIGHTYENA
 	db 15, ZUBAT
 	db 15, GOLBAT
 	db 15, GOLBAT
 	; nite
 	db 13, GEODUDE
-	db 14, RATTATA
-	db 15, RATICATE
+	db 14, POOCHYENA
+	db 15, MIGHTYENA
 	db 14, ZUBAT
 	db 15, MARILL
 	db 15, GOLBAT
@@ -629,7 +629,7 @@ JohtoGrassWildMons:
 	db 31, GRAVELER
 	db 32, MACHOKE
 	db 31, GEODUDE
-	db 30, RATICATE
+	db 30, MIGHTYENA
 	db 28, MACHOP
 	db 30, GOLBAT
 	db 30, GOLBAT
@@ -637,14 +637,14 @@ JohtoGrassWildMons:
 	db 31, GRAVELER
 	db 32, MACHOKE
 	db 31, GEODUDE
-	db 30, RATICATE
+	db 30, MIGHTYENA
 	db 28, MACHOP
 	db 30, GOLBAT
 	db 30, GOLBAT
 	; nite
 	db 31, GRAVELER
 	db 31, GEODUDE
-	db 30, RATICATE
+	db 30, MIGHTYENA
 	db 30, GOLBAT
 	db 28, MARILL
 	db 32, GOLBAT
@@ -658,24 +658,24 @@ JohtoGrassWildMons:
 	db 17, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 18, MIGHTYENA
+	db 18, MIGHTYENA
 	; day
 	db 15, ZUBAT
 	db 17, ZUBAT
 	db 17, GOLBAT
 	db 16, MACHOP
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 18, MIGHTYENA
+	db 18, MIGHTYENA
 	; nite
 	db 15, ZUBAT
 	db 17, ZUBAT
 	db 17, GOLBAT
 	db 16, MARILL
 	db 16, GEODUDE
-	db 18, RATICATE
-	db 18, RATICATE
+	db 18, MIGHTYENA
+	db 18, MIGHTYENA
 
 	map_id ICE_PATH_1F
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
@@ -1189,48 +1189,48 @@ JohtoGrassWildMons:
 	db 25, WOBBUFFET
 	db 23, GOLBAT
 	db 23, GOLBAT
-
-	map_id ROUTE_29
+	
+	map_id ROUTE_101
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 2, WURMPLE
+	db 2, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, WURMPLE
+	db 3, POOCHYENA
 	; day
-	db 2, PIDGEY
-	db 2, SENTRET
-	db 3, PIDGEY
-	db 3, SENTRET
-	db 2, RATTATA
-	db 3, HOPPIP
-	db 3, HOPPIP
+	db 2, WURMPLE
+	db 2, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, WURMPLE
+	db 3, POOCHYENA
 	; nite
-	db 2, HOOTHOOT
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, RATTATA
-	db 2, RATTATA
-	db 3, HOOTHOOT
-	db 3, HOOTHOOT
+	db 3, POOCHYENA
+	db 2, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, WURMPLE
+	db 3, POOCHYENA
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, LEDYBA
-	db 3, CATERPIE
-	db 4, CATERPIE
+	db 3, WURMPLE
+	db 4, WURMPLE
 	db 4, PIDGEY
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
 	db 3, PIDGEY
-	db 3, CATERPIE
-	db 4, CATERPIE
+	db 3, WURMPLE
+	db 4, WURMPLE
 	db 4, PIDGEY
 	db 3, WEEDLE
 	db 4, HOPPIP
@@ -1248,7 +1248,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, LEDYBA
-	db 4, CATERPIE
+	db 4, WURMPLE
 	db 5, BELLSPROUT
 	db 5, PIDGEY
 	db 4, WEEDLE
@@ -1256,7 +1256,7 @@ JohtoGrassWildMons:
 	db 5, HOPPIP
 	; day
 	db 4, PIDGEY
-	db 4, CATERPIE
+	db 4, WURMPLE
 	db 5, BELLSPROUT
 	db 5, PIDGEY
 	db 4, WEEDLE
@@ -1275,7 +1275,7 @@ JohtoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 4, EKANS
-	db 5, RATTATA
+	db 5, POOCHYENA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
 	db 7, PIDGEY
@@ -1283,7 +1283,7 @@ JohtoGrassWildMons:
 	db 7, HOPPIP
 	; day
 	db 4, EKANS
-	db 5, RATTATA
+	db 5, POOCHYENA
 	db 7, BELLSPROUT
 	db 6, HOPPIP
 	db 7, PIDGEY
@@ -1291,7 +1291,7 @@ JohtoGrassWildMons:
 	db 7, HOPPIP
 	; nite
 	db 4, WOOPER
-	db 5, RATTATA
+	db 5, POOCHYENA
 	db 7, BELLSPROUT
 	db 6, ZUBAT
 	db 7, HOOTHOOT
@@ -1301,7 +1301,7 @@ JohtoGrassWildMons:
 	map_id ROUTE_33
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 6, RATTATA
+	db 6, POOCHYENA
 	db 6, SPEAROW
 	db 6, GEODUDE
 	db 6, HOPPIP
@@ -1309,7 +1309,7 @@ JohtoGrassWildMons:
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; day
-	db 6, RATTATA
+	db 6, POOCHYENA
 	db 6, SPEAROW
 	db 6, GEODUDE
 	db 6, HOPPIP
@@ -1317,19 +1317,19 @@ JohtoGrassWildMons:
 	db 7, HOPPIP
 	db 7, HOPPIP
 	; nite
-	db 6, RATTATA
+	db 6, POOCHYENA
 	db 6, ZUBAT
 	db 6, GEODUDE
 	db 6, ZUBAT
-	db 7, RATTATA
-	db 7, RATTATA
-	db 7, RATTATA
+	db 7, POOCHYENA
+	db 7, POOCHYENA
+	db 7, POOCHYENA
 
 	map_id ROUTE_34
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 10, SNUBBULL
-	db 11, RATTATA
+	db 11, POOCHYENA
 	db 12, PIDGEY
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1337,7 +1337,7 @@ JohtoGrassWildMons:
 	db 10, DITTO
 	; day
 	db 10, SNUBBULL
-	db 11, RATTATA
+	db 11, POOCHYENA
 	db 12, PIDGEY
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1345,7 +1345,7 @@ JohtoGrassWildMons:
 	db 10, DITTO
 	; nite
 	db 12, DROWZEE
-	db 11, RATTATA
+	db 11, POOCHYENA
 	db 12, HOOTHOOT
 	db 10, ABRA
 	db 12, JIGGLYPUFF
@@ -1436,16 +1436,16 @@ JohtoGrassWildMons:
 	map_id ROUTE_38
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, POOCHYENA
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
 	db 13, MILTANK
 	db 13, MILTANK
 	; day
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, POOCHYENA
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 13, TAUROS
@@ -1453,7 +1453,7 @@ JohtoGrassWildMons:
 	db 13, MILTANK
 	; nite
 	db 16, MEOWTH
-	db 16, RATICATE
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, NOCTOWL
 	db 16, MEOWTH
@@ -1463,16 +1463,16 @@ JohtoGrassWildMons:
 	map_id ROUTE_39
 	db 2 percent, 2 percent, 2 percent ; encounter rates: morn/day/nite
 	; morn
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, POOCHYENA
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
 	db 15, TAUROS
 	db 15, TAUROS
 	; day
-	db 16, RATTATA
-	db 16, RATICATE
+	db 16, POOCHYENA
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, PIDGEOTTO
 	db 15, MILTANK
@@ -1480,7 +1480,7 @@ JohtoGrassWildMons:
 	db 15, TAUROS
 	; nite
 	db 16, MEOWTH
-	db 16, RATICATE
+	db 16, MIGHTYENA
 	db 16, MAGNEMITE
 	db 16, NOCTOWL
 	db 18, MEOWTH
@@ -1492,23 +1492,23 @@ JohtoGrassWildMons:
 	; morn
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
+	db 15, POOCHYENA
+	db 16, MIGHTYENA
 	db 15, ARBOK
 	db 16, FEAROW
 	db 16, FEAROW
 	; day
 	db 13, EKANS
 	db 14, SPEAROW
-	db 15, RATTATA
-	db 16, RATICATE
+	db 15, POOCHYENA
+	db 16, MIGHTYENA
 	db 15, ARBOK
 	db 16, FEAROW
 	db 16, FEAROW
 	; nite
-	db 13, RATTATA
+	db 13, POOCHYENA
 	db 14, ZUBAT
-	db 15, RATICATE
+	db 15, MIGHTYENA
 	db 16, GOLBAT
 	db 15, MARILL
 	db 16, GOLBAT
@@ -1517,27 +1517,27 @@ JohtoGrassWildMons:
 	map_id ROUTE_43
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
-	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
-	db 17, FURRET
+	db 15, LINOONE
+	db 17, MIGHTYENA
+	db 17, LINOONE
+	db 17, LINOONE
 	; day
-	db 15, SENTRET
+	db 15, ZIGZAGOON
 	db 16, PIDGEOTTO
 	db 16, FARFETCH_D
-	db 15, FURRET
-	db 17, RATICATE
-	db 17, FURRET
-	db 17, FURRET
+	db 15, LINOONE
+	db 17, MIGHTYENA
+	db 17, LINOONE
+	db 17, LINOONE
 	; nite
 	db 15, VENONAT
 	db 16, NOCTOWL
-	db 16, RATICATE
+	db 16, MIGHTYENA
 	db 17, VENONAT
-	db 17, RATICATE
+	db 17, MIGHTYENA
 	db 17, VENOMOTH
 	db 17, VENOMOTH
 
@@ -1601,26 +1601,26 @@ JohtoGrassWildMons:
 	db 2, GEODUDE
 	db 2, SPEAROW
 	db 3, GEODUDE
-	db 3, RATTATA
+	db 3, POOCHYENA
 	db 2, PHANPY
-	db 2, RATTATA
-	db 2, RATTATA
+	db 2, POOCHYENA
+	db 2, POOCHYENA
 	; day
 	db 2, GEODUDE
 	db 2, SPEAROW
 	db 3, GEODUDE
-	db 3, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
+	db 3, POOCHYENA
+	db 2, POOCHYENA
+	db 2, POOCHYENA
+	db 2, POOCHYENA
 	; nite
 	db 2, GEODUDE
-	db 2, RATTATA
+	db 2, POOCHYENA
 	db 3, GEODUDE
-	db 3, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
-	db 2, RATTATA
+	db 3, POOCHYENA
+	db 2, POOCHYENA
+	db 2, POOCHYENA
+	db 2, POOCHYENA
 
 	map_id SILVER_CAVE_OUTSIDE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

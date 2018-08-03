@@ -437,7 +437,7 @@ CooltrainerfLoisBeatenText:
 CooltrainerfLoisAfterBattleText:
 	text "Come to think of"
 	line "it, I've seen a"
-	cont "pink BUTTERFREE."
+	cont "pink BEAUTIFLY."
 	done
 
 MeetWesleyText:

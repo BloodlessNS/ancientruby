@@ -376,7 +376,7 @@ Continue:
 	ret
 
 .SpawnAfterE4:
-	ld a, SPAWN_NEW_BARK
+	ld a, SPAWN_LITTLEROOT
 	ld [wDefaultSpawnpoint], a
 	call PostCreditsSpawn
 	jp FinishContinueFunction
@@ -776,9 +776,9 @@ NamePlayer:
 	ret
 
 .Chris:
-	db "CHRIS@@@@@@"
+	db "BRENDAN@@@@"
 .Kris:
-	db "KRIS@@@@@@@"
+	db "MAY@@@@@@@@"
 
 Unreferenced_Function60e9:
 	call LoadMenuHeader
@@ -935,7 +935,7 @@ Intro_PlacePlayerSprite:
 	ld a, [wPlayerGender]
 	bit PLAYERGENDER_FEMALE_F, a
 	jr z, .male
-	ld b, PAL_OW_BLUE
+	ld b, PAL_OW_RED
 .male
 	ld a, b
 
@@ -1021,7 +1021,6 @@ RunTitleScreen:
 	bit 7, a
 	jr nz, .done_title
 	call TitleScreenScene
-	farcall SuicuneFrameIterator
 	call DelayFrame
 	and a
 	ret
@@ -1092,7 +1091,6 @@ TitleScreenEntrance:
 	dec b
 	jr nz, .loop
 
-	farcall AnimateTitleCrystal
 	ret
 
 .done

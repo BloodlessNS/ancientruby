@@ -94,7 +94,7 @@
 	RGB 21,31,07, 13,25,04 ; morn/day
 	RGB 09,14,08, 06,10,04 ; nite
 
-; group 24 (New Bark)
+; group 24 (Littleroot)
 	RGB 20,31,14, 11,23,05 ; morn/day
 	RGB 09,13,08, 06,09,04 ; nite
 
