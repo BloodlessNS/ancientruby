@@ -117,7 +117,7 @@ EvolveAfterBattle_MasterLoop:
 	jp nz, .dont_evolve_2
 
 	inc hl
-	jr .proceed
+	jp .proceed
 
 .happiness
 	ld a, [wTempMonHappiness]
@@ -129,7 +129,7 @@ EvolveAfterBattle_MasterLoop:
 
 	ld a, [hli]
 	cp TR_ANYTIME
-	jr z, .proceed
+	jp z, .proceed
 	cp TR_MORNDAY
 	jr z, .happiness_daylight
 

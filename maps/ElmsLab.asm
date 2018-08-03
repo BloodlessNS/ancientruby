@@ -236,7 +236,7 @@ TreeckoPokeBallScript:
 	playsound SFX_CAUGHT_MON
 	waitsfx
 	buttonsound
-	givepoke WURMPLE, 5, BERRY
+	givepoke TREECKO, 5, BERRY
 	closetext
 	applymovement PLAYER, AfterTreeckoMovement
 	jump ElmDirectionsScript
