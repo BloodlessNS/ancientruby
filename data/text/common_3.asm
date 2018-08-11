@@ -11,9 +11,9 @@ _OakText7::
 	line "#MON story is"
 	cont "about to unfold."
 
-	para "You'll face fun"
-	line "times and tough"
-	cont "challenges."
+	para "Take courage and"
+	line "leap into the "
+	cont "world of #MON."
 
 	para "A world of dreams"
 	line "and adventures"

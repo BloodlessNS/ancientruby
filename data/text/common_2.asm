@@ -1492,16 +1492,17 @@ UnknownText_0x1c1cf3::
 	done
 
 _OakText1::
-	text "Hello! Sorry to"
+	text "Hi! Sorry to"
 	line "keep you waiting!"
 
 	para "Welcome to the"
 	line "world of #MON!"
 
-	para "My name is OAK."
+	para "My name is BIRCH."
 
-	para "People call me the"
-	line "#MON PROF."
+	para "But everyone"
+	line "calls me the"
+	cont "#MON PROF."
 	prompt
 
 _OakText2::
@@ -1515,8 +1516,8 @@ _OakText3::
 	db "@@"
 
 _OakText4::
-	text "People and #MON"
-	line "live together by"
+	text "We humans live"
+	line "alongside #MON,"
 
 	para "supporting each"
 	line "other."
