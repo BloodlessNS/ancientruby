@@ -1389,27 +1389,28 @@ ElectrodeEvosAttacks:
 	db 48, MIRROR_COAT
 	db 0 ; no more level-up moves
 
-ExeggcuteEvosAttacks:
-	db EVOLVE_ITEM, LEAF_STONE, EXEGGUTOR
+SeedotEvosAttacks:
+	db EVOLVE_LEVEL, 14, NUZLEAF
 	db 0 ; no more evolutions
-	db 1, BARRAGE
-	db 1, HYPNOSIS
-	db 7, REFLECT
+	db 1, BIDE
+	db 3, HARDEN
+	db 7, GROWTH
 	db 13, LEECH_SEED
-	db 19, CONFUSION
-	db 25, STUN_SPORE
-	db 31, POISONPOWDER
-	db 37, SLEEP_POWDER
-	db 43, SOLARBEAM
+	db 21, SYNTHESIS
+	db 31, SUNNY_DAY
+	db 43, EXPLOSION
 	db 0 ; no more level-up moves
 
-ExeggutorEvosAttacks:
+NuzleafEvosAttacks:
+	db EVOLVE_ITEM, LEAF_STONE, SHIFTRY
 	db 0 ; no more evolutions
-	db 1, BARRAGE
-	db 1, HYPNOSIS
-	db 1, CONFUSION
-	db 19, STOMP
-	db 31, EGG_BOMB
+	db 1, POUND
+	db 3, HARDEN
+	db 7, GROWTH
+	db 13, LEECH_SEED
+	db 25, FAINT_ATTACK
+	db 37, RAZOR_WIND
+	db 43, SWAGGER
 	db 0 ; no more level-up moves
 
 CuboneEvosAttacks:
@@ -1559,18 +1560,12 @@ ChanseyEvosAttacks:
 	db 57, DOUBLE_EDGE
 	db 0 ; no more level-up moves
 
-TangelaEvosAttacks:
+ShiftryEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, CONSTRICT
-	db 4, SLEEP_POWDER
-	db 10, ABSORB
-	db 13, POISONPOWDER
-	db 19, VINE_WHIP
-	db 25, BIND
-	db 31, MEGA_DRAIN
-	db 34, STUN_SPORE
-	db 40, SLAM
-	db 46, GROWTH
+	db 1, GROWTH
+	db 1, HARDEN
+	db 1, LEECH_SEED
+	db 1, POUND
 	db 0 ; no more level-up moves
 
 KangaskhanEvosAttacks:

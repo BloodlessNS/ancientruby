@@ -448,19 +448,25 @@ ENDM
 
 	map_const ROUTE_26,                                    10, 54 ;  1
 	map_const ROUTE_27,                                    40,  9 ;  2
-	map_const ELMS_LAB,                                     5,  6 ;  3
-	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  4
-	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  5
-	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  6
-	map_const ELMS_HOUSE,                                   4,  4 ;  7
-	map_const ROUTE_26_HEAL_HOUSE,                          4,  4 ;  8
-	map_const DAY_OF_WEEK_SIBLINGS_HOUSE,                   4,  4 ;  9
-	map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ; 10
-	map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ; 11
-	map_const MOVING_TRUCK,                                 3,  2 ; 12
-	map_const LITTLEROOT_TOWN,                             10, 10 ; 13
-	map_const ROUTE_101,                                   10,  9 ; 14
-	
+	map_const ELMS_LAB,                                     5,  6 ;  5
+	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
+	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7
+	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  8
+	map_const ELMS_HOUSE,                                   4,  4 ;  9
+	map_const ROUTE_26_HEAL_HOUSE,                          4,  4 ; 10
+	map_const DAY_OF_WEEK_SIBLINGS_HOUSE,                   4,  4 ; 11
+	map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ; 12
+	map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ; 13
+	map_const MOVING_TRUCK,                                 3,  2 ; 14
+	map_const LITTLEROOT_TOWN,                             10, 10 ; 15
+	map_const ROUTE_101,                                   10,  9 ; 16
+	map_const OLDALE_TOWN,                                 10,  9 ; 17
+	map_const OLDALE_POKECENTER_1F,                         5,  4 ; 18
+	map_const OLDALE_MART,                                  6,  4 ; 19
+	map_const OLDALE_HOUSE_1,                               4,  4 ; 20
+	map_const OLDALE_HOUSE_2,                               4,  4 ; 21
+	map_const ROUTE_102,                                   22,  9 ; 22
+
 	newgroup                                                      ; 25
 
 	map_const ROUTE_5,                                     10,  9 ;  1

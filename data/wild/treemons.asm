@@ -56,17 +56,17 @@ TreeMonSet_Route:
 	db 50, HOOTHOOT,   10
 	db 15, SPINARAK,   10
 	db 15, LEDYBA,     10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 ; rare
 	db 50, HOOTHOOT,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 
 TreeMonSet_Kanto:
@@ -74,17 +74,17 @@ TreeMonSet_Kanto:
 	db 50, HOOTHOOT,   10
 	db 15, EKANS,      10
 	db 15, HOOTHOOT,   10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 ; rare
 	db 50, HOOTHOOT,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 
 TreeMonSet_Lake:
@@ -92,17 +92,17 @@ TreeMonSet_Lake:
 	db 50, HOOTHOOT,   10
 	db 15, VENONAT,    10
 	db 15, HOOTHOOT,   10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 ; rare
 	db 50, HOOTHOOT,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
-	db 10, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
-	db  5, EXEGGCUTE,  10
+	db 10, SEEDOT,  10
+	db  5, SEEDOT,  10
+	db  5, SEEDOT,  10
 	db -1
 
 TreeMonSet_Forest:

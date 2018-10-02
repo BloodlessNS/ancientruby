@@ -100,8 +100,8 @@ FramesPointers:
 	dw KinglerFrames
 	dw VoltorbFrames
 	dw ElectrodeFrames
-	dw ExeggcuteFrames
-	dw ExeggutorFrames
+	dw SeedotFrames
+	dw NuzleafFrames
 	dw CuboneFrames
 	dw MarowakFrames
 	dw HitmonleeFrames
@@ -112,7 +112,7 @@ FramesPointers:
 	dw RhyhornFrames
 	dw RhydonFrames
 	dw ChanseyFrames
-	dw TangelaFrames
+	dw ShiftryFrames
 	dw KangaskhanFrames
 	dw HorseaFrames
 	dw SeadraFrames

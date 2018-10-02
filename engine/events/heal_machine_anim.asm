@@ -241,7 +241,7 @@ INCLUDE "gfx/overworld/heal_machine.pal"
 	bcpixel 2, 4
 	cp HEALMACHINE_ELMS_LAB
 	jr z, .okay
-	bcpixel 0, 0
+	bcpixel 2, 0
 
 .okay
 	ld a, [de]

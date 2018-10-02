@@ -626,29 +626,29 @@ KantoGrassWildMons:
 	map_id ROUTE_21
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
 	; morn
-	db 30, TANGELA
+	db 30, SHIFTRY
 	db 25, POOCHYENA
-	db 35, TANGELA
+	db 35, SHIFTRY
 	db 20, MIGHTYENA
 	db 30, MR__MIME
 	db 28, MR__MIME
 	db 28, MR__MIME
 	; day
-	db 30, TANGELA
+	db 30, SHIFTRY
 	db 25, POOCHYENA
-	db 35, TANGELA
+	db 35, SHIFTRY
 	db 20, MIGHTYENA
 	db 28, MR__MIME
 	db 30, MR__MIME
 	db 30, MR__MIME
 	; nite
-	db 30, TANGELA
+	db 30, SHIFTRY
 	db 25, POOCHYENA
-	db 35, TANGELA
+	db 35, SHIFTRY
 	db 20, MIGHTYENA
-	db 30, TANGELA
-	db 28, TANGELA
-	db 28, TANGELA
+	db 30, SHIFTRY
+	db 28, SHIFTRY
+	db 28, SHIFTRY
 
 	map_id ROUTE_22
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -788,7 +788,7 @@ KantoGrassWildMons:
 	map_id ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 39, TANGELA
+	db 39, SHIFTRY
 	db 40, PONYTA
 	db 40, RAPIDASH
 	db 42, ARBOK
@@ -796,7 +796,7 @@ KantoGrassWildMons:
 	db 43, DODRIO
 	db 43, DODRIO
 	; day
-	db 39, TANGELA
+	db 39, SHIFTRY
 	db 40, PONYTA
 	db 40, RAPIDASH
 	db 42, ARBOK
@@ -804,7 +804,7 @@ KantoGrassWildMons:
 	db 43, DODRIO
 	db 43, DODRIO
 	; nite
-	db 39, TANGELA
+	db 39, SHIFTRY
 	db 40, POLIWHIRL
 	db 40, GOLBAT
 	db 40, POLIWHIRL

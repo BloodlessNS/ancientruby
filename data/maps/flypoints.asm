@@ -8,7 +8,7 @@ Flypoints:
 	const_def
 ; Johto
 	flypoint LITTLEROOT,   LITTLEROOT_TOWN
-	flypoint CHERRYGROVE,  CHERRYGROVE_CITY
+	flypoint OLDALE,       OLDALE_TOWN
 	flypoint VIOLET,       VIOLET_CITY
 	flypoint AZALEA,       AZALEA_TOWN
 	flypoint GOLDENROD,    GOLDENROD_CITY

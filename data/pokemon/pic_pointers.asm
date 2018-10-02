@@ -204,10 +204,10 @@ PokemonPicPointers::
 	dba_pic VoltorbBackpic
 	dba_pic ElectrodeFrontpic
 	dba_pic ElectrodeBackpic
-	dba_pic ExeggcuteFrontpic
-	dba_pic ExeggcuteBackpic
-	dba_pic ExeggutorFrontpic
-	dba_pic ExeggutorBackpic
+	dba_pic SeedotFrontpic
+	dba_pic SeedotBackpic
+	dba_pic NuzleafFrontpic
+	dba_pic NuzleafBackpic
 	dba_pic CuboneFrontpic
 	dba_pic CuboneBackpic
 	dba_pic MarowakFrontpic
@@ -228,8 +228,8 @@ PokemonPicPointers::
 	dba_pic RhydonBackpic
 	dba_pic ChanseyFrontpic
 	dba_pic ChanseyBackpic
-	dba_pic TangelaFrontpic
-	dba_pic TangelaBackpic
+	dba_pic ShiftryFrontpic
+	dba_pic ShiftryBackpic
 	dba_pic KangaskhanFrontpic
 	dba_pic KangaskhanBackpic
 	dba_pic HorseaFrontpic

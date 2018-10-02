@@ -102,8 +102,8 @@ EvosAttacksPointers::
 	dw KinglerEvosAttacks
 	dw VoltorbEvosAttacks
 	dw ElectrodeEvosAttacks
-	dw ExeggcuteEvosAttacks
-	dw ExeggutorEvosAttacks
+	dw SeedotEvosAttacks
+	dw NuzleafEvosAttacks
 	dw CuboneEvosAttacks
 	dw MarowakEvosAttacks
 	dw HitmonleeEvosAttacks
@@ -114,7 +114,7 @@ EvosAttacksPointers::
 	dw RhyhornEvosAttacks
 	dw RhydonEvosAttacks
 	dw ChanseyEvosAttacks
-	dw TangelaEvosAttacks
+	dw ShiftryEvosAttacks
 	dw KangaskhanEvosAttacks
 	dw HorseaEvosAttacks
 	dw SeadraEvosAttacks

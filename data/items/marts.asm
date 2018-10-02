@@ -1,5 +1,6 @@
 Marts:
 ; entries correspond to MART_* constants
+	dw MartOldale
 	dw MartCherrygrove
 	dw MartCherrygroveDex
 	dw MartViolet
@@ -35,6 +36,15 @@ Marts:
 	dw MartIndigoPlateau
 	dw MartUnderground
 .End
+
+MartOldale:
+	db 5 ; # items
+	db POKE_BALL
+	db POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db -1 ; end
 
 MartCherrygrove:
 	db 4 ; # items

@@ -56,8 +56,8 @@ AlphabeticalPokedexOrder:
 	db ELEKID
 	db ENTEI
 	db ESPEON
-	db EXEGGCUTE
-	db EXEGGUTOR
+	db SEEDOT
+	db NUZLEAF
 	db FARFETCH_D
 	db FEAROW
 	db SWAMPERT
@@ -219,7 +219,7 @@ AlphabeticalPokedexOrder:
 	db SUNFLORA
 	db SUNKERN
 	db SWINUB
-	db TANGELA
+	db SHIFTRY
 	db TAUROS
 	db TEDDIURSA
 	db TENTACOOL

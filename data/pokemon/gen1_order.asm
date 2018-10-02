@@ -8,9 +8,9 @@ Pokered_MonIndices:
 	db NIDOKING
 	db SLOWBRO
 	db IVYSAUR
-	db EXEGGUTOR
+	db NUZLEAF
 	db LICKITUNG
-	db EXEGGCUTE
+	db SEEDOT
 	db GRIMER
 	db GENGAR
 	db NIDORAN_F
@@ -28,7 +28,7 @@ Pokered_MonIndices:
 	db STARYU
 	db BLASTOISE
 	db PINSIR
-	db TANGELA
+	db SHIFTRY
 	db SCIZOR ; MISSINGNO.
 	db SHUCKLE ; MISSINGNO.
 	db GROWLITHE

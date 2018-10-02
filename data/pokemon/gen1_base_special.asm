@@ -102,8 +102,8 @@ KantoMonSpecials:
 	db  50 ; KINGLER
 	db  55 ; VOLTORB
 	db  80 ; ELECTRODE
-	db  60 ; EXEGGCUTE
-	db 125 ; EXEGGUTOR
+	db  60 ; SEEDOT
+	db 125 ; NUZLEAF
 	db  40 ; CUBONE
 	db  50 ; MAROWAK
 	db  35 ; HITMONLEE
@@ -114,7 +114,7 @@ KantoMonSpecials:
 	db  30 ; RHYHORN
 	db  45 ; RHYDON
 	db 105 ; CHANSEY
-	db 100 ; TANGELA
+	db 100 ; SHIFTRY
 	db  40 ; KANGASKHAN
 	db  70 ; HORSEA
 	db  95 ; SEADRA

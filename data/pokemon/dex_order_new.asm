@@ -104,8 +104,8 @@ NewPokedexOrder:
 	db YANMA
 	db SUNKERN
 	db SUNFLORA
-	db EXEGGCUTE
-	db EXEGGUTOR
+	db SEEDOT
+	db NUZLEAF
 	db SUDOWOODO
 	db WOBBUFFET
 	db VENONAT
@@ -179,7 +179,7 @@ NewPokedexOrder:
 	db SEEL
 	db DEWGONG
 	db LICKITUNG
-	db TANGELA
+	db SHIFTRY
 	db EEVEE
 	db VAPOREON
 	db JOLTEON

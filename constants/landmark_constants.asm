@@ -5,6 +5,8 @@
 	const SPECIAL_MAP       ; 00
 	const LITTLEROOT_TOWN   ; 01
 	const ROUTE_101         ; 02
+	const OLDALE_TOWN
+	const ROUTE_102         ; 02
 	const CHERRYGROVE_CITY  ; 03
 	const ROUTE_30          ; 04
 	const ROUTE_31          ; 05

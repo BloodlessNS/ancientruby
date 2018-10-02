@@ -99,8 +99,8 @@ KrabbyBitmasks:
 KinglerBitmasks:
 VoltorbBitmasks:
 ElectrodeBitmasks:
-ExeggcuteBitmasks:
-ExeggutorBitmasks:
+SeedotBitmasks:
+NuzleafBitmasks:
 CuboneBitmasks:
 MarowakBitmasks:
 HitmonleeBitmasks:
@@ -111,7 +111,7 @@ WeezingBitmasks:
 RhyhornBitmasks:
 RhydonBitmasks:
 ChanseyBitmasks:
-TangelaBitmasks:
+ShiftryBitmasks:
 KangaskhanBitmasks:
 HorseaBitmasks:
 SeadraBitmasks:

@@ -9,7 +9,7 @@ AsleepTreeMonsNite:
 	db DUSTOX
 	db SPEAROW
 	db EKANS
-	db EXEGGCUTE
+	db SEEDOT
 	db LEDYBA
 	db AIPOM
 	db -1 ; end

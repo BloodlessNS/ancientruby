@@ -1216,6 +1216,33 @@ JohtoGrassWildMons:
 	db 2, POOCHYENA
 	db 3, WURMPLE
 	db 3, POOCHYENA
+	
+	map_id ROUTE_102
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, SEEDOT
+	db 3, POOCHYENA
+	db 3, WURMPLE
+	db 3, NUZLEAF
+	; day
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, SEEDOT
+	db 3, POOCHYENA
+	db 3, WURMPLE
+	db 3, NUZLEAF
+	; nite
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, SEEDOT
+	db 3, POOCHYENA
+	db 3, WURMPLE
+	db 3, NUZLEAF
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1544,7 +1571,7 @@ JohtoGrassWildMons:
 	map_id ROUTE_44
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 23, TANGELA
+	db 23, SHIFTRY
 	db 22, LICKITUNG
 	db 22, BELLSPROUT
 	db 24, WEEPINBELL
@@ -1552,7 +1579,7 @@ JohtoGrassWildMons:
 	db 26, LICKITUNG
 	db 26, LICKITUNG
 	; day
-	db 23, TANGELA
+	db 23, SHIFTRY
 	db 22, LICKITUNG
 	db 22, BELLSPROUT
 	db 24, WEEPINBELL
@@ -1560,7 +1587,7 @@ JohtoGrassWildMons:
 	db 26, LICKITUNG
 	db 26, LICKITUNG
 	; nite
-	db 23, TANGELA
+	db 23, SHIFTRY
 	db 22, POLIWAG
 	db 22, BELLSPROUT
 	db 24, WEEPINBELL
@@ -1625,7 +1652,7 @@ JohtoGrassWildMons:
 	map_id SILVER_CAVE_OUTSIDE
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 41, TANGELA
+	db 41, SHIFTRY
 	db 42, PONYTA
 	db 42, ARBOK
 	db 44, RAPIDASH
@@ -1633,7 +1660,7 @@ JohtoGrassWildMons:
 	db 43, DODRIO
 	db 43, DODRIO
 	; day
-	db 41, TANGELA
+	db 41, SHIFTRY
 	db 42, PONYTA
 	db 42, ARBOK
 	db 44, RAPIDASH
@@ -1641,7 +1668,7 @@ JohtoGrassWildMons:
 	db 43, DODRIO
 	db 43, DODRIO
 	; nite
-	db 41, TANGELA
+	db 41, SHIFTRY
 	db 42, POLIWHIRL
 	db 42, GOLBAT
 	db 44, POLIWHIRL

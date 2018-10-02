@@ -57,7 +57,8 @@ Route101_MapEvents:
 	db 1 ; bg events
 	bg_event 5,  9, BGEVENT_READ, Route101Sign
 	
-	db 2 ; object events
+	db 3 ; object events
+	object_event  8,  22, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, -1
 	object_event 2,  14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route101CooltrainerMScript, -1
 	object_event 15,  7, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route101YoungsterScript, -1
 	

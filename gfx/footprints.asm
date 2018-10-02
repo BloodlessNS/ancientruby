@@ -231,8 +231,8 @@ INCBIN "gfx/footprints/krabby.1bpp",     footprint_top
 INCBIN "gfx/footprints/kingler.1bpp",    footprint_top
 INCBIN "gfx/footprints/voltorb.1bpp",    footprint_top
 INCBIN "gfx/footprints/electrode.1bpp",  footprint_top
-INCBIN "gfx/footprints/exeggcute.1bpp",  footprint_top
-INCBIN "gfx/footprints/exeggutor.1bpp",  footprint_top
+INCBIN "gfx/footprints/seedot.1bpp",  footprint_top
+INCBIN "gfx/footprints/nuzleaf.1bpp",  footprint_top
 INCBIN "gfx/footprints/cubone.1bpp",     footprint_top
 ; 097-104 bottom halves
 INCBIN "gfx/footprints/hypno.1bpp",      footprint_bottom
@@ -240,8 +240,8 @@ INCBIN "gfx/footprints/krabby.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/kingler.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/voltorb.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/electrode.1bpp",  footprint_bottom
-INCBIN "gfx/footprints/exeggcute.1bpp",  footprint_bottom
-INCBIN "gfx/footprints/exeggutor.1bpp",  footprint_bottom
+INCBIN "gfx/footprints/seedot.1bpp",  footprint_bottom
+INCBIN "gfx/footprints/nuzleaf.1bpp",  footprint_bottom
 INCBIN "gfx/footprints/cubone.1bpp",     footprint_bottom
 ; 105-112 top halves
 INCBIN "gfx/footprints/marowak.1bpp",    footprint_top
@@ -263,7 +263,7 @@ INCBIN "gfx/footprints/rhyhorn.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/rhydon.1bpp",     footprint_bottom
 ; 113-120 top halves
 INCBIN "gfx/footprints/chansey.1bpp",    footprint_top
-INCBIN "gfx/footprints/tangela.1bpp",    footprint_top
+INCBIN "gfx/footprints/shiftry.1bpp",    footprint_top
 INCBIN "gfx/footprints/kangaskhan.1bpp", footprint_top
 INCBIN "gfx/footprints/horsea.1bpp",     footprint_top
 INCBIN "gfx/footprints/seadra.1bpp",     footprint_top
@@ -272,7 +272,7 @@ INCBIN "gfx/footprints/seaking.1bpp",    footprint_top
 INCBIN "gfx/footprints/staryu.1bpp",     footprint_top
 ; 113-120 bottom halves
 INCBIN "gfx/footprints/chansey.1bpp",    footprint_bottom
-INCBIN "gfx/footprints/tangela.1bpp",    footprint_bottom
+INCBIN "gfx/footprints/shiftry.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/kangaskhan.1bpp", footprint_bottom
 INCBIN "gfx/footprints/horsea.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/seadra.1bpp",     footprint_bottom

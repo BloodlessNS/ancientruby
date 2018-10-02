@@ -100,8 +100,8 @@ BitmasksPointers:
 	dw KinglerBitmasks
 	dw VoltorbBitmasks
 	dw ElectrodeBitmasks
-	dw ExeggcuteBitmasks
-	dw ExeggutorBitmasks
+	dw SeedotBitmasks
+	dw NuzleafBitmasks
 	dw CuboneBitmasks
 	dw MarowakBitmasks
 	dw HitmonleeBitmasks
@@ -112,7 +112,7 @@ BitmasksPointers:
 	dw RhyhornBitmasks
 	dw RhydonBitmasks
 	dw ChanseyBitmasks
-	dw TangelaBitmasks
+	dw ShiftryBitmasks
 	dw KangaskhanBitmasks
 	dw HorseaBitmasks
 	dw SeadraBitmasks

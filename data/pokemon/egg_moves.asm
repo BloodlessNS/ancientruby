@@ -322,7 +322,7 @@ KrabbyEggMoves:
 	db SLAM
 	db -1 ; end
 
-ExeggcuteEggMoves:
+SeedotEggMoves:
 	db SYNTHESIS
 	db MOONLIGHT
 	db REFLECT
@@ -372,7 +372,7 @@ ChanseyEggMoves:
 	db HEAL_BELL
 	db -1 ; end
 
-TangelaEggMoves:
+ShiftryEggMoves:
 	db FLAIL
 	db CONFUSION
 	db MEGA_DRAIN

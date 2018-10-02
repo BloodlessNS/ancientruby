@@ -100,7 +100,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw ExeggcuteEggMoves
+	dw SeedotEggMoves
 	dw NoEggMoves
 	dw CuboneEggMoves
 	dw NoEggMoves
@@ -112,7 +112,7 @@ EggMovePointers::
 	dw RhyhornEggMoves
 	dw NoEggMoves
 	dw ChanseyEggMoves
-	dw TangelaEggMoves
+	dw ShiftryEggMoves
 	dw KangaskhanEggMoves
 	dw HorseaEggMoves
 	dw NoEggMoves

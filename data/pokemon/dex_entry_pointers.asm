@@ -101,8 +101,8 @@ PokedexDataPointerTable:
 	dw KinglerPokedexEntry
 	dw VoltorbPokedexEntry
 	dw ElectrodePokedexEntry
-	dw ExeggcutePokedexEntry
-	dw ExeggutorPokedexEntry
+	dw SeedotPokedexEntry
+	dw NuzleafPokedexEntry
 	dw CubonePokedexEntry
 	dw MarowakPokedexEntry
 	dw HitmonleePokedexEntry
@@ -113,7 +113,7 @@ PokedexDataPointerTable:
 	dw RhyhornPokedexEntry
 	dw RhydonPokedexEntry
 	dw ChanseyPokedexEntry
-	dw TangelaPokedexEntry
+	dw ShiftryPokedexEntry
 	dw KangaskhanPokedexEntry
 	dw HorseaPokedexEntry
 	dw SeadraPokedexEntry

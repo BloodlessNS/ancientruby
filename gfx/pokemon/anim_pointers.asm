@@ -100,8 +100,8 @@ AnimationPointers:
 	dw KinglerAnimation
 	dw VoltorbAnimation
 	dw ElectrodeAnimation
-	dw ExeggcuteAnimation
-	dw ExeggutorAnimation
+	dw SeedotAnimation
+	dw NuzleafAnimation
 	dw CuboneAnimation
 	dw MarowakAnimation
 	dw HitmonleeAnimation
@@ -112,7 +112,7 @@ AnimationPointers:
 	dw RhyhornAnimation
 	dw RhydonAnimation
 	dw ChanseyAnimation
-	dw TangelaAnimation
+	dw ShiftryAnimation
 	dw KangaskhanAnimation
 	dw HorseaAnimation
 	dw SeadraAnimation

@@ -145,6 +145,8 @@ Route38_Blocks:
 BetaCianwoodCity_Blocks:
 	INCBIN "maps/unused/BetaCianwoodCity.blk"
 
+OldaleHouse1_Blocks:
+OldaleHouse2_Blocks:
 OlivineTimsHouse_Blocks:
 OlivineHouseBeta_Blocks:
 OlivinePunishmentSpeechHouse_Blocks:
@@ -316,6 +318,7 @@ Route14_Blocks:
 BetaSproutTower8_Blocks:
 	INCBIN "maps/unused/BetaSproutTower8.blk"
 
+OldaleMart_Blocks:
 OlivineMart_Blocks:
 EcruteakMart_Blocks:
 BlackthornMart_Blocks:
@@ -358,6 +361,7 @@ CianwoodPokecenter1F_Blocks:
 ViridianPokecenter1F_Blocks:
 SaffronPokecenter1F_Blocks:
 CherrygrovePokecenter1F_Blocks:
+OldalePokecenter1F_Blocks:
 	INCBIN "maps/Pokecenter1F.blk"
 
 BetaPewterMuseumOfScience1F_Blocks:
@@ -1050,4 +1054,10 @@ LittlerootTown_Blocks:
 	
 Route101_Blocks:
 	INCBIN "maps/Route101.blk"
+	
+OldaleTown_Blocks:
+	INCBIN "maps/OldaleTown.blk"
+	
+Route102_Blocks:
+	INCBIN "maps/Route102.blk"
 	

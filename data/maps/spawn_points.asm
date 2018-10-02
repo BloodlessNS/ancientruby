@@ -23,8 +23,8 @@ SpawnPoints:
 	spawn CINNABAR_ISLAND,            11, 12
 	spawn ROUTE_23,                    9,  6
 
-	spawn LITTLEROOT_TOWN,              5,  8
-	spawn CHERRYGROVE_CITY,           29,  4
+	spawn LITTLEROOT_TOWN,             5,  8
+	spawn OLDALE_TOWN,                 5, 14
 	spawn VIOLET_CITY,                31, 26
 	spawn ROUTE_32,                   11, 74
 	spawn AZALEA_TOWN,                15, 10

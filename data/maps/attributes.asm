@@ -67,8 +67,16 @@ ENDM
 	map_attributes LittlerootTown, LITTLEROOT_TOWN,$00, NORTH
 	connection north, Route101, ROUTE_101, 0, 0, 10
 	
-	map_attributes Route101, ROUTE_101, $00, SOUTH
+	map_attributes Route101, ROUTE_101, $00, NORTH | SOUTH
+	connection north, OldaleTown, OLDALE_TOWN, 0, 0, 10
 	connection south, LittlerootTown, LITTLEROOT_TOWN, 0, 0, 10
+	
+	map_attributes OldaleTown, OLDALE_TOWN, $00, SOUTH | WEST
+	connection south, Route101, ROUTE_101, 0, 0, 10
+	connection west, Route102, ROUTE_102, 0, 0, 9
+	
+	map_attributes Route102, ROUTE_102, $00, EAST
+	connection east, OldaleTown, OLDALE_TOWN, 0, 0, 9
 	
 	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH
 	connection north, Route30, ROUTE_30, 5, 0, 10
@@ -657,3 +665,8 @@ ENDM
 	map_attributes MrPokemonsHouse, MR_POKEMONS_HOUSE, $00, 0
 	map_attributes Route31VioletGate, ROUTE_31_VIOLET_GATE, $00, 0
 	map_attributes MovingTruck, MOVING_TRUCK, $00, 0
+	map_attributes OldalePokecenter1F, OLDALE_POKECENTER_1F, $00, 0
+	map_attributes OldaleMart, OLDALE_MART, $00, 0
+	map_attributes OldaleHouse1, OLDALE_HOUSE_1, $00, 0
+	map_attributes OldaleHouse2, OLDALE_HOUSE_2, $00, 0
+	

@@ -100,8 +100,8 @@ AnimationIdlePointers:
 	dw KinglerAnimationIdle
 	dw VoltorbAnimationIdle
 	dw ElectrodeAnimationIdle
-	dw ExeggcuteAnimationIdle
-	dw ExeggutorAnimationIdle
+	dw SeedotAnimationIdle
+	dw NuzleafAnimationIdle
 	dw CuboneAnimationIdle
 	dw MarowakAnimationIdle
 	dw HitmonleeAnimationIdle
@@ -112,7 +112,7 @@ AnimationIdlePointers:
 	dw RhyhornAnimationIdle
 	dw RhydonAnimationIdle
 	dw ChanseyAnimationIdle
-	dw TangelaAnimationIdle
+	dw ShiftryAnimationIdle
 	dw KangaskhanAnimationIdle
 	dw HorseaAnimationIdle
 	dw SeadraAnimationIdle

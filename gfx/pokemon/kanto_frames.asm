@@ -101,8 +101,8 @@ KrabbyFrames:
 KinglerFrames:
 VoltorbFrames:
 ElectrodeFrames:
-ExeggcuteFrames:
-ExeggutorFrames:
+SeedotFrames:
+NuzleafFrames:
 CuboneFrames:
 MarowakFrames:
 HitmonleeFrames:
@@ -113,7 +113,7 @@ WeezingFrames:
 RhyhornFrames:
 RhydonFrames:
 ChanseyFrames:
-TangelaFrames:
+ShiftryFrames:
 KangaskhanFrames:
 HorseaFrames:
 SeadraFrames:
