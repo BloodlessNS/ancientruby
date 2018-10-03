@@ -72,8 +72,8 @@ DayOfWeekSiblingsHouse_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  2,  7, ROUTE_26, 3
-	warp_event  3,  7, ROUTE_26, 3
+	warp_event  2,  7, ROUTE_27, 3
+	warp_event  3,  7, ROUTE_27, 3
 
 	db 0 ; coord events
 

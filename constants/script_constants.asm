@@ -175,7 +175,6 @@ EMOTE_MEM EQU -1
 	const FRUITTREE_ROUTE_35      ; 0b
 	const FRUITTREE_ROUTE_45      ; 0c
 	const FRUITTREE_ROUTE_36      ; 0d
-	const FRUITTREE_ROUTE_26      ; 0e
 	const FRUITTREE_ROUTE_39      ; 0f
 	const FRUITTREE_ROUTE_44      ; 10
 	const FRUITTREE_ROUTE_37_1    ; 11

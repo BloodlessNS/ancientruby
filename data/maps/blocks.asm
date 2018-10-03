@@ -124,9 +124,6 @@ BetaPokecenterMainHouse_Blocks:
 Route30_Blocks:
 	INCBIN "maps/Route30.blk"
 
-Route26_Blocks:
-	INCBIN "maps/Route26.blk"
-
 Route42_Blocks:
 	INCBIN "maps/Route42.blk"
 
@@ -1060,4 +1057,7 @@ OldaleTown_Blocks:
 	
 Route102_Blocks:
 	INCBIN "maps/Route102.blk"
+	
+Route103_Blocks:
+	INCBIN "maps/Route103.blk"
 	

@@ -86,12 +86,6 @@ KantoWaterWildMons:
 	db 5, GOLDEEN
 	db 10, SEAKING
 
-	map_id ROUTE_26
-	db 6 percent ; encounter rate
-	db 30, TENTACOOL
-	db 25, TENTACOOL
-	db 30, TENTACRUEL
-
 	map_id ROUTE_27
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL

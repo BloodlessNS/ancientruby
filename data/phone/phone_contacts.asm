@@ -21,8 +21,8 @@ PhoneContacts:
 	phone TRAINER_NONE, PHONE_00,           N_A,              0,       UnusedPhoneScript,   0,       UnusedPhoneScript
 	phone TRAINER_NONE, PHONE_00,           N_A,              0,       UnusedPhoneScript,   0,       UnusedPhoneScript
 	phone TRAINER_NONE, PHONE_00,           N_A,              0,       UnusedPhoneScript,   0,       UnusedPhoneScript
-	phone COOLTRAINERM, GAVEN3,             ROUTE_26,         ANYTIME, GavenPhoneScript1,   ANYTIME, GavenPhoneScript2
-	phone COOLTRAINERF, BETH1,              ROUTE_26,         ANYTIME, BethPhoneScript1,    ANYTIME, BethPhoneScript2
+	phone COOLTRAINERM, GAVEN3,             ROUTE_27,         ANYTIME, GavenPhoneScript1,   ANYTIME, GavenPhoneScript2
+	phone COOLTRAINERF, BETH1,              ROUTE_27,         ANYTIME, BethPhoneScript1,    ANYTIME, BethPhoneScript2
 	phone BIRD_KEEPER,  JOSE2,              ROUTE_27,         ANYTIME, JosePhoneScript1,    ANYTIME, JosePhoneScript2
 	phone COOLTRAINERF, REENA1,             ROUTE_27,         ANYTIME, ReenaPhoneScript1,   ANYTIME, ReenaPhoneScript2
 	phone YOUNGSTER,    JOEY1,              ROUTE_30,         ANYTIME, JoeyPhoneScript1,    ANYTIME, JoeyPhoneScript2

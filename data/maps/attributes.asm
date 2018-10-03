@@ -71,12 +71,16 @@ ENDM
 	connection north, OldaleTown, OLDALE_TOWN, 0, 0, 10
 	connection south, LittlerootTown, LITTLEROOT_TOWN, 0, 0, 10
 	
-	map_attributes OldaleTown, OLDALE_TOWN, $00, SOUTH | WEST
+	map_attributes OldaleTown, OLDALE_TOWN, $00, NORTH |SOUTH | WEST
+	connection north, Route103, ROUTE_103, 2, 2, 6
 	connection south, Route101, ROUTE_101, 0, 0, 10
 	connection west, Route102, ROUTE_102, 0, 0, 9
 	
 	map_attributes Route102, ROUTE_102, $00, EAST
 	connection east, OldaleTown, OLDALE_TOWN, 0, 0, 9
+	
+	map_attributes Route103, ROUTE_103, $00, SOUTH
+	connection south, OldaleTown, OLDALE_TOWN, 2, 2, 6
 	
 	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH
 	connection north, Route30, ROUTE_30, 5, 0, 10
@@ -121,11 +125,7 @@ ENDM
 	map_attributes SilverCaveOutside, SILVER_CAVE_OUTSIDE, $2c, EAST
 	connection east, Route28, ROUTE_28, 9, 0, 9
 
-	map_attributes Route26, ROUTE_26, $05, WEST
-	connection west, Route27, ROUTE_27, 45, 0, 9
-
-	map_attributes Route27, ROUTE_27, $35, EAST
-	connection east, Route26, ROUTE_26, -3, 42, 12
+	map_attributes Route27, ROUTE_27, $35, 0
 
 	map_attributes Route28, ROUTE_28, $2c, WEST
 	connection west, SilverCaveOutside, SILVER_CAVE_OUTSIDE, -3, 6, 12

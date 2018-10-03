@@ -438,7 +438,7 @@ GavenPhoneScript1:
 	farjump UnknownScript_0xa0910
 
 .WantsBattle:
-	landmarktotext ROUTE_26, MEM_BUFFER_2
+	landmarktotext ROUTE_27, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a37
 
 GavenPhoneScript2:
@@ -460,7 +460,7 @@ GavenThursdayMorning:
 	setflag ENGINE_GAVEN_THURSDAY_MORNING
 
 GavenWantsRematch:
-	landmarktotext ROUTE_26, MEM_BUFFER_2
+	landmarktotext ROUTE_27, MEM_BUFFER_2
 	setflag ENGINE_GAVEN
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -485,7 +485,7 @@ BethPhoneScript1:
 	farjump UnknownScript_0xa0918
 
 .WantsBattle:
-	landmarktotext ROUTE_26, MEM_BUFFER_2
+	landmarktotext ROUTE_27, MEM_BUFFER_2
 	farjump BethBattleReminderScript
 
 BethPhoneScript2:
@@ -505,7 +505,7 @@ BethFridayAfternoon:
 	setflag ENGINE_BETH_FRIDAY_AFTERNOON
 
 BethWantsBattle:
-	landmarktotext ROUTE_26, MEM_BUFFER_2
+	landmarktotext ROUTE_27, MEM_BUFFER_2
 	setflag ENGINE_BETH
 	farjump PhoneScript_WantsToBattle_Female
 

@@ -1,11 +1,11 @@
 	const_def 2 ; object constants
 
-OldaleTown_MapScripts:
+Route103_MapScripts:
 	db 0 ; scene scripts
 
 	db 0 ; callbacks
 
-OldaleTown_MapEvents:
+Route103_MapEvents:
 	db 0, 0 ; filler
 
 	db 0 ; warp events

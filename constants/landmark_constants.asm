@@ -7,6 +7,7 @@
 	const ROUTE_101         ; 02
 	const OLDALE_TOWN
 	const ROUTE_102         ; 02
+	const ROUTE_103         ; 02
 	const CHERRYGROVE_CITY  ; 03
 	const ROUTE_30          ; 04
 	const ROUTE_31          ; 05
@@ -97,7 +98,6 @@ KANTO_LANDMARK EQU const_value
 	const VICTORY_ROAD      ; 58
 	const ROUTE_23          ; 59
 	const INDIGO_PLATEAU    ; 5a
-	const ROUTE_26          ; 5b
 	const ROUTE_27          ; 5c
 	const TOHJO_FALLS       ; 5d
 	const ROUTE_28          ; 5e

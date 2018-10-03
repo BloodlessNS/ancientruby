@@ -11,6 +11,7 @@ Landmarks:
 	landmark 44,   92,  Route101Name
 	landmark 44,   84, OldaleTownName
 	landmark 36,   84,  Route102Name
+	landmark 44,   78,  Route103Name
 	landmark 100, 100, CherrygroveCityName
 	landmark 100,  80, Route30Name
 	landmark  96,  60, Route31Name
@@ -99,7 +100,6 @@ Landmarks:
 	landmark  28,  52, VictoryRoadName
 	landmark  28,  44, Route23Name
 	landmark  28,  36, IndigoPlateauName
-	landmark  28,  92, Route26Name
 	landmark  20, 100, Route27Name
 	landmark  12, 100, TohjoFallsName
 	landmark  20,  68, Route28Name
@@ -109,6 +109,7 @@ LittlerootTownName:  db "LITTLEROOT¯TOWN@"
 Route101Name         db "ROUTE 101@"
 OldaleTownName       db "OLDALE¯TOWN@"
 Route102Name         db "ROUTE 102@"
+Route103Name         db "ROUTE 103@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
 VioletCityName:      db "VIOLET CITY@"
 AzaleaTownName:      db "AZALEA TOWN@"
@@ -179,7 +180,6 @@ Route22Name:         db "ROUTE 22@"
 Route23Name:         db "ROUTE 23@"
 Route24Name:         db "ROUTE 24@"
 Route25Name:         db "ROUTE 25@"
-Route26Name:         db "ROUTE 26@"
 Route27Name:         db "ROUTE 27@"
 Route28Name:         db "ROUTE 28@"
 Route29Name:         db "ROUTE 29@"

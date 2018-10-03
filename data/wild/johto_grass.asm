@@ -1243,6 +1243,33 @@ JohtoGrassWildMons:
 	db 3, POOCHYENA
 	db 3, WURMPLE
 	db 3, NUZLEAF
+	
+	map_id ROUTE_103
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 2, ZIGZAGOON
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, POOCHYENA
+	db 4, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, NUZLEAF
+	; day
+	db 2, ZIGZAGOON
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, POOCHYENA
+	db 4, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, NUZLEAF
+	; nite
+	db 2, ZIGZAGOON
+	db 3, ZIGZAGOON
+	db 2, POOCHYENA
+	db 3, POOCHYENA
+	db 4, ZIGZAGOON
+	db 3, WURMPLE
+	db 3, NUZLEAF
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

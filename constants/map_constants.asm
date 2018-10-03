@@ -446,7 +446,6 @@ ENDM
 
 	newgroup                                                      ; 24
 
-	map_const ROUTE_26,                                    10, 54 ;  1
 	map_const ROUTE_27,                                    40,  9 ;  2
 	map_const ELMS_LAB,                                     5,  6 ;  5
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
@@ -466,6 +465,7 @@ ENDM
 	map_const OLDALE_HOUSE_1,                               4,  4 ; 20
 	map_const OLDALE_HOUSE_2,                               4,  4 ; 21
 	map_const ROUTE_102,                                   22,  9 ; 22
+	map_const ROUTE_103,                                   34,  9 ; 23
 
 	newgroup                                                      ; 25
 

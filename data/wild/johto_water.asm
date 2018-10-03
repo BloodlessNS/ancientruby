@@ -109,6 +109,18 @@ JohtoWaterWildMons:
 	db 20, TENTACOOL
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
+	
+	map_id ROUTE_102
+	db 2 percent ; encounter rate
+	db 20, MARILL
+	db 15, MARILL
+	db 30, POLIWHIRL
+	
+	map_id ROUTE_103
+	db 2 percent ; encounter rate
+	db 5, TENTACOOL
+	db 15, POLIWAG
+	db 25, POLIWHIRL
 
 	map_id ROUTE_30
 	db 2 percent ; encounter rate

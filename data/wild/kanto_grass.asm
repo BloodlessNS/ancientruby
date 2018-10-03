@@ -731,33 +731,6 @@ KantoGrassWildMons:
 	db 14, NOCTOWL
 	db 14, NOCTOWL
 
-	map_id ROUTE_26
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 28, DODUO
-	db 28, SANDSLASH
-	db 32, PONYTA
-	db 30, MIGHTYENA
-	db 30, DODUO
-	db 30, ARBOK
-	db 30, ARBOK
-	; day
-	db 28, DODUO
-	db 28, SANDSLASH
-	db 32, PONYTA
-	db 30, MIGHTYENA
-	db 30, DODUO
-	db 30, ARBOK
-	db 30, ARBOK
-	; nite
-	db 28, NOCTOWL
-	db 28, MIGHTYENA
-	db 32, NOCTOWL
-	db 30, MIGHTYENA
-	db 30, QUAGSIRE
-	db 30, QUAGSIRE
-	db 30, QUAGSIRE
-
 	map_id ROUTE_27
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
