@@ -208,7 +208,7 @@ Text_BusyProfBirch:
 	cont "he'll suddenly go"
 	cont "out in the wild"
 	cont "to do more"
-	cont "research..."
+	cont "research…"
 
 	para "When does he spend"
 	line "time at home?"

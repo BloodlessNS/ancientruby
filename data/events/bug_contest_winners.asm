@@ -1,7 +1,7 @@
 BugContestantPointers:
 ; there are NUM_BUG_CONTESTANTS + 1 entries
-	dw BugContestant_BugCatcherDon ; this reverts back to the player
-	dw BugContestant_BugCatcherDon
+	dw BugContestant_BugCatcherRick ; this reverts back to the player
+	dw BugContestant_BugCatcherRick
 	dw BugContestant_BugCatcherEd
 	dw BugContestant_CooltrainerMNick
 	dw BugContestant_PokefanMWilliam
@@ -18,8 +18,8 @@ BugContestantPointers:
 ;   dbw 2nd-place mon, score
 ;   dbw 3rd-place mon, score
 
-BugContestant_BugCatcherDon:
-	db BUG_CATCHER, DON
+BugContestant_BugCatcherRick:
+	db BUG_CATCHER, RICK
 	dbw CASCOON,     300
 	dbw SILCOON,    285
 	dbw WURMPLE,   226

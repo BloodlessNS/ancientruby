@@ -343,14 +343,13 @@ YoungsterGroup:
 
 	; YOUNGSTER (2)
 	db "MIKEY@", TRAINERTYPE_NORMAL
-	db  2, PIDGEY
-	db  4, POOCHYENA
+	db  5, ZIGZAGOON
 	db -1 ; end
 
 	; YOUNGSTER (3)
-	db "ALBERT@", TRAINERTYPE_NORMAL
-	db  6, POOCHYENA
-	db  8, ZUBAT
+	db "ALLEN@", TRAINERTYPE_NORMAL
+	db  5, POOCHYENA
+	db  3, PIDGEY
 	db -1 ; end
 
 	; YOUNGSTER (4)
@@ -412,6 +411,11 @@ YoungsterGroup:
 	; YOUNGSTER (14)
 	db "JOEY@", TRAINERTYPE_MOVES
 	db 37, MIGHTYENA,   HYPER_BEAM, QUICK_ATTACK, HYPER_FANG, PURSUIT
+	db -1 ; end
+	
+	; YOUNGSTER (15)
+	db "CALVIN@", TRAINERTYPE_NORMAL
+	db  5, ZIGZAGOON
 	db -1 ; end
 
 SchoolboyGroup:
@@ -688,8 +692,9 @@ BirdKeeperGroup:
 
 LassGroup:
 	; LASS (1)
-	db "CARRIE@", TRAINERTYPE_MOVES
-	db 18, SNUBBULL,   SCARY_FACE, CHARM, BITE, LICK
+	db "TIANA@", TRAINERTYPE_NORMAL
+	db 4, ZIGZAGOON
+	db 4, ZIGZAGOON
 	db -1 ; end
 
 	; LASS (2)
@@ -1495,9 +1500,9 @@ SabrinaGroup:
 
 BugCatcherGroup:
 	; BUG_CATCHER (1)
-	db "DON@", TRAINERTYPE_NORMAL
-	db  3, WURMPLE
-	db  3, WURMPLE
+	db "RICK@", TRAINERTYPE_NORMAL
+	db  4, WURMPLE
+	db  4, WURMPLE
 	db -1 ; end
 
 	; BUG_CATCHER (2)

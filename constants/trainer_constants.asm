@@ -110,7 +110,7 @@ KRIS EQU __enum__
 	trainerclass YOUNGSTER ; 16
 	const JOEY1
 	const MIKEY
-	const ALBERT
+	const ALLEN
 	const GORDON
 	const SAMUEL
 	const IAN
@@ -122,6 +122,7 @@ KRIS EQU __enum__
 	const JASON
 	const JOEY4
 	const JOEY5
+	const CALVIN
 
 	trainerclass SCHOOLBOY ; 17
 	const JACK1
@@ -171,7 +172,7 @@ KRIS EQU __enum__
 	const VANCE3
 
 	trainerclass LASS ; 19
-	const CARRIE
+	const TIANA
 	const BRIDGET
 	const ALICE
 	const KRISE
@@ -211,7 +212,7 @@ KRIS EQU __enum__
 	const SEAN
 	const KEVIN
 	const STEVE
-	const ALLEN
+	const ALLEN1
 	const DARIN
 
 	trainerclass COOLTRAINERF ; 1c
@@ -259,7 +260,7 @@ KRIS EQU __enum__
 	trainerclass POKEMANIAC ; 1e
 	const LARRY
 	const ANDREW
-	const CALVIN
+	const CALVIN1
 	const SHANE
 	const BEN
 	const BRENT1
@@ -326,7 +327,7 @@ KRIS EQU __enum__
 	const SABRINA1
 
 	trainerclass BUG_CATCHER ; 24
-	const DON
+	const RICK
 	const ROB
 	const ED
 	const WADE1
@@ -389,7 +390,7 @@ KRIS EQU __enum__
 	const TONY
 	const JEROME
 	const TUCKER
-	const RICK
+	const RICK1
 	const CAMERON
 	const SETH
 	const JAMES

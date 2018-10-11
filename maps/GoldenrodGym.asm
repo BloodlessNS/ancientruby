@@ -36,7 +36,6 @@ GoldenrodGymWhitneyScript:
 	setscene SCENE_GOLDENRODGYM_WHITNEY_STOPS_CRYING
 	setevent EVENT_BEAT_BEAUTY_VICTORIA
 	setevent EVENT_BEAT_BEAUTY_SAMANTHA
-	setevent EVENT_BEAT_LASS_CARRIE
 	setevent EVENT_BEAT_LASS_BRIDGET
 .FightDone:
 	opentext
@@ -89,17 +88,6 @@ GoldenrodGymActivateRockets:
 
 .RadioTowerRockets:
 	jumpstd radiotowerrockets
-
-TrainerLassCarrie:
-	trainer LASS, CARRIE, EVENT_BEAT_LASS_CARRIE, LassCarrieSeenText, LassCarrieBeatenText, 0, .Script
-
-.Script:
-	endifjustbattled
-	opentext
-	writetext LassCarrieAfterBattleText
-	waitbutton
-	closetext
-	end
 
 WhitneyCriesScript:
 	showemote EMOTE_SHOCK, GOLDENRODGYM_LASS2, 15
@@ -268,23 +256,6 @@ WhitneyGoodCryText:
 	line "again! Bye-bye!"
 	done
 
-LassCarrieSeenText:
-	text "Don't let my"
-	line "#MON's cute"
-
-	para "looks fool you."
-	line "They can whip you!"
-	done
-
-LassCarrieBeatenText:
-	text "Darn… I thought"
-	line "you were weak…"
-	done
-
-LassCarrieAfterBattleText:
-	text "Do my #MON"
-	line "think I'm cute?"
-	done
 
 LassBridgetSeenText:
 	text "I like cute #-"
@@ -393,7 +364,6 @@ GoldenrodGym_MapEvents:
 
 	db 6 ; object events
 	object_event  8,  3, SPRITE_WHITNEY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, GoldenrodGymWhitneyScript, -1
-	object_event  9, 13, SPRITE_LASS, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 4, TrainerLassCarrie, -1
 	object_event  9,  6, SPRITE_LASS, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerLassBridget, -1
 	object_event  0,  2, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBeautyVictoria, -1
 	object_event 19,  5, SPRITE_BUENA, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerBeautySamantha, -1
