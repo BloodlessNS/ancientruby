@@ -45,22 +45,22 @@ FastShip1FSailor1Script:
 	opentext
 	checkevent EVENT_FAST_SHIP_HAS_ARRIVED
 	iftrue .Arrived
-	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
-	iftrue .Olivine
+	checkevent EVENT_FAST_SHIP_DESTINATION_CIANWOOD
+	iftrue .Cianwood
 	writetext FastShip1FSailor1Text_ToVermilion
 	waitbutton
 	closetext
 	end
 
-.Olivine:
-	writetext FastShip1FSailor1Text_ToOlivine
+.Cianwood:
+	writetext FastShip1FSailor1Text_ToCianwood
 	waitbutton
 	closetext
 	end
 
 .Arrived:
-	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
-	iftrue ._Olivine
+	checkevent EVENT_FAST_SHIP_DESTINATION_CIANWOOD
+	iftrue ._Cianwood
 	writetext FastShip1FSailor1Text_InVermilion
 	waitbutton
 	closetext
@@ -73,8 +73,8 @@ FastShip1FSailor1Script:
 	warp VERMILION_PORT, 7, 17
 	end
 
-._Olivine:
-	writetext FastShip1FSailor1Text_InOlivine
+._Cianwood:
+	writetext FastShip1FSailor1Text_InCianwood
 	waitbutton
 	closetext
 	scall .LetThePlayerOut
@@ -215,10 +215,10 @@ FastShip1FSailor1Text_ToVermilion:
 	cont "we arrive."
 	done
 
-FastShip1FSailor1Text_ToOlivine:
+FastShip1FSailor1Text_ToCianwood:
 	text "FAST SHIP S.S.AQUA"
 	line "is en route to"
-	cont "OLIVINE CITY."
+	cont "CIANWOOD CITY."
 
 	para "We will make an"
 	line "announcement when"
@@ -271,10 +271,10 @@ UnknownText_0x75412:
 	line "know!"
 	done
 
-FastShip1FSailor1Text_InOlivine:
+FastShip1FSailor1Text_InCianwood:
 	text "FAST SHIP S.S.AQUA"
 	line "has arrived in"
-	cont "OLIVINE CITY."
+	cont "CIANWOOD CITY."
 	done
 
 FastShip1FSailor1Text_InVermilion:

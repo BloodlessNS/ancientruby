@@ -279,8 +279,6 @@ BurnedTower1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 14 ; warp events
-	warp_event  9, 15, ECRUTEAK_CITY, 13
-	warp_event 10, 15, ECRUTEAK_CITY, 13
 	warp_event 10,  9, BURNED_TOWER_B1F, 1
 	warp_event  5,  5, BURNED_TOWER_B1F, 1 ; inaccessible, left over from G/S
 	warp_event  5,  6, BURNED_TOWER_B1F, 1 ; inaccessible, left over from G/S

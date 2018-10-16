@@ -63,7 +63,6 @@ DarkCaveBlackthornEntrance_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event 23,  3, ROUTE_45, 1
 	warp_event  3, 25, DARK_CAVE_VIOLET_ENTRANCE, 2
 
 	db 0 ; coord events

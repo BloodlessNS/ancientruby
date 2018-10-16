@@ -123,7 +123,6 @@ TinTower1F_MapScripts:
 	disappear TINTOWER1F_SUICUNE
 	setevent EVENT_FOUGHT_SUICUNE
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_42
-	setmapscene ROUTE_42, SCENE_ROUTE42_NOTHING
 	setevent EVENT_SAW_SUICUNE_ON_ROUTE_36
 	setmapscene ROUTE_36, SCENE_ROUTE36_NOTHING
 	setevent EVENT_SAW_SUICUNE_AT_CIANWOOD_CITY
@@ -524,8 +523,6 @@ TinTower1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 3 ; warp events
-	warp_event  9, 15, ECRUTEAK_CITY, 12
-	warp_event 10, 15, ECRUTEAK_CITY, 12
 	warp_event 10,  2, TIN_TOWER_2F, 2
 
 	db 0 ; coord events

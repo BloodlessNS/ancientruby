@@ -51,8 +51,6 @@ BlackthornGymClairScript:
 	setevent EVENT_BEAT_COOLTRAINERF_FRAN
 	setevent EVENT_BEAT_COOLTRAINERF_LOLA
 	clearevent EVENT_MAHOGANY_MART_OWNERS
-	setevent EVENT_BLACKTHORN_CITY_GRAMPS_BLOCKS_DRAGONS_DEN
-	clearevent EVENT_BLACKTHORN_CITY_GRAMPS_NOT_BLOCKING_DRAGONS_DEN
 	end
 
 .FightDone:
@@ -388,8 +386,6 @@ BlackthornGym1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 7 ; warp events
-	warp_event  4, 17, BLACKTHORN_CITY, 1
-	warp_event  5, 17, BLACKTHORN_CITY, 1
 	warp_event  1,  7, BLACKTHORN_GYM_2F, 1
 	warp_event  7,  9, BLACKTHORN_GYM_2F, 2
 	warp_event  2,  6, BLACKTHORN_GYM_2F, 3

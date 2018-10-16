@@ -91,8 +91,8 @@ FastShipBed:
 .CanArrive:
 	playsound SFX_ELEVATOR_END
 	pause 30
-	checkevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
-	iftrue .ArrivedOlivine
+	checkevent EVENT_FAST_SHIP_DESTINATION_CIANWOOD
+	iftrue .ArrivedCianwood
 	opentext
 	writetext FastShipArrivedVermilionText
 	waitbutton
@@ -100,9 +100,9 @@ FastShipBed:
 	setevent EVENT_FAST_SHIP_HAS_ARRIVED
 	end
 
-.ArrivedOlivine:
+.ArrivedCianwood:
 	opentext
-	writetext FastShipArrivedOlivineText
+	writetext FastShipArrivedCianwoodText
 	waitbutton
 	closetext
 	setevent EVENT_FAST_SHIP_HAS_ARRIVED
@@ -208,10 +208,10 @@ FastShipBedText2:
 	line "restored!"
 	done
 
-FastShipArrivedOlivineText:
+FastShipArrivedCianwoodText:
 	text "FAST SHIP S.S.AQUA"
 	line "has arrived in"
-	cont "OLIVINE CITY."
+	cont "CIANWOOD CITY."
 	done
 
 FastShipArrivedVermilionText:

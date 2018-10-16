@@ -438,7 +438,7 @@ GavenPhoneScript1:
 	farjump UnknownScript_0xa0910
 
 .WantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a37
 
 GavenPhoneScript2:
@@ -460,7 +460,7 @@ GavenThursdayMorning:
 	setflag ENGINE_GAVEN_THURSDAY_MORNING
 
 GavenWantsRematch:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	setflag ENGINE_GAVEN
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -485,7 +485,7 @@ BethPhoneScript1:
 	farjump UnknownScript_0xa0918
 
 .WantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump BethBattleReminderScript
 
 BethPhoneScript2:
@@ -505,7 +505,7 @@ BethFridayAfternoon:
 	setflag ENGINE_BETH_FRIDAY_AFTERNOON
 
 BethWantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	setflag ENGINE_BETH
 	farjump PhoneScript_WantsToBattle_Female
 
@@ -529,11 +529,11 @@ JosePhoneScript1:
 	farjump UnknownScript_0xa0920
 
 .WantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a41
 
 .HasItem:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a41
 
 JosePhoneScript2:
@@ -559,7 +559,7 @@ JoseSaturdayNight:
 	setflag ENGINE_JOSE_SATURDAY_NIGHT
 
 JoseWantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	setflag ENGINE_JOSE
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -568,7 +568,7 @@ JoseFoundRare:
 
 JoseHasStarPiece:
 	setflag ENGINE_JOSE_HAS_STAR_PIECE
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Male
 
 ; Reena
@@ -589,7 +589,7 @@ ReenaPhoneScript1:
 	farjump UnknownScript_0xa0928
 
 .WantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a46
 
 ReenaPhoneScript2:
@@ -609,7 +609,7 @@ ReenaSundayMorning:
 	setflag ENGINE_REENA_SUNDAY_MORNING
 
 ReenaWantsBattle:
-	landmarktotext ROUTE_27, MEM_BUFFER_2
+	landmarktotext ROUTE_2, MEM_BUFFER_2
 	setflag ENGINE_REENA
 	farjump PhoneScript_WantsToBattle_Female
 
@@ -1313,11 +1313,11 @@ DanaPhoneScript1:
 	farjump UnknownScript_0xa0978
 
 .WantsBattle:
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a78
 
 .HasThunderstone:
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump UnknownScript_0xa0acd
 
 DanaPhoneScript2:
@@ -1349,7 +1349,7 @@ DanaThursdayNight:
 	setflag ENGINE_DANA_THURSDAY_NIGHT
 
 DanaWantsBattle:
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	setflag ENGINE_DANA
 	farjump PhoneScript_WantsToBattle_Female
 
@@ -1358,7 +1358,7 @@ DanaFoundRare:
 
 DanaHasThunderstone:
 	setflag ENGINE_DANA_HAS_THUNDERSTONE
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Female
 
 ; Chad
@@ -1379,7 +1379,7 @@ ChadPhoneScript1:
 	farjump UnknownScript_0xa0980
 
 .WantsBattle:
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a7d
 
 ChadPhoneScript2:
@@ -1403,7 +1403,7 @@ ChadFridayMorning:
 	setflag ENGINE_CHAD_FRIDAY_MORNING
 
 ChadWantsBattle:
-	landmarktotext ROUTE_38, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	setflag ENGINE_CHAD
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1434,7 +1434,7 @@ DerekPhoneScript1:
 	farjump PhoneScript_BugCatchingContest
 
 .Nugget:
-	landmarktotext ROUTE_39, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump UnknownScript_0xa0ad5
 
 DerekPhoneScript2:
@@ -1459,7 +1459,7 @@ DerekPhoneScript2:
 
 .Nugget:
 	setflag ENGINE_DEREK_HAS_NUGGET
-	landmarktotext ROUTE_39, MEM_BUFFER_2
+	landmarktotext ROUTE_40, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Male
 
 TullyPhoneScript1:
@@ -1480,11 +1480,11 @@ TullyPhoneScript1:
 	farjump UnknownScript_0xa0990
 
 .WantsBattle:
-	landmarktotext ROUTE_42, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a82
 
 .WaterStone:
-	landmarktotext ROUTE_42, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0add
 
 TullyPhoneScript2:
@@ -1514,13 +1514,13 @@ TullySundayNight:
 	setflag ENGINE_TULLY_SUNDAY_NIGHT
 
 TullyWantsBattle:
-	landmarktotext ROUTE_42, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_TULLY
 	farjump PhoneScript_WantsToBattle_Male
 
 TullyFoundWaterStone:
 	setflag ENGINE_TULLY_HAS_WATER_STONE
-	landmarktotext ROUTE_42, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Male
 
 BrentPhoneScript1:
@@ -1685,7 +1685,7 @@ VancePhoneScript1:
 	farjump VanceLookingForward
 
 .WantsBattle:
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump VanceHurryHurry
 
 VancePhoneScript2:
@@ -1706,7 +1706,7 @@ VanceWednesdayNight:
 	setflag ENGINE_VANCE_WEDNESDAY_NIGHT
 
 VanceWantsRematch:
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_VANCE
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1728,11 +1728,11 @@ WiltonPhoneScript1:
 	farjump WiltonHaventFoundAnything
 
 .WantsBattle:
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump WiltonNotBiting
 
 .HasItem:
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump WiltonWantThis
 
 WiltonPhoneScript2:
@@ -1756,13 +1756,13 @@ WiltonThursdayMorning:
 	setflag ENGINE_WILTON_THURSDAY_MORNING
 
 WiltonWantsBattle:
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_WILTON
 	farjump PhoneScript_WantsToBattle_Male
 
 WiltonHasItem:
 	setflag ENGINE_WILTON_HAS_ITEM
-	landmarktotext ROUTE_44, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	clearevent EVENT_WILTON_HAS_ULTRA_BALL
 	clearevent EVENT_WILTON_HAS_GREAT_BALL
 	clearevent EVENT_WILTON_HAS_POKE_BALL
@@ -1816,7 +1816,7 @@ ParryPhoneScript1:
 	farjump ParryBattleWithMe
 
 .WantsBattle:
-	landmarktotext ROUTE_45, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump ParryHaventYouGottenTo
 
 ParryPhoneScript2:
@@ -1837,7 +1837,7 @@ ParryFridayDay:
 	setflag ENGINE_PARRY_FRIDAY_AFTERNOON
 
 ParryWantsBattle:
-	landmarktotext ROUTE_45, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_PARRY
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1859,7 +1859,7 @@ ErinPhoneScript1:
 	farjump ErinWorkingHardScript
 
 .WantsBattle:
-	landmarktotext ROUTE_46, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump ErinComeBattleScript
 
 ErinPhoneScript2:
@@ -1880,6 +1880,6 @@ ErinSaturdayNight:
 	setflag ENGINE_ERIN_SATURDAY_NIGHT
 
 ErinWantsBattle:
-	landmarktotext ROUTE_46, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_ERIN
 	farjump PhoneScript_WantsToBattle_Female

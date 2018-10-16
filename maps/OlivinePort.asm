@@ -26,7 +26,7 @@ OlivinePort_MapScripts:
 	appear OLIVINEPORT_SAILOR1
 	setscene SCENE_DEFAULT
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	blackoutmod OLIVINE_CITY
+	blackoutmod CIANWOOD_CITY
 	end
 
 OlivinePortSailorAtGangwayScript:
@@ -60,7 +60,7 @@ OlivinePortSailorAtGangwayScript:
 	clearevent EVENT_BEAT_FISHER_JONAH
 	clearevent EVENT_BEAT_BLACKBELT_WAI
 .FirstTime:
-	clearevent EVENT_FAST_SHIP_DESTINATION_OLIVINE
+	clearevent EVENT_FAST_SHIP_DESTINATION_CIANWOOD
 	appear OLIVINEPORT_SAILOR1
 	setmapscene FAST_SHIP_1F, SCENE_FASTSHIP1F_ENTER_SHIP
 	warp FAST_SHIP_1F, 25, 1

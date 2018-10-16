@@ -27,30 +27,20 @@
 	const NATIONAL_PARK     ; 13
 	const ROUTE_36          ; 14
 	const ROUTE_37          ; 15
-	const ECRUTEAK_CITY     ; 16
 	const TIN_TOWER         ; 17
 	const BURNED_TOWER      ; 18
-	const ROUTE_38          ; 19
-	const ROUTE_39          ; 1a
-	const OLIVINE_CITY      ; 1b
 	const LIGHTHOUSE        ; 1c
 	const BATTLE_TOWER      ; 1d
 	const ROUTE_40          ; 1e
 	const WHIRL_ISLANDS     ; 1f
 	const ROUTE_41          ; 20
 	const CIANWOOD_CITY     ; 21
-	const ROUTE_42          ; 22
 	const MT_MORTAR         ; 23
-	const MAHOGANY_TOWN     ; 24
 	const ROUTE_43          ; 25
 	const LAKE_OF_RAGE      ; 26
-	const ROUTE_44          ; 27
 	const ICE_PATH          ; 28
-	const BLACKTHORN_CITY   ; 29
 	const DRAGONS_DEN       ; 2a
-	const ROUTE_45          ; 2b
 	const DARK_CAVE         ; 2c
-	const ROUTE_46          ; 2d
 	const SILVER_CAVE       ; 2e
 
 KANTO_LANDMARK EQU const_value
@@ -98,7 +88,6 @@ KANTO_LANDMARK EQU const_value
 	const VICTORY_ROAD      ; 58
 	const ROUTE_23          ; 59
 	const INDIGO_PLATEAU    ; 5a
-	const ROUTE_27          ; 5c
 	const TOHJO_FALLS       ; 5d
 	const ROUTE_28          ; 5e
 	const FAST_SHIP         ; 5f

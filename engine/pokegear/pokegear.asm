@@ -1542,7 +1542,7 @@ RadioChannels:
 	bit STATUSFLAGS_ROCKET_SIGNAL_F, a
 	jr z, .NoSignal
 	ld a, [wPokegearMapPlayerIconLandmark]
-	cp MAHOGANY_TOWN
+	cp LITTLEROOT_TOWN
 	jr z, .ok
 	cp ROUTE_43
 	jr z, .ok

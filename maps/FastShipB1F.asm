@@ -331,7 +331,7 @@ SailorGarrettAfterBattleText:
 	line "passengers from"
 
 	para "VERMILION CITY to"
-	line "OLIVINE CITY."
+	line "CIANWOOD CITY."
 	done
 
 FisherJonahSeenText:

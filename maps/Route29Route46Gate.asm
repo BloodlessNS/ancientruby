@@ -38,10 +38,6 @@ Route29Route46Gate_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  4,  0, ROUTE_46, 1
-	warp_event  5,  0, ROUTE_46, 2
-	warp_event  4,  7, ROUTE_46, 1
-	warp_event  5,  7, ROUTE_46, 1
 
 	db 0 ; coord events
 

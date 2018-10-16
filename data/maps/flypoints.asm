@@ -12,12 +12,8 @@ Flypoints:
 	flypoint VIOLET,       VIOLET_CITY
 	flypoint AZALEA,       AZALEA_TOWN
 	flypoint GOLDENROD,    GOLDENROD_CITY
-	flypoint ECRUTEAK,     ECRUTEAK_CITY
-	flypoint OLIVINE,      OLIVINE_CITY
 	flypoint CIANWOOD,     CIANWOOD_CITY
-	flypoint MAHOGANY,     MAHOGANY_TOWN
 	flypoint LAKE_OF_RAGE, LAKE_OF_RAGE
-	flypoint BLACKTHORN,   BLACKTHORN_CITY
 	flypoint MT_SILVER,    SILVER_CAVE
 
 ; Kanto

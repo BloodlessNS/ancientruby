@@ -28,30 +28,7 @@ ENDM
 
 	newgroup                                                      ;  1
 
-	map_const OLIVINE_POKECENTER_1F,                        5,  4 ;  1
-	map_const OLIVINE_GYM,                                  5,  8 ;  2
-	map_const OLIVINE_TIMS_HOUSE,                           4,  4 ;  3
-	map_const OLIVINE_HOUSE_BETA,                           4,  4 ;  4
-	map_const OLIVINE_PUNISHMENT_SPEECH_HOUSE,              4,  4 ;  5
-	map_const OLIVINE_GOOD_ROD_HOUSE,                       4,  4 ;  6
-	map_const OLIVINE_CAFE,                                 4,  4 ;  7
-	map_const OLIVINE_MART,                                 6,  4 ;  8
-	map_const ROUTE_38_ECRUTEAK_GATE,                       5,  4 ;  9
-	map_const ROUTE_39_BARN,                                4,  4 ; 10
-	map_const ROUTE_39_FARMHOUSE,                           4,  4 ; 11
-	map_const ROUTE_38,                                    20,  9 ; 12
-	map_const ROUTE_39,                                    10, 18 ; 13
-	map_const OLIVINE_CITY,                                20, 18 ; 14
-
 	newgroup                                                      ;  2
-
-	map_const MAHOGANY_RED_GYARADOS_SPEECH_HOUSE,           4,  4 ;  1
-	map_const MAHOGANY_GYM,                                 5,  9 ;  2
-	map_const MAHOGANY_POKECENTER_1F,                       5,  4 ;  3
-	map_const ROUTE_42_ECRUTEAK_GATE,                       5,  4 ;  4
-	map_const ROUTE_42,                                    30,  9 ;  5
-	map_const ROUTE_44,                                    30,  9 ;  6
-	map_const MAHOGANY_TOWN,                               10,  9 ;  7
 
 	newgroup                                                      ;  3
 
@@ -95,14 +72,7 @@ ENDM
 	map_const UNION_CAVE_B1F,                              10, 18 ; 38
 	map_const UNION_CAVE_B2F,                              10, 18 ; 39
 	map_const SLOWPOKE_WELL_B1F,                           10,  9 ; 40
-	map_const SLOWPOKE_WELL_B2F,                           10,  9 ; 41
-	map_const OLIVINE_LIGHTHOUSE_1F,                       10,  9 ; 42
-	map_const OLIVINE_LIGHTHOUSE_2F,                       10,  9 ; 43
-	map_const OLIVINE_LIGHTHOUSE_3F,                       10,  9 ; 44
-	map_const OLIVINE_LIGHTHOUSE_4F,                       10,  9 ; 45
-	map_const OLIVINE_LIGHTHOUSE_5F,                       10,  9 ; 46
-	map_const OLIVINE_LIGHTHOUSE_6F,                       10,  9 ; 47
-	map_const MAHOGANY_MART_1F,                             4,  4 ; 48
+	map_const SLOWPOKE_WELL_B2F,                           10,  9 ; 41           10,  9 ; 47
 	map_const TEAM_ROCKET_BASE_B1F,                        15,  9 ; 49
 	map_const TEAM_ROCKET_BASE_B2F,                        15,  9 ; 50
 	map_const TEAM_ROCKET_BASE_B3F,                        15,  9 ; 51
@@ -117,7 +87,6 @@ ENDM
 	map_const MOUNT_MORTAR_B1F,                            20, 18 ; 60
 	map_const ICE_PATH_1F,                                 20, 18 ; 61
 	map_const ICE_PATH_B1F,                                10, 18 ; 62
-	map_const ICE_PATH_B2F_MAHOGANY_SIDE,                  10,  9 ; 63
 	map_const ICE_PATH_B2F_BLACKTHORN_SIDE,                 5,  9 ; 64
 	map_const ICE_PATH_B3F,                                10,  9 ; 65
 	map_const WHIRL_ISLAND_NW,                              5,  9 ; 66
@@ -146,31 +115,10 @@ ENDM
 	map_const SAFARI_ZONE_FUCHSIA_GATE_BETA,                5,  4 ; 89
 	map_const SAFARI_ZONE_BETA,                            10, 18 ; 90
 	map_const VICTORY_ROAD,                                10, 36 ; 91
-
-	newgroup                                                      ;  4
-
-	map_const ECRUTEAK_TIN_TOWER_ENTRANCE,                 10,  9 ;  1
-	map_const WISE_TRIOS_ROOM,                              4,  4 ;  2
-	map_const ECRUTEAK_POKECENTER_1F,                       5,  4 ;  3
-	map_const ECRUTEAK_LUGIA_SPEECH_HOUSE,                  4,  4 ;  4
-	map_const DANCE_THEATRE,                                6,  7 ;  5
-	map_const ECRUTEAK_MART,                                6,  4 ;  6
-	map_const ECRUTEAK_GYM,                                 5,  9 ;  7
-	map_const ECRUTEAK_ITEMFINDER_HOUSE,                    4,  4 ;  8
-	map_const ECRUTEAK_CITY,                               20, 18 ;  9
-
-	newgroup                                                      ;  5
-
-	map_const BLACKTHORN_GYM_1F,                            5,  9 ;  1
-	map_const BLACKTHORN_GYM_2F,                            5,  9 ;  2
-	map_const BLACKTHORN_DRAGON_SPEECH_HOUSE,               4,  4 ;  3
-	map_const BLACKTHORN_EMYS_HOUSE,                        4,  4 ;  4
-	map_const BLACKTHORN_MART,                              6,  4 ;  5
-	map_const BLACKTHORN_POKECENTER_1F,                     5,  4 ;  6
-	map_const MOVE_DELETERS_HOUSE,                          4,  4 ;  7
-	map_const ROUTE_45,                                    10, 45 ;  8
-	map_const ROUTE_46,                                    10, 18 ;  9
-	map_const BLACKTHORN_CITY,                             20, 18 ; 10
+	
+	newgroup                                                      ;  6
+	
+	newgroup                                                      ;  6
 
 	newgroup                                                      ;  6
 
@@ -217,7 +165,6 @@ ENDM
 
 	map_const LAKE_OF_RAGE_HIDDEN_POWER_HOUSE,              4,  4 ;  1
 	map_const LAKE_OF_RAGE_MAGIKARP_HOUSE,                  4,  4 ;  2
-	map_const ROUTE_43_MAHOGANY_GATE,                       5,  4 ;  3
 	map_const ROUTE_43_GATE,                                5,  4 ;  4
 	map_const ROUTE_43,                                    10, 27 ;  5
 	map_const LAKE_OF_RAGE,                                20, 18 ;  6
@@ -446,7 +393,6 @@ ENDM
 
 	newgroup                                                      ; 24
 
-	map_const ROUTE_27,                                    40,  9 ;  2
 	map_const ELMS_LAB,                                     5,  6 ;  5
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  6
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  7

@@ -21,8 +21,6 @@ IcePath1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  4, 19, ROUTE_44, 1
-	warp_event 36, 27, BLACKTHORN_CITY, 7
 	warp_event 37,  5, ICE_PATH_B1F, 1
 	warp_event 37, 13, ICE_PATH_B1F, 7
 

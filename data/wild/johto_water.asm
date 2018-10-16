@@ -164,29 +164,11 @@ JohtoWaterWildMons:
 	db 20, TENTACRUEL
 	db 20, MANTINE
 
-	map_id ROUTE_42
-	db 4 percent ; encounter rate
-	db 20, GOLDEEN
-	db 15, GOLDEEN
-	db 20, SEAKING
-
 	map_id ROUTE_43
 	db 2 percent ; encounter rate
 	db 20, MAGIKARP
 	db 15, MAGIKARP
 	db 10, MAGIKARP
-
-	map_id ROUTE_44
-	db 2 percent ; encounter rate
-	db 25, POLIWAG
-	db 20, POLIWAG
-	db 25, POLIWHIRL
-
-	map_id ROUTE_45
-	db 2 percent ; encounter rate
-	db 20, MAGIKARP
-	db 15, MAGIKARP
-	db 5, MAGIKARP
 
 	map_id LITTLEROOT_TOWN
 	db 6 percent ; encounter rate
@@ -212,29 +194,11 @@ JohtoWaterWildMons:
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 
-	map_id OLIVINE_CITY
-	db 6 percent ; encounter rate
-	db 20, TENTACOOL
-	db 15, TENTACOOL
-	db 20, TENTACRUEL
-
-	map_id ECRUTEAK_CITY
-	db 2 percent ; encounter rate
-	db 20, POLIWAG
-	db 15, POLIWAG
-	db 20, POLIWHIRL
-
 	map_id LAKE_OF_RAGE
 	db 6 percent ; encounter rate
 	db 15, MAGIKARP
 	db 10, MAGIKARP
 	db 15, GYARADOS
-
-	map_id BLACKTHORN_CITY
-	db 4 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 5, MAGIKARP
 
 	map_id SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate
