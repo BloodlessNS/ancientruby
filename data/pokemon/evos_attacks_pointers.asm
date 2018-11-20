@@ -21,8 +21,8 @@ EvosAttacksPointers::
 	dw PidgeotEvosAttacks
 	dw PoochyenaEvosAttacks
 	dw MightyenaEvosAttacks
-	dw SpearowEvosAttacks
-	dw FearowEvosAttacks
+	dw TaillowEvosAttacks
+	dw SwellowEvosAttacks
 	dw EkansEvosAttacks
 	dw ArbokEvosAttacks
 	dw PikachuEvosAttacks
@@ -79,8 +79,8 @@ EvosAttacksPointers::
 	dw GolemEvosAttacks
 	dw PonytaEvosAttacks
 	dw RapidashEvosAttacks
-	dw SlowpokeEvosAttacks
-	dw SlowbroEvosAttacks
+	dw RaltsEvosAttacks
+	dw KirliaEvosAttacks
 	dw MagnemiteEvosAttacks
 	dw MagnetonEvosAttacks
 	dw FarfetchDEvosAttacks

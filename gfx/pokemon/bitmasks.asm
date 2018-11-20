@@ -18,8 +18,8 @@ PidgeottoBitmasks:
 PidgeotBitmasks:
 PoochyenaBitmasks:
 MightyenaBitmasks:
-SpearowBitmasks:
-FearowBitmasks:
+TaillowBitmasks:
+SwellowBitmasks:
 EkansBitmasks:
 ArbokBitmasks:
 PikachuBitmasks:
@@ -76,8 +76,8 @@ GravelerBitmasks:
 GolemBitmasks:
 PonytaBitmasks:
 RapidashBitmasks:
-SlowpokeBitmasks:
-SlowbroBitmasks:
+RaltsBitmasks:
+KirliaBitmasks:
 MagnemiteBitmasks:
 MagnetonBitmasks:
 FarfetchDBitmasks:

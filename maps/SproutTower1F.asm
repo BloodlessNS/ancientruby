@@ -104,11 +104,6 @@ SproutTower1F_MapEvents:
 	db 0, 0 ; filler
 
 	db 5 ; warp events
-	warp_event  9, 15, VIOLET_CITY, 7
-	warp_event 10, 15, VIOLET_CITY, 7
-	warp_event  6,  4, SPROUT_TOWER_2F, 1
-	warp_event  2,  6, SPROUT_TOWER_2F, 2
-	warp_event 17,  3, SPROUT_TOWER_2F, 3
 
 	db 0 ; coord events
 

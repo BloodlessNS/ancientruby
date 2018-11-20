@@ -199,7 +199,7 @@ WillGroup:
 	db 40, XATU,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
 	db 41, JYNX,       DOUBLESLAP, LOVELY_KISS, ICE_PUNCH, PSYCHIC_M
 	db 41, NUZLEAF,  REFLECT, LEECH_SEED, EGG_BOMB, PSYCHIC_M
-	db 41, SLOWBRO,    CURSE, AMNESIA, BODY_SLAM, PSYCHIC_M
+	db 41, KIRLIA,    CURSE, AMNESIA, BODY_SLAM, PSYCHIC_M
 	db 42, XATU,       QUICK_ATTACK, FUTURE_SIGHT, CONFUSE_RAY, PSYCHIC_M
 	db -1 ; end
 
@@ -349,7 +349,7 @@ YoungsterGroup:
 	; YOUNGSTER (3)
 	db "ALLEN@", TRAINERTYPE_NORMAL
 	db  5, POOCHYENA
-	db  3, PIDGEY
+	db  3, SWELLOW
 	db -1 ; end
 
 	; YOUNGSTER (4)
@@ -361,8 +361,8 @@ YoungsterGroup:
 	db "SAMUEL@", TRAINERTYPE_NORMAL
 	db  7, POOCHYENA
 	db 10, SANDSHREW
-	db  8, SPEAROW
-	db  8, SPEAROW
+	db  8, TAILLOW
+	db  8, TAILLOW
 	db -1 ; end
 
 	; YOUNGSTER (6)
@@ -383,7 +383,7 @@ YoungsterGroup:
 
 	; YOUNGSTER (9)
 	db "WARREN@", TRAINERTYPE_NORMAL
-	db 35, FEAROW
+	db 35, SWELLOW
 	db -1 ; end
 
 	; YOUNGSTER (10)
@@ -583,7 +583,7 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (2)
 	db "ABE@", TRAINERTYPE_NORMAL
-	db  9, SPEAROW
+	db  9, TAILLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (3)
@@ -610,9 +610,9 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (6)
 	db "DENIS@", TRAINERTYPE_NORMAL
-	db 18, SPEAROW
-	db 20, FEAROW
-	db 18, SPEAROW
+	db 18, TAILLOW
+	db 20, SWELLOW
+	db 18, TAILLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (7)
@@ -629,8 +629,8 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (9)
 	db "ROY@", TRAINERTYPE_NORMAL
-	db 29, FEAROW
-	db 35, FEAROW
+	db 29, SWELLOW
+	db 35, SWELLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (10)
@@ -654,7 +654,7 @@ BirdKeeperGroup:
 	db "PETER@", TRAINERTYPE_NORMAL
 	db  6, PIDGEY
 	db  6, PIDGEY
-	db  8, SPEAROW
+	db  8, TAILLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (14)
@@ -670,7 +670,7 @@ BirdKeeperGroup:
 	; BIRD_KEEPER (16)
 	db "BRET@", TRAINERTYPE_NORMAL
 	db 32, PIDGEOTTO
-	db 32, FEAROW
+	db 32, SWELLOW
 	db -1 ; end
 
 	; BIRD_KEEPER (17)
@@ -1165,7 +1165,7 @@ BeautyGroup:
 PokemaniacGroup:
 	; POKEMANIAC (1)
 	db "LARRY@", TRAINERTYPE_NORMAL
-	db 10, SLOWPOKE
+	db 10, RALTS
 	db -1 ; end
 
 	; POKEMANIAC (2)
@@ -1187,7 +1187,7 @@ PokemaniacGroup:
 
 	; POKEMANIAC (5)
 	db "BEN@", TRAINERTYPE_NORMAL
-	db 19, SLOWBRO
+	db 19, KIRLIA
 	db -1 ; end
 
 	; POKEMANIAC (6)
@@ -1223,8 +1223,8 @@ PokemaniacGroup:
 
 	; POKEMANIAC (12)
 	db "DONALD@", TRAINERTYPE_NORMAL
-	db 10, SLOWPOKE
-	db 10, SLOWPOKE
+	db 10, RALTS
+	db 10, RALTS
 	db -1 ; end
 
 	; POKEMANIAC (13)
@@ -2194,7 +2194,7 @@ SuperNerdGroup:
 
 	; SUPER_NERD (14)
 	db "MARKUS@", TRAINERTYPE_MOVES
-	db 19, SLOWPOKE,   CURSE, WATER_GUN, GROWL, STRENGTH
+	db 19, RALTS,   CURSE, WATER_GUN, GROWL, STRENGTH
 	db -1 ; end
 
 Rival2Group:
@@ -2722,8 +2722,8 @@ PsychicGroup:
 
 	; PSYCHIC_T (6)
 	db "NORMAN@", TRAINERTYPE_MOVES
-	db 17, SLOWPOKE,   TACKLE, GROWL, WATER_GUN, NO_MOVE
-	db 20, SLOWPOKE,   CURSE, BODY_SLAM, WATER_GUN, CONFUSION
+	db 17, RALTS,   TACKLE, GROWL, WATER_GUN, NO_MOVE
+	db 20, RALTS,   CURSE, BODY_SLAM, WATER_GUN, CONFUSION
 	db -1 ; end
 
 	; PSYCHIC_T (7)
@@ -3057,7 +3057,7 @@ CamperGroup:
 
 	; CAMPER (22)
 	db "QUENTIN@", TRAINERTYPE_NORMAL
-	db 30, FEAROW
+	db 30, SWELLOW
 	db 30, PRIMEAPE
 	db 30, TAUROS
 	db -1 ; end
@@ -3191,8 +3191,8 @@ MediumGroup:
 
 	; MEDIUM (7)
 	db "DORIS@", TRAINERTYPE_NORMAL
-	db 34, SLOWPOKE
-	db 36, SLOWBRO
+	db 34, RALTS
+	db 36, KIRLIA
 	db -1 ; end
 
 BoarderGroup:

@@ -105,3 +105,6 @@ Music:
 	dba Music_MobileCenter
 	dba Music_LittlerootTown
 	dba Music_Route101
+	dba Music_OldaleTown	
+	dba Music_Route103
+	dba Music_PetalburgCity

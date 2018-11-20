@@ -36,6 +36,6 @@
 	const ICON_HO_OH
 	const ICON_LUGIA
 	const ICON_GYARADOS
-	const ICON_SLOWPOKE
+	const ICON_RALTS
 	const ICON_SUDOWOODO
 	const ICON_BIGMON

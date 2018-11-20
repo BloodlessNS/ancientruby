@@ -20,8 +20,8 @@ PokedexDataPointerTable:
 	dw PidgeotPokedexEntry
 	dw PoochyenaPokedexEntry
 	dw MightyenaPokedexEntry
-	dw SpearowPokedexEntry
-	dw FearowPokedexEntry
+	dw TaillowPokedexEntry
+	dw SwellowPokedexEntry
 	dw EkansPokedexEntry
 	dw ArbokPokedexEntry
 	dw PikachuPokedexEntry
@@ -78,8 +78,8 @@ PokedexDataPointerTable:
 	dw GolemPokedexEntry
 	dw PonytaPokedexEntry
 	dw RapidashPokedexEntry
-	dw SlowpokePokedexEntry
-	dw SlowbroPokedexEntry
+	dw RaltsPokedexEntry
+	dw KirliaPokedexEntry
 	dw MagnemitePokedexEntry
 	dw MagnetonPokedexEntry
 	dw FarfetchDPokedexEntry

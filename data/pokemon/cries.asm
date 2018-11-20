@@ -25,8 +25,8 @@ PokemonCries::
 	mon_cry CRY_PIDGEOTTO,   $011,  $17f ; PIDGEOT
 	mon_cry CRY_POOCHYENA,     $000,  $100 ; POOCHYENA
 	mon_cry CRY_POOCHYENA,     $020,  $17f ; MIGHTYENA
-	mon_cry CRY_SPEAROW,     $000,  $100 ; SPEAROW
-	mon_cry CRY_FEAROW,      $040,  $120 ; FEAROW
+	mon_cry CRY_TAILLOW,     $000,  $100 ; TAILLOW
+	mon_cry CRY_SWELLOW,      $040,  $120 ; SWELLOW
 	mon_cry CRY_EKANS,       $012,  $0c0 ; EKANS
 	mon_cry CRY_EKANS,       $0e0,  $090 ; ARBOK
 	mon_cry CRY_BULBASAUR,   $0ee,  $081 ; PIKACHU
@@ -83,19 +83,19 @@ PokemonCries::
 	mon_cry CRY_GOLEM,       $0e0,  $0c0 ; GOLEM
 	mon_cry CRY_WEEPINBELL,  $000,  $100 ; PONYTA
 	mon_cry CRY_WEEPINBELL,  $020,  $140 ; RAPIDASH
-	mon_cry CRY_SLOWPOKE,    $000,  $100 ; SLOWPOKE
-	mon_cry CRY_GROWLITHE,   $000,  $100 ; SLOWBRO
+	mon_cry CRY_RALTS,    $000,  $100 ; RALTS
+	mon_cry CRY_GROWLITHE,   $000,  $100 ; KIRLIA
 	mon_cry CRY_SILCOON,     $080,  $0e0 ; MAGNEMITE
 	mon_cry CRY_SILCOON,     $020,  $140 ; MAGNETON
-	mon_cry CRY_SPEAROW,     $0dd,  $081 ; FARFETCH_D
+	mon_cry CRY_TAILLOW,     $0dd,  $081 ; FARFETCH_D
 	mon_cry CRY_DIGLETT,     $0bb,  $081 ; DODUO
 	mon_cry CRY_DIGLETT,     $099,  $0a0 ; DODRIO
 	mon_cry CRY_SEEL,        $088,  $140 ; SEEL
 	mon_cry CRY_SEEL,        $023,  $17f ; DEWGONG
 	mon_cry CRY_GRIMER,      $000,  $100 ; GRIMER
 	mon_cry CRY_MUK,         $0ef,  $17f ; MUK
-	mon_cry CRY_FEAROW,      $000,  $100 ; SHELLDER
-	mon_cry CRY_FEAROW,      $06f,  $160 ; CLOYSTER
+	mon_cry CRY_SWELLOW,      $000,  $100 ; SHELLDER
+	mon_cry CRY_SWELLOW,      $06f,  $160 ; CLOYSTER
 	mon_cry CRY_SILCOON,     $000,  $100 ; GASTLY
 	mon_cry CRY_SILCOON,     $030,  $0c0 ; HAUNTER
 	mon_cry CRY_MUK,         $000,  $17f ; GENGAR
@@ -145,11 +145,11 @@ PokemonCries::
 	mon_cry CRY_GROWLITHE,   $0f0,  $081 ; OMANYTE
 	mon_cry CRY_GROWLITHE,   $0ff,  $0c0 ; OMASTAR
 	mon_cry CRY_WURMPLE,    $0bb,  $0c0 ; KABUTO
-	mon_cry CRY_FEAROW,      $0ee,  $081 ; KABUTOPS
+	mon_cry CRY_SWELLOW,      $0ee,  $081 ; KABUTOPS
 	mon_cry CRY_VILEPLUME,   $020,  $170 ; AERODACTYL
 	mon_cry CRY_GRIMER,      $055,  $081 ; SNORLAX
 	mon_cry CRY_RAICHU,      $080,  $0c0 ; ARTICUNO
-	mon_cry CRY_FEAROW,      $0ff,  $100 ; ZAPDOS
+	mon_cry CRY_SWELLOW,      $0ff,  $100 ; ZAPDOS
 	mon_cry CRY_RAICHU,      $0f8,  $0c0 ; MOLTRES
 	mon_cry CRY_BULBASAUR,   $060,  $0c0 ; DRATINI
 	mon_cry CRY_BULBASAUR,   $040,  $100 ; DRAGONAIR

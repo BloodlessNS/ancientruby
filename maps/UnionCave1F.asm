@@ -143,7 +143,7 @@ HikerDanielBeatenText:
 
 HikerDanielAfterBattleText:
 	text "I was conned into"
-	line "buying a SLOWPOKE-"
+	line "buying a RALTS-"
 	cont "TAIL."
 
 	para "I feel sorry for"
@@ -200,8 +200,6 @@ UnionCave1F_MapEvents:
 	db 4 ; warp events
 	warp_event  5, 19, UNION_CAVE_B1F, 3
 	warp_event  3, 33, UNION_CAVE_B1F, 4
-	warp_event 17, 31, ROUTE_33, 1
-	warp_event 17,  3, ROUTE_32, 4
 
 	db 0 ; coord events
 

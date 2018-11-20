@@ -13,8 +13,8 @@ NewPokedexOrder:
 	db PIDGEY
 	db PIDGEOTTO
 	db PIDGEOT
-	db SPEAROW
-	db FEAROW
+	db TAILLOW
+	db SWELLOW
 	db HOOTHOOT
 	db NOCTOWL
 	db POOCHYENA
@@ -80,8 +80,8 @@ NewPokedexOrder:
 	db GYARADOS
 	db GOLDEEN
 	db SEAKING
-	db SLOWPOKE
-	db SLOWBRO
+	db RALTS
+	db KIRLIA
 	db SLOWKING
 	db ODDISH
 	db GLOOM

@@ -19,8 +19,8 @@ BitmasksPointers:
 	dw PidgeotBitmasks
 	dw PoochyenaBitmasks
 	dw MightyenaBitmasks
-	dw SpearowBitmasks
-	dw FearowBitmasks
+	dw TaillowBitmasks
+	dw SwellowBitmasks
 	dw EkansBitmasks
 	dw ArbokBitmasks
 	dw PikachuBitmasks
@@ -77,8 +77,8 @@ BitmasksPointers:
 	dw GolemBitmasks
 	dw PonytaBitmasks
 	dw RapidashBitmasks
-	dw SlowpokeBitmasks
-	dw SlowbroBitmasks
+	dw RaltsBitmasks
+	dw KirliaBitmasks
 	dw MagnemiteBitmasks
 	dw MagnetonBitmasks
 	dw FarfetchDBitmasks

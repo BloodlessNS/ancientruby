@@ -143,53 +143,26 @@ KantoGrassWildMons:
 	db 22, ZUBAT
 	db 22, MIGHTYENA
 	db 24, GOLBAT
-	db 21, SLOWPOKE
+	db 21, RALTS
 	db 20, POOCHYENA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, RALTS
+	db 23, RALTS
 	; day
 	db 22, ZUBAT
 	db 22, MIGHTYENA
 	db 24, GOLBAT
-	db 21, SLOWPOKE
+	db 21, RALTS
 	db 20, POOCHYENA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
+	db 23, RALTS
+	db 23, RALTS
 	; nite
 	db 22, ZUBAT
 	db 22, MIGHTYENA
 	db 24, GOLBAT
-	db 21, SLOWPOKE
+	db 21, RALTS
 	db 20, POOCHYENA
-	db 23, SLOWPOKE
-	db 23, SLOWPOKE
-
-	map_id ROUTE_1
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 2, PIDGEY
-	db 2, POOCHYENA
-	db 3, ZIGZAGOON
-	db 3, PIDGEY
-	db 6, LINOONE
-	db 4, PIDGEY
-	db 4, PIDGEY
-	; day
-	db 2, PIDGEY
-	db 2, POOCHYENA
-	db 3, ZIGZAGOON
-	db 3, PIDGEY
-	db 6, LINOONE
-	db 4, PIDGEY
-	db 4, PIDGEY
-	; nite
-	db 2, HOOTHOOT
-	db 2, POOCHYENA
-	db 3, POOCHYENA
-	db 3, HOOTHOOT
-	db 6, MIGHTYENA
-	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 23, RALTS
+	db 23, RALTS
 
 	map_id ROUTE_2
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -217,60 +190,6 @@ KantoGrassWildMons:
 	db 7, ARIADOS
 	db 4, NOCTOWL
 	db 4, NOCTOWL
-
-	map_id ROUTE_3
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 5, SPEAROW
-	db 5, POOCHYENA
-	db 8, EKANS
-	db 10, MIGHTYENA
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
-	; day
-	db 5, SPEAROW
-	db 5, POOCHYENA
-	db 8, EKANS
-	db 10, MIGHTYENA
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
-	; nite
-	db 5, POOCHYENA
-	db 10, POOCHYENA
-	db 10, MIGHTYENA
-	db 6, ZUBAT
-	db 5, POOCHYENA
-	db 6, CLEFAIRY
-	db 6, CLEFAIRY
-
-	map_id ROUTE_4
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 5, SPEAROW
-	db 5, POOCHYENA
-	db 8, EKANS
-	db 10, MIGHTYENA
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
-	; day
-	db 5, SPEAROW
-	db 5, POOCHYENA
-	db 8, EKANS
-	db 10, MIGHTYENA
-	db 10, ARBOK
-	db 10, SANDSHREW
-	db 10, SANDSHREW
-	; nite
-	db 5, POOCHYENA
-	db 10, POOCHYENA
-	db 10, MIGHTYENA
-	db 6, ZUBAT
-	db 5, POOCHYENA
-	db 6, CLEFAIRY
-	db 6, CLEFAIRY
 
 	map_id ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -330,7 +249,7 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, POOCHYENA
-	db 17, SPEAROW
+	db 17, TAILLOW
 	db 18, SNUBBULL
 	db 18, MIGHTYENA
 	db 18, JIGGLYPUFF
@@ -338,7 +257,7 @@ KantoGrassWildMons:
 	db 16, ABRA
 	; day
 	db 17, POOCHYENA
-	db 17, SPEAROW
+	db 17, TAILLOW
 	db 18, SNUBBULL
 	db 18, MIGHTYENA
 	db 18, JIGGLYPUFF
@@ -379,60 +298,6 @@ KantoGrassWildMons:
 	db 16, JIGGLYPUFF
 	db 18, KADABRA
 	db 18, KADABRA
-
-	map_id ROUTE_9
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 15, POOCHYENA
-	db 15, SPEAROW
-	db 15, MIGHTYENA
-	db 15, FEAROW
-	db 15, FEAROW
-	db 18, MAROWAK
-	db 18, MAROWAK
-	; day
-	db 15, POOCHYENA
-	db 15, SPEAROW
-	db 15, MIGHTYENA
-	db 15, FEAROW
-	db 15, FEAROW
-	db 18, MAROWAK
-	db 18, MAROWAK
-	; nite
-	db 15, POOCHYENA
-	db 15, VENONAT
-	db 15, MIGHTYENA
-	db 15, VENOMOTH
-	db 15, ZUBAT
-	db 18, MIGHTYENA
-	db 18, MIGHTYENA
-
-	map_id ROUTE_10_NORTH
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 15, SPEAROW
-	db 17, VOLTORB
-	db 15, MIGHTYENA
-	db 15, FEAROW
-	db 15, MAROWAK
-	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
-	; day
-	db 15, SPEAROW
-	db 17, VOLTORB
-	db 15, MIGHTYENA
-	db 15, FEAROW
-	db 15, MAROWAK
-	db 18, ELECTABUZZ
-	db 18, ELECTABUZZ
-	; nite
-	db 15, VENONAT
-	db 17, VOLTORB
-	db 15, MIGHTYENA
-	db 15, VENOMOTH
-	db 15, ZUBAT
-	db 16, ELECTABUZZ
-	db 16, ELECTABUZZ
 
 	map_id ROUTE_11
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -546,17 +411,17 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 26, GRIMER
-	db 27, FEAROW
+	db 27, SWELLOW
 	db 28, GRIMER
-	db 29, FEAROW
-	db 29, FEAROW
+	db 29, SWELLOW
+	db 29, SWELLOW
 	db 30, MUK
 	db 30, MUK
 	; day
 	db 26, GRIMER
-	db 27, FEAROW
+	db 27, SWELLOW
 	db 28, GRIMER
-	db 29, FEAROW
+	db 29, SWELLOW
 	db 29, SLUGMA
 	db 30, MUK
 	db 30, MUK
@@ -572,18 +437,18 @@ KantoGrassWildMons:
 	map_id ROUTE_17
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 30, FEAROW
+	db 30, SWELLOW
 	db 29, GRIMER
 	db 31, GRIMER
-	db 32, FEAROW
+	db 32, SWELLOW
 	db 33, GRIMER
 	db 33, MUK
 	db 33, MUK
 	; day
-	db 30, FEAROW
+	db 30, SWELLOW
 	db 29, SLUGMA
 	db 29, GRIMER
-	db 32, FEAROW
+	db 32, SWELLOW
 	db 32, SLUGMA
 	db 33, MUK
 	db 33, MUK
@@ -600,17 +465,17 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 26, GRIMER
-	db 27, FEAROW
+	db 27, SWELLOW
 	db 28, GRIMER
-	db 29, FEAROW
-	db 29, FEAROW
+	db 29, SWELLOW
+	db 29, SWELLOW
 	db 30, MUK
 	db 30, MUK
 	; day
 	db 26, GRIMER
-	db 27, FEAROW
+	db 27, SWELLOW
 	db 28, GRIMER
-	db 29, FEAROW
+	db 29, SWELLOW
 	db 29, SLUGMA
 	db 30, MUK
 	db 30, MUK
@@ -623,51 +488,24 @@ KantoGrassWildMons:
 	db 30, MUK
 	db 30, MUK
 
-	map_id ROUTE_21
-	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
-	; morn
-	db 30, SHIFTRY
-	db 25, POOCHYENA
-	db 35, SHIFTRY
-	db 20, MIGHTYENA
-	db 30, MR__MIME
-	db 28, MR__MIME
-	db 28, MR__MIME
-	; day
-	db 30, SHIFTRY
-	db 25, POOCHYENA
-	db 35, SHIFTRY
-	db 20, MIGHTYENA
-	db 28, MR__MIME
-	db 30, MR__MIME
-	db 30, MR__MIME
-	; nite
-	db 30, SHIFTRY
-	db 25, POOCHYENA
-	db 35, SHIFTRY
-	db 20, MIGHTYENA
-	db 30, SHIFTRY
-	db 28, SHIFTRY
-	db 28, SHIFTRY
-
 	map_id ROUTE_22
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 3, POOCHYENA
-	db 3, SPEAROW
-	db 5, SPEAROW
+	db 3, TAILLOW
+	db 5, TAILLOW
 	db 4, DODUO
 	db 6, PONYTA
-	db 7, FEAROW
-	db 7, FEAROW
+	db 7, SWELLOW
+	db 7, SWELLOW
 	; day
 	db 3, POOCHYENA
-	db 3, SPEAROW
-	db 5, SPEAROW
+	db 3, TAILLOW
+	db 5, TAILLOW
 	db 4, DODUO
 	db 6, PONYTA
-	db 7, FEAROW
-	db 7, FEAROW
+	db 7, SWELLOW
+	db 7, SWELLOW
 	; nite
 	db 3, POOCHYENA
 	db 3, POLIWAG
@@ -676,60 +514,6 @@ KantoGrassWildMons:
 	db 6, POOCHYENA
 	db 7, POOCHYENA
 	db 7, POOCHYENA
-
-	map_id ROUTE_24
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 8, WURMPLE
-	db 10, WURMPLE
-	db 12, SILCOON
-	db 12, ABRA
-	db 10, BELLSPROUT
-	db 14, BEAUTIFLY
-	db 14, BEAUTIFLY
-	; day
-	db 8, WURMPLE
-	db 12, SUNKERN
-	db 10, WURMPLE
-	db 12, ABRA
-	db 10, BELLSPROUT
-	db 14, BEAUTIFLY
-	db 14, BEAUTIFLY
-	; nite
-	db 10, VENONAT
-	db 10, ODDISH
-	db 12, ODDISH
-	db 12, ABRA
-	db 10, BELLSPROUT
-	db 14, GLOOM
-	db 14, GLOOM
-
-	map_id ROUTE_25
-	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
-	; morn
-	db 10, WURMPLE
-	db 10, PIDGEY
-	db 12, PIDGEOTTO
-	db 12, SILCOON
-	db 10, BELLSPROUT
-	db 14, BEAUTIFLY
-	db 14, BEAUTIFLY
-	; day
-	db 10, WURMPLE
-	db 10, PIDGEY
-	db 12, PIDGEOTTO
-	db 12, SILCOON
-	db 10, BELLSPROUT
-	db 14, BEAUTIFLY
-	db 14, BEAUTIFLY
-	; nite
-	db 10, ODDISH
-	db 10, HOOTHOOT
-	db 10, VENONAT
-	db 12, NOCTOWL
-	db 10, BELLSPROUT
-	db 14, NOCTOWL
-	db 14, NOCTOWL
 
 	map_id ROUTE_28
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

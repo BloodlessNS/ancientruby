@@ -105,6 +105,9 @@
 	const MUSIC_MOBILE_CENTER                ; 63
 	const MUSIC_LITTLEROOT_TOWN              ; 64
 	const MUSIC_ROUTE_101                    ; 65
+	const MUSIC_OLDALE_TOWN                  ; 66
+	const MUSIC_ROUTE_103                    ; 67
+	const MUSIC_PETALBURG_CITY               ; 68
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64

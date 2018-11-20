@@ -3240,7 +3240,7 @@ GFX_11d67e:
 INCBIN "gfx/pokedex/select_start.2bpp"
 
 LZ_11d6de:
-INCBIN "gfx/pokedex/slowpoke.2bpp.lz"
+INCBIN "gfx/pokedex/ralts.2bpp.lz"
 
 MobileEZChatCategoryNames:
 ; Fixed message categories

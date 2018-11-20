@@ -60,7 +60,7 @@ SupernerdHughAfterBattleText:
 	para "Have you seen a"
 	line "trainer who has a"
 
-	para "SLOWPOKE that can"
+	para "RALTS that can"
 	line "use STRENGTH?"
 	done
 

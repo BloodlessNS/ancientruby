@@ -3,10 +3,10 @@ Pokered_MonIndices:
 	db KANGASKHAN
 	db NIDORAN_M
 	db CLEFAIRY
-	db SPEAROW
+	db TAILLOW
 	db VOLTORB
 	db NIDOKING
-	db SLOWBRO
+	db KIRLIA
 	db IVYSAUR
 	db NUZLEAF
 	db LICKITUNG
@@ -33,9 +33,9 @@ Pokered_MonIndices:
 	db SHUCKLE ; MISSINGNO.
 	db GROWLITHE
 	db ONIX
-	db FEAROW
+	db SWELLOW
 	db PIDGEY
-	db SLOWPOKE
+	db RALTS
 	db KADABRA
 	db GRAVELER
 	db CHANSEY

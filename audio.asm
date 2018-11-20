@@ -140,6 +140,9 @@ SECTION "Hoenn Songs 1", ROMX
 INCLUDE "audio/music/mobileadapter.asm"
 INCLUDE "audio/music/littleroottown.asm"
 INCLUDE "audio/music/route101.asm"
+INCLUDE "audio/music/oldaletown.asm"
+INCLUDE "audio/music/route103.asm"
+INCLUDE "audio/music/petalburgcity.asm"
 INCLUDE "audio/music/hoennwildbattle.asm"
 INCLUDE "audio/music/hoenntrainerbattle.asm"
 

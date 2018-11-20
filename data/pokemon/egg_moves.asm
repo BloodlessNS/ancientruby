@@ -60,7 +60,7 @@ PoochyenaEggMoves:
 	db REVERSAL
 	db -1 ; end
 
-SpearowEggMoves:
+TaillowEggMoves:
 	db FAINT_ATTACK
 	db FALSE_SWIPE
 	db SCARY_FACE
@@ -249,7 +249,7 @@ PonytaEggMoves:
 	db QUICK_ATTACK
 	db -1 ; end
 
-SlowpokeEggMoves:
+RaltsEggMoves:
 	db SAFEGUARD
 	db BELLY_DRUM
 	db FUTURE_SIGHT

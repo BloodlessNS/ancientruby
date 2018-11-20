@@ -19,7 +19,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw PoochyenaEggMoves
 	dw NoEggMoves
-	dw SpearowEggMoves
+	dw TaillowEggMoves
 	dw NoEggMoves
 	dw EkansEggMoves
 	dw NoEggMoves
@@ -77,7 +77,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw PonytaEggMoves
 	dw NoEggMoves
-	dw SlowpokeEggMoves
+	dw RaltsEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves

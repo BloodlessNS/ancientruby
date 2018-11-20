@@ -116,15 +116,6 @@ INCBIN "data/tilesets/lab_metatiles.bin"
 TilesetLabColl:
 INCLUDE "data/tilesets/lab_collision.asm"
 
-TilesetMartGFX:
-INCBIN "gfx/tilesets/mart.2bpp.lz"
-
-TilesetMartMeta:
-INCBIN "data/tilesets/mart_metatiles.bin"
-
-TilesetMartColl:
-INCLUDE "data/tilesets/mart_collision.asm"
-
 TilesetGameCornerGFX:
 INCBIN "gfx/tilesets/game_corner.2bpp.lz"
 
@@ -294,17 +285,6 @@ INCBIN "data/tilesets/battle_tower_outside_metatiles.bin"
 TilesetBattleTowerOutsideColl:
 INCLUDE "data/tilesets/battle_tower_outside_collision.asm"
 
-TilesetBetaWordRoomMeta:
-INCBIN "data/tilesets/beta_word_room_metatiles.bin"
-
-TilesetBetaWordRoomColl:
-TilesetHoOhWordRoomColl:
-TilesetKabutoWordRoomColl:
-TilesetOmanyteWordRoomColl:
-TilesetAerodactylWordRoomColl:
-INCLUDE "data/tilesets/beta_word_room_collision.asm"
-
-
 SECTION "Tileset Data 7", ROMX
 
 TilesetRuinsOfAlphGFX:
@@ -344,3 +324,22 @@ INCBIN "data/tilesets/moving_truck_metatiles.bin"
 
 TilesetMovingTruckColl:
 INCLUDE "data/tilesets/moving_truck_collision.asm"
+
+TilesetBetaWordRoomMeta:
+INCBIN "data/tilesets/beta_word_room_metatiles.bin"
+
+TilesetBetaWordRoomColl:
+TilesetHoOhWordRoomColl:
+TilesetKabutoWordRoomColl:
+TilesetOmanyteWordRoomColl:
+TilesetAerodactylWordRoomColl:
+INCLUDE "data/tilesets/beta_word_room_collision.asm"
+
+TilesetMartGFX:
+INCBIN "gfx/tilesets/mart.2bpp.lz"
+
+TilesetMartMeta:
+INCBIN "data/tilesets/mart_metatiles.bin"
+
+TilesetMartColl:
+INCLUDE "data/tilesets/mart_collision.asm"

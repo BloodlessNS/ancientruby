@@ -39,8 +39,8 @@ INCLUDE "maps/RuinsOfAlphAerodactylWordRoom.asm"
 INCLUDE "maps/UnionCave1F.asm"
 INCLUDE "maps/UnionCaveB1F.asm"
 INCLUDE "maps/UnionCaveB2F.asm"
-INCLUDE "maps/SlowpokeWellB1F.asm"
-INCLUDE "maps/SlowpokeWellB2F.asm"
+INCLUDE "maps/RaltsWellB1F.asm"
+INCLUDE "maps/RaltsWellB2F.asm"
 
 
 SECTION "Map Scripts 3", ROMX
@@ -66,18 +66,6 @@ INCLUDE "maps/DayCare.asm"
 SECTION "Map Scripts 5", ROMX
 
 INCLUDE "maps/Route11.asm"
-INCLUDE "maps/VioletMart.asm"
-INCLUDE "maps/VioletGym.asm"
-INCLUDE "maps/EarlsPokemonAcademy.asm"
-INCLUDE "maps/VioletNicknameSpeechHouse.asm"
-INCLUDE "maps/VioletPokecenter1F.asm"
-INCLUDE "maps/VioletKylesHouse.asm"
-INCLUDE "maps/Route32RuinsOfAlphGate.asm"
-INCLUDE "maps/Route32Pokecenter1F.asm"
-INCLUDE "maps/Route35GoldenrodGate.asm"
-INCLUDE "maps/Route35NationalParkGate.asm"
-INCLUDE "maps/Route36RuinsOfAlphGate.asm"
-INCLUDE "maps/Route36NationalParkGate.asm"
 
 
 SECTION "Map Scripts 6", ROMX
@@ -91,7 +79,6 @@ INCLUDE "maps/IlexForest.asm"
 
 SECTION "Map Scripts 7", ROMX
 
-INCLUDE "maps/LakeOfRage.asm"
 INCLUDE "maps/CeladonDeptStore1F.asm"
 INCLUDE "maps/CeladonDeptStore2F.asm"
 INCLUDE "maps/CeladonDeptStore3F.asm"
@@ -225,7 +212,6 @@ INCLUDE "maps/HallOfFame.asm"
 
 SECTION "Map Scripts 14", ROMX
 
-INCLUDE "maps/CeruleanCity.asm"
 INCLUDE "maps/SproutTower1F.asm"
 INCLUDE "maps/SproutTower2F.asm"
 INCLUDE "maps/SproutTower3F.asm"
@@ -244,17 +230,6 @@ INCLUDE "maps/BurnedTowerB1F.asm"
 
 SECTION "Map Scripts 15", ROMX
 
-INCLUDE "maps/CeruleanGymBadgeSpeechHouse.asm"
-INCLUDE "maps/CeruleanPoliceStation.asm"
-INCLUDE "maps/CeruleanTradeSpeechHouse.asm"
-INCLUDE "maps/CeruleanPokecenter1F.asm"
-INCLUDE "maps/CeruleanPokecenter2FBeta.asm"
-INCLUDE "maps/CeruleanGym.asm"
-INCLUDE "maps/CeruleanMart.asm"
-INCLUDE "maps/Route10Pokecenter1F.asm"
-INCLUDE "maps/Route10Pokecenter2FBeta.asm"
-INCLUDE "maps/PowerPlant.asm"
-INCLUDE "maps/BillsHouse.asm"
 INCLUDE "maps/FightingDojo.asm"
 INCLUDE "maps/SaffronGym.asm"
 INCLUDE "maps/SaffronMart.asm"
@@ -272,7 +247,6 @@ INCLUDE "maps/Route5CleanseTagHouse.asm"
 
 SECTION "Map Scripts 16", ROMX
 
-INCLUDE "maps/PewterCity.asm"
 INCLUDE "maps/WhirlIslandNW.asm"
 INCLUDE "maps/WhirlIslandNE.asm"
 INCLUDE "maps/WhirlIslandSW.asm"
@@ -291,16 +265,10 @@ INCLUDE "maps/DragonsDen1F.asm"
 INCLUDE "maps/DragonsDenB1F.asm"
 INCLUDE "maps/DragonShrine.asm"
 INCLUDE "maps/TohjoFalls.asm"
-INCLUDE "maps/AzaleaPokecenter1F.asm"
-INCLUDE "maps/CharcoalKiln.asm"
-INCLUDE "maps/AzaleaMart.asm"
-INCLUDE "maps/KurtsHouse.asm"
-INCLUDE "maps/AzaleaGym.asm"
 
 
 SECTION "Map Scripts 17", ROMX
 
-INCLUDE "maps/Route32.asm"
 INCLUDE "maps/VermilionFishingSpeechHouse.asm"
 INCLUDE "maps/VermilionPokecenter1F.asm"
 INCLUDE "maps/VermilionPokecenter2FBeta.asm"
@@ -321,7 +289,6 @@ INCLUDE "maps/MobileBattleRoom.asm"
 
 SECTION "Map Scripts 18", ROMX
 
-INCLUDE "maps/Route36.asm"
 INCLUDE "maps/FuchsiaCity.asm"
 INCLUDE "maps/FuchsiaMart.asm"
 INCLUDE "maps/SafariZoneMainOffice.asm"
@@ -343,25 +310,13 @@ INCLUDE "maps/Route31VioletGate.asm"
 
 SECTION "Map Scripts 19", ROMX
 
-INCLUDE "maps/AzaleaTown.asm"
 INCLUDE "maps/GoldenrodCity.asm"
 INCLUDE "maps/SaffronCity.asm"
-INCLUDE "maps/LakeOfRageHiddenPowerHouse.asm"
-INCLUDE "maps/LakeOfRageMagikarpHouse.asm"
-INCLUDE "maps/Route43Gate.asm"
-INCLUDE "maps/RedsHouse1F.asm"
-INCLUDE "maps/RedsHouse2F.asm"
-INCLUDE "maps/BluesHouse.asm"
-INCLUDE "maps/OaksLab.asm"
 
 
 SECTION "Map Scripts 20", ROMX
 
 INCLUDE "maps/CherrygroveCity.asm"
-INCLUDE "maps/Route35.asm"
-INCLUDE "maps/Route43.asm"
-INCLUDE "maps/Route19.asm"
-INCLUDE "maps/Route25.asm"
 
 
 SECTION "Map Scripts 21", ROMX
@@ -369,12 +324,6 @@ SECTION "Map Scripts 21", ROMX
 INCLUDE "maps/CianwoodCity.asm"
 INCLUDE "maps/Route30.asm"
 INCLUDE "maps/Route13.asm"
-INCLUDE "maps/PewterNidoranSpeechHouse.asm"
-INCLUDE "maps/PewterGym.asm"
-INCLUDE "maps/PewterMart.asm"
-INCLUDE "maps/PewterPokecenter1F.asm"
-INCLUDE "maps/PewterPokecenter2FBeta.asm"
-INCLUDE "maps/PewterSnoozeSpeechHouse.asm"
 
 
 SECTION "Map Scripts 22", ROMX
@@ -388,28 +337,15 @@ INCLUDE "maps/Route12.asm"
 
 SECTION "Map Scripts 23", ROMX
 
-INCLUDE "maps/VioletCity.asm"
-INCLUDE "maps/Route37.asm"
 INCLUDE "maps/ViridianCity.asm"
 INCLUDE "maps/CeladonCity.asm"
 INCLUDE "maps/Route15.asm"
 INCLUDE "maps/VermilionCity.asm"
-INCLUDE "maps/Route9.asm"
-INCLUDE "maps/CinnabarPokecenter1F.asm"
-INCLUDE "maps/CinnabarPokecenter2FBeta.asm"
-INCLUDE "maps/Route19FuchsiaGate.asm"
-INCLUDE "maps/SeafoamGym.asm"
 
 
 SECTION "Map Scripts 24", ROMX
 
-INCLUDE "maps/Route33.asm"
 INCLUDE "maps/Route2.asm"
-INCLUDE "maps/Route1.asm"
-INCLUDE "maps/PalletTown.asm"
-INCLUDE "maps/Route21.asm"
-INCLUDE "maps/CinnabarIsland.asm"
-INCLUDE "maps/Route20.asm"
 INCLUDE "maps/Route18.asm"
 INCLUDE "maps/Route17.asm"
 INCLUDE "maps/Route16.asm"
@@ -418,10 +354,6 @@ INCLUDE "maps/Route14.asm"
 INCLUDE "maps/LavenderTown.asm"
 INCLUDE "maps/Route6.asm"
 INCLUDE "maps/Route5.asm"
-INCLUDE "maps/Route24.asm"
-INCLUDE "maps/Route3.asm"
-INCLUDE "maps/Route4.asm"
-INCLUDE "maps/Route10South.asm"
 INCLUDE "maps/Route23.asm"
 INCLUDE "maps/SilverCavePokecenter1F.asm"
 INCLUDE "maps/Route28SteelWingHouse.asm"
@@ -430,9 +362,9 @@ INCLUDE "maps/Route28SteelWingHouse.asm"
 SECTION "Map Scripts 25", ROMX
 
 INCLUDE "maps/SilverCaveOutside.asm"
-INCLUDE "maps/Route10North.asm"
 INCLUDE "maps/MovingTruck.asm"
 INCLUDE "maps/LittlerootTown.asm"
+INCLUDE "maps/LittlerootTownIntro.asm"
 INCLUDE "maps/Route101.asm"
 INCLUDE "maps/OldaleTown.asm"
 INCLUDE "maps/OldalePokecenter1F.asm"
@@ -441,3 +373,8 @@ INCLUDE "maps/OldaleHouse1.asm"
 INCLUDE "maps/OldaleHouse2.asm"
 INCLUDE "maps/Route102.asm"
 INCLUDE "maps/Route103.asm"
+INCLUDE "maps/PetalburgCity.asm"
+INCLUDE "maps/PetalburgHouse1.asm"
+INCLUDE "maps/PetalburgHouse2.asm"
+INCLUDE "maps/PetalburgPokecenter1F.asm"
+INCLUDE "maps/PetalburgMart.asm"

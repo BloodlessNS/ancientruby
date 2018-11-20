@@ -182,7 +182,7 @@ Route102FisherText:
 	done
 	
 Route102BugCatcherText:
-	text "I'm... not very"
+	text "I'm… not very"
 	line "tall, so I sink"
 	cont "right in to tall"
 	cont "grass."
@@ -190,7 +190,7 @@ Route102BugCatcherText:
 	para "The grass goes"
 	line "right up my nose"
 	cont "and..."
-	cont "Fwafwafwafwafwa..."
+	cont "Fwafwafwafwafwa…"
 	
 	para "Fwatchoo!"
 	done

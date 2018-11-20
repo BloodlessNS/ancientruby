@@ -22,8 +22,8 @@ MovingTruck_MapEvents:
 	db 0, 0 ; filler
 
 	db 2 ; warp events
-	warp_event  5, 1, LITTLEROOT_TOWN, 1
-	warp_event  5, 2, LITTLEROOT_TOWN, 1
+	warp_event  5, 1, LITTLEROOT_TOWN_INTRO, 1
+	warp_event  5, 2, LITTLEROOT_TOWN_INTRO, 1
 
 	db 0 ; coord events
 

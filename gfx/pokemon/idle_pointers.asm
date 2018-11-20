@@ -19,8 +19,8 @@ AnimationIdlePointers:
 	dw PidgeotAnimationIdle
 	dw PoochyenaAnimationIdle
 	dw MightyenaAnimationIdle
-	dw SpearowAnimationIdle
-	dw FearowAnimationIdle
+	dw TaillowAnimationIdle
+	dw SwellowAnimationIdle
 	dw EkansAnimationIdle
 	dw ArbokAnimationIdle
 	dw PikachuAnimationIdle
@@ -77,8 +77,8 @@ AnimationIdlePointers:
 	dw GolemAnimationIdle
 	dw PonytaAnimationIdle
 	dw RapidashAnimationIdle
-	dw SlowpokeAnimationIdle
-	dw SlowbroAnimationIdle
+	dw RaltsAnimationIdle
+	dw KirliaAnimationIdle
 	dw MagnemiteAnimationIdle
 	dw MagnetonAnimationIdle
 	dw FarfetchDAnimationIdle

@@ -21,8 +21,8 @@ KantoMonSpecials:
 	db  70 ; PIDGEOT
 	db  25 ; POOCHYENA
 	db  50 ; MIGHTYENA
-	db  31 ; SPEAROW
-	db  61 ; FEAROW
+	db  31 ; TAILLOW
+	db  61 ; SWELLOW
 	db  40 ; EKANS
 	db  65 ; ARBOK
 	db  50 ; PIKACHU
@@ -79,8 +79,8 @@ KantoMonSpecials:
 	db  55 ; GOLEM
 	db  65 ; PONYTA
 	db  80 ; RAPIDASH
-	db  40 ; SLOWPOKE
-	db  80 ; SLOWBRO
+	db  40 ; RALTS
+	db  80 ; KIRLIA
 	db  95 ; MAGNEMITE
 	db 120 ; MAGNETON
 	db  58 ; FARFETCH_D

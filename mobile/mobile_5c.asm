@@ -806,7 +806,7 @@ Attrmap_172955:
 INCBIN "gfx/unknown/172955.attrmap"
 
 LZ_172abd:
-INCBIN "gfx/pokedex/slowpoke.2bpp.lz"
+INCBIN "gfx/pokedex/ralts.2bpp.lz"
 
 String_172e31:
 	db "パスワード<WO>いれてください@"

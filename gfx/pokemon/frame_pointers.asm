@@ -19,8 +19,8 @@ FramesPointers:
 	dw PidgeotFrames
 	dw PoochyenaFrames
 	dw MightyenaFrames
-	dw SpearowFrames
-	dw FearowFrames
+	dw TaillowFrames
+	dw SwellowFrames
 	dw EkansFrames
 	dw ArbokFrames
 	dw PikachuFrames
@@ -77,8 +77,8 @@ FramesPointers:
 	dw GolemFrames
 	dw PonytaFrames
 	dw RapidashFrames
-	dw SlowpokeFrames
-	dw SlowbroFrames
+	dw RaltsFrames
+	dw KirliaFrames
 	dw MagnemiteFrames
 	dw MagnetonFrames
 	dw FarfetchDFrames

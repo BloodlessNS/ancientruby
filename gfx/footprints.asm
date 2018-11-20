@@ -50,8 +50,8 @@ INCBIN "gfx/footprints/pidgeotto.1bpp",  footprint_top
 INCBIN "gfx/footprints/pidgeot.1bpp",    footprint_top
 INCBIN "gfx/footprints/poochyena.1bpp",    footprint_top
 INCBIN "gfx/footprints/mightyena.1bpp",   footprint_top
-INCBIN "gfx/footprints/spearow.1bpp",    footprint_top
-INCBIN "gfx/footprints/fearow.1bpp",     footprint_top
+INCBIN "gfx/footprints/taillow.1bpp",    footprint_top
+INCBIN "gfx/footprints/swellow.1bpp",     footprint_top
 INCBIN "gfx/footprints/ekans.1bpp",      footprint_top
 INCBIN "gfx/footprints/arbok.1bpp",      footprint_top
 ; 017-024 bottom halves
@@ -59,8 +59,8 @@ INCBIN "gfx/footprints/pidgeotto.1bpp",  footprint_bottom
 INCBIN "gfx/footprints/pidgeot.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/poochyena.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/mightyena.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/spearow.1bpp",    footprint_bottom
-INCBIN "gfx/footprints/fearow.1bpp",     footprint_bottom
+INCBIN "gfx/footprints/taillow.1bpp",    footprint_bottom
+INCBIN "gfx/footprints/swellow.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/ekans.1bpp",      footprint_bottom
 INCBIN "gfx/footprints/arbok.1bpp",      footprint_bottom
 ; 025-032 top halves
@@ -178,8 +178,8 @@ INCBIN "gfx/footprints/graveler.1bpp",   footprint_top
 INCBIN "gfx/footprints/golem.1bpp",      footprint_top
 INCBIN "gfx/footprints/ponyta.1bpp",     footprint_top
 INCBIN "gfx/footprints/rapidash.1bpp",   footprint_top
-INCBIN "gfx/footprints/slowpoke.1bpp",   footprint_top
-INCBIN "gfx/footprints/slowbro.1bpp",    footprint_top
+INCBIN "gfx/footprints/ralts.1bpp",   footprint_top
+INCBIN "gfx/footprints/kirlia.1bpp",    footprint_top
 ; 073-080 bottom halves
 INCBIN "gfx/footprints/tentacruel.1bpp", footprint_bottom
 INCBIN "gfx/footprints/geodude.1bpp",    footprint_bottom
@@ -187,8 +187,8 @@ INCBIN "gfx/footprints/graveler.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/golem.1bpp",      footprint_bottom
 INCBIN "gfx/footprints/ponyta.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/rapidash.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/slowpoke.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/slowbro.1bpp",    footprint_bottom
+INCBIN "gfx/footprints/ralts.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/kirlia.1bpp",    footprint_bottom
 ; 081-088 top halves
 INCBIN "gfx/footprints/magnemite.1bpp",  footprint_top
 INCBIN "gfx/footprints/magneton.1bpp",   footprint_top

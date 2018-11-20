@@ -737,7 +737,7 @@ TownMap_GetKantoLandmarkLimits:
 	bit STATUSFLAGS_HALL_OF_FAME_F, a
 	jr z, .not_hof
 	ld d, ROUTE_28
-	ld e, PALLET_TOWN
+	ld e, LITTLEROOT_TOWN
 	ret
 
 .not_hof
@@ -1544,9 +1544,9 @@ RadioChannels:
 	ld a, [wPokegearMapPlayerIconLandmark]
 	cp LITTLEROOT_TOWN
 	jr z, .ok
-	cp ROUTE_43
+	cp LITTLEROOT_TOWN
 	jr z, .ok
-	cp LAKE_OF_RAGE
+	cp LITTLEROOT_TOWN
 	jr nz, .NoSignal
 .ok
 	jp LoadStation_EvolutionRadio
@@ -2318,7 +2318,7 @@ FlyMap:
 ; Kanto's map is only loaded if we've visited Indigo Plateau
 
 ; Flypoints begin at Pallet Town...
-	ld a, FLY_PALLET
+	ld a, FLY_LITTLEROOT
 	ld [wStartFlypoint], a
 ; ...and end at Indigo Plateau
 	ld a, FLY_INDIGO

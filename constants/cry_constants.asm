@@ -4,7 +4,7 @@
 ; gen 1
 	const CRY_NIDORAN_M
 	const CRY_NIDORAN_F
-	const CRY_SLOWPOKE
+	const CRY_RALTS
 	const CRY_KANGASKHAN
 	const CRY_CHARMANDER
 	const CRY_GRIMER
@@ -18,7 +18,7 @@
 	const CRY_DROWZEE
 	const CRY_PIDGEY
 	const CRY_BULBASAUR
-	const CRY_SPEAROW
+	const CRY_TAILLOW
 	const CRY_RHYDON
 	const CRY_GOLEM
 	const CRY_BLASTOISE
@@ -26,7 +26,7 @@
 	const CRY_WEEDLE
 	const CRY_WURMPLE
 	const CRY_EKANS
-	const CRY_FEAROW
+	const CRY_SWELLOW
 	const CRY_CLEFAIRY
 	const CRY_VENONAT
 	const CRY_LAPRAS

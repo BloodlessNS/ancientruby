@@ -26,17 +26,17 @@ JohtoWaterWildMons:
 	db 20, QUAGSIRE
 	db 20, TENTACRUEL
 
-	map_id SLOWPOKE_WELL_B1F
+	map_id RALTS_WELL_B1F
 	db 2 percent ; encounter rate
-	db 15, SLOWPOKE
-	db 20, SLOWPOKE
-	db 10, SLOWPOKE
+	db 15, RALTS
+	db 20, RALTS
+	db 10, RALTS
 
-	map_id SLOWPOKE_WELL_B2F
+	map_id RALTS_WELL_B2F
 	db 2 percent ; encounter rate
-	db 15, SLOWPOKE
-	db 20, SLOWPOKE
-	db 20, SLOWBRO
+	db 15, RALTS
+	db 20, RALTS
+	db 20, KIRLIA
 
 	map_id ILEX_FOREST
 	db 2 percent ; encounter rate
@@ -134,23 +134,11 @@ JohtoWaterWildMons:
 	db 15, POLIWAG
 	db 20, POLIWHIRL
 
-	map_id ROUTE_32
-	db 6 percent ; encounter rate
-	db 15, TENTACOOL
-	db 20, QUAGSIRE
-	db 20, TENTACRUEL
-
 	map_id ROUTE_34
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
-
-	map_id ROUTE_35
-	db 4 percent ; encounter rate
-	db 20, PSYDUCK
-	db 15, PSYDUCK
-	db 20, GOLDUCK
 
 	map_id ROUTE_40
 	db 6 percent ; encounter rate
@@ -164,12 +152,6 @@ JohtoWaterWildMons:
 	db 20, TENTACRUEL
 	db 20, MANTINE
 
-	map_id ROUTE_43
-	db 2 percent ; encounter rate
-	db 20, MAGIKARP
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-
 	map_id LITTLEROOT_TOWN
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
@@ -182,23 +164,11 @@ JohtoWaterWildMons:
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
 
-	map_id VIOLET_CITY
-	db 2 percent ; encounter rate
-	db 20, POLIWAG
-	db 15, POLIWAG
-	db 20, POLIWHIRL
-
 	map_id CIANWOOD_CITY
 	db 6 percent ; encounter rate
 	db 20, TENTACOOL
 	db 15, TENTACOOL
 	db 20, TENTACRUEL
-
-	map_id LAKE_OF_RAGE
-	db 6 percent ; encounter rate
-	db 15, MAGIKARP
-	db 10, MAGIKARP
-	db 15, GYARADOS
 
 	map_id SILVER_CAVE_OUTSIDE
 	db 2 percent ; encounter rate

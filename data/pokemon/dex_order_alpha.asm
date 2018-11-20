@@ -59,7 +59,7 @@ AlphabeticalPokedexOrder:
 	db SEEDOT
 	db NUZLEAF
 	db FARFETCH_D
-	db FEAROW
+	db SWELLOW
 	db SWAMPERT
 	db FLAAFFY
 	db FLAREON
@@ -198,16 +198,16 @@ AlphabeticalPokedexOrder:
 	db SHUCKLE
 	db SKARMORY
 	db SKIPLOOM
-	db SLOWBRO
+	db KIRLIA
 	db SLOWKING
-	db SLOWPOKE
+	db RALTS
 	db SLUGMA
 	db SMEARGLE
 	db SMOOCHUM
 	db SNEASEL
 	db SNORLAX
 	db SNUBBULL
-	db SPEAROW
+	db TAILLOW
 	db SPINARAK
 	db SQUIRTLE
 	db STANTLER

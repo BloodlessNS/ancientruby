@@ -19,8 +19,8 @@ AnimationPointers:
 	dw PidgeotAnimation
 	dw PoochyenaAnimation
 	dw MightyenaAnimation
-	dw SpearowAnimation
-	dw FearowAnimation
+	dw TaillowAnimation
+	dw SwellowAnimation
 	dw EkansAnimation
 	dw ArbokAnimation
 	dw PikachuAnimation
@@ -77,8 +77,8 @@ AnimationPointers:
 	dw GolemAnimation
 	dw PonytaAnimation
 	dw RapidashAnimation
-	dw SlowpokeAnimation
-	dw SlowbroAnimation
+	dw RaltsAnimation
+	dw KirliaAnimation
 	dw MagnemiteAnimation
 	dw MagnetonAnimation
 	dw FarfetchDAnimation

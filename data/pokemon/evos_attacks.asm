@@ -294,30 +294,29 @@ MightyenaEvosAttacks:
 	db 40, SUPER_FANG
 	db 0 ; no more level-up moves
 
-SpearowEvosAttacks:
-	db EVOLVE_LEVEL, 20, FEAROW
+TaillowEvosAttacks:
+	db EVOLVE_LEVEL, 22, SWELLOW
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 7, LEER
-	db 13, FURY_ATTACK
-	db 25, PURSUIT
-	db 31, MIRROR_MOVE
-	db 37, DRILL_PECK
+	db 4, FOCUS_ENERGY
+	db 8, QUICK_ATTACK
+	db 13, WING_ATTACK
+	db 19, DOUBLE_TEAM
+	db 37, STEEL_WING
 	db 43, AGILITY
 	db 0 ; no more level-up moves
 
-FearowEvosAttacks:
+SwellowEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, PECK
 	db 1, GROWL
-	db 1, LEER
-	db 1, FURY_ATTACK
-	db 7, LEER
-	db 13, FURY_ATTACK
-	db 26, PURSUIT
-	db 32, MIRROR_MOVE
-	db 40, DRILL_PECK
+	db 1, FOCUS_ENERGY
+	db 1, QUICK_ATTACK
+	db 4, FOCUS_ENERGY
+	db 8, QUICK_ATTACK
+	db 13, WING_ATTACK
+	db 19, DOUBLE_TEAM
 	db 47, AGILITY
 	db 0 ; no more level-up moves
 
@@ -1063,22 +1062,22 @@ RapidashEvosAttacks:
 	db 61, FIRE_BLAST
 	db 0 ; no more level-up moves
 
-SlowpokeEvosAttacks:
-	db EVOLVE_LEVEL, 37, SLOWBRO
+RaltsEvosAttacks:
+	db EVOLVE_LEVEL, 20, KIRLIA
 	db EVOLVE_TRADE, KINGS_ROCK, SLOWKING
 	db 0 ; no more evolutions
-	db 1, CURSE
-	db 1, TACKLE
-	db 6, GROWL
-	db 15, WATER_GUN
-	db 20, CONFUSION
-	db 29, DISABLE
-	db 34, HEADBUTT
-	db 43, AMNESIA
-	db 48, PSYCHIC_M
+	db 1, GROWL
+	db 6, CONFUSION
+	db 11, DOUBLE_TEAM
+	db 16, TELEPORT
+	db 26, PSYCHIC_M
+	db 31, AMNESIA
+	db 36, HEADBUTT
+	db 41, HYPNOSIS
+	db 46, DREAM_EATER
 	db 0 ; no more level-up moves
 
-SlowbroEvosAttacks:
+KirliaEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE

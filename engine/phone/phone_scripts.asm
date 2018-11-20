@@ -35,8 +35,6 @@ MomPhonePalette1:
 	checkcode VAR_MAPGROUP
 	ifequal GROUP_LITTLEROOT_TOWN, .littleroot
 	ifequal GROUP_CHERRYGROVE_CITY, .cherrygrove
-	ifequal GROUP_VIOLET_CITY, .violet
-	ifequal GROUP_AZALEA_TOWN, .azalea
 	ifequal GROUP_GOLDENROD_CITY, .goldenrod
 	farwritetext MomPhoneGenericAreaText
 	buttonsound
@@ -54,9 +52,6 @@ MomPhonePalette1:
 
 .violet
 	landmarktotext SPROUT_TOWER, MEM_BUFFER_1
-	jump MomPhoneLandmark
-.azalea
-	landmarktotext SLOWPOKE_WELL, MEM_BUFFER_1
 	jump MomPhoneLandmark
 .goldenrod
 	landmarktotext RADIO_TOWER, MEM_BUFFER_1
@@ -792,11 +787,11 @@ RalphPhoneScript1:
 	farjump UnknownScript_0xa0940
 
 .Rematch:
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a55
 
 .ReportSwarm:
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0af5
 
 RalphPhoneScript2:
@@ -818,7 +813,7 @@ RalphPhoneScript2:
 Ralph_WednesdayMorning:
 	setflag ENGINE_RALPH_WEDNESDAY_MORNING
 Ralph_FightMe:
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_RALPH
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -827,7 +822,7 @@ Ralph_SetUpSwarm:
 	iftrue .Generic
 	setflag ENGINE_FISH_SWARM
 	pokenamemem QWILFISH, MEM_BUFFER_1
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	writebyte FISHSWARM_QWILFISH
 	special ActivateFishingSwarm
 	farjump UnknownScript_0xa05d6
@@ -854,7 +849,7 @@ LizPhoneScript1:
 	farjump UnknownScript_0xa0948
 
 .WantsBattle:
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a5a
 
 LizPhoneScript2:
@@ -882,7 +877,7 @@ LizThursdayAfternoon:
 	setflag ENGINE_LIZ_THURSDAY_AFTERNOON
 
 LizWantsBattle:
-	landmarktotext ROUTE_32, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_LIZ
 	farjump PhoneScript_WantsToBattle_Female
 
@@ -960,11 +955,11 @@ AnthonyPhoneScript1:
 	farjump UnknownScript_0xa0950
 
 .WantsBattle:
-	landmarktotext ROUTE_33, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a5f
 
 .AlreadySwarming:
-	landmarktotext ROUTE_33, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0afa
 
 AnthonyPhoneScript2:
@@ -988,7 +983,7 @@ AnthonyFridayNight:
 	setflag ENGINE_ANTHONY_FRIDAY_NIGHT
 
 AnthonyWantsBattle:
-	landmarktotext ROUTE_33, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_ANTHONY
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1183,11 +1178,11 @@ ArniePhoneScript1:
 	farjump UnknownScript_0xa0968
 
 .WantsBattle:
-	landmarktotext ROUTE_35, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a6e
 
 .AlreadySwarming:
-	landmarktotext ROUTE_35, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0aff
 
 ArniePhoneScript2:
@@ -1211,7 +1206,7 @@ ArnieTuesdayMorning:
 	setflag ENGINE_ARNIE_TUESDAY_MORNING
 
 ArnieWantsBattle:
-	landmarktotext ROUTE_35, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_ARNIE
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1220,8 +1215,8 @@ ArnieYanmaSwarm: ; start swarm
 	iftrue ArnieYanmaAlreadySwarming
 	setflag ENGINE_YANMA_SWARM
 	pokenamemem YANMA, MEM_BUFFER_1
-	swarm SWARM_YANMA, ROUTE_35
-	landmarktotext ROUTE_35, MEM_BUFFER_2
+	swarm SWARM_YANMA, ROUTE_101
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa05ce
 
 ArnieFoundRare:
@@ -1250,11 +1245,11 @@ AlanPhoneScript1:
 	farjump UnknownScript_0xa0970
 
 .WantsBattle:
-	landmarktotext ROUTE_36, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a73
 
 .FireStone:
-	landmarktotext ROUTE_36, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0ac5
 
 AlanPhoneScript2:
@@ -1284,13 +1279,13 @@ AlanWednesdayDay:
 	setflag ENGINE_ALAN_WEDNESDAY_AFTERNOON
 
 AlanWantsBattle:
-	landmarktotext ROUTE_36, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_ALAN
 	farjump PhoneScript_WantsToBattle_Male
 
 AlanHasFireStone:
 	setflag ENGINE_ALAN_HAS_FIRE_STONE
-	landmarktotext ROUTE_36, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Male
 
 ; Dana
@@ -1539,7 +1534,7 @@ BrentPhoneScript1:
 	farjump UnknownScript_0xa0998
 
 .WantsBattle:
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a87
 
 BrentPhoneScript2:
@@ -1561,7 +1556,7 @@ BrentMondayMorning:
 	setflag ENGINE_BRENT_MONDAY_MORNING
 
 BrentWantsBattle:
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_BRENT
 	farjump PhoneScript_WantsToBattle_Male
 
@@ -1586,11 +1581,11 @@ TiffanyPhoneScript1:
 	farjump UnknownScript_0xa09a0
 
 .WantsBattle:
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0a8c
 
 .HasItem:
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump UnknownScript_0xa0ae5
 
 TiffanyPhoneScript2:
@@ -1622,7 +1617,7 @@ TiffanyTuesdayAfternoon:
 	setflag ENGINE_TIFFANY_TUESDAY_AFTERNOON
 
 TiffanyWantsBattle:
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	setflag ENGINE_TIFFANY
 	farjump PhoneScript_WantsToBattle_Female
 
@@ -1664,7 +1659,7 @@ TiffanysFamilyMembers:
 
 TiffanyHasPinkBow:
 	setflag ENGINE_TIFFANY_HAS_PINK_BOW
-	landmarktotext ROUTE_43, MEM_BUFFER_2
+	landmarktotext ROUTE_101, MEM_BUFFER_2
 	farjump PhoneScript_FoundItem_Female
 
 ; Vance

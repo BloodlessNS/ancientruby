@@ -21,8 +21,8 @@ MonMenuIcons:
 	db ICON_BIRD        ; PIDGEOT
 	db ICON_FOX         ; POOCHYENA
 	db ICON_FOX         ; MIGHTYENA
-	db ICON_BIRD        ; SPEAROW
-	db ICON_BIRD        ; FEAROW
+	db ICON_BIRD        ; TAILLOW
+	db ICON_BIRD        ; SWELLOW
 	db ICON_SERPENT     ; EKANS
 	db ICON_SERPENT     ; ARBOK
 	db ICON_PIKACHU     ; PIKACHU
@@ -79,8 +79,8 @@ MonMenuIcons:
 	db ICON_GEODUDE     ; GOLEM
 	db ICON_EQUINE      ; PONYTA
 	db ICON_EQUINE      ; RAPIDASH
-	db ICON_SLOWPOKE    ; SLOWPOKE
-	db ICON_SLOWPOKE    ; SLOWBRO
+	db ICON_RALTS    ; RALTS
+	db ICON_RALTS    ; KIRLIA
 	db ICON_VOLTORB     ; MAGNEMITE
 	db ICON_VOLTORB     ; MAGNETON
 	db ICON_BIRD        ; FARFETCH_D
@@ -199,7 +199,7 @@ MonMenuIcons:
 	db ICON_FOX         ; ESPEON
 	db ICON_FOX         ; UMBREON
 	db ICON_BIRD        ; MURKROW
-	db ICON_SLOWPOKE    ; SLOWKING
+	db ICON_RALTS    ; SLOWKING
 	db ICON_GHOST       ; MISDREAVUS
 	db ICON_UNOWN       ; UNOWN
 	db ICON_GHOST       ; WOBBUFFET

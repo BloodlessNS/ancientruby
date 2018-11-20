@@ -1,6 +1,7 @@
 Marts:
 ; entries correspond to MART_* constants
 	dw MartOldale
+	dw MartPetalburg
 	dw MartCherrygrove
 	dw MartCherrygroveDex
 	dw MartViolet
@@ -44,6 +45,20 @@ MartOldale:
 	db ANTIDOTE
 	db PARLYZ_HEAL
 	db AWAKENING
+	db -1 ; end
+	
+MartPetalburg:
+	db 10 ; # items
+	db POKE_BALL
+	db POTION
+	db ANTIDOTE
+	db PARLYZ_HEAL
+	db AWAKENING
+	db ESCAPE_ROPE
+	db REPEL
+	db X_SPEED
+	db X_ATTACK
+	db X_DEFEND
 	db -1 ; end
 
 MartCherrygrove:

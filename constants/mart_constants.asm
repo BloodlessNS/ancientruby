@@ -9,6 +9,7 @@
 ; Marts indexes (see data/items/marts.asm)
 	const_def
 	const MART_OLDALE
+	const MART_PETALBURG
 	const MART_CHERRYGROVE
 	const MART_CHERRYGROVE_DEX
 	const MART_VIOLET

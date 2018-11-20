@@ -36,7 +36,7 @@ _AnimateTileset::
 Tileset0Anim:
 TilesetJohtoModernAnim:
 TilesetKantoAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $16, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -49,7 +49,7 @@ TilesetKantoAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetParkAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $16, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw vTiles2 tile $5f, AnimateFountain
 	dw NULL,  WaitTileAnimation
@@ -70,13 +70,13 @@ TilesetForestAnim:
 	dw NULL,  ForestTreeLeftAnimation2
 	dw NULL,  ForestTreeRightAnimation2
 	dw NULL,  AnimateFlowerTile
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $16, AnimateWaterTile
 	dw NULL,  TileAnimationPalette
 	dw NULL,  StandingTileFrame8
 	dw NULL,  DoneTileAnimation
 
 TilesetJohtoAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $16, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -99,9 +99,9 @@ UnusedTilesetAnim_fc0d7:
 	dw NULL,  DoneTileAnimation
 
 UnusedTilesetAnim_fc103:
-	dw vTiles2 tile $14, WriteTileToBuffer
+	dw vTiles2 tile $16, WriteTileToBuffer
 	dw wTileAnimBuffer, ScrollTileRightLeft
-	dw vTiles2 tile $14, WriteTileFromBuffer
+	dw vTiles2 tile $16, WriteTileFromBuffer
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -112,7 +112,7 @@ UnusedTilesetAnim_fc103:
 	dw NULL,  DoneTileAnimation
 
 TilesetPortAnim:
-	dw vTiles2 tile $14, AnimateWaterTile
+	dw vTiles2 tile $16, AnimateWaterTile
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -167,11 +167,11 @@ UnusedTilesetAnim_fc1af:
 
 TilesetCaveAnim:
 TilesetDarkCaveAnim:
-	dw vTiles2 tile $14, WriteTileToBuffer
+	dw vTiles2 tile $16, WriteTileToBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw wTileAnimBuffer, ScrollTileRightLeft
 	dw NULL,  FlickeringCaveEntrancePalette
-	dw vTiles2 tile $14, WriteTileFromBuffer
+	dw vTiles2 tile $16, WriteTileFromBuffer
 	dw NULL,  FlickeringCaveEntrancePalette
 	dw NULL,  TileAnimationPalette
 	dw NULL,  FlickeringCaveEntrancePalette

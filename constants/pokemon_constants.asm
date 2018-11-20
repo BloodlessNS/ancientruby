@@ -39,8 +39,8 @@
 	const PIDGEOT    ; 12
 	const POOCHYENA    ; 13
 	const MIGHTYENA   ; 14
-	const SPEAROW    ; 15
-	const FEAROW     ; 16
+	const TAILLOW    ; 15
+	const SWELLOW     ; 16
 	const EKANS      ; 17
 	const ARBOK      ; 18
 	const PIKACHU    ; 19
@@ -97,8 +97,8 @@
 	const GOLEM      ; 4c
 	const PONYTA     ; 4d
 	const RAPIDASH   ; 4e
-	const SLOWPOKE   ; 4f
-	const SLOWBRO    ; 50
+	const RALTS   ; 4f
+	const KIRLIA    ; 50
 	const MAGNEMITE  ; 51
 	const MAGNETON   ; 52
 	const FARFETCH_D ; 53

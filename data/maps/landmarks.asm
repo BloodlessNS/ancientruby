@@ -12,25 +12,19 @@ Landmarks:
 	landmark 44,   84, OldaleTownName
 	landmark 36,   84,  Route102Name
 	landmark 44,   78,  Route103Name
+	landmark 44,   70, PetalburgCityName
 	landmark 100, 100, CherrygroveCityName
 	landmark 100,  80, Route30Name
 	landmark  96,  60, Route31Name
-	landmark  84,  60, VioletCityName
 	landmark  85,  58, SproutTowerName
-	landmark  84,  92, Route32Name
 	landmark  76,  76, RuinsOfAlphName
 	landmark  84, 124, UnionCaveName
-	landmark  82, 124, Route33Name
-	landmark  68, 124, AzaleaTownName
-	landmark  70, 122, SlowpokeWellName
+	landmark  70, 122, RaltsWellName
 	landmark  52, 120, IlexForestName
 	landmark  52, 112, Route34Name
 	landmark  52,  92, GoldenrodCityName
 	landmark  50,  92, RadioTowerName
-	landmark  52,  76, Route35Name
 	landmark  52,  60, NationalParkName
-	landmark  64,  60, Route36Name
-	landmark  68,  52, Route37Name
 	landmark  70,  42, TinTowerName
 	landmark  66,  42, BurnedTowerName
 	landmark  38,  62, LighthouseName
@@ -40,23 +34,13 @@ Landmarks:
 	landmark  28, 100, Route41Name
 	landmark  20, 100, CianwoodCityName
 	landmark  84,  44, MtMortarName
-	landmark 108,  36, Route43Name
-	landmark 108,  28, LakeOfRageName
 	landmark 130,  38, IcePathName
 	landmark 132,  36, DragonsDenName
 	landmark 112,  72, DarkCaveName
 	landmark 148,  68, SilverCaveName
-	landmark  52, 108, PalletTownName
-	landmark  52,  92, Route1Name
 	landmark  52,  76, ViridianCityName
 	landmark  52,  64, Route2Name
-	landmark  52,  52, PewterCityName
-	landmark  64,  52, Route3Name
 	landmark  76,  52, MtMoonName
-	landmark  88,  52, Route4Name
-	landmark 100,  52, CeruleanCityName
-	landmark 100,  44, Route24Name
-	landmark 108,  36, Route25Name
 	landmark 100,  60, Route5Name
 	landmark 108,  76, UndergroundName
 	landmark 100,  76, Route6Name
@@ -64,10 +48,7 @@ Landmarks:
 	landmark  88,  60, DiglettsCaveName
 	landmark  88,  68, Route7Name
 	landmark 116,  68, Route8Name
-	landmark 116,  52, Route9Name
 	landmark 132,  52, RockTunnelName
-	landmark 132,  56, Route10Name
-	landmark 132,  60, PowerPlantName
 	landmark 132,  68, LavenderTownName
 	landmark 140,  68, LavRadioTowerName
 	landmark  76,  68, CeladonCityName
@@ -81,11 +62,6 @@ Landmarks:
 	landmark  68,  92, Route17Name
 	landmark  80, 116, Route18Name
 	landmark  92, 116, FuchsiaCityName
-	landmark  92, 128, Route19Name
-	landmark  76, 132, Route20Name
-	landmark  68, 132, SeafoamIslandsName
-	landmark  52, 132, CinnabarIslandName
-	landmark  52, 120, Route21Name
 	landmark  36,  68, Route22Name
 	landmark  28,  52, VictoryRoadName
 	landmark  28,  44, Route23Name
@@ -95,23 +71,20 @@ Landmarks:
 	landmark 140, 116, FastShipName
 
 LittlerootTownName:  db "LITTLEROOT¯TOWN@"
-Route101Name         db "ROUTE 101@"
-OldaleTownName       db "OLDALE¯TOWN@"
-Route102Name         db "ROUTE 102@"
-Route103Name         db "ROUTE 103@"
+Route101Name:         db "ROUTE 101@"
+OldaleTownName:       db "OLDALE¯TOWN@"
+Route102Name:         db "ROUTE 102@"
+Route103Name:         db "ROUTE 103@"
+PetalburgCityName:   db "PETALBURG¯CITY@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
-VioletCityName:      db "VIOLET CITY@"
-AzaleaTownName:      db "AZALEA TOWN@"
 GoldenrodCityName:   db "GOLDENROD¯CITY@"
 CianwoodCityName:    db "CIANWOOD¯CITY@"
-LakeOfRageName:      db "LAKE OF¯RAGE@"
 SilverCaveName:      db "SILVER CAVE@"
 SproutTowerName:     db "SPROUT¯TOWER@"
 RuinsOfAlphName:     db "RUINS¯OF ALPH@"
 UnionCaveName:       db "UNION CAVE@"
-SlowpokeWellName:    db "SLOWPOKE¯WELL@"
+RaltsWellName:    db "RALTS¯WELL@"
 RadioTowerName:      db "RADIO TOWER@"
-PowerPlantName:      db "POWER PLANT@"
 NationalParkName:    db "NATIONAL¯PARK@"
 TinTowerName:        db "TIN TOWER@"
 LighthouseName:      db "LIGHTHOUSE@"
@@ -120,16 +93,12 @@ MtMortarName:        db "MT.MORTAR@"
 DragonsDenName:      db "DRAGON'S¯DEN@"
 IcePathName:         db "ICE PATH@"
 NotApplicableName:   db "N/A@" ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
-PalletTownName:      db "PALLET TOWN@"
 ViridianCityName:    db "VIRIDIAN¯CITY@"
-PewterCityName:      db "PEWTER CITY@"
-CeruleanCityName:    db "CERULEAN¯CITY@"
 LavenderTownName:    db "LAVENDER¯TOWN@"
 VermilionCityName:   db "VERMILION¯CITY@"
 CeladonCityName:     db "CELADON¯CITY@"
 SaffronCityName:     db "SAFFRON¯CITY@"
 FuchsiaCityName:     db "FUCHSIA¯CITY@"
-CinnabarIslandName:  db "CINNABAR¯ISLAND@"
 IndigoPlateauName:   db "INDIGO¯PLATEAU@"
 VictoryRoadName:     db "VICTORY¯ROAD@"
 MtMoonName:          db "MT.MOON@"
@@ -137,19 +106,13 @@ RockTunnelName:      db "ROCK TUNNEL@"
 LavRadioTowerName:   db "LAV¯RADIO TOWER@"
 SilphCoName:         db "SILPH CO.@"
 SafariZoneName:      db "SAFARI ZONE@"
-SeafoamIslandsName:  db "SEAFOAM¯ISLANDS@"
 PokemonMansionName:  db "#MON¯MANSION@"
 CeruleanCaveName:    db "CERULEAN¯CAVE@"
-Route1Name:          db "ROUTE 1@"
 Route2Name:          db "ROUTE 2@"
-Route3Name:          db "ROUTE 3@"
-Route4Name:          db "ROUTE 4@"
 Route5Name:          db "ROUTE 5@"
 Route6Name:          db "ROUTE 6@"
 Route7Name:          db "ROUTE 7@"
 Route8Name:          db "ROUTE 8@"
-Route9Name:          db "ROUTE 9@"
-Route10Name:         db "ROUTE 10@"
 Route11Name:         db "ROUTE 11@"
 Route12Name:         db "ROUTE 12@"
 Route13Name:         db "ROUTE 13@"
@@ -158,26 +121,15 @@ Route15Name:         db "ROUTE 15@"
 Route16Name:         db "ROUTE 16@"
 Route17Name:         db "ROUTE 17@"
 Route18Name:         db "ROUTE 18@"
-Route19Name:         db "ROUTE 19@"
-Route20Name:         db "ROUTE 20@"
-Route21Name:         db "ROUTE 21@"
 Route22Name:         db "ROUTE 22@"
 Route23Name:         db "ROUTE 23@"
-Route24Name:         db "ROUTE 24@"
-Route25Name:         db "ROUTE 25@"
 Route28Name:         db "ROUTE 28@"
 Route29Name:         db "ROUTE 29@"
 Route30Name:         db "ROUTE 30@"
 Route31Name:         db "ROUTE 31@"
-Route32Name:         db "ROUTE 32@"
-Route33Name:         db "ROUTE 33@"
 Route34Name:         db "ROUTE 34@"
-Route35Name:         db "ROUTE 35@"
-Route36Name:         db "ROUTE 36@"
-Route37Name:         db "ROUTE 37@"
 Route40Name:         db "ROUTE 40@"
 Route41Name:         db "ROUTE 41@"
-Route43Name:         db "ROUTE 43@"
 DarkCaveName:        db "DARK CAVE@"
 IlexForestName:      db "ILEX¯FOREST@"
 BurnedTowerName:     db "BURNED¯TOWER@"

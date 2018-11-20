@@ -42,10 +42,10 @@ PokemonPicPointers::
 	dba_pic PoochyenaBackpic
 	dba_pic MightyenaFrontpic
 	dba_pic MightyenaBackpic
-	dba_pic SpearowFrontpic
-	dba_pic SpearowBackpic
-	dba_pic FearowFrontpic
-	dba_pic FearowBackpic
+	dba_pic TaillowFrontpic
+	dba_pic TaillowBackpic
+	dba_pic SwellowFrontpic
+	dba_pic SwellowBackpic
 	dba_pic EkansFrontpic
 	dba_pic EkansBackpic
 	dba_pic ArbokFrontpic
@@ -158,10 +158,10 @@ PokemonPicPointers::
 	dba_pic PonytaBackpic
 	dba_pic RapidashFrontpic
 	dba_pic RapidashBackpic
-	dba_pic SlowpokeFrontpic
-	dba_pic SlowpokeBackpic
-	dba_pic SlowbroFrontpic
-	dba_pic SlowbroBackpic
+	dba_pic RaltsFrontpic
+	dba_pic RaltsBackpic
+	dba_pic KirliaFrontpic
+	dba_pic KirliaBackpic
 	dba_pic MagnemiteFrontpic
 	dba_pic MagnemiteBackpic
 	dba_pic MagnetonFrontpic

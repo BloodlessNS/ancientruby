@@ -20,8 +20,8 @@ PidgeottoFrames:
 PidgeotFrames:
 PoochyenaFrames:
 MightyenaFrames:
-SpearowFrames:
-FearowFrames:
+TaillowFrames:
+SwellowFrames:
 EkansFrames:
 ArbokFrames:
 PikachuFrames:
@@ -78,8 +78,8 @@ GravelerFrames:
 GolemFrames:
 PonytaFrames:
 RapidashFrames:
-SlowpokeFrames:
-SlowbroFrames:
+RaltsFrames:
+KirliaFrames:
 MagnemiteFrames:
 MagnetonFrames:
 FarfetchDFrames:

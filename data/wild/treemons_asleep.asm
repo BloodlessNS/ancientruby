@@ -7,7 +7,7 @@ AsleepTreeMonsNite:
 	db WEEDLE
 	db CASCOON
 	db DUSTOX
-	db SPEAROW
+	db TAILLOW
 	db EKANS
 	db SEEDOT
 	db LEDYBA
