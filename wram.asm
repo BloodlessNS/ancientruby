@@ -2595,6 +2595,7 @@ wFastShipB1FSceneID::                             db ; d9bd
 wMountMoonSquareSceneID::                         db ; d9be
 wMobileTradeRoomSceneID::                         db ; d9bf
 wMobileBattleRoomSceneID::                        db ; d9c0
+wLittlerootTownIntroSceneID::                     db
 
 	ds 49
 

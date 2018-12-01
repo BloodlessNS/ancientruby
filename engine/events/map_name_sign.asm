@@ -14,6 +14,7 @@ ReturnFromMapSetupScript::
 	ld c, a
 	call GetWorldMapLocation
 	ld [wCurrentLandmark], a
+	call .CheckNationalParkGate	
 	jr z, .nationalparkgate
 
 	call GetMapEnvironment
@@ -81,6 +82,9 @@ ReturnFromMapSetupScript::
 	ret z
 	ld a, 1
 	and a
+	ret
+	
+.CheckNationalParkGate:
 	ret
 
 PlaceMapNameSign::
