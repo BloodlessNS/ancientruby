@@ -74,6 +74,9 @@ EngineFlags:
 	; fly
 	engine_flag wVisitedSpawns, SPAWN_HOME
 	engine_flag wVisitedSpawns, SPAWN_DEBUG
+	engine_flag wVisitedSpawns, SPAWN_LITTLEROOT
+	engine_flag wVisitedSpawns, SPAWN_OLDALE
+	engine_flag wVisitedSpawns, SPAWN_PETALBURG
 	engine_flag wVisitedSpawns, SPAWN_PALLET
 	engine_flag wVisitedSpawns, SPAWN_VIRIDIAN
 	engine_flag wVisitedSpawns, SPAWN_PEWTER
@@ -86,9 +89,6 @@ EngineFlags:
 	engine_flag wVisitedSpawns, SPAWN_FUCHSIA
 	engine_flag wVisitedSpawns, SPAWN_CINNABAR
 	engine_flag wVisitedSpawns, SPAWN_INDIGO ; $40
-	engine_flag wVisitedSpawns, SPAWN_LITTLEROOT
-	engine_flag wVisitedSpawns, SPAWN_OLDALE
-	engine_flag wVisitedSpawns, SPAWN_PETALBURG
 	engine_flag wVisitedSpawns, SPAWN_VIOLET
 	engine_flag wVisitedSpawns, SPAWN_AZALEA
 	engine_flag wVisitedSpawns, SPAWN_CIANWOOD

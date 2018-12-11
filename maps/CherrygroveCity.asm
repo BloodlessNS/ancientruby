@@ -10,18 +10,13 @@ CherrygroveCity_MapScripts:
 	scene_script .DummyScene0 ; SCENE_CHERRYGROVECITY_NOTHING
 	scene_script .DummyScene1 ; SCENE_CHERRYGROVECITY_MEET_RIVAL
 
-	db 1 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .FlyPoint
+	db 0 ; callbacks
 
 .DummyScene0:
 	end
 
 .DummyScene1:
 	end
-
-.FlyPoint:
-	setflag ENGINE_FLYPOINT_CHERRYGROVE
-	return
 
 CherrygroveCityGuideGent:
 	faceplayer
