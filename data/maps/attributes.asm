@@ -410,7 +410,7 @@ ENDM
 	map_attributes PlayersHouse1F, PLAYERS_HOUSE_1F, $00, 0
 	map_attributes PlayersHouse2F, PLAYERS_HOUSE_2F, $00, 0
 	map_attributes PlayersNeighborsHouse, PLAYERS_NEIGHBORS_HOUSE, $00, 0
-	map_attributes ElmsHouse, ELMS_HOUSE, $00, 0
+	map_attributes RivalsHouse, RIVALS_HOUSE, $00, 0
 	map_attributes Route26HealHouse, ROUTE_26_HEAL_HOUSE, $00, 0
 	map_attributes DayOfWeekSiblingsHouse, DAY_OF_WEEK_SIBLINGS_HOUSE, $00, 0
 	map_attributes Route27SandstormHouse, ROUTE_27_SANDSTORM_HOUSE, $00, 0
@@ -445,4 +445,5 @@ ENDM
 	map_attributes PetalburgHouse2, PETALBURG_HOUSE_2, $00, 0
 	map_attributes PetalburgPokecenter1F, PETALBURG_POKECENTER_1F, $00, 0
 	map_attributes PetalburgMart, PETALBURG_MART, $00, 0
+	map_attributes RivalsRoom, RIVALS_ROOM, $00, 0
 	

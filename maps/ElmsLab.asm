@@ -81,6 +81,10 @@ ElmsLab_MapScripts:
 	turnobject PLAYER, RIGHT
 	opentext
 	writetext ElmText_ChooseAPokemon
+	writetext GetDexText
+	playsound SFX_ITEM
+	waitsfx
+	setflag ENGINE_POKEDEX
 	waitbutton
 	setscene SCENE_ELMSLAB_CANT_LEAVE
 	closetext
@@ -829,6 +833,11 @@ ElmText_MissionFromMrPokemon:
 
 	para "<PLAY_G>, can you"
 	line "go in our place?"
+	done
+	
+GetDexText:
+	text "<PLAYER> received"
+	line "#DEX!"
 	done
 
 ElmText_ChooseAPokemon:

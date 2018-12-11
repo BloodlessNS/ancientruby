@@ -18,8 +18,8 @@ SaffronCity_Blocks:
 Route2_Blocks:
 	INCBIN "maps/Route2.blk"
 
-ElmsHouse_Blocks:
-	INCBIN "maps/ElmsHouse.blk"
+RivalsHouse_Blocks:
+	INCBIN "maps/RivalsHouse.blk"
 
 BetaSproutTower1_Blocks:
 	INCBIN "maps/unused/BetaSproutTower1.blk"
@@ -816,4 +816,7 @@ ViridianMart_Blocks:
 SaffronMart_Blocks:
 CherrygroveMart_Blocks:
 	INCBIN "maps/Mart.blk"
+	
+RivalsRoom_Blocks:
+	INCBIN "maps/RivalsRoom.blk"
 	

@@ -349,7 +349,7 @@ YoungsterGroup:
 	; YOUNGSTER (3)
 	db "ALLEN@", TRAINERTYPE_NORMAL
 	db  5, POOCHYENA
-	db  3, SWELLOW
+	db  3, TAILLOW
 	db -1 ; end
 
 	; YOUNGSTER (4)

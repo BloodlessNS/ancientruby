@@ -1,23 +1,59 @@
 	const_def 2 ; object constants
-	const ELMSHOUSE_ELMS_WIFE
-	const ELMSHOUSE_ELMS_SON
+	const RIVALS_MOM
 
 ElmsHouse_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .rivalsmom
+	scene_script .DummyScene0 ; SCENE_DEFAULT
 
 	db 0 ; callbacks
+	
+.rivalsmom
+	priorityjump RivalsMomScript
+	end
+	
+.DummyScene0:
+	end
+	
+RivalsMomScript:
+	applymovement RIVALS_MOM, MovementData_RivalsMom
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext TestRivalsMomText
+	waitbutton
+	closetext
+	applymovement RIVALS_MOM, MovementData_RivalsMom2
+	setscene SCENE_FINISHED
+	end
+	
+MovementData_RivalsMom:
+	slow_step DOWN
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	step_end
+	
+MovementData_RivalsMom2:
+	slow_step RIGHT
+	slow_step RIGHT
+	slow_step RIGHT
+	slow_step RIGHT
+	slow_step UP
+	step_end
 
 ElmsWife:
 	jumptextfaceplayer ElmsWifeText
-
-ElmsSon:
-	jumptextfaceplayer ElmsSonText
 
 ElmsHousePC:
 	jumptext ElmsHousePCText
 
 ElmsHouseBookshelf:
 	jumpstd difficultbookshelf
+	
+TestRivalsMomText:
+	text "TBD"
+	done
 
 ElmsWifeText:
 	text "Hi, <PLAY_G>! My"
@@ -31,16 +67,6 @@ ElmsWifeText:
 
 	para "research, he even"
 	line "forgets to eat."
-	done
-
-ElmsSonText:
-	text "When I grow up,"
-	line "I'm going to help"
-	cont "my dad!"
-
-	para "I'm going to be a"
-	line "great #MON"
-	cont "professor!"
 	done
 
 ElmsHouseLabFoodText:
@@ -84,17 +110,18 @@ ElmsHousePCText:
 ElmsHouse_MapEvents:
 	db 0, 0 ; filler
 
-	db 2 ; warp events
+	db 3 ; warp events
 	warp_event  2,  7, LITTLEROOT_TOWN, 4
 	warp_event  3,  7, LITTLEROOT_TOWN, 4
-
-	db 0 ; coord events
+	warp_event  0,  0, RIVALS_ROOM, 1
+	
+	db 1 ; coord events
+	coord_event  2,  7, SCENE_DEFAULT, RivalsMomScript
 
 	db 3 ; bg events
 	bg_event  0,  1, BGEVENT_READ, ElmsHousePC
 	bg_event  6,  1, BGEVENT_READ, ElmsHouseBookshelf
 	bg_event  7,  1, BGEVENT_READ, ElmsHouseBookshelf
 
-	db 2 ; object events
-	object_event  1,  5, SPRITE_TEACHER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ElmsWife, -1
-	object_event  5,  4, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ElmsSon, -1
+	db 1 ; object events
+	object_event  7,  6, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ElmsWife, -1

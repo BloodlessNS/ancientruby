@@ -243,7 +243,7 @@ LittlerootTown_MapEvents:
 	warp_event  4, 10, MOVING_TRUCK, 1
 	warp_event  8,  15, ELMS_LAB, 1
 	warp_event  5,  9, PLAYERS_HOUSE_1F, 1
-	warp_event  13, 9, ELMS_HOUSE, 1
+	warp_event  13, 9, RIVALS_HOUSE, 1
 
 	db 2 ; coord events
 	coord_event  10,  3, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene1

@@ -321,7 +321,7 @@ ENDM
 	map_const PLAYERS_HOUSE_1F,                             5,  4 ;  2
 	map_const PLAYERS_HOUSE_2F,                             4,  3 ;  3
 	map_const PLAYERS_NEIGHBORS_HOUSE,                      4,  4 ;  4
-	map_const ELMS_HOUSE,                                   4,  4 ;  5
+	map_const RIVALS_HOUSE,                                 4,  4 ;  5
 	map_const ROUTE_26_HEAL_HOUSE,                          4,  4 ;  6
 	map_const DAY_OF_WEEK_SIBLINGS_HOUSE,                   4,  4 ;  7
 	map_const ROUTE_27_SANDSTORM_HOUSE,                     4,  4 ;  8
@@ -341,6 +341,7 @@ ENDM
 	map_const PETALBURG_HOUSE_2,                            4,  4 ; 22
 	map_const PETALBURG_POKECENTER_1F,                      5,  4 ; 23
 	map_const PETALBURG_MART,                               5,  4 ; 24
+	map_const RIVALS_ROOM,                                  4,  3 ; 25
 
 	newgroup                                                      ; 25
 

@@ -6,11 +6,16 @@
 	const PLAYERSHOUSE1F_POKEFAN_F
 
 PlayersHouse1F_MapScripts:
-	db 2 ; scene scripts
+	db 3 ; scene scripts
+	scene_script .mom
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
 	db 0 ; callbacks
+	
+.mom:
+	priorityjump MeetMomLeftScript
+	end
 
 .DummyScene0:
 	end
@@ -23,8 +28,6 @@ MeetMomLeftScript:
 
 MeetMomRightScript:
 	playmusic MUSIC_MOM
-	showemote EMOTE_SHOCK, PLAYERSHOUSE1F_MOM1, 15
-	turnobject PLAYER, LEFT
 	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 	iffalse .OnRight
 	applymovement PLAYERSHOUSE1F_MOM1, MovementData_0x7a5fc
@@ -195,19 +198,27 @@ FridgeScript:
 	jumptext FridgeText
 
 MovementData_0x7a5fc:
-	turn_head RIGHT
+	turn_head DOWN
+	slow_step DOWN
+	slow_step DOWN
 	step_end
 
 MovementData_0x7a5fe:
-	slow_step RIGHT
+	turn_head DOWN
+	slow_step DOWN
+	slow_step DOWN
 	step_end
 
 MovementData_0x7a600:
+	slow_step UP
+	slow_step UP
 	turn_head LEFT
 	step_end
 
 MovementData_0x7a602:
-	slow_step LEFT
+	slow_step UP
+	slow_step UP
+	turn_head LEFT
 	step_end
 
 UnknownText_0x7a604:
@@ -392,8 +403,8 @@ PlayersHouse1F_MapEvents:
 	warp_event  9,  0, PLAYERS_HOUSE_2F, 1
 
 	db 2 ; coord events
-	coord_event  8,  4, SCENE_DEFAULT, MeetMomLeftScript
-	coord_event  9,  4, SCENE_DEFAULT, MeetMomRightScript
+	coord_event  7,  7, SCENE_DEFAULT, MeetMomLeftScript
+	coord_event  7,  7, SCENE_DEFAULT, MeetMomRightScript
 
 	db 4 ; bg events
 	bg_event  0,  1, BGEVENT_READ, StoveScript
