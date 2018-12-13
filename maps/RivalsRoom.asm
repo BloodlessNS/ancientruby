@@ -8,6 +8,9 @@ RivalsRoom_MapScripts:
 RivalsEmail:
 	jumptext RivalsEmailText
 	
+RivalsNotebook:
+	jumptext RivalsNotebookText
+	
 RivalsEmailText:
 	text "There's an e-mail"
 	line "from #MON"
@@ -27,6 +30,28 @@ RivalsEmailText:
 	
 	para "… … … …"
 	done
+	
+RivalsNotebookText:
+	text "<PLAYER>"
+	line "flipped open the"
+	cont "notebook."
+	
+	para "ADVENTURE RULE"
+	line "NO. 1"
+	
+	para "Open the MENU"
+	line "with START."
+	
+	para "ADVENTURE RULE"
+	line "NO. 2"
+	
+	para "Record your"
+	line "progress with"
+	cont "SAVE."
+	
+	para "The remaining"
+	line "pages are blank…"
+	done
 
 RivalsRoom_MapEvents:
 	db 0, 0 ; filler
@@ -36,8 +61,9 @@ RivalsRoom_MapEvents:
 	
 	db 0 ; coord events
 
-	db 1 ; bg events
+	db 2 ; bg events
 	bg_event  7,  1, BGEVENT_READ, RivalsEmail
+	bg_event  6,  1, BGEVENT_READ, RivalsNotebook
 
 	db 0 ; object events
 	

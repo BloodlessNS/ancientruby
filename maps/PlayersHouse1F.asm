@@ -3,7 +3,6 @@
 	const PLAYERSHOUSE1F_MOM2
 	const PLAYERSHOUSE1F_MOM3
 	const PLAYERSHOUSE1F_MOM4
-	const PLAYERSHOUSE1F_POKEFAN_F
 
 PlayersHouse1F_MapScripts:
 	db 3 ; scene scripts
@@ -23,19 +22,18 @@ PlayersHouse1F_MapScripts:
 .DummyScene1:
 	end
 
+MomScript2:
+	jumptext MomScript2Text
+
 MeetMomLeftScript:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 
 MeetMomRightScript:
 	playmusic MUSIC_MOM
-	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iffalse .OnRight
-	applymovement PLAYERSHOUSE1F_MOM1, MovementData_0x7a5fc
 	jump MeetMomScript
 
-.OnRight:
-	applymovement PLAYERSHOUSE1F_MOM1, MovementData_0x7a5fe
 MeetMomScript:
+	turnobject PLAYER, RIGHT
 	opentext
 	writetext UnknownText_0x7a604
 	buttonsound
@@ -65,41 +63,12 @@ MeetMomScript:
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
 	writetext UnknownText_0x7a763
-	yesorno
-	iffalse .ExplainPhone
-	jump .KnowPhone
-
-.KnowPhone:
-	writetext UnknownText_0x7a7cb
-	buttonsound
-	jump .FinishPhone
-
-.ExplainPhone:
-	writetext UnknownText_0x7a807
-	buttonsound
-	jump .FinishPhone
-
-.FinishPhone:
-	writetext UnknownText_0x7a850
 	waitbutton
 	closetext
-	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
-	iftrue .FromRight
-	checkevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_2
-	iffalse .FromLeft
-	jump .Finish
-
-.FromRight:
-	applymovement PLAYERSHOUSE1F_MOM1, MovementData_0x7a600
-	jump .Finish
-
-.FromLeft:
-	applymovement PLAYERSHOUSE1F_MOM1, MovementData_0x7a602
 	jump .Finish
 
 .Finish:
 	special RestartMapMusic
-	turnobject PLAYERSHOUSE1F_MOM1, LEFT
 	end
 
 MeetMomTalkedScript:
@@ -153,16 +122,6 @@ MomScript:
 	closetext
 	end
 
-NeighborScript:
-	faceplayer
-	opentext
-	checktime MORN
-	iftrue .MornScript
-	checktime DAY
-	iftrue .DayScript
-	checktime NITE
-	iftrue .NiteScript
-
 .MornScript:
 	writetext NeighborMornIntroText
 	buttonsound
@@ -182,7 +141,6 @@ NeighborScript:
 	writetext NeighborText
 	waitbutton
 	closetext
-	turnobject PLAYERSHOUSE1F_POKEFAN_F, RIGHT
 	end
 
 TVScript:
@@ -197,40 +155,19 @@ SinkScript:
 FridgeScript:
 	jumptext FridgeText
 
-MovementData_0x7a5fc:
-	turn_head DOWN
-	slow_step DOWN
-	slow_step DOWN
-	step_end
-
-MovementData_0x7a5fe:
-	turn_head DOWN
-	slow_step DOWN
-	slow_step DOWN
-	step_end
-
-MovementData_0x7a600:
-	slow_step UP
-	slow_step UP
-	turn_head LEFT
-	step_end
-
-MovementData_0x7a602:
-	slow_step UP
-	slow_step UP
-	turn_head LEFT
-	step_end
-
 UnknownText_0x7a604:
-	text "Oh, <PLAYER>…! Our"
-	line "neighbor, PROF."
+	text "See, <PLAYER>?"
+	line "Isn't it nice"
+	cont "here, too?"
 
-	para "ELM, was looking"
-	line "for you."
+	para "The mover's"
+	line "#MON do all the"
+	cont "of moving us in"
+	cont "and cleaning up"
+	cont "after."
 
-	para "He said he wanted"
-	line "you to do some-"
-	cont "thing for him."
+	para "This is so"
+	line "convenient!"
 
 	para "Oh! I almost for-"
 	line "got! Your #MON"
@@ -267,45 +204,16 @@ UnknownText_0x7a763:
 
 	para "for Daylight"
 	line "Saving Time."
-
-	para "By the way, do you"
-	line "know how to use"
-	cont "the PHONE?"
-	done
-
-UnknownText_0x7a7cb:
-	text "Don't you just"
-	line "turn the #GEAR"
-
-	para "on and select the"
-	line "PHONE icon?"
-	done
-
-UnknownText_0x7a807:
-	text "I'll read the"
-	line "instructions."
-
-	para "Turn the #GEAR"
-	line "on and select the"
-	cont "PHONE icon."
-	done
-
-UnknownText_0x7a850:
-	text "Phone numbers are"
-	line "stored in memory."
-
-	para "Just choose a name"
-	line "you want to call."
-
-	para "Gee, isn't that"
-	line "convenient?"
+	
+	para "<PLAYER>, your"
+	line "room is upstairs."
+	
+	para "Go check it out,"
+	line "dear!"
 	done
 
 UnknownText_0x7a8b5:
-	text "PROF.ELM is wait-"
-	line "ing for you."
-
-	para "Hurry up, baby!"
+	text "See you, honey!"
 	done
 
 UnknownText_0x7a8e5:
@@ -393,6 +301,12 @@ TVText:
 	para "I'd better get"
 	line "rolling too!"
 	done
+	
+MomScript2Text:
+	text "See, <PLAYER>?"
+	line "Isn't it nice in"
+	cont "here, too?"
+	done
 
 PlayersHouse1F_MapEvents:
 	db 0, 0 ; filler
@@ -407,14 +321,13 @@ PlayersHouse1F_MapEvents:
 	coord_event  7,  7, SCENE_DEFAULT, MeetMomRightScript
 
 	db 4 ; bg events
-	bg_event  0,  1, BGEVENT_READ, StoveScript
+	bg_event  2,  1, BGEVENT_READ, StoveScript
 	bg_event  1,  1, BGEVENT_READ, SinkScript
-	bg_event  2,  1, BGEVENT_READ, FridgeScript
-	bg_event  4,  1, BGEVENT_READ, TVScript
+	bg_event  0,  1, BGEVENT_READ, FridgeScript
+	bg_event  4,  3, BGEVENT_READ, TVScript
 
-	db 5 ; object events
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_1
+	db 4 ; object events
+	object_event  7,  7, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript2, EVENT_PLAYERS_HOUSE_MOM_1
 	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  7,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  2,  5, SPRITE_MOM, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  4,  4, SPRITE_POKEFAN_F, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, NeighborScript, EVENT_PLAYERS_HOUSE_1F_NEIGHBOR

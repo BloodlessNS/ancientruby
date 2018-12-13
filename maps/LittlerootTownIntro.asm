@@ -74,7 +74,7 @@ LittlerootTownIntro_MapEvents:
 
 	db 2 ; warp events
 	warp_event  5, 11, MOVING_TRUCK, 1
-	warp_event  5,  9, PLAYERS_HOUSE_1F, 2
+	warp_event  5,  9, PLAYERS_HOUSE_1F, 1
 
 	db 1 ; coord events
 	coord_event  5, 11, SCENE_WALK_IN_TO_HOUSE, WalkInToHouse
