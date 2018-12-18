@@ -1,9 +1,59 @@
 	const_def 2 ; object constants
+	const RIVALSROOM_RIVAL
 
 RivalsRoom_MapScripts:
 	db 0 ; scene scripts
 
-	db 0 ; callbacks
+	db 1 ; callbacks
+	callback MAPCALLBACK_OBJECTS, .Callback
+
+.Callback:
+	checkevent EVENT_MET_RIVAL
+	iftrue .RivalMet
+	return
+	
+.RivalMet:
+	disappear RIVALSROOM_RIVAL
+	return
+	
+RivalScript_MeetRival:
+	opentext
+	writetext MeetRivalText1
+	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
+	faceplayer
+	writetext MeetRivalText2
+	waitbutton
+	closetext
+	applymovement RIVALSROOM_RIVAL, MovementData_Rival
+	disappear RIVALSROOM_RIVAL
+	setevent EVENT_MET_RIVAL
+	end
+	
+RivalScript_MeetRivalFemale:
+	opentext
+	writetext MeetRivalText1
+	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
+	faceplayer
+	writetext MeetRivalText2
+	waitbutton
+	closetext
+	applymovement RIVALSROOM_RIVAL, MovementData_Rival
+	disappear RIVALSROOM_RIVAL
+	setevent EVENT_MET_RIVAL
+	end
+	
+MovementData_Rival:
+	slow_step DOWN
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step UP
+	slow_step UP
+	slow_step UP
+	step_end
 	
 RivalsEmail:
 	jumptext RivalsEmailText
@@ -52,6 +102,63 @@ RivalsNotebookText:
 	para "The remaining"
 	line "pages are blank…"
 	done
+	
+MeetRivalText1:
+	text "#MON fully"
+	line "restored!"
+	
+	para "Items ready, and…"
+	line "Huh?"
+	done
+	
+MeetRivalText2:
+	text "Who… Who are you?"
+	
+	para "… … … … … … …"
+	line "… … … … … … …"
+	
+	para "Oh, You're"
+	line "<PLAYER>. So your"
+	cont "move was today."
+	
+	para "Um… I'm <RIVAL>."
+	line "Glad to meet you!"
+	
+	para "I…"
+	line "I have this dream"
+	cont "of becoming"
+	cont "friends with"
+	cont "#MON all over"
+	cont "the world."
+	
+	para "I… I heard about"
+	line "you, <PLAYER>, from"
+	cont "my dad, PROF."
+	cont "BIRCH."
+	
+	para "I was hoping that"
+	line "you would be nice,"
+	cont "<PLAYER>, and that"
+	cont "we could be"
+	cont "friends."
+	
+	para "Oh, this is silly,"
+	line "isn't it?"
+	
+	para "I… I've just met"
+	line "you, <PLAYER>."
+	
+	para "Eheheh…"
+	
+	para "Oh, no! I forgot!"
+	
+	para "I was supposed to"
+	line "go help Dad catch"
+	cont "some wild #MON!"
+	
+	para "<PLAYER>, I'll"
+	line "catch you later!"
+	done
 
 RivalsRoom_MapEvents:
 	db 0, 0 ; filler
@@ -65,5 +172,6 @@ RivalsRoom_MapEvents:
 	bg_event  7,  1, BGEVENT_READ, RivalsEmail
 	bg_event  6,  1, BGEVENT_READ, RivalsNotebook
 
-	db 0 ; object events
+	db 1 ; object events
+	object_event  6,  2, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RivalScript_MeetRival, EVENT_MET_RIVAL
 	

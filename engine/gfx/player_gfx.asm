@@ -222,3 +222,21 @@ GetKrisBackpic:
 
 KrisBackpic:
 INCBIN "gfx/player/kris_back.2bpp"
+
+GetRivalIcon:
+; Get the rival icon corresponding to gender
+
+; Male
+	ld de, KrisSpriteGFX
+	ld b, BANK(KrisSpriteGFX)
+
+	ld a, [wPlayerGender]
+	bit PLAYERGENDER_FEMALE_F, a
+	jr z, .done
+
+; Female
+	ld de, ChrisSpriteGFX
+	ld b, BANK(ChrisSpriteGFX)
+
+.done
+	ret

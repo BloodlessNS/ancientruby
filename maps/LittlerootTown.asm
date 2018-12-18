@@ -23,16 +23,11 @@ LittlerootTown_MapScripts:
 	return
 	
 LittlerootTown_YoungsterStopsYouScene1:
-	playmusic MUSIC_MOM
 	turnobject LITTLEROOTTOWN_YOUNGSTER, RIGHT
-	opentext
-	writetext Text_WaitPlayer
-	waitbutton
-	closetext
-	turnobject PLAYER, DOWN
 	applymovement LITTLEROOTTOWN_YOUNGSTER, Movement_YoungsterRunsToYou1_NBT
+	turnobject PLAYER, DOWN
 	opentext
-	writetext Text_WhatDoYouThinkYoureDoing
+	writetext Text_TallMon
 	waitbutton
 	closetext
 	follow LITTLEROOTTOWN_YOUNGSTER, PLAYER
@@ -42,20 +37,14 @@ LittlerootTown_YoungsterStopsYouScene1:
 	writetext Text_ItsDangerousToGoAlone
 	waitbutton
 	closetext
-	special RestartMapMusic
 	end
 
 LittlerootTown_YoungsterStopsYouScene2:
-	playmusic MUSIC_MOM
 	turnobject LITTLEROOTTOWN_YOUNGSTER, RIGHT
-	opentext
-	writetext Text_WaitPlayer
-	waitbutton
-	closetext
-	turnobject PLAYER, DOWN
 	applymovement LITTLEROOTTOWN_YOUNGSTER, Movement_YoungsterRunsToYou2_NBT
+	turnobject PLAYER, DOWN
 	opentext
-	writetext Text_WhatDoYouThinkYoureDoing
+	writetext Text_TallMon
 	waitbutton
 	closetext
 	follow LITTLEROOTTOWN_YOUNGSTER, PLAYER
@@ -65,37 +54,28 @@ LittlerootTown_YoungsterStopsYouScene2:
 	writetext Text_ItsDangerousToGoAlone
 	waitbutton
 	closetext
-	special RestartMapMusic
 	end
 
 LittlerootTownYoungsterScript:
 	faceplayer
 	opentext
-	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
-	iftrue .CallMom
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .TellMomYoureLeaving
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue .MonIsAdorable
-	writetext Text_GearIsImpressive
+	iftrue .AfterAttack
+	checkevent EVENT_MET_RIVAL
+	iftrue .BirchAttack
+	writetext Text_TallMon
 	waitbutton
 	closetext
 	end
 
-.MonIsAdorable:
-	writetext Text_YourMonIsAdorable
+.AfterAttack:
+	writetext Text_AfterAttack
 	waitbutton
 	closetext
 	end
 
-.TellMomYoureLeaving:
-	writetext Text_TellMomIfLeaving
-	waitbutton
-	closetext
-	end
-
-.CallMom:
-	writetext Text_CallMomOnGear
+.BirchAttack:
+	writetext Text_BirchAttack
 	waitbutton
 	closetext
 	end
@@ -132,63 +112,49 @@ Movement_YoungsterRunsToYou2_NBT:
 	step_end
 
 Movement_YoungsterBringsYouBack1_NBT:
-	step DOWN
+	step LEFT
+	step LEFT
+	turn_head RIGHT
 	step_end
 
 Movement_YoungsterBringsYouBack2_NBT:
-	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	turn_head RIGHT
 	step_end
 	
-Text_GearIsImpressive:
-	text "Wow, your #GEAR"
-	line "is impressive!"
-
-	para "Did your mom get"
-	line "it for you?"
-	done
-
-Text_WaitPlayer:
-	text "Wait, <PLAY_G>!"
-	done
-
-Text_WhatDoYouThinkYoureDoing:
-	text "What do you think"
-	line "you're doing?"
+Text_TallMon:
+	text "If you go in the"
+	line "tall grass at the"
+	cont "sides of this"
+	cont "road, wild #MON"
+	cont "will appear."
 	done
 
 Text_ItsDangerousToGoAlone:
-	text "It's dangerous to"
-	line "go out without a"
-	cont "#MON!"
-
-	para "Wild #MON"
-	line "jump out of the"
-
-	para "grass on the way"
-	line "to the next town."
+	text "It's not safe to"
+	line "go out there if"
+	cont "you dont have any"
+	cont "#MON with you."
 	done
 
-Text_YourMonIsAdorable:
-	text "Oh! Your #MON"
-	line "is adorable!"
-	cont "I wish I had one!"
+Text_AfterAttack:
+	text "Boy, am I glad you"
+	line "went and rescued"
+	cont "the PROFESSOR."
 	done
 
-Text_TellMomIfLeaving:
-	text "Hi, <PLAY_G>!"
-	line "Leaving again?"
+Text_BirchAttack:
+	text "I can hear someone"
+	line "shouting down the"
+	cont "road here."
 
-	para "You should tell"
-	line "your mom if you"
-	cont "are leaving."
-	done
-
-Text_CallMomOnGear:
-	text "Call your mom on"
-	line "your #GEAR to"
-
-	para "let her know how"
-	line "you're doing."
+	para "What should I do?"
+	line "What should we do?"
+	
+	para "Somebody has to go"
+	line "help…"
 	done
 	
 Text_StoreItemsTip:
@@ -258,5 +224,5 @@ LittlerootTown_MapEvents:
 	db 3 ; object events
 	object_event  8,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, -1
 	object_event 11,  13, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittlerootTownFisherScript, -1
-	object_event 14,  16, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1	
+	object_event 14,  16, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1
 	

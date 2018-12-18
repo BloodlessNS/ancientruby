@@ -105,7 +105,7 @@ OldaleTown_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event 5, 13, OLDALE_POKECENTER_1F, 1
+	warp_event 5, 13, OLDALE_POKECENTER_1F, 2
 	warp_event 15,  7, OLDALE_MART, 2
 	warp_event 5,  7, OLDALE_HOUSE_1, 1
 	warp_event 15,  13, OLDALE_HOUSE_2, 1

@@ -16,6 +16,7 @@ RivalsHouse_MapScripts:
 	end
 	
 RivalsMomScript:
+	showemote EMOTE_SHOCK, RIVALS_MOM, 15
 	applymovement RIVALS_MOM, MovementData_RivalsMom
 	turnobject PLAYER, RIGHT
 	checkflag ENGINE_PLAYER_IS_FEMALE
@@ -23,12 +24,18 @@ RivalsMomScript:
 	opentext
 	writetext TestRivalsMomTextMale
 	waitbutton
+	special NameRival
+	writetext RivalsMomText3
+	waitbutton
 	closetext
 	setscene SCENE_FINISHED
 	end
 .RivalsMomFemale:
 	opentext
 	writetext TestRivalsMomTextFemale
+	waitbutton
+	special NameRival
+	writetext RivalsMomText3
 	waitbutton
 	closetext
 	setscene SCENE_FINISHED
@@ -43,7 +50,17 @@ MovementData_RivalsMom:
 	step_end
 
 RivalsMom:
+	checkevent EVENT_MET_RIVAL
+	iffalse .upstairs
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .GotAPokemon
 	jumptextfaceplayer RivalsMomText
+	
+.upstairs
+	jumptextfaceplayer RivalsMomText3
+	
+.GotAPokemon
+	jumptextfaceplayer RivalsMomText2
 
 RivalsHousePC:
 	jumptext RivalsHousePCText
@@ -71,9 +88,6 @@ TestRivalsMomTextMale:
 	line "was excited about"
 	cont "making a new"
 	cont "friend."
-	
-	para "Our daughter is"
-	line "upstairs, I think."
 	done
 	
 TestRivalsMomTextFemale:
@@ -96,37 +110,38 @@ TestRivalsMomTextFemale:
 	line "was excited about"
 	cont "making a new"
 	cont "friend."
-	
-	para "Our son is"
-	line "upstairs, I think."
 	done
 
 RivalsMomText:
-	text "Hi, <PLAY_G>! My"
-	line "husband's always"
+	text "Where has my"
+	line "husband gone?"
 
-	para "so busy--I hope"
-	line "he's OK."
+	para "Just when <PLAYER>"
+	line "is visiting, too…"
 
-	para "When he's caught"
-	line "up in his #MON"
+	para "That man can never"
+	line "sit still for"
+	cont "long…"
 
-	para "research, he even"
-	line "forgets to eat."
+	para "He might be at his"
+	line "LAB."
 	done
-
-RivalsHouseLabFoodText:
-; unused
-	text "There's some food"
-	line "here. It must be"
-	cont "for the LAB."
+	
+RivalsMomText2:
+	text "Oh, <RIVAL> has"
+	line "gone out"
+	cont "somewhere."
+	
+	para "Like father, like"
+	line "child."
+	
+	para "<RIVAL> can't stay"
+	line "quietly at home."
 	done
-
-RivalsHousePokemonFoodText:
-; unused
-	text "There's some food"
-	line "here. This must be"
-	cont "for #MON."
+	
+RivalsMomText3:
+	text "<RIVAL>'s"
+	line "upstairs, I think."
 	done
 
 RivalsHousePCText:

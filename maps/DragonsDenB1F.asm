@@ -179,9 +179,6 @@ DragonsDenB1FCalcium:
 DragonsDenB1FMaxElixer:
 	itemball MAX_ELIXER
 
-DragonsDenB1FHiddenRevive:
-	hiddenitem REVIVE, EVENT_DRAGONS_DEN_B1F_HIDDEN_REVIVE
-
 DragonsDenB1FHiddenMaxPotion:
 	hiddenitem MAX_POTION, EVENT_DRAGONS_DEN_B1F_HIDDEN_MAX_POTION
 
@@ -413,9 +410,8 @@ DragonsDenB1F_MapEvents:
 	db 1 ; coord events
 	coord_event 19, 30, SCENE_DRAGONSDENB1F_CLAIR_GIVES_TM, DragonsDenB1F_ClairScene
 
-	db 4 ; bg events
+	db 3 ; bg events
 	bg_event 18, 24, BGEVENT_READ, DragonShrineSignpost
-	bg_event 33, 29, BGEVENT_ITEM, DragonsDenB1FHiddenRevive
 	bg_event 21, 17, BGEVENT_ITEM, DragonsDenB1FHiddenMaxPotion
 	bg_event 31, 15, BGEVENT_ITEM, DragonsDenB1FHiddenMaxElixer
 

@@ -111,7 +111,7 @@ PetalburgCity_MapEvents:
 	db 4 ; warp events
 	warp_event  19, 21, PETALBURG_HOUSE_1, 1
 	warp_event  9, 17, PETALBURG_HOUSE_2, 1
-	warp_event  17, 15, PETALBURG_POKECENTER_1F, 1
+	warp_event  17, 15, PETALBURG_POKECENTER_1F, 2
 	warp_event  23, 11, PETALBURG_MART, 1
 	
 	db 0 ; coord events

@@ -35,7 +35,7 @@ MeetMomRightScript:
 MeetMomScript:
 	turnobject PLAYER, RIGHT
 	opentext
-	writetext UnknownText_0x7a604
+	writetext MomText_MoversMon
 	buttonsound
 	stringtotext GearName, MEM_BUFFER_1
 	scall PlayersHouse1FReceiveItemStd
@@ -44,7 +44,7 @@ MeetMomScript:
 	addcellnum PHONE_MOM
 	setscene SCENE_FINISHED
 	setevent EVENT_PLAYERS_HOUSE_MOM_1
-	clearevent EVENT_PLAYERS_HOUSE_MOM_2
+	clearevent EVENT_PLAYERS_HOUSE_MOM_3
 	writetext UnknownText_0x7a6bd
 	buttonsound
 	special SetDayOfWeek
@@ -62,9 +62,21 @@ MeetMomScript:
 	yesorno
 	iffalse .SetDayOfWeek
 .DayOfWeekDone:
-	writetext UnknownText_0x7a763
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .Female
+	writetext MomText_RoomsUpstairs
 	waitbutton
 	closetext
+	applymovement PLAYER, SetClockMovement
+	jump .Finish
+	
+.Female:
+	writetext MomText_RoomsUpstairs
+	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_CHRIS
+	special LoadUsedSpritesGFX
+	waitbutton
+	closetext
+	applymovement PLAYER, SetClockMovement
 	jump .Finish
 
 .Finish:
@@ -102,7 +114,19 @@ MomScript:
 	end
 
 .GotAPokemon:
-	writetext UnknownText_0x7a8e5
+	writetext MomText_Tired
+	waitbutton
+	closetext
+	special FadeBlackQuickly
+	special ReloadSpritesNoPalettes
+	playmusic MUSIC_HEAL
+	special StubbedTrainerRankings_Healings
+	special HealParty
+	pause 60
+	special FadeInQuickly
+	special RestartMapMusic
+	opentext
+	writetext MomText_TakeCare
 	waitbutton
 	closetext
 	end
@@ -122,27 +146,6 @@ MomScript:
 	closetext
 	end
 
-.MornScript:
-	writetext NeighborMornIntroText
-	buttonsound
-	jump .Main
-
-.DayScript:
-	writetext NeighborDayIntroText
-	buttonsound
-	jump .Main
-
-.NiteScript:
-	writetext NeighborNiteIntroText
-	buttonsound
-	jump .Main
-
-.Main:
-	writetext NeighborText
-	waitbutton
-	closetext
-	end
-
 TVScript:
 	jumptext TVText
 
@@ -154,8 +157,112 @@ SinkScript:
 
 FridgeScript:
 	jumptext FridgeText
+	
+DadOnTv:
+	checkevent EVENT_DAD_ON_TV
+	iffalse .continued
+	clearevent EVENT_PLAYERS_HOUSE_MOM_2
+	setevent EVENT_PLAYERS_HOUSE_MOM_3
+	opentext
+	writetext DadOnTVText
+	waitbutton
+	closetext
+	applymovement PLAYER, WalkToHouseTvMovement
+	turnobject PLAYERSHOUSE1F_MOM3, RIGHT
+	opentext
+	writetext DadOnTVText2
+	waitbutton
+	closetext
+	follow PLAYERSHOUSE1F_MOM3, PLAYER
+	applymovement PLAYERSHOUSE1F_MOM3, WalkToHouseTvMovement2
+	stopfollow
+	turnobject PLAYER, UP
+	opentext
+	writetext DadOnTVText3
+	waitbutton
+	turnobject PLAYER, LEFT
+	writetext DadOnTVText4
+	waitbutton
+	closetext
+	clearevent EVENT_DAD_ON_TV
+.continued
+	end
 
-UnknownText_0x7a604:
+SetClockScript:
+	checkevent EVENT_CLOCK_SET
+	iftrue .Done
+	opentext
+	writetext MomText_GoSetClock
+	waitbutton
+	closetext
+	applymovement PLAYER, SetClockMovement
+.Done
+	end
+	
+WalkToHouseTvMovement:
+	step DOWN
+	step DOWN
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+WalkToHouseTvMovement2:
+	step LEFT
+	turn_head RIGHT
+	turn_head RIGHT
+	step_end
+	
+SetClockMovement:
+	step UP
+	step_end
+	
+DadOnTVText:
+	text "MOM: Oh! <PLAYER>,"
+	line "<PLAYER>! Quick!"
+	cont "Come quickly!"
+	done
+	
+DadOnTVText2:
+	text "MOM: Look! It's"
+	line "PETALBURG GYM!"
+	
+	para "Maybe DAD will be"
+	line "on!"
+	done
+	
+DadOnTVText3:
+	text "INTERVIEWER: …We"
+	line "brought you this"
+	cont "report from in"
+	cont "front of PETALBURG"
+	cont "GYM."
+	done
+	
+DadOnTVText4:
+	text "Oh… It's over."
+	
+	para "I think DAD was"
+	line "on, but we missed"
+	cont "him. Too bad"
+	
+	para "Oh, yes. One of"
+	line "DAD's friends"
+	cont "lives in town."
+	
+	para "PROF. BIRCH is his"
+	line "name."
+	
+	para "He lives right"
+	line "next door, so you"
+	cont "should go over and"
+	cont "introduce"
+	cont "yourself."
+	done
+
+MomText_MoversMon:
 	text "See, <PLAYER>?"
 	line "Isn't it nice"
 	cont "here, too?"
@@ -198,7 +305,7 @@ UnknownText_0x7a742:
 	line "Saving Time now?"
 	done
 
-UnknownText_0x7a763:
+MomText_RoomsUpstairs:
 	text "Come home to"
 	line "adjust your clock"
 
@@ -210,24 +317,41 @@ UnknownText_0x7a763:
 	
 	para "Go check it out,"
 	line "dear!"
+	
+	para "DAD bought you a"
+	line "new clock to mark"
+	cont "our move here."
+	
+	para "Don't forget to"
+	line "set it!"
+	done
+	
+MomText_GoSetClock:
+	text "MOM: <PLAYER>."
+	
+	para "Go set the clock"
+	line "in your room,"
+	cont "honey."
 	done
 
 UnknownText_0x7a8b5:
 	text "See you, honey!"
 	done
 
-UnknownText_0x7a8e5:
-	text "So, what was PROF."
-	line "ELM's errand?"
+MomText_Tired:
+	text "Mom: How are you"
+	line "doing, <PLAYER>?"
 
-	para "…"
+	para "You look a little"
+	line "tired."
 
-	para "That does sound"
-	line "challenging."
-
-	para "But, you should be"
-	line "proud that people"
-	cont "rely on you."
+	para "I think you should"
+	line "rest a bit."
+	done
+	
+MomText_TakeCare:
+	text "MOM: Take care,"
+	line "honey!"
 	done
 
 UnknownText_0x7a957:
@@ -235,39 +359,6 @@ UnknownText_0x7a957:
 
 	para "I'm behind you all"
 	line "the way!"
-	done
-
-NeighborMornIntroText:
-	text "Good morning,"
-	line "<PLAY_G>!"
-
-	para "I'm visiting!"
-	done
-
-NeighborDayIntroText:
-	text "Hello, <PLAY_G>!"
-	line "I'm visiting!"
-	done
-
-NeighborNiteIntroText:
-	text "Good evening,"
-	line "<PLAY_G>!"
-
-	para "I'm visiting!"
-	done
-
-NeighborText:
-	text "<PLAY_G>, have you"
-	line "heard?"
-
-	para "My daughter is"
-	line "adamant about"
-
-	para "becoming PROF."
-	line "ELM's assistant."
-
-	para "She really loves"
-	line "#MON!"
 	done
 
 StoveText:
@@ -316,9 +407,12 @@ PlayersHouse1F_MapEvents:
 	warp_event  7,  7, LITTLEROOT_TOWN, 3
 	warp_event  9,  0, PLAYERS_HOUSE_2F, 1
 
-	db 2 ; coord events
+	db 5 ; coord events
 	coord_event  7,  7, SCENE_DEFAULT, MeetMomLeftScript
 	coord_event  7,  7, SCENE_DEFAULT, MeetMomRightScript
+	coord_event  9,  1, SCENE_FINISHED, DadOnTv
+	coord_event  6,  7, SCENE_FINISHED, SetClockScript
+	coord_event  7,  7, SCENE_FINISHED, SetClockScript
 
 	db 4 ; bg events
 	bg_event  2,  1, BGEVENT_READ, StoveScript
@@ -326,8 +420,7 @@ PlayersHouse1F_MapEvents:
 	bg_event  0,  1, BGEVENT_READ, FridgeScript
 	bg_event  4,  3, BGEVENT_READ, TVScript
 
-	db 4 ; object events
+	db 3 ; object events
 	object_event  7,  7, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript2, EVENT_PLAYERS_HOUSE_MOM_1
-	object_event  2,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, MORN, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  2,  5, SPRITE_MOM, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, DAY, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
-	object_event  0,  2, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, NITE, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  2,  5, SPRITE_MOM, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
+	object_event  4,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_3

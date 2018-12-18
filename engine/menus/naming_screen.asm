@@ -130,8 +130,7 @@ NamingScreen:
 	db "YOUR NAME?@"
 
 .Rival:
-	ld de, SilverSpriteGFX
-	ld b, BANK(SilverSpriteGFX)
+	farcall GetRivalIcon
 	call .LoadSprite
 	hlcoord 5, 2
 	ld de, .RivalNameString

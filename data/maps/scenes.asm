@@ -65,5 +65,6 @@ MapScenes::
 	scene_var MOBILE_TRADE_ROOM,                           wMobileTradeRoomSceneID
 	scene_var MOBILE_BATTLE_ROOM,                          wMobileBattleRoomSceneID
 	scene_var LITTLEROOT_TOWN_INTRO,                       wLittlerootTownIntroSceneID
+	scene_var LITTLEROOT_TOWN,                       wLittlerootTownSceneID
 	scene_var RIVALS_HOUSE,                                wRivalsHouseSceneID
 	db -1
