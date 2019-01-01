@@ -29,7 +29,6 @@ MeetMomLeftScript:
 	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_1
 
 MeetMomRightScript:
-	playmusic MUSIC_MOM
 	jump MeetMomScript
 
 MeetMomScript:
@@ -84,7 +83,6 @@ MeetMomScript:
 	end
 
 MeetMomTalkedScript:
-	playmusic MUSIC_MOM
 	jump MeetMomScript
 
 GearName:
@@ -104,8 +102,6 @@ MomScript:
 	iftrue .FirstTimeBanking
 	checkevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
 	iftrue .BankOfMom
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .GaveMysteryEgg
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .GotAPokemon
 	writetext UnknownText_0x7a8b5
@@ -137,14 +133,15 @@ MomScript:
 	closetext
 	end
 
-.GaveMysteryEgg:
-	setevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 .BankOfMom:
 	setevent EVENT_TALKED_TO_MOM_AFTER_MYSTERY_EGG_QUEST
 	special BankOfMom
 	waitbutton
 	closetext
 	end
+	
+MachokeScript:
+	jumptext MachokeText
 
 TVScript:
 	jumptext TVText
@@ -173,6 +170,7 @@ DadOnTv:
 	writetext DadOnTVText2
 	waitbutton
 	closetext
+	playmusic MUSIC_MOM
 	follow PLAYERSHOUSE1F_MOM3, PLAYER
 	applymovement PLAYERSHOUSE1F_MOM3, WalkToHouseTvMovement2
 	stopfollow
@@ -181,6 +179,8 @@ DadOnTv:
 	writetext DadOnTVText3
 	waitbutton
 	turnobject PLAYER, LEFT
+	special FadeOutMusic
+	special RestartMapMusic
 	writetext DadOnTVText4
 	waitbutton
 	closetext
@@ -399,6 +399,10 @@ MomScript2Text:
 	cont "here, too?"
 	done
 
+MachokeText
+	text "Gyao, gyoa gyaoh…"
+	done
+
 PlayersHouse1F_MapEvents:
 	db 0, 0 ; filler
 
@@ -420,7 +424,9 @@ PlayersHouse1F_MapEvents:
 	bg_event  0,  1, BGEVENT_READ, FridgeScript
 	bg_event  4,  3, BGEVENT_READ, TVScript
 
-	db 3 ; object events
+	db 5 ; object events
 	object_event  7,  7, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript2, EVENT_PLAYERS_HOUSE_MOM_1
 	object_event  2,  5, SPRITE_MOM, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_2
 	object_event  4,  4, SPRITE_MOM, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MomScript, EVENT_PLAYERS_HOUSE_MOM_3
+	object_event  1,  2, SPRITE_MACHOKE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MachokeScript, EVENT_PLAYERS_HOUSE_MOM_1
+	object_event  4,  4, SPRITE_MACHOKE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, MachokeScript, EVENT_PLAYERS_HOUSE_MOM_1

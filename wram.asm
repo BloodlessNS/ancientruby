@@ -2596,8 +2596,9 @@ wMountMoonSquareSceneID::                         db ; d9be
 wMobileTradeRoomSceneID::                         db ; d9bf
 wMobileBattleRoomSceneID::                        db ; d9c0
 wLittlerootTownIntroSceneID::                     db
-wLittlerootTownSceneID::
-wRivalsHouseSceneID::                               db
+wLittlerootTownSceneID::                          db
+wRivalsHouseSceneID::                             db
+wOldaleTownSceneID::                             db
 
 	ds 49
 

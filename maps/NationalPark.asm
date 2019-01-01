@@ -117,8 +117,7 @@ TrainerSchoolboyJack1:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight2
 .Fight1:
-	checkflag ENGINE_FLYPOINT_OLIVINE
-	iftrue .LoadFight1
+	jump .LoadFight1
 .LoadFight0:
 	loadtrainer SCHOOLBOY, JACK1
 	startbattle

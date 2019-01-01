@@ -39,3 +39,4 @@ IconPointers:
 	dw RaltsIcon
 	dw SudowoodoIcon
 	dw BigmonIcon
+	dw MachokeIcon

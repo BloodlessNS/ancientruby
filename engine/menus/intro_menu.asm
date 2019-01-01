@@ -2,7 +2,7 @@ _MainMenu:
 	ld de, MUSIC_NONE
 	call PlayMusic
 	call DelayFrame
-	ld de, MUSIC_MAIN_MENU
+	ld de, MUSIC_NONE
 	ld a, e
 	ld [wMapMusic], a
 	call PlayMusic
@@ -1115,7 +1115,7 @@ TitleScreenTimer:
 
 ; Start a timer
 	ld hl, wTitleScreenTimer
-	ld de, 73 * 60 + 36
+	ld de, 97 * 60 + 40
 	ld [hl], e
 	inc hl
 	ld [hl], d

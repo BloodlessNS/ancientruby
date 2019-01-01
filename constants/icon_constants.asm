@@ -39,3 +39,4 @@
 	const ICON_RALTS
 	const ICON_SUDOWOODO
 	const ICON_BIGMON
+	const ICON_MACHOKE

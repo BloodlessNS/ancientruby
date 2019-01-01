@@ -52,7 +52,7 @@
 	const MUSIC_CHAMPION_BATTLE              ; 2f
 	const MUSIC_RIVAL_BATTLE                 ; 30
 	const MUSIC_ROCKET_BATTLE                ; 31
-	const MUSIC_PROF_ELM                     ; 32
+	const MUSIC_PROF_BIRCH                   ; 32
 	const MUSIC_DARK_CAVE                    ; 33
 	const MUSIC_ROUTE_36                     ; 34
 	const MUSIC_SS_AQUA                      ; 35

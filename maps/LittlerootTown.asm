@@ -2,14 +2,16 @@
 	const LITTLEROOTTOWN_YOUNGSTER
 	const LITTLEROOTTOWN_FISHER
 	const LITTLEROOTTOWN_COOLTRAINER_M
+	const LITTLEROOTTOWN_YOUNGSTER2
 
 LittlerootTown_MapScripts:
 	db 2 ; scene scripts
 	scene_script .DummyScene0 ; SCENE_DEFAULT
 	scene_script .DummyScene1 ; SCENE_FINISHED
 
-	db 1 ; callbacks
+	db 2 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .FlyPoint
+	callback MAPCALLBACK_NEWMAP, .SetSpawn
 
 .DummyScene0:
 	end
@@ -22,7 +24,12 @@ LittlerootTown_MapScripts:
 	clearevent EVENT_FIRST_TIME_BANKING_WITH_MOM
 	return
 	
+.SetSpawn:
+	return
+	
 LittlerootTown_YoungsterStopsYouScene1:
+	checkevent EVENT_MET_RIVAL
+	iftrue .End
 	turnobject LITTLEROOTTOWN_YOUNGSTER, RIGHT
 	applymovement LITTLEROOTTOWN_YOUNGSTER, Movement_YoungsterRunsToYou1_NBT
 	turnobject PLAYER, DOWN
@@ -37,9 +44,12 @@ LittlerootTown_YoungsterStopsYouScene1:
 	writetext Text_ItsDangerousToGoAlone
 	waitbutton
 	closetext
+.End
 	end
 
 LittlerootTown_YoungsterStopsYouScene2:
+	checkevent EVENT_MET_RIVAL
+	iftrue LittlerootTown_YoungsterStopsYouScene3
 	turnobject LITTLEROOTTOWN_YOUNGSTER, RIGHT
 	applymovement LITTLEROOTTOWN_YOUNGSTER, Movement_YoungsterRunsToYou2_NBT
 	turnobject PLAYER, DOWN
@@ -54,28 +64,42 @@ LittlerootTown_YoungsterStopsYouScene2:
 	writetext Text_ItsDangerousToGoAlone
 	waitbutton
 	closetext
+.End2
 	end
-
+	
+LittlerootTown_YoungsterStopsYouScene3:
+	checkevent EVENT_MET_RIVAL
+	iffalse .Done
+	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
+	iftrue .Done
+	turnobject PLAYER, LEFT
+	opentext
+	writetext Text_BirchAttack
+	waitbutton
+	closetext
+.Done
+	end
+	
 LittlerootTownYoungsterScript:
+	faceplayer
+	opentext
+	writetext Text_TallMon
+	waitbutton
+	closetext
+	end
+	
+LittlerootTownYoungsterScript2:
 	faceplayer
 	opentext
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .AfterAttack
-	checkevent EVENT_MET_RIVAL
-	iftrue .BirchAttack
-	writetext Text_TallMon
+	writetext Text_BirchAttack
 	waitbutton
 	closetext
 	end
 
 .AfterAttack:
 	writetext Text_AfterAttack
-	waitbutton
-	closetext
-	end
-
-.BirchAttack:
-	writetext Text_BirchAttack
 	waitbutton
 	closetext
 	end
@@ -211,9 +235,11 @@ LittlerootTown_MapEvents:
 	warp_event  5,  9, PLAYERS_HOUSE_1F, 1
 	warp_event  13, 9, RIVALS_HOUSE, 1
 
-	db 2 ; coord events
+	db 4 ; coord events
 	coord_event  10,  3, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene1
 	coord_event  11,  3, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene2
+	coord_event  10,  3, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene1
+	coord_event  11,  3, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene2
 
 	db 4 ; bg events
 	bg_event  15,  13, BGEVENT_READ, LittlerootTownSign
@@ -221,8 +247,10 @@ LittlerootTown_MapEvents:
 	bg_event  7,  16,  BGEVENT_READ, LittlerootTownBirchsLabSign
 	bg_event  11,  9,   BGEVENT_READ, LittlerootTownBirchsHouseSign
 	
-	db 3 ; object events
-	object_event  8,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, -1
+	db 5 ; object events
+	object_event  8,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, EVENT_MET_RIVAL
 	object_event 11,  13, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittlerootTownFisherScript, -1
-	object_event 14,  16, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1
+	object_event 14,  16, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1
+	object_event 10,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_BIRCH_ATTACK
+	object_event 15,  11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_AFTER_ATTACK
 	

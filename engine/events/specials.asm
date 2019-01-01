@@ -84,6 +84,9 @@ FoundNone:
 	ret
 
 NameRival:
+	ld a, [wPlayerGender]
+	bit PLAYERGENDER_FEMALE_F, a
+	jr z, .Male
 	ld b, $2 ; rival
 	ld de, wRivalName
 	farcall _NamingScreen
@@ -94,7 +97,20 @@ NameRival:
 	ret
 
 .default
-	db "SAPHIRE@"
+	db "BRENDAN@"
+	
+.Male
+	ld b, $2 ; rival
+	ld de, wRivalName
+	farcall _NamingScreen
+	; default to "SILVER"
+	ld hl, wRivalName
+	ld de, .default2
+	call InitName
+	ret
+	
+.default2
+	db "MAY@"
 
 NameRater:
 	farcall _NameRater

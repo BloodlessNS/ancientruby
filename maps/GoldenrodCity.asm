@@ -23,7 +23,6 @@ GoldenrodCity_MapScripts:
 	callback MAPCALLBACK_OBJECTS, .MoveTutor
 
 .FlyPointAndFloria:
-	setflag ENGINE_FLYPOINT_GOLDENROD
 	setflag ENGINE_REACHED_GOLDENROD
 	checkevent EVENT_MET_FLORIA
 	iftrue .FloriaDone

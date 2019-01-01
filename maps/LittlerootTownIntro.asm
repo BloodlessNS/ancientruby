@@ -16,12 +16,14 @@ LittlerootTownIntro_MapScripts:
 	return
 	
 WalkInToHouse:
+	appear LITTLEROOTTOWNINTRO_MOM
+	applymovement LITTLEROOTTOWNINTRO_MOM, MovementData_Mom
 	opentext
 	writetext MomText_Intro
 	waitbutton
 	closetext
 	turnobject LITTLEROOTTOWNINTRO_MOM, UP
-	applymovement LITTLEROOTTOWNINTRO_MOM, MovementData_Mom
+	applymovement LITTLEROOTTOWNINTRO_MOM, MovementData_Mom2
 	disappear LITTLEROOTTOWNINTRO_MOM
 	turnobject PLAYER, UP
 	applymovement PLAYER, LittleRootTown_WalkInToHouseMovement
@@ -59,9 +61,16 @@ MomText_Intro:
 	done
 	
 MovementData_Mom:
-	step UP
-	step LEFT
-	step UP
+	slow_step DOWN
+	slow_step RIGHT
+	slow_step DOWN
+	turn_head LEFT
+	step_end
+	
+MovementData_Mom2:
+	slow_step UP
+	slow_step LEFT
+	slow_step UP
 	step_end
 	
 LittleRootTown_WalkInToHouseMovement:
@@ -82,5 +91,5 @@ LittlerootTownIntro_MapEvents:
 	db 0 ; bg events
 	
 	db 1 ; object events
-	object_event  6,  11, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WalkInToHouse, -1
+	object_event  5,  9, SPRITE_MOM, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, WalkInToHouse, EVENT_BIRCH_ATTACK
 	

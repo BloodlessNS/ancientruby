@@ -10,7 +10,6 @@ Flypoints:
 	flypoint LITTLEROOT,   LITTLEROOT_TOWN
 	flypoint OLDALE,       OLDALE_TOWN
 	flypoint PETALBURG,    PETALBURG_CITY
-	flypoint GOLDENROD,    GOLDENROD_CITY
 	flypoint CIANWOOD,     CIANWOOD_CITY
 	flypoint MT_SILVER,    SILVER_CAVE
 
@@ -18,7 +17,6 @@ Flypoints:
 KANTO_FLYPOINT EQU const_value
 	flypoint VIRIDIAN,     VIRIDIAN_CITY
 	flypoint VERMILION,    VERMILION_CITY
-	flypoint ROCK_TUNNEL,  ROCK_TUNNEL
 	flypoint LAVENDER,     LAVENDER_TOWN
 	flypoint CELADON,      CELADON_CITY
 	flypoint SAFFRON,      SAFFRON_CITY

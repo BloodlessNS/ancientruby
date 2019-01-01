@@ -20,26 +20,44 @@ RivalScript_MeetRival:
 	opentext
 	writetext MeetRivalText1
 	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .RivalScript_MeetRivalFemale
+	playmusic MUSIC_RIVAL_ENCOUNTER
 	faceplayer
 	writetext MeetRivalText2
 	waitbutton
 	closetext
+	special FadeOutMusic
+	special RestartMapMusic
+	checkcode VAR_YCOORD
+	ifgreater 2, UnderRival
 	applymovement RIVALSROOM_RIVAL, MovementData_Rival
 	disappear RIVALSROOM_RIVAL
 	setevent EVENT_MET_RIVAL
+	clearevent EVENT_BIRCH_ATTACK
 	end
 	
-RivalScript_MeetRivalFemale:
-	opentext
-	writetext MeetRivalText1
-	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
+.RivalScript_MeetRivalFemale:
+	playmusic MUSIC_RIVAL_AFTER
 	faceplayer
 	writetext MeetRivalText2
 	waitbutton
 	closetext
+	special FadeOutMusic
+	special RestartMapMusic
+	checkcode VAR_YCOORD
+	ifgreater 2, UnderRival
 	applymovement RIVALSROOM_RIVAL, MovementData_Rival
 	disappear RIVALSROOM_RIVAL
 	setevent EVENT_MET_RIVAL
+	clearevent EVENT_BIRCH_ATTACK
+	end
+	
+UnderRival:
+	applymovement RIVALSROOM_RIVAL, MovementData_Rival2
+	disappear RIVALSROOM_RIVAL
+	setevent EVENT_MET_RIVAL
+	clearevent EVENT_BIRCH_ATTACK
 	end
 	
 MovementData_Rival:
@@ -54,6 +72,17 @@ MovementData_Rival:
 	slow_step UP
 	slow_step UP
 	step_end
+	
+MovementData_Rival2:
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step LEFT
+	slow_step UP
+	slow_step UP
+	step_end	
 	
 RivalsEmail:
 	jumptext RivalsEmailText

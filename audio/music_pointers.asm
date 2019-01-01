@@ -33,8 +33,8 @@ Music:
 	dba Music_PalletTown
 	dba Music_ProfOaksPokemonTalk
 	dba Music_ProfOak
-	dba Music_LookRival
-	dba Music_AfterTheRivalFight
+	dba Music_MayEncounter
+	dba Music_BrendanEncounter
 	dba Music_Surf
 	dba Music_Evolution
 	dba Music_NationalPark
@@ -52,7 +52,7 @@ Music:
 	dba Music_ChampionBattle
 	dba Music_RivalBattle
 	dba Music_RocketBattle
-	dba Music_ElmsLab
+	dba Music_BirchsLab
 	dba Music_DarkCave
 	dba Music_Route36
 	dba Music_SSAqua
@@ -77,7 +77,7 @@ Music:
 	dba Music_RuinsOfAlphRadio
 	dba Music_SuccessfulCapture
 	dba Music_Route26
-	dba Music_Mom
+	dba Music_RSLookReporter
 	dba Music_VictoryRoad
 	dba Music_PokemonLullaby
 	dba Music_PokemonMarch

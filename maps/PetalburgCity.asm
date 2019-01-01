@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const PETALBURGCITY_GENTLEMAN
 	const PETALBURGCITY_TEACHER
-	const PETALBURGCITY_SILVER
+	const PETALBURGCITY_WALLY
 	const PETALBURGCITY_COOLTAINER_M
 
 PetalburgCity_MapScripts:

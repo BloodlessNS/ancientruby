@@ -1,6 +1,7 @@
 	const_def 2 ; object constants
 	const OLDALETOWN_CLERK
 	const OLDALETOWN_SCIENTIST
+	const OLDALETOWN_SCIENTIST2
 	const OLDALETOWN_COOLTRAINER_F
 
 OldaleTown_MapScripts:
@@ -12,6 +13,23 @@ OldaleTown_MapScripts:
 .Flypoint:
 	setflag ENGINE_FLYPOINT_OLDALE
 	return
+	
+LittlerootTown_ScientistStopsYouScene1:
+	checkevent EVENT_GOT_POKEDEX
+	iftrue .end
+	applymovement OLDALETOWN_SCIENTIST, GrabPlayerMovement
+	turnobject PLAYER, RIGHT
+	follow OLDALETOWN_SCIENTIST, PLAYER
+	applymovement OLDALETOWN_SCIENTIST, GrabPlayerMovement2
+	stopfollow
+	opentext
+	writetext WaitText
+	waitbutton
+	writetext WaitText2
+	closetext
+	applymovement OLDALETOWN_SCIENTIST, GrabPlayerMovement3
+.end
+	end
 	
 ClerkScript_ClerkWithPotion:
 	faceplayer
@@ -33,7 +51,25 @@ ClerkScript_ClerkWithPotion:
 	closetext
 	end
 	
+GrabPlayerMovement:
+	step UP
+	turn_head LEFT
+	step_end
+	
+GrabPlayerMovement2:
+	step RIGHT
+	turn_head LEFT
+	step_end
+	
+GrabPlayerMovement3:
+	step DOWN
+	step LEFT
+	step_end
+	
 OldaleTownScientistScript:
+	jumptextfaceplayer WaitText2
+	
+OldaleTownScientistScript2:
 	jumptextfaceplayer OldaleTownScientistText
 	
 OldaleTownCooltrainerFScript:
@@ -41,6 +77,23 @@ OldaleTownCooltrainerFScript:
 	
 OldaleTownSign:
 	jumptext OldaleTownSignText
+	
+WaitText:
+	text "Aaaaah! Wait!"
+	
+	para "Please dont come"
+	line "in here."
+	done
+	
+WaitText2:
+	text "I just discovered"
+	line "the footprints of"
+	cont "a rare #MON!"
+	
+	para "wait until I"
+	line "finish sketching"
+	cont "them, okay?"
+	done
 	
 ClerkText_PromotionalItem:
 	text "Hi!"
@@ -110,13 +163,16 @@ OldaleTown_MapEvents:
 	warp_event 5,  7, OLDALE_HOUSE_1, 1
 	warp_event 15,  13, OLDALE_HOUSE_2, 1
 
-	db 0 ; coord events
+	db 1 ; coord events
+	
+	coord_event  0,  8, SCENE_DEFAULT, LittlerootTown_ScientistStopsYouScene1
 
 	db 1 ; bg events
 	bg_event 11,  8, BGEVENT_READ, OldaleTownSign
 
-	db 3 ; object events
-	object_event  14,  8, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ClerkScript_ClerkWithPotion, EVENT_GOT_POTION
-	object_event  8,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript, -1
+	db 4 ; object events
+	object_event  14,  8, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ClerkScript_ClerkWithPotion, -1
+	object_event  1,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript, EVENT_GOT_POKEDEX
+	object_event  8,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript2, EVENT_NOT_GOT_POKEDEX
 	object_event  13, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownCooltrainerFScript, -1
 	

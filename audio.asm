@@ -16,14 +16,12 @@ SECTION "Songs 1", ROMX
 INCLUDE "audio/music/route36.asm"
 INCLUDE "audio/music/rivalbattle.asm"
 INCLUDE "audio/music/rocketbattle.asm"
-INCLUDE "audio/music/elmslab.asm"
 INCLUDE "audio/music/darkcave.asm"
 INCLUDE "audio/music/johtogymbattle.asm"
 INCLUDE "audio/music/championbattle.asm"
 INCLUDE "audio/music/ssaqua.asm"
 INCLUDE "audio/music/goldenrodcity.asm"
 INCLUDE "audio/music/vermilioncity.asm"
-INCLUDE "audio/music/titlescreen.asm"
 INCLUDE "audio/music/ruinsofalphinterior.asm"
 INCLUDE "audio/music/lookpokemaniac.asm"
 INCLUDE "audio/music/trainervictory.asm"
@@ -138,6 +136,7 @@ INCLUDE "audio/music/postcredits.asm"
 SECTION "Hoenn Songs 1", ROMX
 
 INCLUDE "audio/music/mobileadapter.asm"
+INCLUDE "audio/music/titlescreen.asm"
 INCLUDE "audio/music/littleroottown.asm"
 INCLUDE "audio/music/route101.asm"
 INCLUDE "audio/music/oldaletown.asm"
@@ -145,6 +144,7 @@ INCLUDE "audio/music/route103.asm"
 INCLUDE "audio/music/petalburgcity.asm"
 INCLUDE "audio/music/hoennwildbattle.asm"
 INCLUDE "audio/music/hoenntrainerbattle.asm"
+INCLUDE "audio/music/birchslab.asm"
 
 
 SECTION "Sound Effects", ROMX

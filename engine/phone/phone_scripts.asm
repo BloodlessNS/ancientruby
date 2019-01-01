@@ -9,8 +9,6 @@ MomPhoneScript:
 	iftrue .bcec5
 	checkevent EVENT_DUDE_TALKED_TO_YOU
 	iftrue MomPhoneLectureScript
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue MomPhoneNoGymQuestScript
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue MomPhoneNoPokedexScript
 	jump MomPhoneNoPokemonScript
@@ -202,12 +200,8 @@ ElmPhoneScript1:
 	iftrue .eggunhatched
 	checkevent EVENT_ELMS_AIDE_IN_LAB
 	iftrue .assistant
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .checkingegg
 	checkevent EVENT_ELM_CALLED_ABOUT_STOLEN_POKEMON
 	iftrue .stolen
-	checkevent EVENT_GOT_MYSTERY_EGG_FROM_MR_POKEMON
-	iftrue .sawmrpokemon
 	farwritetext ElmPhoneStartText
 	end
 
@@ -713,8 +707,7 @@ WadePhoneScript2:
 	iftrue .next
 	farscall PhoneScript_Random2
 	ifequal 0, WadeHasItem2
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .next
+	jump .next
 	farscall PhoneScript_Random2
 	ifequal 0, WadeWantsBattle2
 
@@ -797,8 +790,7 @@ RalphPhoneScript1:
 RalphPhoneScript2:
 	trainertotext FISHER, RALPH1, MEM_BUFFER_0
 	farscall PhoneScript_GreetPhone_Male
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .CheckSwarm
+	jump .CheckSwarm
 	checkflag ENGINE_RALPH
 	iftrue .CheckSwarm
 	checkflag ENGINE_RALPH_WEDNESDAY_MORNING
@@ -865,8 +857,7 @@ LizPhoneScript2:
 .next:
 	farscall PhoneScript_Random2
 	ifequal 0, LizGossip
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .Generic
+	jump .Generic
 	farscall PhoneScript_Random2
 	ifequal 0, LizWantsBattle
 
@@ -965,8 +956,7 @@ AnthonyPhoneScript1:
 AnthonyPhoneScript2:
 	trainertotext HIKER, ANTHONY2, MEM_BUFFER_0
 	farscall PhoneScript_GreetPhone_Male
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .TriesSwarm
+	jump .TriesSwarm
 	checkflag ENGINE_ANTHONY
 	iftrue .TriesSwarm
 	checkflag ENGINE_ANTHONY_FRIDAY_NIGHT
@@ -1032,8 +1022,7 @@ ToddPhoneScript2:
 	iftrue .TryForSale
 	checkflag ENGINE_TODD_SATURDAY_MORNING
 	iftrue .TryForSale
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .NoGoldenrod
+	jump .NoGoldenrod
 	farscall PhoneScript_Random2
 	ifequal 0, ToddWantsBattle
 
@@ -1112,8 +1101,7 @@ GinaPhoneScript2:
 .GaveLeafStone:
 	farscall PhoneScript_Random11
 	ifequal 0, GinaHasLeafStone
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iffalse .Generic
+	jump .Generic
 	farscall PhoneScript_Random3
 	ifequal 0, GinaWantsBattle
 

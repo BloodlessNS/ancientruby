@@ -80,11 +80,9 @@ TrainerYoungsterJoey:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight3
 .Fight2:
-	checkflag ENGINE_FLYPOINT_OLIVINE
-	iftrue .LoadFight2
+	jump .LoadFight2
 .Fight1:
-	checkflag ENGINE_FLYPOINT_GOLDENROD
-	iftrue .LoadFight1
+	jump .LoadFight1
 .LoadFight0:
 	loadtrainer YOUNGSTER, JOEY1
 	startbattle
@@ -196,15 +194,7 @@ TrainerYoungsterMikey:
 Route30YoungsterScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GAVE_MYSTERY_EGG_TO_ELM
-	iftrue .CompletedEggQuest
 	writetext Route30YoungsterText_DirectionsToMrPokemonsHouse
-	waitbutton
-	closetext
-	end
-
-.CompletedEggQuest:
-	writetext Route30YoungsterText_EveryoneIsBattling
 	waitbutton
 	closetext
 	end
@@ -390,7 +380,7 @@ Route30_MapEvents:
 
 	db 11 ; object events
 	object_event  5, 26, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, YoungsterJoey_ImportantBattleScript, EVENT_ROUTE_30_BATTLE
-	object_event  2, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterJoey, EVENT_ROUTE_30_YOUNGSTER_JOEY
+	object_event  2, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterJoey, EVENT_AFTER_ATTACK
 	object_event  5, 23, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerYoungsterMikey, -1
 	object_event  7, 30, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_LEFT_RIGHT, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route30YoungsterScript, -1
 	object_event  5, 24, SPRITE_MONSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_ROUTE_30_BATTLE

@@ -8,25 +8,9 @@
 PlayersHouse2F_MapScripts:
 	db 0 ; scene scripts
 
-	db 2 ; callbacks
-	callback MAPCALLBACK_NEWMAP, .InitializeRoom
+	db 1 ; callbacks
 	callback MAPCALLBACK_TILES, .SetSpawn
-
-; unused
-.Null:
-	end
-
-.InitializeRoom:
-	special ToggleDecorationsVisibility
-	setevent EVENT_TEMPORARY_UNTIL_MAP_RELOAD_8
-	checkevent EVENT_INITIALIZED_EVENTS
-	iftrue .SkipInitialization
-	jumpstd initializeevents
-	return
-
-.SkipInitialization:
-	return
-
+	
 .SetSpawn:
 	special ToggleMaptileDecorations
 	return

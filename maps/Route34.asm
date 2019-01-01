@@ -132,8 +132,7 @@ TrainerCamperTodd1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkflag ENGINE_FLYPOINT_BLACKTHORN
-	iftrue .LoadFight2
+	jump .LoadFight2
 .Fight1:
 	checkflag ENGINE_FLYPOINT_CIANWOOD
 	iftrue .LoadFight1
@@ -260,8 +259,7 @@ TrainerPicnickerGina1:
 	checkevent EVENT_CLEARED_RADIO_TOWER
 	iftrue .LoadFight2
 .Fight1:
-	checkflag ENGINE_FLYPOINT_MAHOGANY
-	iftrue .LoadFight1
+	jump .LoadFight1
 .LoadFight0:
 	loadtrainer PICNICKER, GINA1
 	startbattle
