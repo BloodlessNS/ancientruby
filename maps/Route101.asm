@@ -35,7 +35,7 @@ Text_PokeCentreTip:
 	cont "CENTRE."
 	
 	para "There's a #MON"
-	line "CENTRE in ODALE"
+	line "CENTRE in OLDALE"
 	cont "TOWN right close"
 	cont "by."
 	done

@@ -751,30 +751,30 @@ ElmText_LetYourMonBattleIt:
 	done
 
 LabWhereGoingText:
-	text "ELM: Wait! Where"
+	text "BIRCH: Wait! Where"
 	line "are you going?"
 	done
 
 TakeTorchicText:
-	text "ELM: You'll take"
+	text "BIRCH: You'll take"
 	line "TORCHIC, the"
 	cont "fire #MON?"
 	done
 
 TakeMudkipText:
-	text "ELM: Do you want"
+	text "BIRCH: Do you want"
 	line "MUDKIP, the"
 	cont "water #MON?"
 	done
 
 TakeTreeckoText:
-	text "ELM: So, you like"
+	text "BIRCH: So, you like"
 	line "TREECKO, the"
 	cont "grass #MON?"
 	done
 
 DidntChooseStarterText:
-	text "ELM: Think it over"
+	text "BIRCH: Think it over"
 	line "carefully."
 
 	para "Your partner is"
@@ -782,7 +782,7 @@ DidntChooseStarterText:
 	done
 
 ChoseStarterText:
-	text "ELM: I think"
+	text "BIRCH: I think"
 	line "that's a great"
 	cont "#MON too!"
 	done
@@ -888,7 +888,7 @@ AfterBattleTestText:
 	cont "await you!"
 	
 	para "Argh, I'm getting"
-	line "an ictch to get"
+	line "an itch to get"
 	cont "out and do"
 	cont "fieldwork again!"
 	done
@@ -910,7 +910,7 @@ ElmsLabHealingMachineText2:
 	done
 
 ElmAfterTheftText1:
-	text "ELM: <PLAY_G>, this"
+	text "BIRCH: <PLAY_G>, this"
 	line "is terrible…"
 
 	para "Oh, yes, what was"
@@ -925,7 +925,7 @@ ElmAfterTheftText2:
 	done
 
 ElmAfterTheftText3:
-	text "ELM: This?"
+	text "BIRCH: This?"
 	done
 
 ElmAfterTheftText4:
@@ -937,7 +937,7 @@ ElmAfterTheftText4:
 	done
 
 ElmAfterTheftText5:
-	text "ELM: What?!?"
+	text "BIRCH: What?!?"
 
 	para "PROF.OAK gave you"
 	line "a #DEX?"
@@ -983,7 +983,7 @@ ElmAfterTheftText6:
 	done
 
 ElmStudyingEggText:
-	text "ELM: Don't give"
+	text "BIRCH: Don't give"
 	line "up! I'll call if"
 
 	para "I learn anything"
@@ -991,7 +991,7 @@ ElmStudyingEggText:
 	done
 
 ElmAideHasEggText:
-	text "ELM: <PLAY_G>?"
+	text "BIRCH: <PLAY_G>?"
 	line "Didn't you meet my"
 	cont "assistant?"
 
@@ -1007,7 +1007,7 @@ ElmAideHasEggText:
 	done
 
 ElmWaitingEggHatchText:
-	text "ELM: Hey, has that"
+	text "BIRCH: Hey, has that"
 	line "EGG changed any?"
 	done
 
@@ -1020,7 +1020,7 @@ UnknownText_0x79a40:
 	done
 
 ShowElmTogepiText1:
-	text "ELM: <PLAY_G>, you"
+	text "BIRCH: <PLAY_G>, you"
 	line "look great!"
 	done
 
@@ -1074,7 +1074,7 @@ ElmGiveEverstoneText2:
 	done
 
 ElmText_CallYou:
-	text "ELM: <PLAY_G>, I'll"
+	text "BIRCH: <PLAY_G>, I'll"
 	line "call you if any-"
 	cont "thing comes up."
 	done
@@ -1094,7 +1094,7 @@ AideText_AfterTheft:
 	done
 
 ElmGiveMasterBallText1:
-	text "ELM: Hi, <PLAY_G>!"
+	text "BIRCH: Hi, <PLAY_G>!"
 	line "Thanks to you, my"
 
 	para "research is going"
@@ -1127,7 +1127,7 @@ ElmGiveMasterBallText2:
 	done
 
 ElmGiveTicketText1:
-	text "ELM: <PLAY_G>!"
+	text "BIRCH: <PLAY_G>!"
 	line "There you are!"
 
 	para "I called because I"

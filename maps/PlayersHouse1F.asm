@@ -191,6 +191,7 @@ DadOnTv:
 SetClockScript:
 	checkevent EVENT_CLOCK_SET
 	iftrue .Done
+	turnobject PLAYERSHOUSE1F_MOM1, LEFT
 	opentext
 	writetext MomText_GoSetClock
 	waitbutton

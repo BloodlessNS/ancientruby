@@ -30,7 +30,7 @@ Route103RivalScript:
 	loadtrainer RIVAL1, RIVAL1_1_MUDKIP
 	startbattle
 	dontrestartmapmusic
-	reloadmapafterbattle
+	reloadmap
 	jump .FinishBattle
 
 .Mudkip:
@@ -114,6 +114,8 @@ BelowRival:
 	applymovement ROUTE103_RIVAL, Route103_RivalExits2
 	disappear ROUTE103_RIVAL
 	setevent EVENT_RIVAL_ROUTE_103
+	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
+	clearevent EVENT_COP_IN_ELMS_LAB
 	special HealParty
 	playmapmusic
 	end
@@ -158,7 +160,7 @@ Route103Sign1Text:
 	done
 	
 Route103RivalText_Seen:
-	text "<RIVAL>: Let's See…"
+	text "<RIVAL>: Let's see…"
 	line "The #MON on"
 	cont "ROUTE 103 include…"
 	done

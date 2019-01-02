@@ -38,6 +38,7 @@ PlayersHousePosterScript:
 PlayersClockScript:
 	checkevent EVENT_CLOCK_SET
 	iftrue .Done
+	blackoutmod PLAYERS_HOUSE_2F
 	opentext
 	writetext ClockSet
 	appear PLAYERSHOUSE2F_MOM
@@ -133,7 +134,7 @@ PlayersTVScript:
 	
 PlayersGameCubeScriptText:
 	text "It's a Nintendo"
-	line "GameCube"
+	line "GameCube."
 
 	para "A Gameboy Advance"
 	line "is connected to"
