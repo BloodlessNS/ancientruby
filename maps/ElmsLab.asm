@@ -768,14 +768,15 @@ TakeMudkipText:
 	done
 
 TakeTreeckoText:
-	text "BIRCH: So, you like"
-	line "TREECKO, the"
-	cont "grass #MON?"
+	text "BIRCH: So, you"
+	line "like TREECKO,"
+	cont "the grass"
+	cont "#MON?"
 	done
 
 DidntChooseStarterText:
-	text "BIRCH: Think it over"
-	line "carefully."
+	text "BIRCH: Think it"
+	line "over carefully."
 
 	para "Your partner is"
 	line "important."
