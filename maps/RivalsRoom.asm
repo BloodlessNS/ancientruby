@@ -17,38 +17,41 @@ RivalsRoom_MapScripts:
 	return
 	
 RivalScript_MeetRival:
+	checkflag ENGINE_PLAYER_IS_FEMALE
+	iftrue .RivalScript_MeetRivalFemale
 	opentext
 	writetext MeetRivalText1
 	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
-	checkflag ENGINE_PLAYER_IS_FEMALE
-	iftrue .RivalScript_MeetRivalFemale
 	playmusic MUSIC_RIVAL_ENCOUNTER
 	faceplayer
 	writetext MeetRivalText2
 	waitbutton
 	closetext
-	special FadeOutMusic
-	special RestartMapMusic
 	checkcode VAR_YCOORD
 	ifgreater 2, UnderRival
 	applymovement RIVALSROOM_RIVAL, MovementData_Rival
 	disappear RIVALSROOM_RIVAL
+	special FadeOutMusic
+	special RestartMapMusic
 	setevent EVENT_MET_RIVAL
 	clearevent EVENT_BIRCH_ATTACK
 	end
 	
 .RivalScript_MeetRivalFemale:
+	opentext
+	writetext MeetMaleRivalText1
+	showemote EMOTE_SHOCK, RIVALSROOM_RIVAL, 15
 	playmusic MUSIC_RIVAL_AFTER
 	faceplayer
-	writetext MeetRivalText2
+	writetext MeetMaleRivalText2
 	waitbutton
 	closetext
-	special FadeOutMusic
-	special RestartMapMusic
 	checkcode VAR_YCOORD
 	ifgreater 2, UnderRival
 	applymovement RIVALSROOM_RIVAL, MovementData_Rival
 	disappear RIVALSROOM_RIVAL
+	special FadeOutMusic
+	special RestartMapMusic
 	setevent EVENT_MET_RIVAL
 	clearevent EVENT_BIRCH_ATTACK
 	end
@@ -56,32 +59,34 @@ RivalScript_MeetRival:
 UnderRival:
 	applymovement RIVALSROOM_RIVAL, MovementData_Rival2
 	disappear RIVALSROOM_RIVAL
+	special FadeOutMusic
+	special RestartMapMusic
 	setevent EVENT_MET_RIVAL
 	clearevent EVENT_BIRCH_ATTACK
 	end
 	
 MovementData_Rival:
-	slow_step DOWN
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step UP
-	slow_step UP
-	slow_step UP
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step UP
+	step UP
+	step UP
 	step_end
 	
 MovementData_Rival2:
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step UP
-	slow_step UP
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step UP
+	step UP
 	step_end	
 	
 RivalsEmail:
@@ -89,6 +94,9 @@ RivalsEmail:
 	
 RivalsNotebook:
 	jumptext RivalsNotebookText
+	
+RivalsGamecube:
+	jumptext RivalsGamecubeText
 	
 RivalsEmailText:
 	text "There's an e-mail"
@@ -132,12 +140,30 @@ RivalsNotebookText:
 	line "pages are blank…"
 	done
 	
+RivalsGamecubeText:
+	text "It's a Nintendo"
+	line "GameCube."
+
+	para "A Gameboy Advance"
+	line "is connected to"
+	cont "serve as the"
+	cont "controller."
+	done
+	
 MeetRivalText1:
 	text "#MON fully"
 	line "restored!"
 	
 	para "Items ready, and…"
 	line "Huh?"
+	done
+	
+MeetMaleRivalText1:
+	text "#MON fully"
+	line "restored…"
+	
+	para "Items all packed,"
+	line "and…"
 	done
 	
 MeetRivalText2:
@@ -188,6 +214,50 @@ MeetRivalText2:
 	para "<PLAYER>, I'll"
 	line "catch you later!"
 	done
+	
+MeetMaleRivalText2:
+	text "Hey!"
+	line "You…"
+	
+	para "Who are you?"
+	
+	para "Oh, you're"
+	line "<PLAYER>, aren't"
+	cont "you?"
+	
+	para "Moved in next"
+	line "door, right?"
+	
+	para "I didn't know that"
+	line "you're a girl."
+	
+	para "Dad, PROF. BIRCH,"
+	line "said that our new"
+	cont "next-door neighbor"
+	cont "is a GYM LEADER's"
+	cont "kid, so I assumed"
+	cont "you'd be a guy."
+	
+	para "My name's <RIVAL>."
+	line "So, hi, neighbor!"
+	
+	para "Huh? Hey, <PLAYER>,"
+	line "don't you have a"
+	cont "#MON?"
+	
+	para "Do you want me to"
+	line "go cacth you one?"
+	
+	para "Aw, darn, I"
+	line "forgot…"
+	
+	para "I'm supposed to go"
+	line "help my dad catch"
+	cont "some wild #MON."
+	
+	para "Some other time,"
+	line "okay?"
+	done
 
 RivalsRoom_MapEvents:
 	db 0, 0 ; filler
@@ -197,9 +267,10 @@ RivalsRoom_MapEvents:
 	
 	db 0 ; coord events
 
-	db 2 ; bg events
+	db 3 ; bg events
 	bg_event  7,  1, BGEVENT_READ, RivalsEmail
 	bg_event  6,  1, BGEVENT_READ, RivalsNotebook
+	bg_event  4,  1, BGEVENT_READ, RivalsGamecube
 
 	db 1 ; object events
 	object_event  6,  2, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RivalScript_MeetRival, EVENT_MET_RIVAL

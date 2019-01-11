@@ -42,11 +42,11 @@ RivalsMomScript:
 	end
 	
 MovementData_RivalsMom:
-	slow_step DOWN
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
-	slow_step LEFT
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
 	step_end
 
 RivalsMom:
@@ -65,8 +65,6 @@ RivalsMom:
 RivalsHousePC:
 	jumptext RivalsHousePCText
 
-RivalsHouseBookshelf:
-	jumpstd difficultbookshelf
 	
 TestRivalsMomTextMale:
 	text "Oh, hello. And you"
@@ -179,10 +177,8 @@ RivalsHouse_MapEvents:
 	db 1 ; coord events
 	coord_event  2,  7, SCENE_DEFAULT, RivalsMomScript
 
-	db 3 ; bg events
+	db 1 ; bg events
 	bg_event  0,  1, BGEVENT_READ, RivalsHousePC
-	bg_event  6,  1, BGEVENT_READ, RivalsHouseBookshelf
-	bg_event  7,  1, BGEVENT_READ, RivalsHouseBookshelf
 
 	db 1 ; object events
 	object_event  7,  6, SPRITE_TEACHER, SPRITEMOVEDATA_STANDING_LEFT, 0, 1, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, RivalsMom, -1

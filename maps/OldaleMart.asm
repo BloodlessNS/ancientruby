@@ -29,7 +29,7 @@ OldaleMartRockerText:
 	line "#MON from"
 	cont "fainting, restore"
 	cont "it's HP with a"
-	cont "potion."
+	cont "POTION."
 	done
 	
 OldaleMartTeacherText:

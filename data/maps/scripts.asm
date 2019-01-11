@@ -365,7 +365,6 @@ INCLUDE "maps/SilverCaveOutside.asm"
 INCLUDE "maps/MovingTruck.asm"
 INCLUDE "maps/LittlerootTown.asm"
 INCLUDE "maps/LittlerootTownIntro.asm"
-INCLUDE "maps/Route101.asm"
 INCLUDE "maps/OldaleTown.asm"
 INCLUDE "maps/OldalePokecenter1F.asm"
 INCLUDE "maps/OldaleMart.asm"
@@ -375,11 +374,12 @@ INCLUDE "maps/Route102.asm"
 INCLUDE "maps/PetalburgCity.asm"
 INCLUDE "maps/PetalburgHouse1.asm"
 INCLUDE "maps/PetalburgHouse2.asm"
-INCLUDE "maps/PetalburgPokecenter1F.asm"
 INCLUDE "maps/PetalburgMart.asm"
 INCLUDE "maps/RivalsRoom.asm"
 
 
 SECTION "Map Scripts 26", ROMX
 
+INCLUDE "maps/Route101.asm"
 INCLUDE "maps/Route103.asm"
+INCLUDE "maps/PetalburgPokecenter1F.asm"

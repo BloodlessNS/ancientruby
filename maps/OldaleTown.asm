@@ -81,7 +81,7 @@ OldaleTownSign:
 WaitText:
 	text "Aaaaah! Wait!"
 	
-	para "Please dont come"
+	para "Please don't come"
 	line "in here."
 	done
 	
@@ -120,11 +120,11 @@ Text_ReceivedPotion:
 	done
 
 ClerkText_Potion:
-	text "A potion can be"
+	text "A POTION can be"
 	line "used anytime, so"
 	cont "it's even more"
 	cont "useful than a"
-	cont "#MON CENTRE in"
+	cont "#MON CENTER in"
 	cont "certain"
 	cont "situations."
 	done
@@ -137,7 +137,7 @@ OldaleTownScientistText:
 
 	para "But it turns out"
 	line "they were only my"
-	cont "own footprints..."
+	cont "own footprints…"
 	done
 	
 OldaleTownCooltrainerFText:
@@ -172,7 +172,7 @@ OldaleTown_MapEvents:
 
 	db 4 ; object events
 	object_event  14,  8, SPRITE_CLERK, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, ClerkScript_ClerkWithPotion, -1
-	object_event  1,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript, EVENT_GOT_POKEDEX
+	object_event  1,  9, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript, EVENT_GOT_POKEDEX
 	object_event  8,  7, SPRITE_SCIENTIST, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownScientistScript2, EVENT_NOT_GOT_POKEDEX
 	object_event  13, 11, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_STANDING_LEFT, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, OldaleTownCooltrainerFScript, -1
 	

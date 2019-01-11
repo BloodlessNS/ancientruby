@@ -45,7 +45,7 @@
 	const MUSIC_UNION_CAVE                   ; 28
 	const MUSIC_HOENN_WILD_BATTLE            ; 29
 	const MUSIC_HOENN_TRAINER_BATTLE         ; 2a
-	const MUSIC_ROUTE_30                     ; 2b
+	const MUSIC_ROUTE_123                     ; 2b
 	const MUSIC_ECRUTEAK_CITY                ; 2c
 	const MUSIC_VIOLET_CITY                  ; 2d
 	const MUSIC_JOHTO_GYM_LEADER_BATTLE      ; 2e

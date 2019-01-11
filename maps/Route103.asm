@@ -30,7 +30,7 @@ Route103RivalScript:
 	loadtrainer RIVAL1, RIVAL1_1_MUDKIP
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	jump .FinishBattle
 
 .Mudkip:
@@ -39,7 +39,7 @@ Route103RivalScript:
 	loadtrainer RIVAL1, RIVAL1_1_TREECKO
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	jump .FinishBattle
 
 .Treecko:
@@ -48,7 +48,7 @@ Route103RivalScript:
 	loadtrainer RIVAL1, RIVAL1_1_TORCHIC
 	startbattle
 	dontrestartmapmusic
-	reloadmap
+	reloadmapafterbattle
 	jump .FinishBattle
 	
 .Female
@@ -56,47 +56,64 @@ Route103RivalScript:
 	pause 15
 	playmusic MUSIC_RIVAL_AFTER
 	opentext
-	writetext Route103RivalText_Seen
+	writetext Route103RivalText_MaleSeen
 	waitbutton
 	showemote EMOTE_SHOCK, ROUTE103_RIVAL, 15
 	faceplayer
-	writetext Route103RivalText_Seen2
+	writetext Route103RivalText_MaleSeen2
 	waitbutton
 	closetext
 	checkevent EVENT_GOT_MUDKIP_FROM_ELM
 	iftrue .FemaleMudkip
 	checkevent EVENT_GOT_TREECKO_FROM_ELM
 	iftrue .FemaleTreecko
-	winlosstext Route103RivalWinText, Route103RivalLossText
+	winlosstext Route103RivalMaleWinText, Route103RivalMaleLossText
 	setlasttalked ROUTE103_RIVAL
 	loadtrainer RIVAL2, RIVAL1_1_MUDKIP
 	startbattle
 	dontrestartmapmusic
-	reloadmap
-	jump .FinishBattle
+	reloadmapafterbattle
+	jump .FinishBattleFemale
 
 .FemaleMudkip:
-	winlosstext Route103RivalWinText, Route103RivalLossText
+	winlosstext Route103RivalMaleWinText, Route103RivalMaleLossText
 	setlasttalked ROUTE103_RIVAL
 	loadtrainer RIVAL2, RIVAL1_1_TREECKO
 	startbattle
 	dontrestartmapmusic
-	reloadmap
-	jump .FinishBattle
+	reloadmapafterbattle
+	jump .FinishBattleFemale
 
 .FemaleTreecko:
-	winlosstext Route103RivalWinText, Route103RivalLossText
+	winlosstext Route103RivalMaleWinText, Route103RivalMaleLossText
 	setlasttalked ROUTE103_RIVAL
 	loadtrainer RIVAL2, RIVAL1_1_TORCHIC
 	startbattle
 	dontrestartmapmusic
-	reloadmap
-	jump .FinishBattle
+	reloadmapafterbattle
+	jump .FinishBattleFemale
 
 .FinishBattle
 	playmusic MUSIC_RIVAL_ENCOUNTER
 	opentext
 	writetext Route103RivalText_YouWon
+	waitbutton
+	closetext
+	checkcode VAR_YCOORD
+	ifgreater 2, BelowRival
+	applymovement ROUTE103_RIVAL, Route103_RivalExits
+	disappear ROUTE103_RIVAL
+	setevent EVENT_RIVAL_ROUTE_103
+	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
+	clearevent EVENT_COP_IN_ELMS_LAB
+	special HealParty
+	playmapmusic
+	end
+	
+.FinishBattleFemale
+	playmusic MUSIC_RIVAL_AFTER
+	opentext
+	writetext Route103RivalText_MaleYouWon
 	waitbutton
 	closetext
 	checkcode VAR_YCOORD
@@ -165,6 +182,13 @@ Route103RivalText_Seen:
 	cont "ROUTE 103 include…"
 	done
 	
+Route103RivalText_MaleSeen:
+	text "<RIVAL>: Okay, so"
+	line "it's this one and"
+	cont "that one that live"
+	cont "on ROUTE 103…"
+	done
+	
 Route103RivalText_Seen2:
 	text "Oh, hi, <PLAYER>!"
 
@@ -181,38 +205,46 @@ Route103RivalText_Seen2:
 	cont "being a TRAINER"
 	cont "is like."
 	done
+	
+Route103RivalText_MaleSeen2:
+	text "Hey, it's <PLAYER>!"
+
+	para "…Oh, yeah, Dad"
+	line "gave you a"
+	cont "#MON."
+
+	para "Since we're here,"
+	line "how about a little"
+	cont "battle?"
+
+	para "I'll teach you"
+	line "what being a"
+	cont "TRAINER's all"
+	cont "about!"
+	done
 
 Route103RivalWinText:
 	text "Wow! That's great!"
 	line "<PLAYER>, you're"
 	cont "pretty good!"
 	done
-
-Route103RivalText_YouLost:
-	text "<RIVAL>: I think I"
-	line "know why my dad"
-	cont "has an eye out for"
-	cont "you now."
-
-	para "I mean, you just"
-	line "got that #MON"
-	cont "but it already"
-	cont "likes you."
-
-	para "You might be able"
-	line "to befriend any"
-	cont "kind of #MON"
-	cont "easily"
 	
-	para "Well, it's time to"
-	line "head back to the"
-	cont "LAB."
+Route103RivalMaleWinText:
+	text "Huh, <PLAYER>,"
+	line "you're not too"
+	cont "shabby."
 	done
 
 Route103RivalLossText:
 	text "Wow! That's great!"
 	line "<PLAYER>, you're"
 	cont "pretty good!"
+	done
+	
+Route103RivalMaleLossText:
+	text "Huh, <PLAYER>,"
+	line "you're not too"
+	cont "shabby."
 	done
 
 Route103RivalText_YouWon:
@@ -234,6 +266,28 @@ Route103RivalText_YouWon:
 	para "Well, it's time to"
 	line "head back to the"
 	cont "LAB."
+	done
+	
+Route103RivalText_MaleYouWon:
+	text "<RIVAL>: I think I"
+	line "get. I think I"
+	cont "know why my dad"
+	cont "has his eye out"
+	cont "for you now."
+
+	para "Look, your #MON"
+	line "already likes you,"
+	cont "even though you"
+	cont "just got it."
+
+	para "<PLAYER>, I get the"
+	line "feeling you could"
+	cont "befriend any kind"
+	cont "of #MON with"
+	cont "ease."
+	
+	para "We should head"
+	line "back to the LAB."
 	done
 	
 Route103_MapEvents:

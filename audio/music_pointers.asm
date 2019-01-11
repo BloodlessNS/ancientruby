@@ -45,7 +45,7 @@ Music:
 	dba Music_UnionCave
 	dba Music_HoennWildBattle
 	dba Music_HoennTrainerBattle
-	dba Music_Route30
+	dba Music_Route123
 	dba Music_EcruteakCity
 	dba Music_VioletCity
 	dba Music_JohtoGymBattle
@@ -98,7 +98,7 @@ Music:
 	dba Music_MobileAdapter
 	dba Music_BuenasPassword
 	dba Music_LookMysticalMan
-	dba Music_CrystalOpening
+	dba Music_RSIntro1
 	dba Music_BattleTowerTheme
 	dba Music_SuicuneBattle
 	dba Music_BattleTowerLobby

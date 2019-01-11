@@ -56,33 +56,9 @@ PlayersClockScript:
 .Done
 	end
 
-PlayersHouseRadioScript:
-	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
-	iftrue .NormalRadio
-	checkevent EVENT_LISTENED_TO_INITIAL_RADIO
-	iftrue .AbbreviatedRadio
-	playmusic MUSIC_POKEMON_TALK
+PlayersHouseNotesScript:
 	opentext
-	writetext PlayersRadioText1
-	pause 45
-	writetext PlayersRadioText2
-	pause 45
-	writetext PlayersRadioText3
-	pause 45
-	musicfadeout MUSIC_LITTLEROOT_TOWN, 16
-	writetext PlayersRadioText4
-	pause 45
-	closetext
-	setevent EVENT_LISTENED_TO_INITIAL_RADIO
-	end
-
-.NormalRadio:
-	jumpstd radio1
-
-.AbbreviatedRadio:
-	opentext
-	writetext PlayersRadioText4
-	pause 45
+	writetext PlayersNotesText
 	closetext
 	end
 
@@ -106,24 +82,26 @@ MomLeaveMovement:
 	step UP
 	step_end
 
-PlayersRadioText1:
-	text "PROF.OAK'S #MON"
-	line "TALK! Please tune"
-	cont "in next time!"
-	done
-
-PlayersRadioText2:
-	text "#MON CHANNEL!"
-	done
-
-PlayersRadioText3:
-	text "This is DJ MARY,"
-	line "your co-host!"
-	done
-
-PlayersRadioText4:
-	text "#MON!"
-	line "#MON CHANNEL…"
+PlayersNotesText:
+	text "<PLAYER>"
+	line "flipped open the"
+	cont "notebook."
+	
+	para "ADVENTURE RULE"
+	line "NO. 1"
+	
+	para "Open the MENU"
+	line "with START."
+	
+	para "ADVENTURE RULE"
+	line "NO. 2"
+	
+	para "Record your"
+	line "progress with"
+	cont "SAVE."
+	
+	para "The remaining"
+	line "pages are blank…"
 	done
 	
 PlayersGameCubeScript:
@@ -186,7 +164,7 @@ PlayersHouse2F_MapEvents:
 
 	db 6 ; bg events
 	bg_event  0,  1, BGEVENT_UP, PlayersHousePCScript
-	bg_event  1,  1, BGEVENT_READ, PlayersHouseRadioScript
+	bg_event  1,  1, BGEVENT_READ, PlayersHouseNotesScript
 	bg_event  2,  0, BGEVENT_IFSET, PlayersHousePosterScript
 	bg_event  3,  1, BGEVENT_READ, PlayersGameCubeScript
 	bg_event  4,  1, BGEVENT_READ, PlayersTVScript

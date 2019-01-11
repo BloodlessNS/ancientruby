@@ -63,7 +63,7 @@
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; 3e
 	tilecoll WALL, WALL, WALL, WALL ; 3f
 	tilecoll WALL, WALL, FLOOR, FLOOR ; 40
-	tilecoll WALL, WALL, WALL, WALL ; 41
+	tilecoll WALL, WALL, WALL, MART_SHELF ; 41
 	tilecoll WALL, WALL, MART_SHELF, WALL ; 42
 	tilecoll MART_SHELF, FLOOR, MART_SHELF, FLOOR ; 43
 	tilecoll MART_SHELF, FLOOR, FLOOR, FLOOR ; 44

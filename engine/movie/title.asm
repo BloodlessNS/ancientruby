@@ -21,10 +21,16 @@ _TitleScreen:
 	ld a, 1
 	ld [rVBK], a
 	
-; Decompress Groudon gfx
+; Decompress Legend gfx
+if DEF(_SAPPHIRE)
+	ld hl, TitleKyogreGFX
+	ld de, vTiles1
+	call Decompress
+else
 	ld hl, TitleGroudonGFX
 	ld de, vTiles1
 	call Decompress
+endc
 
 ; Clear screen palettes
 	hlbgcoord 0, 0
@@ -89,9 +95,15 @@ _TitleScreen:
 	ld [rVBK], a
 
 ; Decompress logo
+if DEF(_SAPPHIRE)
+	ld hl, TitleLogoSapphireGFX
+	ld de, vTiles1
+	call Decompress
+else
 	ld hl, TitleLogoGFX
 	ld de, vTiles1
 	call Decompress
+endc
 
 ; Clear screen tiles
 	hlbgcoord 0, 0
@@ -128,6 +140,17 @@ _TitleScreen:
 	ld [rSVBK], a
 
 ; Update palette colors
+if DEF(_SAPPHIRE)
+	ld hl, TitleScreenSapphirePalettes
+	ld de, wBGPals1
+	ld bc, 16 palettes
+	call CopyBytes
+
+	ld hl, TitleScreenSapphirePalettes
+	ld de, wBGPals2
+	ld bc, 16 palettes
+	call CopyBytes
+else
 	ld hl, TitleScreenPalettes
 	ld de, wBGPals1
 	ld bc, 16 palettes
@@ -137,6 +160,7 @@ _TitleScreen:
 	ld de, wBGPals2
 	ld bc, 16 palettes
 	call CopyBytes
+endc
 
 ; Restore WRAM bank
 	pop af
@@ -204,11 +228,6 @@ _TitleScreen:
 
 	xor a
 	ld [wd002], a
-
-; Play starting sound effect
-	call SFXChannelsOff
-	ld de, SFX_TITLE_SCREEN_ENTRANCE
-	call PlaySFX
 
 	ret
 
@@ -280,8 +299,17 @@ InitializeBackground:
 TitleLogoGFX:
 INCBIN "gfx/title/logo.2bpp.lz"
 
+TitleLogoSapphireGFX:
+INCBIN "gfx/title/logosapphire.2bpp.lz"
+
 TitleScreenPalettes:
 INCLUDE "gfx/title/title.pal"
 
+TitleScreenSapphirePalettes:
+INCLUDE "gfx/title/titlesapphire.pal"
+
 TitleGroudonGFX:
 INCBIN "gfx/title/groudon.2bpp.lz"
+
+TitleKyogreGFX:
+INCBIN "gfx/title/kyogre.2bpp.lz"

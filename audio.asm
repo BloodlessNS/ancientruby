@@ -60,7 +60,6 @@ INCLUDE "audio/music/magnettrain.asm"
 INCLUDE "audio/music/lavendertown.asm"
 INCLUDE "audio/music/dancinghall.asm"
 INCLUDE "audio/music/contestresults.asm"
-INCLUDE "audio/music/route30.asm"
 
 
 SECTION "Songs 3", ROMX
@@ -145,6 +144,7 @@ INCLUDE "audio/music/petalburgcity.asm"
 INCLUDE "audio/music/hoennwildbattle.asm"
 INCLUDE "audio/music/hoenntrainerbattle.asm"
 INCLUDE "audio/music/birchslab.asm"
+INCLUDE "audio/music/route123.asm"
 
 
 SECTION "Sound Effects", ROMX

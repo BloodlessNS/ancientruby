@@ -74,6 +74,8 @@ LittlerootTown_YoungsterStopsYouScene3:
 	iftrue .Done
 	turnobject PLAYER, LEFT
 	opentext
+	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_ELM
+	special LoadUsedSpritesGFX
 	writetext Text_BirchAttack
 	waitbutton
 	closetext
@@ -213,7 +215,7 @@ LittlerootTownSignText:
 	done
 
 LittlerootTownPlayersHouseSignText:
-	text "<PLAYER>'s House"
+	text "<PLAYER>'s HOUSE"
 	done
 
 LittlerootTownBirchsLabSignText:
@@ -230,27 +232,27 @@ LittlerootTown_MapEvents:
 	db 0, 0 ; filler
 
 	db 4 ; warp events
-	warp_event  4, 10, MOVING_TRUCK, 1
-	warp_event  8,  15, ELMS_LAB, 1
-	warp_event  5,  9, PLAYERS_HOUSE_1F, 1
-	warp_event  13, 9, RIVALS_HOUSE, 1
+	warp_event  4, 8, MOVING_TRUCK, 1
+	warp_event  8,  13, ELMS_LAB, 1
+	warp_event  5,  7, PLAYERS_HOUSE_1F, 1
+	warp_event  13, 7, RIVALS_HOUSE, 1
 
 	db 4 ; coord events
-	coord_event  10,  3, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene1
-	coord_event  11,  3, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene2
-	coord_event  10,  3, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene1
-	coord_event  11,  3, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene2
+	coord_event  10,  1, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene1
+	coord_event  11,  1, SCENE_DEFAULT, LittlerootTown_YoungsterStopsYouScene2
+	coord_event  10,  1, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene1
+	coord_event  11,  1, SCENE_FINISHED, LittlerootTown_YoungsterStopsYouScene2
 
 	db 4 ; bg events
-	bg_event  15,  13, BGEVENT_READ, LittlerootTownSign
-	bg_event  8,  9,   BGEVENT_READ, LittlerootTownPlayersHouseSign
-	bg_event  7,  16,  BGEVENT_READ, LittlerootTownBirchsLabSign
-	bg_event  11,  9,   BGEVENT_READ, LittlerootTownBirchsHouseSign
+	bg_event  15,  11, BGEVENT_READ, LittlerootTownSign
+	bg_event  8,  7,   BGEVENT_READ, LittlerootTownPlayersHouseSign
+	bg_event  7,  14,  BGEVENT_READ, LittlerootTownBirchsLabSign
+	bg_event  11,  7,   BGEVENT_READ, LittlerootTownBirchsHouseSign
 	
 	db 5 ; object events
-	object_event  8,  4, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, EVENT_MET_RIVAL
-	object_event 11,  13, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittlerootTownFisherScript, -1
-	object_event 14,  16, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1
-	object_event 10,  3, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_BIRCH_ATTACK
-	object_event 15,  11, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_AFTER_ATTACK
+	object_event  8,  2, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript, EVENT_MET_RIVAL
+	object_event 11,  11, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, LittlerootTownFisherScript, -1
+	object_event 14,  14, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, LittlerootTownCooltrainerMScript, -1
+	object_event 10,  1, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_RIGHT, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_BIRCH_ATTACK
+	object_event 15,  9, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WANDER, 1, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, LittlerootTownYoungsterScript2, EVENT_AFTER_ATTACK
 	

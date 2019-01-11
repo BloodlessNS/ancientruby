@@ -625,11 +625,18 @@ Continue_DisplayGameTime:
 	jp PrintNum
 
 OakSpeech:
+	ld a, POTION
+	ld [wCurItem], a
+	ld a, 1
+	ld [wItemQuantityChangeBuffer], a
+	ld hl, wPCItems
+	call ReceiveItem
+
 	farcall InitClock
 	call RotateFourPalettesLeft
 	call ClearTileMap
 
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_ROUTE_123
 	call PlayMusic
 
 	call RotateFourPalettesRight

@@ -404,6 +404,8 @@ IntroSceneJumper:
 IntroScenes:
 	dw IntroScene1
 	dw IntroScene2
+	dw IntroScene5
+	dw IntroScene6
 	dw IntroScene3
 	dw IntroScene4
 	dw IntroScene7
@@ -414,8 +416,9 @@ IntroScenes:
 	dw IntroScene14
 	dw IntroScene15
 	dw IntroScene16
-	dw IntroScene22
-	dw IntroScene23
+	dw IntroScene19
+	dw IntroScene20
+	dw IntroScene24
 	dw IntroScene28
 
 NextIntroScene:
@@ -480,21 +483,115 @@ IntroScene2:
 	ld hl, wIntroSceneFrameCounter
 	ld a, [hl]
 	inc [hl]
-	cp $80
+	cp $FF
 	jr nc, .endscene
-	cp $60
+	cp $DF
 	jr nz, .DontPlaySound
+	ld de, MUSIC_CRYSTAL_OPENING
+	call PlayMusic
 	push af
 	depixel 11, 11
 	call CrystalIntro_InitUnownAnim
-	ld de, SFX_INTRO_UNOWN_1
-	call PlaySFX
 	pop af
 .DontPlaySound:
 	ld [wIntroSceneTimer], a
 	xor a
 	call CrystalIntro_UnownFade
 	ret
+.endscene
+	call NextIntroScene
+	ret
+	
+IntroScene5:
+; Go back to the Unown.
+	call Intro_ClearBGPals
+	call ClearSprites
+	call ClearTileMap
+	xor a
+	ldh [hBGMapMode], a
+	ldh [hLCDCPointer], a
+	ld a, $1
+	ldh [rVBK], a
+	ld hl, IntroTilemap005
+	debgcoord 0, 0
+	call Intro_DecompressRequest2bpp_64Tiles
+	ld a, $0
+	ldh [rVBK], a
+	ld hl, IntroUnownsGFX
+	ld de, vTiles2 tile $00
+	call Intro_DecompressRequest2bpp_128Tiles
+	ld hl, IntroPulseGFX
+	ld de, vTiles0 tile $00
+	call Intro_DecompressRequest2bpp_128Tiles
+	ld hl, IntroTilemap006
+	debgcoord 0, 0
+	call Intro_DecompressRequest2bpp_64Tiles
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBGPals1)
+	ldh [rSVBK], a
+	ld hl, IntroPalette2
+	ld de, wBGPals1
+	ld bc, 16 palettes
+	call CopyBytes
+	ld hl, IntroPalette2
+	ld de, wBGPals2
+	ld bc, 16 palettes
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
+	xor a
+	ldh [hSCX], a
+	ldh [hSCY], a
+	ld a, $7
+	ldh [hWX], a
+	ld a, $90
+	ldh [hWY], a
+	farcall ClearSpriteAnims
+	call Intro_SetCGBPalUpdate
+	xor a
+	ld [wIntroSceneFrameCounter], a
+	ld [wIntroSceneTimer], a
+	call NextIntroScene
+	ret
+	
+IntroScene6:
+; Two more Unown (I, H) fade in.
+	ld hl, wIntroSceneFrameCounter
+	ld a, [hl]
+	inc [hl]
+	cp $FF
+	jr nc, .endscene
+	cp $DF
+	jr z, .SecondUnown
+	cp $BF
+	jr nc, .StopUnown
+	cp $9F
+	jr z, .FirstUnown
+	jr .NoUnown
+
+.FirstUnown:
+	push af
+	depixel 7, 15
+	call CrystalIntro_InitUnownAnim
+	pop af
+.NoUnown:
+	ld [wIntroSceneTimer], a
+	xor a
+	call CrystalIntro_UnownFade
+	ret
+
+.SecondUnown:
+	push af
+	depixel 14, 6
+	call CrystalIntro_InitUnownAnim
+	pop af
+.StopUnown:
+	ld [wIntroSceneTimer], a
+	ld a, $1
+	call CrystalIntro_UnownFade
+	ret
+
 .endscene
 	call NextIntroScene
 	ret
@@ -552,7 +649,7 @@ IntroScene4:
 	call Intro_PerspectiveScrollBG
 	ld hl, wIntroSceneFrameCounter
 	ld a, [hl]
-	cp $80
+	cp $FF
 	jr z, .endscene
 	inc [hl]
 	ret
@@ -574,10 +671,6 @@ IntroScene7:
 	ld hl, IntroTilemap003
 	debgcoord 0, 0
 	call Intro_DecompressRequest2bpp_64Tiles
-
-	ld hl, IntroPichuWooperGFX
-	ld de, vTiles0 tile $00
-	call Intro_DecompressRequest2bpp_128Tiles
 
 	ld a, $0
 	ld [rVBK], a
@@ -701,11 +794,11 @@ IntroScene10:
 	ld hl, wIntroSceneFrameCounter
 	ld a, [hl]
 	inc [hl]
-	cp $c0
+	cp $FF
 	jr z, .done
-	cp $20
+	cp $FF
 	jr z, .wooper
-	cp $40
+	cp $FF
 	jr z, .pichu
 	ret
 
@@ -713,16 +806,12 @@ IntroScene10:
 	depixel 21, 16, 1, 0
 	ld a, SPRITE_ANIM_INDEX_INTRO_PICHU
 	call _InitSpriteAnimStruct
-	ld de, SFX_INTRO_PICHU
-	call PlaySFX
 	ret
 
 .wooper
 	depixel 22, 6
 	ld a, SPRITE_ANIM_INDEX_INTRO_WOOPER
 	call _InitSpriteAnimStruct
-	ld de, SFX_INTRO_PICHU
-	call PlaySFX
 	ret
 .done
 	call NextIntroScene
@@ -776,8 +865,6 @@ IntroScene13:
 	depixel 13, 11, 4, 0
 	ld a, SPRITE_ANIM_INDEX_INTRO_SUICUNE
 	call _InitSpriteAnimStruct
-	ld de, MUSIC_CRYSTAL_OPENING
-	call PlayMusic
 	xor a
 	ld [wGlobalAnimXOffset], a
 	call Intro_SetCGBPalUpdate
@@ -795,12 +882,12 @@ IntroScene14:
 	ld hl, wIntroSceneFrameCounter
 	ld a, [hl]
 	inc [hl]
-	cp $80
+	cp $FF
 	jr z, .done
-	cp $60
+	cp $DF
 	jr z, .jump
 	jr nc, .asm_e4e1a
-	cp $40
+	cp $BF
 	jr nc, .asm_e4e33
 	ret
 
@@ -904,30 +991,147 @@ IntroScene16:
 	cp $80
 	jr nc, .done
 	call Intro_Scene16_AnimateSuicune
-	ld a, [hSCY]
+	ldh a, [hSCY]
 	and a
 	ret z
 	add 8
-	ld [hSCY], a
+	ldh [hSCY], a
 	ret
 .done
 	call NextIntroScene
 	ret
 
-IntroScene22:
+IntroScene19:
+; More setup.
+	call Intro_ClearBGPals
+	call ClearSprites
+	call ClearTileMap
+	xor a
+	ldh [hBGMapMode], a
+	ld a, $1
+	ldh [rVBK], a
+	ld hl, IntroTilemap013
+	debgcoord 0, 0
+	call Intro_DecompressRequest2bpp_64Tiles
+	ld a, $0
+	ldh [rVBK], a
+	ld hl, IntroSuicuneBackGFX
+	ld de, vTiles2 tile $00
+	call Intro_DecompressRequest2bpp_128Tiles
+	ld hl, IntroUnownsGFX
+	ld de, vTiles1 tile $00
+	call Intro_DecompressRequest2bpp_128Tiles
+	ld de, IntroGrass4GFX
+	ld hl, vTiles1 tile $7f
+	lb bc, BANK(IntroGrass4GFX), 1
+	call Request2bpp
+	ld hl, IntroTilemap014
+	debgcoord 0, 0
+	call Intro_DecompressRequest2bpp_64Tiles
+	call Intro_LoadTilemap
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBGPals1)
+	ldh [rSVBK], a
+	ld hl, IntroPalette5
+	ld de, wBGPals1
+	ld bc, 16 palettes
+	call CopyBytes
+	ld hl, IntroPalette5
+	ld de, wBGPals2
+	ld bc, 16 palettes
+	call CopyBytes
+	pop af
+	ldh [rSVBK], a
+	xor a
+	ldh [hSCX], a
+	ld a, $d8
+	ldh [hSCY], a
+	ld a, $7
+	ldh [hWX], a
+	ld a, $90
+	ldh [hWY], a
+	farcall ClearSpriteAnims
+	ld hl, wSpriteAnimDict
+	xor a
+	ld [hli], a
+	ld [hl], $7f
+	call Intro_SetCGBPalUpdate
+	depixel 12, 0
+	ld a, SPRITE_ANIM_INDEX_INTRO_SUICUNE_AWAY
+	call _InitSpriteAnimStruct
+	xor a
+	ld [wIntroSceneFrameCounter], a
+	ld [wIntroSceneTimer], a
+	call NextIntroScene
+	ret
+
+IntroScene20:
+; Suicune running away. A bunch of Unown appear.
 	ld hl, wIntroSceneFrameCounter
 	ld a, [hl]
 	inc [hl]
-	cp $8
-	jr nc, .done
+	cp $98
+	jr nc, .finished
+	cp $58
+	ret nc
+	cp $40
+	jr nc, .AppearUnown
+	cp $28
+	ret nc
+	ldh a, [hSCY]
+	inc a
+	ldh [hSCY], a
 	ret
-.done
-	farcall DeinitializeAllSprites
+
+.AppearUnown:
+	sub $18
+	ld c, a
+	and $3
+	cp $3
+	ret nz
+	ld a, c
+	and $1c
+	srl a
+	srl a
+	ld [wIntroSceneTimer], a
+	xor a
+	call Intro_Scene20_AppearUnown
+	ret
+; unused
+	ld a, c
+	and $1c
+	srl a
+	srl a
+	ld [wIntroSceneTimer], a
+	ld a, 1
+	call Intro_Scene20_AppearUnown
+	ret
+
+.finished
 	call NextIntroScene
 	ret
 
-IntroScene23:
-	xor a
+IntroScene24:
+; Fade to white.
+	ld hl, wIntroSceneFrameCounter
+	ld a, [hl]
+	inc [hl]
+	cp $20
+	jr nc, .done
+
+	ld c, a
+	and $3
+	ret nz
+
+	ld a, c
+	and $1c
+	sla a
+	call Intro_Scene24_ApplyPaletteFade
+	ret
+
+.done
+	ld a, $40
 	ld [wIntroSceneFrameCounter], a
 	call NextIntroScene
 	ret
@@ -1494,9 +1698,6 @@ Intro_PerspectiveScrollBG:
 
 IntroSuicuneRunGFX:
 INCBIN "gfx/intro/suicune_run.2bpp.lz"
-
-IntroPichuWooperGFX:
-INCBIN "gfx/intro/pichu_wooper.2bpp.lz"
 
 IntroBackgroundGFX:
 INCBIN "gfx/intro/background.2bpp.lz"

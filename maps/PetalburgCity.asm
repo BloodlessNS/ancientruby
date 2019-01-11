@@ -124,6 +124,6 @@ PetalburgCity_MapEvents:
 	db 4 ; object events
 	object_event 20,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgCityGentlemanScript, -1
 	object_event 14,  16, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, WallyGoneScript, -1
-	object_event 13,  8, SPRITE_SILVER, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1	
+	object_event 13,  8, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1	
 	object_event 7,  19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgCityCooltrainerMScript, -1
 	

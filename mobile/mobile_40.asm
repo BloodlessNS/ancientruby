@@ -5066,7 +5066,7 @@ Function102387:
 	set 6, [hl]
 	xor a
 	ld [wdc5f], a
-	ld de, MUSIC_ROUTE_30
+	ld de, MUSIC_ROUTE_123
 	call PlayMusic
 	call Function102d9a
 	call Function102dd3

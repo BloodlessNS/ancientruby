@@ -67,5 +67,6 @@ MapScenes::
 	scene_var LITTLEROOT_TOWN_INTRO,                       wLittlerootTownIntroSceneID
 	scene_var LITTLEROOT_TOWN,                             wLittlerootTownSceneID
 	scene_var RIVALS_HOUSE,                                wRivalsHouseSceneID
-	scene_var OLDALE_TOWN,                                wOldaleTownSceneID
+	scene_var OLDALE_TOWN,                                 wOldaleTownSceneID
+	scene_var ROUTE_101,                                   wRoute101SceneID
 	db -1

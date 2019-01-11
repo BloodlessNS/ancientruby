@@ -10,7 +10,15 @@ PetalburgPokecenter1FNurseScript:
 	jumpstd pokecenternurse
 	
 PetalburgPokecentreLassScript:
+	checkevent EVENT_GOT_TORCHIC_FROM_ELM
+	iftrue .torchictext
+	checkevent EVENT_GOT_MUDKIP_FROM_ELM
+	iftrue .mudkiptext
 	jumptextfaceplayer PetalburgPokecentreLassText
+.torchictext
+	jumptextfaceplayer PetalburgPokecentreLassText2
+.mudkiptext
+	jumptextfaceplayer PetalburgPokecentreLassText3
 	
 PetalburgPokecentreYoungsterScript:
 	jumptextfaceplayer PetalburgPokecentreYoungsterText
@@ -43,6 +51,62 @@ PetalburgPokecentreLassText:
 	
 	para "But, it's weak"
 	line "against FIRE-TYPE"
+	cont "#MON." 
+	done
+	
+PetalburgPokecentreLassText2:
+	text "There a many types"
+	line "of #MON."
+	
+	para "All types have"
+	line "their strengths"
+	cont "and weaknesses"
+	cont "against other"
+	cont "types."
+	
+	para "Depending on the"
+	line "types of #MON,"
+	cont "a battle could be"
+	cont "easy or hard."
+	
+	para "For example,"
+	line "TORCHIC is a fire"
+	cont "type."
+	
+	para "It's strong"
+	line "against the GRASS"
+	cont "and ICE types."
+	
+	para "But, it's weak"
+	line "against WATER-TYPE"
+	cont "#MON." 
+	done
+	
+PetalburgPokecentreLassText3:
+	text "There a many types"
+	line "of #MON."
+	
+	para "All types have"
+	line "their strengths"
+	cont "and weaknesses"
+	cont "against other"
+	cont "types."
+	
+	para "Depending on the"
+	line "types of #MON,"
+	cont "a battle could be"
+	cont "easy or hard."
+	
+	para "For example,"
+	line "MUDKIP is a water"
+	cont "type."
+	
+	para "It's strong"
+	line "against the FIRE"
+	cont "and ROCK types."
+	
+	para "But, it's weak"
+	line "against GRASS-TYPE"
 	cont "#MON." 
 	done
 	

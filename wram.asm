@@ -858,12 +858,7 @@ wDexListingCursorBackup:: db
 wBackupDexListingCursor:: db
 wBackupDexListingPage:: db
 wDexCurrentLocation:: db
-if DEF(_CRYSTAL11)
-wPokedexStatus:: db
-wPokedexDataEnd::
-else
 wPokedexDataEnd:: ds 1
-endc
 	ds 2
 
 NEXTU ; c6d0
@@ -1340,12 +1335,8 @@ wCreditsLYOverride:: db
 NEXTU ; cf64
 ; pokedex
 wPrevDexEntryJumptableIndex:: db
-if DEF(_CRYSTAL11)
-wPrevDexEntryBackup:: db
-else
 wPrevDexEntryBackup::
 wPokedexStatus:: db
-endc
 
 NEXTU ; cf64
 ; pokegear
@@ -2598,7 +2589,8 @@ wMobileBattleRoomSceneID::                        db ; d9c0
 wLittlerootTownIntroSceneID::                     db
 wLittlerootTownSceneID::                          db
 wRivalsHouseSceneID::                             db
-wOldaleTownSceneID::                             db
+wOldaleTownSceneID::                              db
+wRoute101SceneID ::                               db
 
 	ds 49
 

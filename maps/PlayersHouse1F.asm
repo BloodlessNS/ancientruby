@@ -247,7 +247,7 @@ DadOnTVText4:
 	
 	para "I think DAD was"
 	line "on, but we missed"
-	cont "him. Too bad"
+	cont "him. Too bad."
 	
 	para "Oh, yes. One of"
 	line "DAD's friends"

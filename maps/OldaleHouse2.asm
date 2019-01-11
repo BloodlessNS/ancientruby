@@ -21,7 +21,7 @@ OldaleHouse2ScientistText:
 	done
 	
 OldaleHouse2LassText:
-	text "When #Mon"
+	text "When #MON"
 	line "battle, they"
 	cont "eventually level"
 	cont "up and get"
