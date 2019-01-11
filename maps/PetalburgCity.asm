@@ -14,6 +14,84 @@ PetalburgCity_MapScripts:
 	setflag ENGINE_FLYPOINT_PETALBURG
 	return
 	
+StoppedByNPC:
+	checkevent EVENT_LEARNED_TO_CATCH_POKEMON
+	iftrue .End
+	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext PetalburgCityText_StoppedByNPC
+	waitbutton
+	closetext
+	follow PETALBURGCITY_WALLY, PLAYER
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC2
+	stopfollow
+	turnobject PLAYER, UP
+	opentext
+	writetext PetalburgCityText_StoppedByNPC2
+	waitbutton
+	turnobject PETALBURGCITY_WALLY, RIGHT
+	turnobject PLAYER, RIGHT
+	writetext PetalburgCityText_StoppedByNPC3
+	waitbutton
+	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+.End
+	end
+	
+StoppedByNPC2:
+	checkevent EVENT_LEARNED_TO_CATCH_POKEMON
+	iftrue .End2
+	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC4
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext PetalburgCityText_StoppedByNPC
+	waitbutton
+	closetext
+	follow PETALBURGCITY_WALLY, PLAYER
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC5
+	stopfollow
+	turnobject PLAYER, UP
+	opentext
+	writetext PetalburgCityText_StoppedByNPC2
+	waitbutton
+	turnobject PETALBURGCITY_WALLY, RIGHT
+	turnobject PLAYER, RIGHT
+	writetext PetalburgCityText_StoppedByNPC3
+	waitbutton
+	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+.End2
+	end
+	
+StoppedByNPC3:
+	checkevent EVENT_LEARNED_TO_CATCH_POKEMON
+	iftrue .End3
+	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC6
+	turnobject PLAYER, RIGHT
+	opentext
+	writetext PetalburgCityText_StoppedByNPC
+	waitbutton
+	closetext
+	follow PETALBURGCITY_WALLY, PLAYER
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC7
+	stopfollow
+	turnobject PLAYER, UP
+	opentext
+	writetext PetalburgCityText_StoppedByNPC2
+	waitbutton
+	turnobject PETALBURGCITY_WALLY, RIGHT
+	turnobject PLAYER, RIGHT
+	writetext PetalburgCityText_StoppedByNPC3
+	waitbutton
+	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+.End3
+	end
+	
 PetalburgCityGentlemanScript:
 	jumptextfaceplayer PetalburgCityGentlemanText
 	
@@ -104,6 +182,104 @@ CooltrainerMText:
 	line "reflected in your"
 	cont "face?"
 	done
+	
+PetalburgCityText_StoppedByNPC:
+	text "Hiya! Are you"
+	line "maybe…"
+	
+	para "A rookie TRAINER?"
+	
+	para "Do you know what"
+	line "#MON TRAINERS"
+	cont "do when they reach"
+	cont "a new town?"
+	
+	para "They first check"
+	line "what type of GYM"
+	cont "is in the town."
+	done
+	
+PetalburgCityText_StoppedByNPC2:
+	text "See? This is"
+	line "PETALBURG CITY's"
+	cont "GYM."
+	done
+	
+PetalburgCityText_StoppedByNPC3:
+	text "This is the GYM's"
+	line "sign. Look for it"
+	cont "whenever you're"
+	cont "looking for a GYM."
+	done
+	
+MovementData_StoppedByNPC:
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+MovementData_StoppedByNPC2:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	turn_head UP
+	step_end
+	
+MovementData_StoppedByNPC4:
+	step DOWN
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+MovementData_StoppedByNPC5:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step UP
+	step RIGHT
+	turn_head UP
+	step_end
+	
+MovementData_StoppedByNPC6:
+	step DOWN
+	step DOWN
+	step DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+MovementData_StoppedByNPC7:
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step RIGHT
+	step UP
+	step UP
+	step RIGHT
+	turn_head UP
+	step_end
+	
+MovementData_StoppedByNPC3:
+	step UP
+	step LEFT
+	turn_head DOWN
+	step_end
 
 PetalburgCity_MapEvents:
 	db 0, 0 ; filler
@@ -114,7 +290,10 @@ PetalburgCity_MapEvents:
 	warp_event  17, 15, PETALBURG_POKECENTER_1F, 2
 	warp_event  23, 11, PETALBURG_MART, 1
 	
-	db 0 ; coord events
+	db 3 ; coord events
+	coord_event  7, 9, SCENE_DEFAULT, StoppedByNPC
+	coord_event  7, 10, SCENE_DEFAULT, StoppedByNPC2
+	coord_event  7, 11, SCENE_DEFAULT, StoppedByNPC3
 
 	db 3 ; bg events
 	bg_event  14,  15, BGEVENT_READ, PetalburgCitySign

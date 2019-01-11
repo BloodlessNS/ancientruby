@@ -69,4 +69,5 @@ MapScenes::
 	scene_var RIVALS_HOUSE,                                wRivalsHouseSceneID
 	scene_var OLDALE_TOWN,                                 wOldaleTownSceneID
 	scene_var ROUTE_101,                                   wRoute101SceneID
+	scene_var PETALBURG_CITY,                              wPetalburgCitySceneID
 	db -1

@@ -2591,6 +2591,7 @@ wLittlerootTownSceneID::                          db
 wRivalsHouseSceneID::                             db
 wOldaleTownSceneID::                              db
 wRoute101SceneID ::                               db
+wPetalburgCitySceneID::                           db
 
 	ds 49
 

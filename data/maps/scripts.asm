@@ -371,7 +371,6 @@ INCLUDE "maps/OldaleMart.asm"
 INCLUDE "maps/OldaleHouse1.asm"
 INCLUDE "maps/OldaleHouse2.asm"
 INCLUDE "maps/Route102.asm"
-INCLUDE "maps/PetalburgCity.asm"
 INCLUDE "maps/PetalburgHouse1.asm"
 INCLUDE "maps/PetalburgHouse2.asm"
 INCLUDE "maps/PetalburgMart.asm"
@@ -382,4 +381,5 @@ SECTION "Map Scripts 26", ROMX
 
 INCLUDE "maps/Route101.asm"
 INCLUDE "maps/Route103.asm"
+INCLUDE "maps/PetalburgCity.asm"
 INCLUDE "maps/PetalburgPokecenter1F.asm"
