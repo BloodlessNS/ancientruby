@@ -1024,13 +1024,14 @@ StartTitleScreen:
 	ret
 
 RunTitleScreen:
-	ld a, [wJumptableIndex]
-	bit 7, a
-	jr nz, .done_title
-	call TitleScreenScene
-	call DelayFrame
-	and a
-	ret
+    ld a, [wJumptableIndex]
+    bit 7, a
+    jr nz, .done_title
+    call TitleScreenScene
+    farcall GroudonFrameIterator
+    call DelayFrame
+    and a
+    ret
 
 .done_title
 	scf

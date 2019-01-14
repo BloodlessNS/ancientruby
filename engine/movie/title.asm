@@ -230,6 +230,70 @@ endc
 	ld [wd002], a
 
 	ret
+	
+GroudonFrameIterator:
+	ld hl, wd002
+	ld a, [hl]
+	ld c, a
+	inc [hl]
+	
+	; Only do this once every eight frames
+	and %111
+	ret nz
+GroudonFade:
+	ld hl, wBGPals2 + 4
+	ld a, [wd002]
+	and %11111111
+	cp %01111111
+	jr z, .okay
+	jr c, .okay
+	ld c, a
+	ld a, %11111111
+	sub c
+.okay
+	srl a
+	srl a
+	ld c, a
+	ld b, $0
+	ldh a, [rSVBK]
+	push af
+	ld a, BANK(wBGPals2)
+	ldh [rSVBK], a
+
+	push hl
+	ld hl, .BWFade
+	add hl, bc
+	add hl, bc
+	ld a, [hli]
+	ld d, [hl]
+	ld e, a
+	pop hl
+	ld a, e
+	ld [hli], a
+	ld a, d
+	ld [hli], a
+	pop af
+	ldh [rSVBK], a
+	ld a, $1
+	ldh [hCGBPalUpdate], a
+	ret
+	
+
+.BWFade:
+; Fade between black and white.
+if DEF(_SAPPHIRE)
+hue = 0
+rept 32
+	RGB hue, 0, 0
+hue = hue + 1
+endr
+else
+hue = 0
+rept 32
+	RGB 0, 0, hue
+hue = hue + 1
+endr
+endc
 
 DrawTitleGraphic:
 ; input:
