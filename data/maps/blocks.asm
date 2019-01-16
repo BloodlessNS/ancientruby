@@ -823,3 +823,6 @@ RivalsRoom_Blocks:
 PetalburgGym_Blocks:
 	INCBIN "maps/PetalburgGym.blk"
 	
+Route104South_Blocks:
+	INCBIN "maps/Route104South.blk"
+	

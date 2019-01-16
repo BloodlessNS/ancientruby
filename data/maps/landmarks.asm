@@ -13,6 +13,7 @@ Landmarks:
 	landmark 36,   84,  Route102Name
 	landmark 44,   78,  Route103Name
 	landmark 44,   70, PetalburgCityName
+	landmark 44,   62,  Route104Name
 	landmark 100, 100, CherrygroveCityName
 	landmark 100,  80, Route30Name
 	landmark  96,  60, Route31Name
@@ -71,11 +72,12 @@ Landmarks:
 	landmark 140, 116, FastShipName
 
 LittlerootTownName:  db "LITTLEROOT¯TOWN@"
-Route101Name:         db "ROUTE 101@"
-OldaleTownName:       db "OLDALE¯TOWN@"
-Route102Name:         db "ROUTE 102@"
-Route103Name:         db "ROUTE 103@"
+Route101Name:        db "ROUTE 101@"
+OldaleTownName:      db "OLDALE¯TOWN@"
+Route102Name:        db "ROUTE 102@"
+Route103Name:        db "ROUTE 103@"
 PetalburgCityName:   db "PETALBURG¯CITY@"
+Route104Name:        db "ROUTE 104@"
 CherrygroveCityName: db "CHERRYGROVE¯CITY@"
 GoldenrodCityName:   db "GOLDENROD¯CITY@"
 CianwoodCityName:    db "CIANWOOD¯CITY@"

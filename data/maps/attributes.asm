@@ -85,8 +85,12 @@ ENDM
 	map_attributes Route103, ROUTE_103, $00, SOUTH
 	connection south, OldaleTown, OLDALE_TOWN, 2, 2, 7
 	
-	map_attributes PetalburgCity, PETALBURG_CITY, $00, EAST
+	map_attributes PetalburgCity, PETALBURG_CITY, $00, WEST | EAST
+	connection west, Route104South, ROUTE_104_SOUTH, 1, 8, 6
 	connection east, Route102, ROUTE_102, 5, 1, 6
+	
+	map_attributes Route104South, ROUTE_104_SOUTH, $00, EAST
+	connection east, PetalburgCity, PETALBURG_CITY, 8, 1, 6
 	
 	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH
 	connection north, Route30, ROUTE_30, 5, 0, 10
