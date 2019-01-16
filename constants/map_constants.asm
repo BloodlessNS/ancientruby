@@ -328,7 +328,7 @@ ENDM
 	map_const ROUTE_29_ROUTE_46_GATE,                       5,  4 ;  9
 	map_const MOVING_TRUCK,                                 3,  2 ; 10
 	map_const LITTLEROOT_TOWN,                             10, 10 ; 11
-	map_const ROUTE_101,                                   10,  10 ; 12
+	map_const ROUTE_101,                                   10, 10 ; 12
 	map_const OLDALE_TOWN,                                 10,  9 ; 13
 	map_const OLDALE_POKECENTER_1F,                         5,  4 ; 14
 	map_const OLDALE_MART,                                  5,  4 ; 15
@@ -342,6 +342,7 @@ ENDM
 	map_const PETALBURG_POKECENTER_1F,                      5,  4 ; 23
 	map_const PETALBURG_MART,                               5,  4 ; 24
 	map_const RIVALS_ROOM,                                  4,  3 ; 25
+	map_const PETALBURG_GYM,                                4,  4 ; 26
 
 	newgroup                                                      ; 25
 

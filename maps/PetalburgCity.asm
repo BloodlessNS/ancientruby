@@ -19,11 +19,11 @@ StoppedByNPC:
 	iftrue .End
 	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC
-	turnobject PLAYER, RIGHT
 	opentext
 	writetext PetalburgCityText_StoppedByNPC
 	waitbutton
 	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC8
 	follow PETALBURGCITY_WALLY, PLAYER
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC2
 	stopfollow
@@ -37,6 +37,9 @@ StoppedByNPC:
 	waitbutton
 	closetext
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+	disappear PETALBURGCITY_WALLY
+	moveobject PETALBURGCITY_WALLY, 4, 10
+	appear PETALBURGCITY_WALLY
 .End
 	end
 	
@@ -45,11 +48,11 @@ StoppedByNPC2:
 	iftrue .End2
 	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC4
-	turnobject PLAYER, RIGHT
 	opentext
 	writetext PetalburgCityText_StoppedByNPC
 	waitbutton
 	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC9
 	follow PETALBURGCITY_WALLY, PLAYER
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC5
 	stopfollow
@@ -63,6 +66,9 @@ StoppedByNPC2:
 	waitbutton
 	closetext
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+	disappear PETALBURGCITY_WALLY
+	moveobject PETALBURGCITY_WALLY, 4, 10
+	appear PETALBURGCITY_WALLY
 .End2
 	end
 	
@@ -71,11 +77,11 @@ StoppedByNPC3:
 	iftrue .End3
 	showemote EMOTE_SHOCK, PETALBURGCITY_WALLY, 15
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC6
-	turnobject PLAYER, RIGHT
 	opentext
 	writetext PetalburgCityText_StoppedByNPC
 	waitbutton
 	closetext
+	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC10
 	follow PETALBURGCITY_WALLY, PLAYER
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC7
 	stopfollow
@@ -89,6 +95,9 @@ StoppedByNPC3:
 	waitbutton
 	closetext
 	applymovement PETALBURGCITY_WALLY, MovementData_StoppedByNPC3
+	disappear PETALBURGCITY_WALLY
+	moveobject PETALBURGCITY_WALLY, 4, 10
+	appear PETALBURGCITY_WALLY
 .End3
 	end
 	
@@ -99,7 +108,7 @@ WallyGoneScript:
 	jumptextfaceplayer WallyGoneText
 	
 WallyAlphaEndScript:
-	jumptextfaceplayer WallyAlphaEndText
+	jumptextfaceplayer PetalburgCityText_StoppedByNPC
 	
 PetalburgCityCooltrainerMScript:
 	jumptextfaceplayer CooltrainerMText
@@ -155,16 +164,6 @@ WallyGoneText:
 	cont "TOWN very soon…"
 	done
 	
-WallyAlphaEndText
-	text "I'm waiting to"
-	line "recieve my first"
-	cont "#MON but your"
-	cont "dad's out right"
-	cont "now."
-	
-	para "Check back later!"
-	done
-	
 CooltrainerMText:
 	text "My face is"
 	line "reflected in the"
@@ -213,12 +212,9 @@ PetalburgCityText_StoppedByNPC3:
 	done
 	
 MovementData_StoppedByNPC:
-	step DOWN
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+	step UP
+	step RIGHT
+	step RIGHT
 	step_end
 	
 MovementData_StoppedByNPC2:
@@ -232,13 +228,8 @@ MovementData_StoppedByNPC2:
 	step_end
 	
 MovementData_StoppedByNPC4:
-	step DOWN
-	step DOWN
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 MovementData_StoppedByNPC5:
@@ -254,13 +245,8 @@ MovementData_StoppedByNPC5:
 	
 MovementData_StoppedByNPC6:
 	step DOWN
-	step DOWN
-	step DOWN
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+	step RIGHT
+	step RIGHT
 	step_end
 	
 MovementData_StoppedByNPC7:
@@ -276,19 +262,45 @@ MovementData_StoppedByNPC7:
 	step_end
 	
 MovementData_StoppedByNPC3:
-	step UP
+	step DOWN
 	step LEFT
-	turn_head DOWN
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step LEFT
+	step_end
+	
+MovementData_StoppedByNPC8:
+	step DOWN
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+	
+MovementData_StoppedByNPC9:
+	step DOWN
+	step RIGHT
+	step RIGHT
+	step UP
+	step_end
+	
+MovementData_StoppedByNPC10:
+	step UP
+	step RIGHT
+	step RIGHT
+	step DOWN
 	step_end
 
 PetalburgCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 5 ; warp events
 	warp_event  19, 21, PETALBURG_HOUSE_1, 1
 	warp_event  9, 17, PETALBURG_HOUSE_2, 1
 	warp_event  17, 15, PETALBURG_POKECENTER_1F, 2
 	warp_event  23, 11, PETALBURG_MART, 1
+	warp_event  13, 7, PETALBURG_GYM, 1
 	
 	db 3 ; coord events
 	coord_event  7, 9, SCENE_DEFAULT, StoppedByNPC
@@ -302,7 +314,7 @@ PetalburgCity_MapEvents:
 
 	db 4 ; object events
 	object_event 20,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgCityGentlemanScript, -1
-	object_event 14,  16, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, WallyGoneScript, -1
-	object_event 13,  8, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1	
+	object_event 14,  16, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, WallyGoneScript, EVENT_DUDE_TALKED_TO_YOU
+	object_event 4,  10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1	
 	object_event 7,  19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgCityCooltrainerMScript, -1
 	

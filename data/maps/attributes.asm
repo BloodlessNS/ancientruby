@@ -446,4 +446,5 @@ ENDM
 	map_attributes PetalburgPokecenter1F, PETALBURG_POKECENTER_1F, $00, 0
 	map_attributes PetalburgMart, PETALBURG_MART, $00, 0
 	map_attributes RivalsRoom, RIVALS_ROOM, $00, 0
+	map_attributes PetalburgGym, PETALBURG_GYM, $00, 0
 	

@@ -6,11 +6,53 @@
 	const ROUTE102_BUG_CATCHER2
 	const ROUTE102_YOUNGSTER2
 	const ROUTE102_LASS
+	const ROUTE102_WALLY
 
 Route102_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .DummyScene1 ; SCENE_ROUTE102_NOTHING
+	scene_script .CatchTutorial ; SCENE_ROUTE102_CATCH_TUTORIAL
 
 	db 0 ; callbacks
+	
+.DummyScene1:
+	end
+	
+.CatchTutorial:
+	moveobject ROUTE102_WALLY, 5, 5
+	appear ROUTE102_WALLY
+	turnobject PLAYER, RIGHT
+	pause 30
+	turnobject ROUTE102_WALLY, LEFT
+	pause 30
+	turnobject ROUTE102_WALLY, DOWN
+	pause 30
+	turnobject ROUTE102_WALLY, RIGHT
+	opentext
+	writetext Route102WallyText
+	waitbutton
+	closetext
+	loadwildmon RALTS, 5
+	catchtutorial BATTLETYPE_TUTORIAL
+	reloadmapafterbattle
+	opentext
+	writetext Route102WallyText2
+	waitbutton
+	turnobject ROUTE102_WALLY, LEFT
+	writetext Route102WallyText3
+	waitbutton
+	closetext
+	setscene SCENE_ROUTE102_NOTHING
+	clearevent EVENT_DUDE_TALKED_TO_YOU
+	setmapscene PETALBURG_GYM, SCENE_PETALBURGGYM_CATCH_TUTORIAL
+	warp PETALBURG_GYM, 3, 4
+	end
+	
+.WallyCatchTutorial:
+	disappear ROUTE102_WALLY
+	moveobject ROUTE102_WALLY, 5, 5
+	appear ROUTE102_WALLY
+	end
 	
 Route102FisherScript:
 	jumptextfaceplayer Route102FisherText
@@ -194,6 +236,35 @@ Route102BugCatcherText:
 	
 	para "Fwatchoo!"
 	done
+	
+Route102WallyText:
+	text "WALLY: <PLAYER>…"
+	
+	para "#MON hide in"
+	line "tall grass like"
+	cont "this, don't they?"
+	
+	para "Please watch me"
+	line "and see if I can"
+	cont "catch one"
+	cont "properly."
+	
+	para "…Whoa!"
+	done
+	
+Route102WallyText2:
+	text "WALLY: I did it…"
+	line "It's my… my"
+	cont "#MON!"
+	done
+	
+Route102WallyText3:
+	text "<PLAYER>, thank"
+	line "you!"
+	
+	para "Let's go back to"
+	line "the GYM!"
+	done
 
 Route102_MapEvents:
 	db 0, 0 ; filler
@@ -206,7 +277,7 @@ Route102_MapEvents:
 	bg_event 36,  7, BGEVENT_READ, Route102Sign1
 	bg_event 15,  2, BGEVENT_READ, Route102Sign2
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event  9,  15, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route102Potion, EVENT_ROUTE_102_POTION
 	object_event 33,  3, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, Route102FisherScript, -1
 	object_event 16,  10, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1,PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route102BugCatcherScript, -1
@@ -214,3 +285,4 @@ Route102_MapEvents:
 	object_event  22,  13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherRick, -1
 	object_event  17, 5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerYoungsterAllen, -1
 	object_event  8, 6, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassTiana, -1
+	object_event  5, 21, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_DOWN, 1, -1, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassTiana, EVENT_LEARNED_TO_CATCH_POKEMON

@@ -820,3 +820,6 @@ CherrygroveMart_Blocks:
 RivalsRoom_Blocks:
 	INCBIN "maps/RivalsRoom.blk"
 	
+PetalburgGym_Blocks:
+	INCBIN "maps/PetalburgGym.blk"
+	

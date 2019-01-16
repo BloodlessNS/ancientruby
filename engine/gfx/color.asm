@@ -721,11 +721,11 @@ GetPlayerOrMonPalettePointer:
 	ret
 
 .male
-	ld hl, Rival1Palette
+	ld hl, Rival2Palette
 	ret
 	
 .DudeTutorial
-	ld hl, Rival1Palette
+	ld hl, Rival2Palette
 	ret
 
 GetFrontpicPalettePointer:

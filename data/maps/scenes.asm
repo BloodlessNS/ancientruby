@@ -70,4 +70,6 @@ MapScenes::
 	scene_var OLDALE_TOWN,                                 wOldaleTownSceneID
 	scene_var ROUTE_101,                                   wRoute101SceneID
 	scene_var PETALBURG_CITY,                              wPetalburgCitySceneID
+	scene_var ROUTE_102,                                   wRoute102SceneID
+	scene_var PETALBURG_GYM,                               wPetalburgGymSceneID
 	db -1

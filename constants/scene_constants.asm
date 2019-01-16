@@ -158,3 +158,14 @@ SCENE_FINISHED EQU 1
 
 	const_def 1
 	const SCENE_WALK_IN_TO_HOUSE
+	
+; wRoute102SceneID
+	const_def
+	const SCENE_ROUTE102_NOTHING        ; 0
+	const SCENE_ROUTE102_CATCH_TUTORIAL ; 1
+	
+; wPetalburgGymSceneID
+	const_def
+	const SCENE_PETALBURGGYM_NOTHING        ; 0
+	const SCENE_PETALBURGGYM_CATCH_TUTORIAL ; 1
+	

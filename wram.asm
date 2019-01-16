@@ -2590,8 +2590,10 @@ wLittlerootTownIntroSceneID::                     db
 wLittlerootTownSceneID::                          db
 wRivalsHouseSceneID::                             db
 wOldaleTownSceneID::                              db
-wRoute101SceneID ::                               db
+wRoute101SceneID::                                db
 wPetalburgCitySceneID::                           db
+wRoute102SceneID::                                db
+wPetalburgGymSceneID::                            db
 
 	ds 49
 
