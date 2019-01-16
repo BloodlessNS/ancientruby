@@ -343,7 +343,8 @@ ENDM
 	map_const PETALBURG_MART,                               5,  4 ; 24
 	map_const RIVALS_ROOM,                                  4,  3 ; 25
 	map_const PETALBURG_GYM,                                4,  4 ; 26
-	map_const ROUTE_104_SOUTH,                             16, 25 ; 19
+	map_const ROUTE_104_SOUTH,                             16, 25 ; 27
+	map_const PETALBURG_WOODS,                             20, 19 ; 28
 
 	newgroup                                                      ; 25
 

@@ -826,3 +826,6 @@ PetalburgGym_Blocks:
 Route104South_Blocks:
 	INCBIN "maps/Route104South.blk"
 	
+PetalburgWoods_Blocks:
+	INCBIN "maps/PetalburgWoods.blk"
+	
