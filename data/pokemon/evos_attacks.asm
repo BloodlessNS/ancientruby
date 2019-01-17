@@ -2070,134 +2070,153 @@ MewEvosAttacks:
 TreeckoEvosAttacks:
 	db EVOLVE_LEVEL, 16, GROVYLE
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 22, SYNTHESIS
-	db 29, BODY_SLAM
-	db 36, LIGHT_SCREEN
-	db 43, SAFEGUARD
-	db 50, SOLARBEAM
+	db 1, POUND
+	db 1, LEER
+	db 6, ABSORB
+	db 11, QUICK_ATTACK
+	db 16, PURSUIT
+	db 21, SCREECH
+	db 26, MEGA_DRAIN
+	db 31, AGILITY
+	db 36, SLAM
+	db 41, DETECT
+	db 46, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 GrovyleEvosAttacks:
 	db EVOLVE_LEVEL, 36, SCEPTILE
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 39, LIGHT_SCREEN
-	db 47, SAFEGUARD
-	db 55, SOLARBEAM
+	db 1, POUND
+	db 1, ABSORB
+	db 1, LEER
+	db 1, QUICK_ATTACK
+	db 6, ABSORB
+	db 11, QUICK_ATTACK
+	db 16, FURY_SWIPES
+	db 17, PURSUIT
+	db 23, SCREECH
+	db 35, AGILITY
+	db 41, SLAM
+	db 47, DETECT
+	db 53, FALSE_SWIPE
 	db 0 ; no more level-up moves
 
 SceptileEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 1, RAZOR_LEAF
-	db 1, REFLECT
-	db 8, RAZOR_LEAF
-	db 12, REFLECT
-	db 15, POISONPOWDER
-	db 23, SYNTHESIS
-	db 31, BODY_SLAM
-	db 41, LIGHT_SCREEN
-	db 51, SAFEGUARD
-	db 61, SOLARBEAM
+	db 1, POUND
+	db 1, ABSORB
+	db 1, LEER
+	db 1, QUICK_ATTACK
+	db 6, ABSORB
+	db 11, QUICK_ATTACK
+	db 16, FURY_SWIPES
+	db 17, PURSUIT
+	db 23, SCREECH
+	db 35, AGILITY
+	db 43, SLAM
+	db 51, DETECT
+	db 59, FALSE_SWIPE
 	db 0 ; no more level-up moves
 
 TorchicEvosAttacks:
 	db EVOLVE_LEVEL, 16, COMBUSKEN
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 19, QUICK_ATTACK
-	db 27, FLAME_WHEEL
-	db 36, SWIFT
-	db 46, FLAMETHROWER
+	db 1, SCRATCH
+	db 1, GROWL
+	db 7, FOCUS_ENERGY
+	db 10, EMBER
+	db 16, PECK
+	db 19, SAND_ATTACK
+	db 25, FIRE_SPIN
+	db 28, QUICK_ATTACK
+	db 34, SLASH
+	db 37, MIRROR_MOVE
+	db 43, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 CombuskenEvosAttacks:
 	db EVOLVE_LEVEL, 36, BLAZIKEN
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 1, SMOKESCREEN
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 42, SWIFT
-	db 54, FLAMETHROWER
+	db 1, EMBER
+	db 1, FOCUS_ENERGY
+	db 1, GROWL
+	db 1, SCRATCH
+	db 7, FOCUS_ENERGY
+	db 13, EMBER
+	db 16, DOUBLE_KICK
+	db 17, PECK
+	db 21, SAND_ATTACK
+	db 32, QUICK_ATTACK
+	db 39, SLASH
+	db 43, MIRROR_MOVE
+	db 50, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 BlazikenEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, LEER
-	db 1, SMOKESCREEN
 	db 1, EMBER
-	db 6, SMOKESCREEN
-	db 12, EMBER
-	db 21, QUICK_ATTACK
-	db 31, FLAME_WHEEL
-	db 45, SWIFT
-	db 60, FLAMETHROWER
+	db 1, FOCUS_ENERGY
+	db 1, GROWL
+	db 1, SCRATCH
+	db 1, FIRE_PUNCH
+	db 7, FOCUS_ENERGY
+	db 13, EMBER
+	db 16, DOUBLE_KICK
+	db 17, PECK
+	db 21, SAND_ATTACK
+	db 32, QUICK_ATTACK
+	db 36, FIRE_PUNCH
+	db 42, SLASH
+	db 49, MIRROR_MOVE
+	db 59, FLAMETHROWER
 	db 0 ; no more level-up moves
 
 MudkipEvosAttacks:
 	db EVOLVE_LEVEL, 16, MARSHTOMP
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, LEER
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 20, BITE
-	db 27, SCARY_FACE
-	db 35, SLASH
-	db 43, SCREECH
-	db 52, HYDRO_PUMP
+	db 1, TACKLE
+	db 1, GROWL
+	db 7, MUD_SLAP
+	db 10, WATER_GUN
+	db 15, BIDE
+	db 19, FORESIGHT
+	db 28, TAKE_DOWN
+	db 33, WHIRLPOOL
+	db 37, PROTECT
+	db 42, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 MarshtompEvosAttacks:
 	db EVOLVE_LEVEL, 36, SWAMPERT
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, LEER
-	db 1, RAGE
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 37, SLASH
-	db 45, SCREECH
-	db 55, HYDRO_PUMP
+	db 1, TACKLE
+	db 1, MUD_SLAP
+	db 1, GROWL
+	db 1, WATER_GUN
+	db 6, MUD_SLAP
+	db 10, WATER_GUN
+	db 15, BIDE
+	db 20, FORESIGHT
+	db 31, TAKE_DOWN
+	db 37, PROTECT
+	db 46, EARTHQUAKE
+	db 53, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 SwampertEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, LEER
-	db 1, RAGE
+	db 1, TACKLE
+	db 1, MUD_SLAP
+	db 1, GROWL
 	db 1, WATER_GUN
-	db 7, RAGE
-	db 13, WATER_GUN
-	db 21, BITE
-	db 28, SCARY_FACE
-	db 38, SLASH
-	db 47, SCREECH
-	db 58, HYDRO_PUMP
+	db 6, MUD_SLAP
+	db 10, WATER_GUN
+	db 15, BIDE
+	db 20, FORESIGHT
+	db 31, TAKE_DOWN
+	db 46, PROTECT
+	db 52, EARTHQUAKE
+	db 61, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 ZigzagoonEvosAttacks:
