@@ -50,8 +50,8 @@ PokemonCries::
 	mon_cry CRY_ODDISH,      $0dd,  $081 ; ODDISH
 	mon_cry CRY_ODDISH,      $0aa,  $0c0 ; GLOOM
 	mon_cry CRY_VILEPLUME,   $022,  $17f ; VILEPLUME
-	mon_cry CRY_PARAS,       $020,  $160 ; PARAS
-	mon_cry CRY_PARAS,       $042,  $17f ; PARASECT
+	mon_cry CRY_SURSKIT,       $020,  $160 ; SURSKIT
+	mon_cry CRY_SURSKIT,       $042,  $17f ; MASQUERAIN
 	mon_cry CRY_VENONAT,     $044,  $0c0 ; VENONAT
 	mon_cry CRY_VENONAT,     $029,  $100 ; VENOMOTH
 	mon_cry CRY_DIGLETT,     $0aa,  $081 ; DIGLETT
@@ -94,8 +94,8 @@ PokemonCries::
 	mon_cry CRY_SEEL,        $023,  $17f ; DEWGONG
 	mon_cry CRY_GRIMER,      $000,  $100 ; GRIMER
 	mon_cry CRY_MUK,         $0ef,  $17f ; MUK
-	mon_cry CRY_SWELLOW,      $000,  $100 ; SHELLDER
-	mon_cry CRY_SWELLOW,      $06f,  $160 ; CLOYSTER
+	mon_cry CRY_SWELLOW,      $000,  $100 ; WINGULL
+	mon_cry CRY_SWELLOW,      $06f,  $160 ; PELIPPER
 	mon_cry CRY_SILCOON,     $000,  $100 ; GASTLY
 	mon_cry CRY_SILCOON,     $030,  $0c0 ; HAUNTER
 	mon_cry CRY_MUK,         $000,  $17f ; GENGAR
@@ -124,8 +124,8 @@ PokemonCries::
 	mon_cry CRY_CLEFAIRY,    $03c,  $081 ; SEADRA
 	mon_cry CRY_WURMPLE,    $080,  $0c0 ; GOLDEEN
 	mon_cry CRY_WURMPLE,    $010,  $17f ; SEAKING
-	mon_cry CRY_PARAS,       $002,  $0a0 ; STARYU
-	mon_cry CRY_PARAS,       $000,  $100 ; STARMIE
+	mon_cry CRY_SURSKIT,       $002,  $0a0 ; STARYU
+	mon_cry CRY_SURSKIT,       $000,  $100 ; STARMIE
 	mon_cry CRY_KRABBY,      $008,  $0c0 ; MR__MIME
 	mon_cry CRY_WURMPLE,    $000,  $100 ; SCYTHER
 	mon_cry CRY_DROWZEE,     $0ff,  $17f ; JYNX
@@ -154,8 +154,8 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   $060,  $0c0 ; DRATINI
 	mon_cry CRY_BULBASAUR,   $040,  $100 ; DRAGONAIR
 	mon_cry CRY_BULBASAUR,   $03c,  $140 ; DRAGONITE
-	mon_cry CRY_PARAS,       $099,  $17f ; MEWTWO
-	mon_cry CRY_PARAS,       $0ee,  $17f ; MEW
+	mon_cry CRY_SURSKIT,       $099,  $17f ; MEWTWO
+	mon_cry CRY_SURSKIT,       $0ee,  $17f ; MEW
 	mon_cry CRY_TREECKO,  -$010,  $0b0 ; TREECKO
 	mon_cry CRY_TREECKO,  -$022,  $120 ; GROVYLE
 	mon_cry CRY_TREECKO,  -$0b7,  $200 ; SCEPTILE

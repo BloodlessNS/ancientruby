@@ -44,8 +44,8 @@ BitmasksPointers:
 	dw OddishBitmasks
 	dw GloomBitmasks
 	dw VileplumeBitmasks
-	dw ParasBitmasks
-	dw ParasectBitmasks
+	dw SurskitBitmasks
+	dw MasquerainBitmasks
 	dw VenonatBitmasks
 	dw VenomothBitmasks
 	dw DiglettBitmasks
@@ -88,8 +88,8 @@ BitmasksPointers:
 	dw DewgongBitmasks
 	dw GrimerBitmasks
 	dw MukBitmasks
-	dw ShellderBitmasks
-	dw CloysterBitmasks
+	dw WingullBitmasks
+	dw PelipperBitmasks
 	dw GastlyBitmasks
 	dw HaunterBitmasks
 	dw GengarBitmasks

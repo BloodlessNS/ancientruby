@@ -598,31 +598,30 @@ VileplumeEvosAttacks:
 	db 1, PETAL_DANCE
 	db 0 ; no more level-up moves
 
-ParasEvosAttacks:
-	db EVOLVE_LEVEL, 24, PARASECT
+SurskitEvosAttacks:
+	db EVOLVE_LEVEL, 22, MASQUERAIN
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 7, STUN_SPORE
-	db 13, POISONPOWDER
-	db 19, LEECH_LIFE
-	db 25, SPORE
-	db 31, SLASH
-	db 37, GROWTH
-	db 43, GIGA_DRAIN
+	db 1, BUBBLE
+	db 7, QUICK_ATTACK
+	db 13, WATER_GUN
+	db 25, BUBBLEBEAM
+	db 31, AGILITY
+	db 37, HAZE
+	db 40, MIST
 	db 0 ; no more level-up moves
 
-ParasectEvosAttacks:
+MasquerainEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SCRATCH
-	db 1, STUN_SPORE
-	db 1, POISONPOWDER
-	db 7, STUN_SPORE
-	db 13, POISONPOWDER
-	db 19, LEECH_LIFE
-	db 28, SPORE
-	db 37, SLASH
-	db 46, GROWTH
-	db 55, GIGA_DRAIN
+	db 1, BUBBLE
+	db 1, QUICK_ATTACK
+	db 1, SWEET_SCENT
+	db 7, QUICK_ATTACK
+	db 13, SWEET_SCENT
+	db 19, WATER_GUN
+	db 26, GUST
+	db 33, SCARY_FACE
+	db 40, STUN_SPORE
+	db 53, WHIRLWIND
 	db 0 ; no more level-up moves
 
 VenonatEvosAttacks:
@@ -1219,29 +1218,30 @@ MukEvosAttacks:
 	db 60, SLUDGE_BOMB
 	db 0 ; no more level-up moves
 
-ShellderEvosAttacks:
-	db EVOLVE_ITEM, WATER_STONE, CLOYSTER
+WingullEvosAttacks:
+	db EVOLVE_LEVEL, 25, PELIPPER
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, WITHDRAW
-	db 9, SUPERSONIC
-	db 17, AURORA_BEAM
-	db 25, PROTECT
-	db 33, LEER
-	db 41, CLAMP
-	db 49, ICE_BEAM
-	db 0 ; no more level-up moves
+	db 1, GROWL
+	db 1, WATER_GUN
+	db 7, SUPERSONIC
+	db 13, WING_ATTACK
+	db 21, MIST
+	db 31, QUICK_ATTACK
+	db 43, PURSUIT
+	db 49, AGILITY
+	db 55 ; no more level-up moves
 
-CloysterEvosAttacks:
+PelipperEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, WITHDRAW
-	db 1, SUPERSONIC
-	db 1, AURORA_BEAM
-	db 1, PROTECT
-if _ANCIENTRUBY
-	db 33, SPIKES
-endc
-	db 41, SPIKE_CANNON
+	db 1, GROWL
+	db 1, WATER_GUN
+	db 1, WING_ATTACK
+	db 3, WATER_GUN
+	db 7, SUPERSONIC
+	db 13, WING_ATTACK
+	db 21, MIST
+	db 25, PROTECT
+	db 55, HYDRO_PUMP
 	db 0 ; no more level-up moves
 
 GastlyEvosAttacks:

@@ -550,24 +550,24 @@ JohtoGrassWildMons:
 	db 7, SILCOON
 	db 7, CASCOON
 	db 7, PIDGEY
-	db 6, PARAS
-	db 6, PARAS
+	db 6, SURSKIT
+	db 6, SURSKIT
 	; day
 	db 5, WURMPLE
 	db 5, WEEDLE
 	db 7, SILCOON
 	db 7, CASCOON
 	db 7, PIDGEY
-	db 6, PARAS
-	db 6, PARAS
+	db 6, SURSKIT
+	db 6, SURSKIT
 	; nite
 	db 5, ODDISH
 	db 5, VENONAT
 	db 7, ODDISH
 	db 7, PSYDUCK
 	db 7, HOOTHOOT
-	db 6, PARAS
-	db 6, PARAS
+	db 6, SURSKIT
+	db 6, SURSKIT
 
 	map_id MOUNT_MORTAR_1F_OUTSIDE
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite
@@ -1034,24 +1034,24 @@ JohtoGrassWildMons:
 	db 48, GOLBAT
 	db 48, MACHOKE
 	db 47, URSARING
-	db 46, PARASECT
-	db 48, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
 	db 15, LARVITAR
 	db 20, LARVITAR
 	; day
 	db 48, GOLBAT
 	db 48, MACHOKE
 	db 47, URSARING
-	db 46, PARASECT
-	db 48, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
 	db 15, LARVITAR
 	db 20, LARVITAR
 	; nite
 	db 48, GOLBAT
 	db 48, GOLDUCK
 	db 46, GOLBAT
-	db 46, PARASECT
-	db 48, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
 	db 45, MISDREAVUS
 	db 45, MISDREAVUS
 
@@ -1088,26 +1088,26 @@ JohtoGrassWildMons:
 	db 48, GOLBAT
 	db 46, GOLBAT
 	db 50, GOLBAT
-	db 46, PARASECT
-	db 48, PARASECT
-	db 50, PARASECT
-	db 52, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
+	db 50, MASQUERAIN
+	db 52, MASQUERAIN
 	; day
 	db 48, GOLBAT
 	db 46, GOLBAT
 	db 50, GOLBAT
-	db 46, PARASECT
-	db 48, PARASECT
-	db 50, PARASECT
-	db 52, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
+	db 50, MASQUERAIN
+	db 52, MASQUERAIN
 	; nite
 	db 45, MISDREAVUS
 	db 48, GOLBAT
 	db 50, GOLBAT
-	db 46, PARASECT
-	db 48, PARASECT
-	db 50, PARASECT
-	db 52, PARASECT
+	db 46, MASQUERAIN
+	db 48, MASQUERAIN
+	db 50, MASQUERAIN
+	db 52, MASQUERAIN
 
 	map_id DARK_CAVE_VIOLET_ENTRANCE
 	db 4 percent, 4 percent, 4 percent ; encounter rates: morn/day/nite
@@ -1199,7 +1199,7 @@ JohtoGrassWildMons:
 	db 3, SEEDOT
 	db 3, POOCHYENA
 	db 4, RALTS
-	db 3, NUZLEAF
+	db 3, SURSKIT
 	; day
 	db 3, ZIGZAGOON
 	db 3, WURMPLE
@@ -1207,7 +1207,7 @@ JohtoGrassWildMons:
 	db 3, SEEDOT
 	db 3, POOCHYENA
 	db 4, RALTS
-	db 3, NUZLEAF
+	db 3, SURSKIT
 	; nite
 	db 3, ZIGZAGOON
 	db 3, WURMPLE
@@ -1215,7 +1215,7 @@ JohtoGrassWildMons:
 	db 3, SEEDOT
 	db 3, POOCHYENA
 	db 4, RALTS
-	db 3, NUZLEAF
+	db 3, SURSKIT
 	
 	map_id ROUTE_103
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1225,24 +1225,24 @@ JohtoGrassWildMons:
 	db 2, POOCHYENA
 	db 3, POOCHYENA
 	db 4, ZIGZAGOON
-	db 3, WURMPLE
-	db 3, NUZLEAF
+	db 3, WINGULL
+	db 4, WINGULL
 	; day
 	db 2, ZIGZAGOON
 	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, POOCHYENA
 	db 4, ZIGZAGOON
-	db 3, WURMPLE
-	db 3, NUZLEAF
+	db 3, WINGULL
+	db 4, WINGULL
 	; nite
 	db 2, ZIGZAGOON
 	db 3, ZIGZAGOON
 	db 2, POOCHYENA
 	db 3, POOCHYENA
 	db 4, ZIGZAGOON
-	db 3, WURMPLE
-	db 3, NUZLEAF
+	db 3, WINGULL
+	db 4, WINGULL
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite

@@ -35,7 +35,7 @@ KantoGrassWildMons:
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, SANDSHREW
-	db 12, PARAS
+	db 12, SURSKIT
 	db 10, GEODUDE
 	db 8, CLEFAIRY
 	db 8, CLEFAIRY
@@ -43,7 +43,7 @@ KantoGrassWildMons:
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, SANDSHREW
-	db 12, PARAS
+	db 12, SURSKIT
 	db 10, GEODUDE
 	db 8, CLEFAIRY
 	db 8, CLEFAIRY
@@ -51,7 +51,7 @@ KantoGrassWildMons:
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, CLEFAIRY
-	db 12, PARAS
+	db 12, SURSKIT
 	db 10, GEODUDE
 	db 12, CLEFAIRY
 	db 12, CLEFAIRY

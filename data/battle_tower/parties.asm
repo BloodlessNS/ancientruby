@@ -3242,7 +3242,7 @@ BattleTowerMons6:
 	bigdw 105 ; SDef
 	db "SANDOPAN@@@"
 
-	db PARASECT
+	db MASQUERAIN
 	db GOLD_BERRY
 	db SPORE, GIGA_DRAIN, HYPER_BEAM, SLUDGE_BOMB
 	dw 0 ; OT ID
@@ -3266,7 +3266,7 @@ BattleTowerMons6:
 	bigdw 72 ; Spd
 	bigdw 120 ; SAtk
 	bigdw 144 ; SDef
-	db "PARASEKUTO@"
+	db "SURSKITEKUTO@"
 
 	db GOLEM
 	db BRIGHTPOWDER
@@ -4473,7 +4473,7 @@ BattleTowerMons9:
 	bigdw 236 ; SDef
 	db "SUTA-MI-@@@"
 
-	db CLOYSTER
+	db PELIPPER
 	db LEFTOVERS
 	db EXPLOSION, BLIZZARD, SURF, ICY_WIND
 	dw 0 ; OT ID

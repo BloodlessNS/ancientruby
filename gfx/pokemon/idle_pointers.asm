@@ -44,8 +44,8 @@ AnimationIdlePointers:
 	dw OddishAnimationIdle
 	dw GloomAnimationIdle
 	dw VileplumeAnimationIdle
-	dw ParasAnimationIdle
-	dw ParasectAnimationIdle
+	dw SurskitAnimationIdle
+	dw MasquerainAnimationIdle
 	dw VenonatAnimationIdle
 	dw VenomothAnimationIdle
 	dw DiglettAnimationIdle
@@ -88,8 +88,8 @@ AnimationIdlePointers:
 	dw DewgongAnimationIdle
 	dw GrimerAnimationIdle
 	dw MukAnimationIdle
-	dw ShellderAnimationIdle
-	dw CloysterAnimationIdle
+	dw WingullAnimationIdle
+	dw PelipperAnimationIdle
 	dw GastlyAnimationIdle
 	dw HaunterAnimationIdle
 	dw GengarAnimationIdle

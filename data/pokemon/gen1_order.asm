@@ -21,7 +21,7 @@ Pokered_MonIndices:
 	db ARCANINE
 	db MEW
 	db GYARADOS
-	db SHELLDER
+	db WINGULL
 	db TENTACOOL
 	db GASTLY
 	db SCYTHER
@@ -44,7 +44,7 @@ Pokered_MonIndices:
 	db HITMONLEE
 	db HITMONCHAN
 	db ARBOK
-	db PARASECT
+	db MASQUERAIN
 	db PSYDUCK
 	db DROWZEE
 	db GOLEM
@@ -107,7 +107,7 @@ Pokered_MonIndices:
 	db MACHOP
 	db ZUBAT
 	db EKANS
-	db PARAS
+	db SURSKIT
 	db POLIWHIRL
 	db POLIWRATH
 	db WEEDLE
@@ -137,7 +137,7 @@ Pokered_MonIndices:
 	db MUK
 	db SMEARGLE ; MISSINGNO.
 	db KINGLER
-	db CLOYSTER
+	db PELIPPER
 	db TYROGUE ; MISSINGNO.
 	db ELECTRODE
 	db CLEFABLE

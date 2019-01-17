@@ -32,7 +32,7 @@
 	const CRY_LAPRAS
 	const CRY_SILCOON
 	const CRY_SQUIRTLE
-	const CRY_PARAS
+	const CRY_SURSKIT
 	const CRY_GROWLITHE
 	const CRY_KRABBY
 	const CRY_PSYDUCK

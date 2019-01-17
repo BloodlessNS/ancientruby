@@ -45,8 +45,8 @@ PokedexDataPointerTable:
 	dw OddishPokedexEntry
 	dw GloomPokedexEntry
 	dw VileplumePokedexEntry
-	dw ParasPokedexEntry
-	dw ParasectPokedexEntry
+	dw SurskitPokedexEntry
+	dw MasquerainPokedexEntry
 	dw VenonatPokedexEntry
 	dw VenomothPokedexEntry
 	dw DiglettPokedexEntry
@@ -89,8 +89,8 @@ PokedexDataPointerTable:
 	dw DewgongPokedexEntry
 	dw GrimerPokedexEntry
 	dw MukPokedexEntry
-	dw ShellderPokedexEntry
-	dw CloysterPokedexEntry
+	dw WingullPokedexEntry
+	dw PelipperPokedexEntry
 	dw GastlyPokedexEntry
 	dw HaunterPokedexEntry
 	dw GengarPokedexEntry

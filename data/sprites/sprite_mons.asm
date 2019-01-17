@@ -4,7 +4,7 @@ SpriteMons:
 	db GEODUDE
 	db GROWLITHE
 	db WEEDLE
-	db SHELLDER
+	db WINGULL
 	db ODDISH
 	db GENGAR
 	db ZUBAT
@@ -23,7 +23,7 @@ SpriteMons:
 	db JIGGLYPUFF
 	db GRIMER
 	db EKANS
-	db PARAS
+	db SURSKIT
 	db TENTACOOL
 	db TAUROS
 	db MACHOP

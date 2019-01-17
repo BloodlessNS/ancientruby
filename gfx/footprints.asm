@@ -105,8 +105,8 @@ INCBIN "gfx/footprints/golbat.1bpp",     footprint_top
 INCBIN "gfx/footprints/oddish.1bpp",     footprint_top
 INCBIN "gfx/footprints/gloom.1bpp",      footprint_top
 INCBIN "gfx/footprints/vileplume.1bpp",  footprint_top
-INCBIN "gfx/footprints/paras.1bpp",      footprint_top
-INCBIN "gfx/footprints/parasect.1bpp",   footprint_top
+INCBIN "gfx/footprints/surskit.1bpp",      footprint_top
+INCBIN "gfx/footprints/masquerain.1bpp",   footprint_top
 INCBIN "gfx/footprints/venonat.1bpp",    footprint_top
 ; 041-048 bottom halves
 INCBIN "gfx/footprints/zubat.1bpp",      footprint_bottom
@@ -114,8 +114,8 @@ INCBIN "gfx/footprints/golbat.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/oddish.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/gloom.1bpp",      footprint_bottom
 INCBIN "gfx/footprints/vileplume.1bpp",  footprint_bottom
-INCBIN "gfx/footprints/paras.1bpp",      footprint_bottom
-INCBIN "gfx/footprints/parasect.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/surskit.1bpp",      footprint_bottom
+INCBIN "gfx/footprints/masquerain.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/venonat.1bpp",    footprint_bottom
 ; 049-056 top halves
 INCBIN "gfx/footprints/venomoth.1bpp",   footprint_top
@@ -209,8 +209,8 @@ INCBIN "gfx/footprints/dewgong.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/grimer.1bpp",     footprint_bottom
 ; 089-096 top halves
 INCBIN "gfx/footprints/muk.1bpp",        footprint_top
-INCBIN "gfx/footprints/shellder.1bpp",   footprint_top
-INCBIN "gfx/footprints/cloyster.1bpp",   footprint_top
+INCBIN "gfx/footprints/wingull.1bpp",   footprint_top
+INCBIN "gfx/footprints/pelipper.1bpp",   footprint_top
 INCBIN "gfx/footprints/gastly.1bpp",     footprint_top
 INCBIN "gfx/footprints/haunter.1bpp",    footprint_top
 INCBIN "gfx/footprints/gengar.1bpp",     footprint_top
@@ -218,8 +218,8 @@ INCBIN "gfx/footprints/onix.1bpp",       footprint_top
 INCBIN "gfx/footprints/drowzee.1bpp",    footprint_top
 ; 089-096 bottom halves
 INCBIN "gfx/footprints/muk.1bpp",        footprint_bottom
-INCBIN "gfx/footprints/shellder.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/cloyster.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/wingull.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/pelipper.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/gastly.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/haunter.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/gengar.1bpp",     footprint_bottom

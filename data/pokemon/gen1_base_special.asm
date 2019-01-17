@@ -46,8 +46,8 @@ KantoMonSpecials:
 	db  75 ; ODDISH
 	db  85 ; GLOOM
 	db 100 ; VILEPLUME
-	db  55 ; PARAS
-	db  80 ; PARASECT
+	db  55 ; SURSKIT
+	db  80 ; MASQUERAIN
 	db  40 ; VENONAT
 	db  90 ; VENOMOTH
 	db  45 ; DIGLETT
@@ -90,8 +90,8 @@ KantoMonSpecials:
 	db  95 ; DEWGONG
 	db  40 ; GRIMER
 	db  65 ; MUK
-	db  45 ; SHELLDER
-	db  85 ; CLOYSTER
+	db  45 ; WINGULL
+	db  85 ; PELIPPER
 	db 100 ; GASTLY
 	db 115 ; HAUNTER
 	db 130 ; GENGAR

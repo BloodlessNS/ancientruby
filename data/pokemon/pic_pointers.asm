@@ -92,10 +92,10 @@ PokemonPicPointers::
 	dba_pic GloomBackpic
 	dba_pic VileplumeFrontpic
 	dba_pic VileplumeBackpic
-	dba_pic ParasFrontpic
-	dba_pic ParasBackpic
-	dba_pic ParasectFrontpic
-	dba_pic ParasectBackpic
+	dba_pic SurskitFrontpic
+	dba_pic SurskitBackpic
+	dba_pic MasquerainFrontpic
+	dba_pic MasquerainBackpic
 	dba_pic VenonatFrontpic
 	dba_pic VenonatBackpic
 	dba_pic VenomothFrontpic
@@ -180,10 +180,10 @@ PokemonPicPointers::
 	dba_pic GrimerBackpic
 	dba_pic MukFrontpic
 	dba_pic MukBackpic
-	dba_pic ShellderFrontpic
-	dba_pic ShellderBackpic
-	dba_pic CloysterFrontpic
-	dba_pic CloysterBackpic
+	dba_pic WingullFrontpic
+	dba_pic WingullBackpic
+	dba_pic PelipperFrontpic
+	dba_pic PelipperBackpic
 	dba_pic GastlyFrontpic
 	dba_pic GastlyBackpic
 	dba_pic HaunterFrontpic

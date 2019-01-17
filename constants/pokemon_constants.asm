@@ -64,8 +64,8 @@
 	const ODDISH     ; 2b
 	const GLOOM      ; 2c
 	const VILEPLUME  ; 2d
-	const PARAS      ; 2e
-	const PARASECT   ; 2f
+	const SURSKIT      ; 2e
+	const MASQUERAIN   ; 2f
 	const VENONAT    ; 30
 	const VENOMOTH   ; 31
 	const DIGLETT    ; 32
@@ -108,8 +108,8 @@
 	const DEWGONG    ; 57
 	const GRIMER     ; 58
 	const MUK        ; 59
-	const SHELLDER   ; 5a
-	const CLOYSTER   ; 5b
+	const WINGULL   ; 5a
+	const PELIPPER   ; 5b
 	const GASTLY     ; 5c
 	const HAUNTER    ; 5d
 	const GENGAR     ; 5e

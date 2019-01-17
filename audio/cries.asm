@@ -977,10 +977,10 @@ Cry_Squirtle:
 	musicheader 1, 6, Cry_Squirtle_Ch6
 	musicheader 1, 8, Cry_Squirtle_Ch8
 
-Cry_Paras:
-	musicheader 3, 5, Cry_Paras_Ch5
-	musicheader 1, 6, Cry_Paras_Ch6
-	musicheader 1, 8, Cry_Paras_Ch8
+Cry_Surskit:
+	musicheader 3, 5, Cry_Surskit_Ch5
+	musicheader 1, 6, Cry_Surskit_Ch6
+	musicheader 1, 8, Cry_Surskit_Ch8
 
 Cry_Growlithe:
 	musicheader 3, 5, Cry_Growlithe_Ch5
@@ -1741,7 +1741,7 @@ Cry_Pidgeotto_Ch8:
 	noise __,  9, $d1, $2c
 	endchannel
 
-Cry_Paras_Ch5:
+Cry_Surskit_Ch5:
 	sound_duty 0, 0, 3, 3
 	sound __,  7, $f2, $0600
 	sound __,  7, $e2, $0640
@@ -1753,7 +1753,7 @@ Cry_Paras_Ch5:
 	sound __,  9, $a1, $07c0
 	endchannel
 
-Cry_Paras_Ch6:
+Cry_Surskit_Ch6:
 	sound_duty 1, 0, 1, 0
 	sound __,  4, $8, $0001
 	sound __,  7, $c2, $05c1
@@ -1766,7 +1766,7 @@ Cry_Paras_Ch6:
 	sound __,  9, $81, $0781
 	endchannel
 
-Cry_Paras_Ch8:
+Cry_Surskit_Ch8:
 	noise __,  7, $8, $1
 	noise __,  6, $e2, $5c
 	noise __,  6, $c2, $4c

@@ -44,8 +44,8 @@ FramesPointers:
 	dw OddishFrames
 	dw GloomFrames
 	dw VileplumeFrames
-	dw ParasFrames
-	dw ParasectFrames
+	dw SurskitFrames
+	dw MasquerainFrames
 	dw VenonatFrames
 	dw VenomothFrames
 	dw DiglettFrames
@@ -88,8 +88,8 @@ FramesPointers:
 	dw DewgongFrames
 	dw GrimerFrames
 	dw MukFrames
-	dw ShellderFrames
-	dw CloysterFrames
+	dw WingullFrames
+	dw PelipperFrames
 	dw GastlyFrames
 	dw HaunterFrames
 	dw GengarFrames

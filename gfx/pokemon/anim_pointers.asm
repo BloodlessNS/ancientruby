@@ -44,8 +44,8 @@ AnimationPointers:
 	dw OddishAnimation
 	dw GloomAnimation
 	dw VileplumeAnimation
-	dw ParasAnimation
-	dw ParasectAnimation
+	dw SurskitAnimation
+	dw MasquerainAnimation
 	dw VenonatAnimation
 	dw VenomothAnimation
 	dw DiglettAnimation
@@ -88,8 +88,8 @@ AnimationPointers:
 	dw DewgongAnimation
 	dw GrimerAnimation
 	dw MukAnimation
-	dw ShellderAnimation
-	dw CloysterAnimation
+	dw WingullAnimation
+	dw PelipperAnimation
 	dw GastlyAnimation
 	dw HaunterAnimation
 	dw GengarAnimation

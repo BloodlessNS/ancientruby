@@ -46,8 +46,8 @@ MonMenuIcons:
 	db ICON_ODDISH      ; ODDISH
 	db ICON_ODDISH      ; GLOOM
 	db ICON_ODDISH      ; VILEPLUME
-	db ICON_BUG         ; PARAS
-	db ICON_BUG         ; PARASECT
+	db ICON_BUG         ; SURSKIT
+	db ICON_BUG         ; MASQUERAIN
 	db ICON_CATERPILLAR ; VENONAT
 	db ICON_MOTH        ; VENOMOTH
 	db ICON_DIGLETT     ; DIGLETT
@@ -90,8 +90,8 @@ MonMenuIcons:
 	db ICON_LAPRAS      ; DEWGONG
 	db ICON_BLOB        ; GRIMER
 	db ICON_BLOB        ; MUK
-	db ICON_SHELL       ; SHELLDER
-	db ICON_SHELL       ; CLOYSTER
+	db ICON_SHELL       ; WINGULL
+	db ICON_SHELL       ; PELIPPER
 	db ICON_GHOST       ; GASTLY
 	db ICON_GHOST       ; HAUNTER
 	db ICON_GHOST       ; GENGAR

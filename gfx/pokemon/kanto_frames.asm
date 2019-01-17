@@ -45,8 +45,8 @@ GolbatFrames:
 OddishFrames:
 GloomFrames:
 VileplumeFrames:
-ParasFrames:
-ParasectFrames:
+SurskitFrames:
+MasquerainFrames:
 VenonatFrames:
 VenomothFrames:
 DiglettFrames:
@@ -89,8 +89,8 @@ SeelFrames:
 DewgongFrames:
 GrimerFrames:
 MukFrames:
-ShellderFrames:
-CloysterFrames:
+WingullFrames:
+PelipperFrames:
 GastlyFrames:
 HaunterFrames:
 GengarFrames:

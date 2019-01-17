@@ -471,8 +471,8 @@ SchoolboyGroup:
 
 	; SCHOOLBOY (9)
 	db "BILLY@", TRAINERTYPE_NORMAL
-	db 27, PARAS
-	db 27, PARAS
+	db 27, SURSKIT
+	db 27, SURSKIT
 	db 27, POLIWHIRL
 	db 35, DITTO
 	db -1 ; end
@@ -738,9 +738,9 @@ LassGroup:
 
 	; LASS (8)
 	db "SHANNON@", TRAINERTYPE_NORMAL
-	db 29, PARAS
-	db 29, PARAS
-	db 32, PARASECT
+	db 29, SURSKIT
+	db 29, SURSKIT
+	db 32, MASQUERAIN
 	db -1 ; end
 
 	; LASS (9)
@@ -861,7 +861,7 @@ CooltrainerMGroup:
 
 	; COOLTRAINERM (9)
 	db "JAKE@", TRAINERTYPE_MOVES
-	db 33, PARASECT,   LEECH_LIFE, SPORE, SLASH, SWORDS_DANCE
+	db 33, MASQUERAIN,   LEECH_LIFE, SPORE, SLASH, SWORDS_DANCE
 	db 35, GOLDUCK,    CONFUSION, SCREECH, PSYCH_UP, FURY_SWIPES
 	db -1 ; end
 
@@ -964,8 +964,8 @@ CooltrainerFGroup:
 
 	; COOLTRAINERF (5)
 	db "KATE@", TRAINERTYPE_NORMAL
-	db 26, SHELLDER
-	db 28, CLOYSTER
+	db 26, WINGULL
+	db 28, PELIPPER
 	db -1 ; end
 
 	; COOLTRAINERF (6)
@@ -1141,9 +1141,9 @@ BeautyGroup:
 
 	; BEAUTY (14)
 	db "JULIA@", TRAINERTYPE_NORMAL
-	db 32, PARAS
+	db 32, SURSKIT
 	db 32, SEEDOT
-	db 35, PARASECT
+	db 35, MASQUERAIN
 	db -1 ; end
 
 	; BEAUTY (15)
@@ -1541,7 +1541,7 @@ BugCatcherGroup:
 
 	; BUG_CATCHER (7)
 	db "JOSH@", TRAINERTYPE_NORMAL
-	db 13, PARAS
+	db 13, SURSKIT
 	db -1 ; end
 
 	; BUG_CATCHER (8)
@@ -1615,7 +1615,7 @@ BugCatcherGroup:
 	; BUG_CATCHER (19)
 	db "WAYNE@", TRAINERTYPE_NORMAL
 	db  8, LEDYBA
-	db 10, PARAS
+	db 10, SURSKIT
 	db -1 ; end
 
 FisherGroup:
@@ -1691,10 +1691,10 @@ FisherGroup:
 
 	; FISHER (12)
 	db "JONAH@", TRAINERTYPE_NORMAL
-	db 25, SHELLDER
+	db 25, WINGULL
 	db 29, OCTILLERY
 	db 25, REMORAID
-	db 29, CLOYSTER
+	db 29, PELIPPER
 	db -1 ; end
 
 	; FISHER (13)
@@ -1796,14 +1796,14 @@ SwimmerMGroup:
 
 	; SWIMMERM (3)
 	db "RANDALL@", TRAINERTYPE_NORMAL
-	db 18, SHELLDER
+	db 18, WINGULL
 	db 20, WARTORTLE
-	db 18, SHELLDER
+	db 18, WINGULL
 	db -1 ; end
 
 	; SWIMMERM (4)
 	db "CHARLIE@", TRAINERTYPE_NORMAL
-	db 21, SHELLDER
+	db 21, WINGULL
 	db 19, TENTACOOL
 	db 19, TENTACRUEL
 	db -1 ; end
@@ -1849,9 +1849,9 @@ SwimmerMGroup:
 
 	; SWIMMERM (11)
 	db "DARYL@", TRAINERTYPE_NORMAL
-	db 24, SHELLDER
-	db 25, CLOYSTER
-	db 24, SHELLDER
+	db 24, WINGULL
+	db 25, PELIPPER
+	db 24, WINGULL
 	db -1 ; end
 
 	; SWIMMERM (12)
@@ -1878,8 +1878,8 @@ SwimmerMGroup:
 
 	; SWIMMERM (15)
 	db "TUCKER@", TRAINERTYPE_NORMAL
-	db 30, SHELLDER
-	db 34, CLOYSTER
+	db 30, WINGULL
+	db 34, PELIPPER
 	db -1 ; end
 
 	; SWIMMERM (16)
@@ -1931,7 +1931,7 @@ SwimmerFGroup:
 	; SWIMMERF (2)
 	db "PAULA@", TRAINERTYPE_NORMAL
 	db 19, STARYU
-	db 19, SHELLDER
+	db 19, WINGULL
 	db -1 ; end
 
 	; SWIMMERF (3)
@@ -3196,9 +3196,9 @@ BoarderGroup:
 
 	; BOARDER (3)
 	db "DOUGLAS@", TRAINERTYPE_NORMAL
-	db 24, SHELLDER
-	db 25, CLOYSTER
-	db 24, SHELLDER
+	db 24, WINGULL
+	db 25, PELIPPER
+	db 24, WINGULL
 	db -1 ; end
 
 PokefanMGroup:

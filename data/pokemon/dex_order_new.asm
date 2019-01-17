@@ -70,8 +70,8 @@ NewPokedexOrder:
 	db HOPPIP
 	db SKIPLOOM
 	db JUMPLUFF
-	db PARAS
-	db PARASECT
+	db SURSKIT
+	db MASQUERAIN
 	db POLIWAG
 	db POLIWHIRL
 	db POLIWRATH
@@ -169,8 +169,8 @@ NewPokedexOrder:
 	db SHUCKLE
 	db STARYU
 	db STARMIE
-	db SHELLDER
-	db CLOYSTER
+	db WINGULL
+	db PELIPPER
 	db CORSOLA
 	db REMORAID
 	db OCTILLERY

@@ -43,8 +43,8 @@ GolbatBitmasks:
 OddishBitmasks:
 GloomBitmasks:
 VileplumeBitmasks:
-ParasBitmasks:
-ParasectBitmasks:
+SurskitBitmasks:
+MasquerainBitmasks:
 VenonatBitmasks:
 VenomothBitmasks:
 DiglettBitmasks:
@@ -87,8 +87,8 @@ SeelBitmasks:
 DewgongBitmasks:
 GrimerBitmasks:
 MukBitmasks:
-ShellderBitmasks:
-CloysterBitmasks:
+WingullBitmasks:
+PelipperBitmasks:
 GastlyBitmasks:
 HaunterBitmasks:
 GengarBitmasks:

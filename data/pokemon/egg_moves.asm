@@ -134,7 +134,7 @@ if !_ANCIENTRUBY
 endc
 	db -1 ; end
 
-ParasEggMoves:
+SurskitEggMoves:
 	db FALSE_SWIPE
 	db SCREECH
 	db COUNTER
@@ -290,7 +290,7 @@ GrimerEggMoves:
 	db LICK
 	db -1 ; end
 
-ShellderEggMoves:
+WingullEggMoves:
 	db BUBBLEBEAM
 	db TAKE_DOWN
 	db BARRIER

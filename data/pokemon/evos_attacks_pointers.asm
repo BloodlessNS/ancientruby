@@ -46,8 +46,8 @@ EvosAttacksPointers::
 	dw OddishEvosAttacks
 	dw GloomEvosAttacks
 	dw VileplumeEvosAttacks
-	dw ParasEvosAttacks
-	dw ParasectEvosAttacks
+	dw SurskitEvosAttacks
+	dw MasquerainEvosAttacks
 	dw VenonatEvosAttacks
 	dw VenomothEvosAttacks
 	dw DiglettEvosAttacks
@@ -90,8 +90,8 @@ EvosAttacksPointers::
 	dw DewgongEvosAttacks
 	dw GrimerEvosAttacks
 	dw MukEvosAttacks
-	dw ShellderEvosAttacks
-	dw CloysterEvosAttacks
+	dw WingullEvosAttacks
+	dw PelipperEvosAttacks
 	dw GastlyEvosAttacks
 	dw HaunterEvosAttacks
 	dw GengarEvosAttacks

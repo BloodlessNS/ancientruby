@@ -30,7 +30,7 @@ AlphabeticalPokedexOrder:
 	db CLEFABLE
 	db CLEFAIRY
 	db CLEFFA
-	db CLOYSTER
+	db PELIPPER
 	db CORSOLA
 	db CROBAT
 	db MARSHTOMP
@@ -153,8 +153,8 @@ AlphabeticalPokedexOrder:
 	db OMANYTE
 	db OMASTAR
 	db ONIX
-	db PARAS
-	db PARASECT
+	db SURSKIT
+	db MASQUERAIN
 	db PERSIAN
 	db PHANPY
 	db PICHU
@@ -194,7 +194,7 @@ AlphabeticalPokedexOrder:
 	db SEAKING
 	db SEEL
 	db ZIGZAGOON
-	db SHELLDER
+	db WINGULL
 	db SHUCKLE
 	db SKARMORY
 	db SKIPLOOM
