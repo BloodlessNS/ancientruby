@@ -77,8 +77,7 @@ TrainerYoungsterJoey:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight4
 .Fight3:
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .LoadFight3
+	end
 .Fight2:
 	jump .LoadFight2
 .Fight1:

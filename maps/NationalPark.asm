@@ -104,7 +104,6 @@ TrainerSchoolboyJack1:
 	copybytetovar wJackFightCount
 	ifequal 4, .Fight4
 	ifequal 3, .Fight3
-	ifequal 2, .Fight2
 	ifequal 1, .Fight1
 	ifequal 0, .LoadFight0
 .Fight4:
@@ -113,9 +112,6 @@ TrainerSchoolboyJack1:
 .Fight3:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
-.Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .LoadFight2
 .Fight1:
 	jump .LoadFight1
 .LoadFight0:

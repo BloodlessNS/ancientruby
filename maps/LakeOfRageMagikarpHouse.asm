@@ -13,8 +13,6 @@ MagikarpLengthRaterScript:
 	iftrue .GetReward
 	checkevent EVENT_LAKE_OF_RAGE_ASKED_FOR_MAGIKARP
 	iftrue .AskedForMagikarp
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .ClearedRocketHideout
 	checkevent EVENT_LAKE_OF_RAGE_EXPLAINED_WEIRD_MAGIKARP
 	iftrue .ExplainedHistory
 	writetext MagikarpLengthRaterText_LakeOfRageHistory

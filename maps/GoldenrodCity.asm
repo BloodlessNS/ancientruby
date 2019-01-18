@@ -163,8 +163,6 @@ GoldenrodCityYoungster1Script:
 GoldenrodCityCooltrainerF1Script:
 	faceplayer
 	opentext
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .ClearedRadioTower
 	writetext GoldenrodCityCooltrainerF1Text
 	waitbutton
 	closetext

@@ -9,8 +9,6 @@ Route43MahoganyGate_MapScripts:
 Route43MahoganyGateOfficer:
 	faceplayer
 	opentext
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .RocketsCleared
 	writetext UnknownText_0x19ab1f
 	waitbutton
 	closetext

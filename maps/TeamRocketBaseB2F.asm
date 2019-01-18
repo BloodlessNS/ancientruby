@@ -298,7 +298,6 @@ RocketBaseElectrodeScript:
 	turnobject PLAYER, DOWN
 	applymovement TEAMROCKETBASEB2F_LANCE, MovementData_0x6d283
 	disappear TEAMROCKETBASEB2F_LANCE
-	setevent EVENT_CLEARED_ROCKET_HIDEOUT
 	clearflag ENGINE_ROCKET_SIGNAL_ON_CH20
 	setevent EVENT_ROUTE_43_GATE_ROCKETS
 	setevent EVENT_MAHOGANY_TOWN_POKEFAN_M_BLOCKS_GYM
@@ -337,8 +336,6 @@ TeamRocketBaseB2FLockedDoor:
 
 TeamRocketBaseB2FTransmitterScript:
 	opentext
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .Deactivated
 	writetext UnknownText_0x6dda7
 	waitbutton
 	closetext

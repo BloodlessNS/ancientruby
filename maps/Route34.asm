@@ -256,8 +256,7 @@ TrainerPicnickerGina1:
 	checkevent EVENT_BEAT_ELITE_FOUR
 	iftrue .LoadFight3
 .Fight2:
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .LoadFight2
+	end
 .Fight1:
 	jump .LoadFight1
 .LoadFight0:

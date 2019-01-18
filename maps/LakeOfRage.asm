@@ -105,8 +105,6 @@ RedGyarados:
 LakeOfRageGrampsScript:
 	faceplayer
 	opentext
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .ClearedRocketHideout
 	writetext LakeOfRageGrampsText
 	waitbutton
 	closetext
@@ -130,8 +128,6 @@ LakeOfRageSign:
 MagikarpHouseSignScript:
 	opentext
 	writetext FishingGurusHouseSignText
-	checkevent EVENT_CLEARED_ROCKET_HIDEOUT
-	iftrue .MagikarpLengthRecord
 	waitbutton
 	closetext
 	end

@@ -20,8 +20,6 @@ RadioTower4FDJMaryScript:
 	opentext
 	checkevent EVENT_GOT_PINK_BOW_FROM_MARY
 	iftrue .GotPinkBow
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .ClearedRockets
 	writetext RadioTower4FDJMaryText
 	waitbutton
 	closetext

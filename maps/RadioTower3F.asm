@@ -29,8 +29,6 @@ RadioTower3FSuperNerdScript:
 RadioTower3FGymGuyScript:
 	faceplayer
 	opentext
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .NoRockets
 	writetext RadioTower3FGymGuyText_Rockets
 	waitbutton
 	closetext
@@ -47,8 +45,6 @@ RadioTower3FCooltrainerFScript:
 	opentext
 	checkevent EVENT_GOT_SUNNY_DAY_FROM_RADIO_TOWER
 	iftrue .GotSunnyDay
-	checkevent EVENT_CLEARED_RADIO_TOWER
-	iftrue .NoRockets
 	checkevent EVENT_USED_THE_CARD_KEY_IN_THE_RADIO_TOWER
 	iftrue .UsedCardKey
 	writetext UnknownText_0x5e754
