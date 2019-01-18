@@ -208,13 +208,13 @@ LassTianaAfterText:
 	done
 	
 Route102Sign1Text:
-	text "ROUTE 102-"
-	line "PETALBURG CITY"
+	text "ROUTE 102"
+	line "→ OLDALE TOWN"
 	done
 	
 Route102Sign2Text:
-	text "ROUTE 102-"
-	line "OLDALE TOWN"
+	text "ROUTE 102"
+	line "← PETALBURG CITY"
 	done
 	
 Route102FisherText:

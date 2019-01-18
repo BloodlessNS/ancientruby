@@ -243,9 +243,7 @@ Text_PokeCentreTip:
 	
 Route101SignText:
 	text "ROUTE 101"
-
-	para "LITTLEROOT TOWN -"
-	line "OLDALE TOWN"
+	line "↑ OLDALE TOWN"
 	done
 	
 Movement_BirchAttack:

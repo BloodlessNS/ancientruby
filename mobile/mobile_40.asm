@@ -338,7 +338,7 @@ String10024d:
 	db   "つうしんを　キャンセル　しました@"
 
 String10025e:
-	db   "おともだちと　えらんだ　へやが"
+	db   "おともだちと　えらんだ　↑やが"
 	next "ちがうようです@"
 
 Function100276:
@@ -1048,7 +1048,7 @@ Function100697:
 	ret
 
 String1006c2:
-	db "ふん　@"
+	db "↓ん　@"
 String1006c6:
 	db "びょう@"
 String1006ca:
@@ -1431,7 +1431,7 @@ Function100902:
 .string_10095a
 	db "たいせん　しゅうりょう@"
 .string_100966
-	db "のこり　　　ふん！@"
+	db "のこり　　　↓ん！@"
 
 Function100970:
 	hlcoord 0, 0

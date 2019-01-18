@@ -2748,7 +2748,7 @@ Function8a1b0:
 	ret
 
 Strings_8a1cc:
-	db   "めいし<NO>せいりと　へんしゅうを"
+	db   "めいし<NO>せいりと　↑んしゅうを"
 	next "おこないます"
 	db   "@"
 
@@ -3780,7 +3780,7 @@ MenuHeader_0x8a9f2:
 MenuData_0x8a9fa:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 3 ; items
-	db "へんしゅう@"
+	db "↑んしゅう@"
 	db "みる@"
 	db "やめる@"
 

@@ -172,8 +172,8 @@ Route103FisherText:
 	done
 	
 Route103Sign1Text:
-	text "ROUTE 103-"
-	line "OLDALE TOWN"
+	text "ROUTE 103"
+	line "↓ OLDALE TOWN"
 	done
 	
 Route103RivalText_Seen:

@@ -237,4 +237,4 @@ UnreferencedString_HourJP:
 
 UnreferencedString_MinuteJP:
 ; unused
-	db "ふん@" ; MIN
+	db "↓ん@" ; MIN

@@ -1047,7 +1047,7 @@ MenuHeader_0x8b9b1:
 MenuData_0x8b9b9:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 3 ; items
-	db "へんしゅう@" ; EDIT
+	db "↑んしゅう@" ; EDIT
 	db "いれかえ@"   ; REPLACE
 	db "やめる@"     ; QUIT
 
@@ -1061,7 +1061,7 @@ MenuData_0x8b9d2:
 	db STATICMENU_CURSOR | STATICMENU_WRAP ; flags
 	db 5 ; items
 	db "みる@"       ; VIEW
-	db "へんしゅう@" ; EDIT
+	db "↑んしゅう@" ; EDIT
 	db "いれかえ@"   ; REPLACE
 	db "けす@"       ; ERASE
 	db "やめる@"     ; QUIT

@@ -5098,7 +5098,7 @@ String_11a71e:
 
 String_11a72a:
 	db   "つないだ　じかん"
-	next "　　やく　　　ふん　　　びょう@"
+	next "　　やく　　　↓ん　　　びょう@"
 
 String_11a743:
 	db   "もっていない　データが"

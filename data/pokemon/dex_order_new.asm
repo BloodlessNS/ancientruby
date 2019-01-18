@@ -10,51 +10,77 @@ NewPokedexOrder:
 	db MUDKIP
 	db MARSHTOMP
 	db SWAMPERT
-	db PIDGEY
-	db PIDGEOTTO
-	db PIDGEOT
-	db TAILLOW
-	db SWELLOW
-	db VIGOROTH
-	db SLAKING
 	db POOCHYENA
 	db MIGHTYENA
 	db ZIGZAGOON
 	db LINOONE
-	db PICHU
-	db PIKACHU
-	db RAICHU
 	db WURMPLE
 	db SILCOON
 	db BEAUTIFLY
-	db WEEDLE
 	db CASCOON
 	db DUSTOX
-	db LEDYBA
-	db LEDIAN
-	db SPINARAK
-	db ARIADOS
+	db PIDGEY             ;LOTAD
+	db PIDGEOTTO          ;LOMBRE 
+	db PIDGEOT            ;LUDICOLO
+	db SEEDOT
+	db NUZLEAF
+	db SHIFTRY
+	db TAILLOW
+	db SWELLOW
+	db WINGULL
+	db PELIPPER
+	db RALTS
+	db KIRLIA
+	db DROWZEE            ;GARDEVOIR
+	db HYPNO              ;GALLADE
+	db SURSKIT
+	db MASQUERAIN
+	db SHROOMISH
+	db BRELOOM
+	db SLAKOTH
+	db VIGOROTH
+	db SLAKING
+	db ABRA
+	db KADABRA
+	db ALAKAZAM
+	db CLEFFA             ;NINCADA
+	db CLEFAIRY           ;NINJASK
+	db CLEFABLE           ;SHEDINJA
+	db WEEDLE             ;WHISMUR
+	db LEDYBA             ;LOUDRED
+	db LEDIAN             ;EXPLOUD
+	db SPINARAK           ;MAKUHITA
+	db ARIADOS            ;HARIYAMA
+	db GOLDEEN
+	db SEAKING
+	db MAGIKARP
+	db GYARADOS
+	db SLOWKING
+	db MARILL
+	db AZUMARILL
 	db GEODUDE
 	db GRAVELER
 	db GOLEM
+	db EKANS              ;NOSEPASS
+	db ARBOK              ;PROBOPASS
+	db TOGEPI             ;SKITTY
+	db TOGETIC            ;DELCATTY
 	db ZUBAT
 	db GOLBAT
 	db CROBAT
-	db CLEFFA
-	db CLEFAIRY
-	db CLEFABLE
+	db TENTACOOL
+	db TENTACRUEL
+	db MAREEP             ;SABLEYE
+	db FLAAFFY            ;MAWILE
+	db PICHU
+	db PIKACHU
+	db RAICHU
 	db IGGLYBUFF
 	db JIGGLYPUFF
 	db WIGGLYTUFF
-	db TOGEPI
-	db TOGETIC
 	db SANDSHREW
 	db SANDSLASH
-	db EKANS
-	db ARBOK
 	db DUNSPARCE
-	db MAREEP
-	db FLAAFFY
 	db AMPHAROS
 	db WOOPER
 	db QUAGSIRE
@@ -70,28 +96,14 @@ NewPokedexOrder:
 	db HOPPIP
 	db SKIPLOOM
 	db JUMPLUFF
-	db SURSKIT
-	db MASQUERAIN
 	db POLIWAG
 	db POLIWHIRL
 	db POLIWRATH
 	db POLITOED
-	db MAGIKARP
-	db GYARADOS
-	db GOLDEEN
-	db SEAKING
-	db RALTS
-	db KIRLIA
-	db SLOWKING
 	db ODDISH
 	db GLOOM
 	db VILEPLUME
 	db BELLOSSOM
-	db DROWZEE
-	db HYPNO
-	db ABRA
-	db KADABRA
-	db ALAKAZAM
 	db DITTO
 	db PINECO
 	db FORRETRESS
@@ -102,10 +114,6 @@ NewPokedexOrder:
 	db NIDORINO
 	db NIDOKING
 	db YANMA
-	db SHROOMISH
-	db BRELOOM
-	db SEEDOT
-	db NUZLEAF
 	db SUDOWOODO
 	db WOBBUFFET
 	db VENONAT
@@ -130,8 +138,6 @@ NewPokedexOrder:
 	db GROWLITHE
 	db ARCANINE
 	db STANTLER
-	db MARILL
-	db AZUMARILL
 	db DIGLETT
 	db DUGTRIO
 	db MANKEY
@@ -158,19 +164,14 @@ NewPokedexOrder:
 	db ELECTABUZZ
 	db MR__MIME
 	db SMEARGLE
-	db SLAKOTH
 	db NATU
 	db XATU
 	db QWILFISH
-	db TENTACOOL
-	db TENTACRUEL
 	db KRABBY
 	db KINGLER
 	db SHUCKLE
 	db STARYU
 	db STARMIE
-	db WINGULL
-	db PELIPPER
 	db CORSOLA
 	db REMORAID
 	db OCTILLERY
@@ -179,7 +180,6 @@ NewPokedexOrder:
 	db SEEL
 	db DEWGONG
 	db LICKITUNG
-	db SHIFTRY
 	db EEVEE
 	db VAPOREON
 	db JOLTEON

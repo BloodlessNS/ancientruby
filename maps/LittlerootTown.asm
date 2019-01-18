@@ -209,9 +209,9 @@ Text_BusyProfBirch:
 LittlerootTownSignText:
 	text "LITTLEROOT TOWN"
 
-	para "A town that can't"
+	para "“A town that can't"
 	line "be shaded any"
-	cont "any hue."
+	cont "any hue.”"
 	done
 
 LittlerootTownPlayersHouseSignText:

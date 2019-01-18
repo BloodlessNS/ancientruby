@@ -125,9 +125,9 @@ WallysHouseSign:
 PetalburgCitySignText:
 	text "PETALBURG CITY"
 
-	para "Where people"
+	para "“Where people"
 	line "mingle with"
-	cont "nature."
+	cont "nature.”"
 	done
 	
 PetalburgGymSignText:

@@ -333,8 +333,8 @@
 	charmap "の", $c9
 	charmap "は", $ca
 	charmap "ひ", $cb
-	charmap "ふ", $cc
-	charmap "へ", $cd
+	charmap "↓", $cc
+	charmap "↑", $cd
 	charmap "ほ", $ce
 	charmap "ま", $cf
 	charmap "み", $d0

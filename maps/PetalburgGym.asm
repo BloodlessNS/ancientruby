@@ -34,6 +34,7 @@ PetalburgGymCatchTutorialFinish:
 	setscene SCENE_PETALBURGGYM_NOTHING
 	setevent EVENT_LEARNED_TO_CATCH_POKEMON
 	setevent EVENT_DUDE_TALKED_TO_YOU
+	setevent EVENT_COP_IN_ELMS_LAB
 	
 PetalburgGymWallyScript:
 	checkevent EVENT_LEARNED_TO_CATCH_POKEMON

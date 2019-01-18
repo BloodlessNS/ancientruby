@@ -150,8 +150,8 @@ OldaleTownCooltrainerFText:
 OldaleTownSignText:
 	text "OLDALE TOWN"
 	
-	para "Where things start"
-	line "off scarce."
+	para "“Where things"
+	line "start off scarce.”"
 	done
 
 OldaleTown_MapEvents:
