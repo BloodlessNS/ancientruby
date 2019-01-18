@@ -53,7 +53,7 @@ TreeMonSet_Town:
 
 TreeMonSet_Route:
 ; common
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, SPINARAK,   10
 	db 15, LEDYBA,     10
 	db 10, SEEDOT,  10
@@ -61,7 +61,7 @@ TreeMonSet_Route:
 	db  5, SEEDOT,  10
 	db -1
 ; rare
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
 	db 10, SEEDOT,  10
@@ -71,15 +71,15 @@ TreeMonSet_Route:
 
 TreeMonSet_Kanto:
 ; common
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, EKANS,      10
-	db 15, HOOTHOOT,   10
+	db 15, VIGOROTH,   10
 	db 10, SEEDOT,  10
 	db  5, SEEDOT,  10
 	db  5, SEEDOT,  10
 	db -1
 ; rare
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
 	db 10, SEEDOT,  10
@@ -89,15 +89,15 @@ TreeMonSet_Kanto:
 
 TreeMonSet_Lake:
 ; common
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, VENONAT,    10
-	db 15, HOOTHOOT,   10
+	db 15, VIGOROTH,   10
 	db 10, SEEDOT,  10
 	db  5, SEEDOT,  10
 	db  5, SEEDOT,  10
 	db -1
 ; rare
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
 	db 10, SEEDOT,  10
@@ -107,18 +107,18 @@ TreeMonSet_Lake:
 
 TreeMonSet_Forest:
 ; common
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, PINECO,     10
 	db 15, PINECO,     10
-	db 10, NOCTOWL,    10
+	db 10, SLAKING,    10
 	db  5, BEAUTIFLY, 10
 	db  5, DUSTOX,   10
 	db -1
 ; rare
-	db 50, HOOTHOOT,   10
+	db 50, VIGOROTH,   10
 	db 15, WURMPLE,   10
 	db 15, WEEDLE,     10
-	db 10, HOOTHOOT,   10
+	db 10, VIGOROTH,   10
 	db  5, SILCOON,    10
 	db  5, CASCOON,     10
 	db -1

@@ -183,13 +183,13 @@ KantoGrassWildMons:
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; nite
-	db 3, HOOTHOOT
+	db 3, VIGOROTH
 	db 3, SPINARAK
-	db 5, HOOTHOOT
-	db 7, NOCTOWL
+	db 5, VIGOROTH
+	db 7, SLAKING
 	db 7, ARIADOS
-	db 4, NOCTOWL
-	db 4, NOCTOWL
+	db 4, SLAKING
+	db 4, SLAKING
 
 	map_id ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -210,9 +210,9 @@ KantoGrassWildMons:
 	db 14, ABRA
 	db 14, ABRA
 	; nite
-	db 13, HOOTHOOT
+	db 13, VIGOROTH
 	db 13, MEOWTH
-	db 15, NOCTOWL
+	db 15, SLAKING
 	db 12, ABRA
 	db 14, JIGGLYPUFF
 	db 14, ABRA
@@ -292,7 +292,7 @@ KantoGrassWildMons:
 	db 18, KADABRA
 	; nite
 	db 17, MEOWTH
-	db 20, NOCTOWL
+	db 20, SLAKING
 	db 16, ABRA
 	db 17, HAUNTER
 	db 16, JIGGLYPUFF
@@ -321,7 +321,7 @@ KantoGrassWildMons:
 	db 14, DROWZEE
 	db 13, MEOWTH
 	db 15, MAGNEMITE
-	db 16, NOCTOWL
+	db 16, SLAKING
 	db 16, MIGHTYENA
 	db 16, HYPNO
 	db 16, HYPNO
@@ -347,7 +347,7 @@ KantoGrassWildMons:
 	; nite
 	db 23, VENONAT
 	db 23, QUAGSIRE
-	db 25, NOCTOWL
+	db 25, SLAKING
 	db 25, VENOMOTH
 	db 25, QUAGSIRE
 	db 25, QUAGSIRE
@@ -374,7 +374,7 @@ KantoGrassWildMons:
 	; nite
 	db 26, VENONAT
 	db 26, QUAGSIRE
-	db 28, NOCTOWL
+	db 28, SLAKING
 	db 28, VENOMOTH
 	db 28, QUAGSIRE
 	db 28, QUAGSIRE
@@ -401,7 +401,7 @@ KantoGrassWildMons:
 	; nite
 	db 23, VENONAT
 	db 23, QUAGSIRE
-	db 25, NOCTOWL
+	db 25, SLAKING
 	db 25, VENOMOTH
 	db 25, QUAGSIRE
 	db 25, QUAGSIRE

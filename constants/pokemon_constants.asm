@@ -101,7 +101,7 @@
 	const KIRLIA    ; 50
 	const MAGNEMITE  ; 51
 	const MAGNETON   ; 52
-	const FARFETCH_D ; 53
+	const SLAKOTH ; 53
 	const DODUO      ; 54
 	const DODRIO     ; 55
 	const SEEL       ; 56
@@ -182,8 +182,8 @@ JOHTO_POKEMON EQU const_value
 	const SWAMPERT ; a0
 	const ZIGZAGOON    ; a1
 	const LINOONE     ; a2
-	const HOOTHOOT   ; a3
-	const NOCTOWL    ; a4
+	const VIGOROTH   ; a3
+	const SLAKING    ; a4
 	const LEDYBA     ; a5
 	const LEDIAN     ; a6
 	const SPINARAK   ; a7
@@ -210,8 +210,8 @@ JOHTO_POKEMON EQU const_value
 	const SKIPLOOM   ; bc
 	const JUMPLUFF   ; bd
 	const AIPOM      ; be
-	const SUNKERN    ; bf
-	const SUNFLORA   ; c0
+	const SHROOMISH    ; bf
+	const BRELOOM   ; c0
 	const YANMA      ; c1
 	const WOOPER     ; c2
 	const QUAGSIRE   ; c3

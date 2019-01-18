@@ -82,7 +82,7 @@ PokedexDataPointerTable:
 	dw KirliaPokedexEntry
 	dw MagnemitePokedexEntry
 	dw MagnetonPokedexEntry
-	dw FarfetchDPokedexEntry
+	dw SlakothPokedexEntry
 	dw DoduoPokedexEntry
 	dw DodrioPokedexEntry
 	dw SeelPokedexEntry
@@ -162,8 +162,8 @@ PokedexDataPointerTable:
 	dw SwampertPokedexEntry
 	dw ZigzagoonPokedexEntry
 	dw LinoonePokedexEntry
-	dw HoothootPokedexEntry
-	dw NoctowlPokedexEntry
+	dw VigorothPokedexEntry
+	dw SlakingPokedexEntry
 	dw LedybaPokedexEntry
 	dw LedianPokedexEntry
 	dw SpinarakPokedexEntry
@@ -190,8 +190,8 @@ PokedexDataPointerTable:
 	dw SkiploomPokedexEntry
 	dw JumpluffPokedexEntry
 	dw AipomPokedexEntry
-	dw SunkernPokedexEntry
-	dw SunfloraPokedexEntry
+	dw ShroomishPokedexEntry
+	dw BreloomPokedexEntry
 	dw YanmaPokedexEntry
 	dw WooperPokedexEntry
 	dw QuagsirePokedexEntry

@@ -44,7 +44,7 @@ Cries:
 	dba Cry_Raikou
 	dba Cry_Mareep
 	dba Cry_Togetic
-	dba Cry_Hoothoot
+	dba Cry_Vigoroth
 	dba Cry_Zigzagoon
 	dba Cry_Slowking
 	dba Cry_Torchic
@@ -60,7 +60,7 @@ Cries:
 	dba Cry_Blaziken
 	dba Cry_Natu
 	dba Cry_Teddiursa
-	dba Cry_Sunflora
+	dba Cry_Breloom
 	dba Cry_Ampharos
 	dba Cry_Magcargo
 	dba Cry_Pichu

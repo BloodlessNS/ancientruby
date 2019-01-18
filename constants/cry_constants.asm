@@ -49,7 +49,7 @@
 	const CRY_RAIKOU
 	const CRY_MAREEP
 	const CRY_TOGETIC
-	const CRY_HOOTHOOT
+	const CRY_VIGOROTH
 	const CRY_ZIGZAGOON
 	const CRY_SLOWKING
 	const CRY_TORCHIC
@@ -65,7 +65,7 @@
 	const CRY_BLAZIKEN
 	const CRY_NATU
 	const CRY_TEDDIURSA
-	const CRY_SUNFLORA
+	const CRY_BRELOOM
 	const CRY_AMPHAROS
 	const CRY_MAGCARGO
 	const CRY_PICHU

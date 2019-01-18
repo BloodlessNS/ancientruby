@@ -80,7 +80,7 @@ RaltsBitmasks:
 KirliaBitmasks:
 MagnemiteBitmasks:
 MagnetonBitmasks:
-FarfetchDBitmasks:
+SlakothBitmasks:
 DoduoBitmasks:
 DodrioBitmasks:
 SeelBitmasks:
@@ -160,8 +160,8 @@ MarshtompBitmasks:
 SwampertBitmasks:
 ZigzagoonBitmasks:
 LinooneBitmasks:
-HoothootBitmasks:
-NoctowlBitmasks:
+VigorothBitmasks:
+SlakingBitmasks:
 LedybaBitmasks:
 LedianBitmasks:
 SpinarakBitmasks:
@@ -188,8 +188,8 @@ HoppipBitmasks:
 SkiploomBitmasks:
 JumpluffBitmasks:
 AipomBitmasks:
-SunkernBitmasks:
-SunfloraBitmasks:
+ShroomishBitmasks:
+BreloomBitmasks:
 YanmaBitmasks:
 WooperBitmasks:
 QuagsireBitmasks:

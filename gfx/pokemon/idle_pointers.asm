@@ -81,7 +81,7 @@ AnimationIdlePointers:
 	dw KirliaAnimationIdle
 	dw MagnemiteAnimationIdle
 	dw MagnetonAnimationIdle
-	dw FarfetchDAnimationIdle
+	dw SlakothAnimationIdle
 	dw DoduoAnimationIdle
 	dw DodrioAnimationIdle
 	dw SeelAnimationIdle
@@ -161,8 +161,8 @@ AnimationIdlePointers:
 	dw SwampertAnimationIdle
 	dw ZigzagoonAnimationIdle
 	dw LinooneAnimationIdle
-	dw HoothootAnimationIdle
-	dw NoctowlAnimationIdle
+	dw VigorothAnimationIdle
+	dw SlakingAnimationIdle
 	dw LedybaAnimationIdle
 	dw LedianAnimationIdle
 	dw SpinarakAnimationIdle
@@ -189,8 +189,8 @@ AnimationIdlePointers:
 	dw SkiploomAnimationIdle
 	dw JumpluffAnimationIdle
 	dw AipomAnimationIdle
-	dw SunkernAnimationIdle
-	dw SunfloraAnimationIdle
+	dw ShroomishAnimationIdle
+	dw BreloomAnimationIdle
 	dw YanmaAnimationIdle
 	dw WooperAnimationIdle
 	dw QuagsireAnimationIdle

@@ -1,17 +1,17 @@
-	db SUNKERN ; 191
+	db SHROOMISH ; 191
 
-	db  30,  30,  30,  30,  30,  30
+	db  60,  40,  60,  35,  40,  60
 	;   hp  atk  def  spd  sat  sdf
 
 	db GRASS, GRASS ; type
-	db 235 ; catch rate
-	db 52 ; base exp
+	db 255 ; catch rate
+	db 65 ; base exp
 	db NO_ITEM, NO_ITEM ; items
 	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 20 ; step cycles to hatch
+	db 15 ; step cycles to hatch
 	db 5 ; unknown 2
-	INCBIN "gfx/pokemon/sunkern/front.dimensions"
+	INCBIN "gfx/pokemon/shroomish/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db GROWTH_MEDIUM_SLOW ; growth rate
 	dn EGG_PLANT, EGG_PLANT ; egg groups

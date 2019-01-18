@@ -82,7 +82,7 @@ RaltsFrames:
 KirliaFrames:
 MagnemiteFrames:
 MagnetonFrames:
-FarfetchDFrames:
+SlakothFrames:
 DoduoFrames:
 DodrioFrames:
 SeelFrames:

@@ -81,7 +81,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw FarfetchDEggMoves
+	dw SlakothEggMoves
 	dw DoduoEggMoves
 	dw NoEggMoves
 	dw SeelEggMoves
@@ -165,7 +165,7 @@ endc
 	dw NoEggMoves
 	dw ZigzagoonEggMoves
 	dw NoEggMoves
-	dw HoothootEggMoves
+	dw VigorothEggMoves
 	dw NoEggMoves
 	dw LedybaEggMoves
 	dw NoEggMoves

@@ -2502,7 +2502,7 @@ wTradeFlags:: flag_array PARTY_LENGTH ; d960
 	ds 1
 wMooMooBerries:: db ; d962
 wUndergroundSwitchPositions:: db ; d963
-wFarfetchdPosition:: db ; d964
+wSlakothPosition:: db ; d964
 
 	ds 13
 

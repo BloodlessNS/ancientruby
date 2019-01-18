@@ -169,3 +169,4 @@
 	tilecoll WALL, WALL, WATER, WATER ; a8
 	tilecoll WATER, WALL, BUOY, WATER ; a9
 	tilecoll WALL, WALL, WATER, WALL ; aa
+	tilecoll WALL, FLOOR, WALL, WALL ; ab

@@ -642,12 +642,12 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (11)
 	db "BOB@", TRAINERTYPE_NORMAL
-	db 34, NOCTOWL
+	db 34, SLAKING
 	db -1 ; end
 
 	; BIRD_KEEPER (12)
 	db "JOSE@", TRAINERTYPE_NORMAL
-	db 36, FARFETCH_D
+	db 36, SLAKOTH
 	db -1 ; end
 
 	; BIRD_KEEPER (13)
@@ -659,12 +659,12 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (14)
 	db "JOSE@", TRAINERTYPE_NORMAL
-	db 34, FARFETCH_D
+	db 34, SLAKOTH
 	db -1 ; end
 
 	; BIRD_KEEPER (15)
 	db "PERRY@", TRAINERTYPE_NORMAL
-	db 34, FARFETCH_D
+	db 34, SLAKOTH
 	db -1 ; end
 
 	; BIRD_KEEPER (16)
@@ -675,7 +675,7 @@ BirdKeeperGroup:
 
 	; BIRD_KEEPER (17)
 	db "JOSE@", TRAINERTYPE_MOVES
-	db 40, FARFETCH_D, FURY_ATTACK, DETECT, FLY, SLASH
+	db 40, SLAKOTH, FURY_ATTACK, DETECT, FLY, SLASH
 	db -1 ; end
 
 	; BIRD_KEEPER (18)
@@ -1459,7 +1459,7 @@ GentlemanGroup:
 
 	; GENTLEMAN (5)
 	db "ALFRED@", TRAINERTYPE_NORMAL
-	db 20, NOCTOWL
+	db 20, SLAKING
 	db -1 ; end
 
 SkierGroup:
@@ -3085,7 +3085,7 @@ SageGroup:
 	; SAGE (4)
 	db "TROY@", TRAINERTYPE_NORMAL
 	db  7, BELLSPROUT
-	db  7, HOOTHOOT
+	db  7, VIGOROTH
 	db -1 ; end
 
 	; SAGE (5)
@@ -3118,24 +3118,24 @@ SageGroup:
 	db "LI@", TRAINERTYPE_NORMAL
 	db  7, BELLSPROUT
 	db  7, BELLSPROUT
-	db 10, HOOTHOOT
+	db 10, VIGOROTH
 	db -1 ; end
 
 	; SAGE (10)
 	db "GAKU@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
+	db 32, SLAKING
 	db 32, FLAREON
 	db -1 ; end
 
 	; SAGE (11)
 	db "MASA@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
+	db 32, SLAKING
 	db 32, JOLTEON
 	db -1 ; end
 
 	; SAGE (12)
 	db "KOJI@", TRAINERTYPE_NORMAL
-	db 32, NOCTOWL
+	db 32, SLAKING
 	db 32, VAPOREON
 	db -1 ; end
 

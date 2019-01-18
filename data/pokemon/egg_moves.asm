@@ -256,7 +256,7 @@ RaltsEggMoves:
 	db STOMP
 	db -1 ; end
 
-FarfetchDEggMoves:
+SlakothEggMoves:
 if !_ANCIENTRUBY
 	db STEEL_WING
 endc
@@ -517,7 +517,7 @@ ZigzagoonEggMoves:
 	db REVERSAL
 	db -1 ; end
 
-HoothootEggMoves:
+VigorothEggMoves:
 	db MIRROR_MOVE
 	db SUPERSONIC
 	db FAINT_ATTACK

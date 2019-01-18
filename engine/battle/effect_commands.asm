@@ -1155,7 +1155,7 @@ BattleCommand_Critical:
 	jr .Tally
 
 .Farfetchd:
-	cp FARFETCH_D
+	cp SLAKOTH
 	jr nz, .FocusEnergy
 	ld a, [hl]
 	cp STICK

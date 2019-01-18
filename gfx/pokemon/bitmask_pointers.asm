@@ -81,7 +81,7 @@ BitmasksPointers:
 	dw KirliaBitmasks
 	dw MagnemiteBitmasks
 	dw MagnetonBitmasks
-	dw FarfetchDBitmasks
+	dw SlakothBitmasks
 	dw DoduoBitmasks
 	dw DodrioBitmasks
 	dw SeelBitmasks
@@ -161,8 +161,8 @@ BitmasksPointers:
 	dw SwampertBitmasks
 	dw ZigzagoonBitmasks
 	dw LinooneBitmasks
-	dw HoothootBitmasks
-	dw NoctowlBitmasks
+	dw VigorothBitmasks
+	dw SlakingBitmasks
 	dw LedybaBitmasks
 	dw LedianBitmasks
 	dw SpinarakBitmasks
@@ -189,8 +189,8 @@ BitmasksPointers:
 	dw SkiploomBitmasks
 	dw JumpluffBitmasks
 	dw AipomBitmasks
-	dw SunkernBitmasks
-	dw SunfloraBitmasks
+	dw ShroomishBitmasks
+	dw BreloomBitmasks
 	dw YanmaBitmasks
 	dw WooperBitmasks
 	dw QuagsireBitmasks

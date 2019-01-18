@@ -83,7 +83,7 @@ KantoMonSpecials:
 	db  80 ; KIRLIA
 	db  95 ; MAGNEMITE
 	db 120 ; MAGNETON
-	db  58 ; FARFETCH_D
+	db  58 ; SLAKOTH
 	db  35 ; DODUO
 	db  60 ; DODRIO
 	db  70 ; SEEL

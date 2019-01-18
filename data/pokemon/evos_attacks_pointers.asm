@@ -83,7 +83,7 @@ EvosAttacksPointers::
 	dw KirliaEvosAttacks
 	dw MagnemiteEvosAttacks
 	dw MagnetonEvosAttacks
-	dw FarfetchDEvosAttacks
+	dw SlakothEvosAttacks
 	dw DoduoEvosAttacks
 	dw DodrioEvosAttacks
 	dw SeelEvosAttacks
@@ -163,8 +163,8 @@ EvosAttacksPointers::
 	dw SwampertEvosAttacks
 	dw ZigzagoonEvosAttacks
 	dw LinooneEvosAttacks
-	dw HoothootEvosAttacks
-	dw NoctowlEvosAttacks
+	dw VigorothEvosAttacks
+	dw SlakingEvosAttacks
 	dw LedybaEvosAttacks
 	dw LedianEvosAttacks
 	dw SpinarakEvosAttacks
@@ -191,8 +191,8 @@ EvosAttacksPointers::
 	dw SkiploomEvosAttacks
 	dw JumpluffEvosAttacks
 	dw AipomEvosAttacks
-	dw SunkernEvosAttacks
-	dw SunfloraEvosAttacks
+	dw ShroomishEvosAttacks
+	dw BreloomEvosAttacks
 	dw YanmaEvosAttacks
 	dw WooperEvosAttacks
 	dw QuagsireEvosAttacks

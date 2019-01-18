@@ -339,16 +339,16 @@ JohtoGrassWildMons:
 	; day
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
-	db 14, SUNKERN
+	db 14, SHROOMISH
 	db 13, PIDGEY
 	db 10, WURMPLE
 	db 10, WEEDLE
 	db 10, WEEDLE
 	; nite
 	db 12, PSYDUCK
-	db 13, HOOTHOOT
+	db 13, VIGOROTH
 	db 14, SPINARAK
-	db 15, HOOTHOOT
+	db 15, VIGOROTH
 	db 10, VENONAT
 	db 12, VENONAT
 	db 12, VENONAT
@@ -565,7 +565,7 @@ JohtoGrassWildMons:
 	db 5, VENONAT
 	db 7, ODDISH
 	db 7, PSYDUCK
-	db 7, HOOTHOOT
+	db 7, VIGOROTH
 	db 6, SURSKIT
 	db 6, SURSKIT
 
@@ -1243,6 +1243,60 @@ JohtoGrassWildMons:
 	db 4, ZIGZAGOON
 	db 3, WINGULL
 	db 4, WINGULL
+	
+	map_id ROUTE_104_SOUTH
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 4, ZIGZAGOON
+	db 4, WURMPLE
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 4, TAILLOW
+	db 5, TAILLOW
+	db 5, WINGULL
+	; day
+	db 4, ZIGZAGOON
+	db 4, WURMPLE
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 4, TAILLOW
+	db 5, TAILLOW
+	db 5, WINGULL
+	; nite
+	db 4, ZIGZAGOON
+	db 4, WURMPLE
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 4, TAILLOW
+	db 5, TAILLOW
+	db 5, WINGULL
+	
+	map_id PETALBURG_WOODS
+	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+	; morn
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 5, SHROOMISH
+	db 6, ZIGZAGOON
+	db 5, TAILLOW
+	db 5, SLAKOTH
+	db 6, SLAKOTH
+	; day
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 5, SHROOMISH
+	db 6, ZIGZAGOON
+	db 5, TAILLOW
+	db 5, SLAKOTH
+	db 6, SLAKOTH
+	; nite
+	db 5, ZIGZAGOON
+	db 5, WURMPLE
+	db 5, SHROOMISH
+	db 6, ZIGZAGOON
+	db 5, TAILLOW
+	db 5, SLAKOTH
+	db 6, SLAKOTH
 
 	map_id ROUTE_30
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1264,12 +1318,12 @@ JohtoGrassWildMons:
 	db 4, HOPPIP
 	; nite
 	db 3, SPINARAK
-	db 3, HOOTHOOT
+	db 3, VIGOROTH
 	db 4, POLIWAG
-	db 4, HOOTHOOT
+	db 4, VIGOROTH
 	db 3, ZUBAT
-	db 4, HOOTHOOT
-	db 4, HOOTHOOT
+	db 4, VIGOROTH
+	db 4, VIGOROTH
 
 	map_id ROUTE_31
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1293,7 +1347,7 @@ JohtoGrassWildMons:
 	db 4, SPINARAK
 	db 4, POLIWAG
 	db 5, BELLSPROUT
-	db 5, HOOTHOOT
+	db 5, VIGOROTH
 	db 4, ZUBAT
 	db 5, GASTLY
 	db 5, GASTLY
@@ -1319,7 +1373,7 @@ JohtoGrassWildMons:
 	; nite
 	db 12, DROWZEE
 	db 11, POOCHYENA
-	db 12, HOOTHOOT
+	db 12, VIGOROTH
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO

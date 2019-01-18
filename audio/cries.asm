@@ -21,10 +21,10 @@ Cry_Raikou:
 	musicheader 1, 6, Cry_Raikou_Ch6
 	musicheader 1, 8, Cry_Raikou_Ch8
 
-Cry_Hoothoot:
-	musicheader 3, 5, Cry_Hoothoot_Ch5
-	musicheader 1, 6, Cry_Hoothoot_Ch6
-	musicheader 1, 8, Cry_Hoothoot_Ch8
+Cry_Vigoroth:
+	musicheader 3, 5, Cry_Vigoroth_Ch5
+	musicheader 1, 6, Cry_Vigoroth_Ch6
+	musicheader 1, 8, Cry_Vigoroth_Ch8
 
 Cry_Zigzagoon:
 	musicheader 2, 5, Cry_Zigzagoon_Ch5
@@ -92,10 +92,10 @@ Cry_Teddiursa:
 	musicheader 1, 6, Cry_Teddiursa_Ch6
 	musicheader 1, 8, Cry_Teddiursa_Ch8
 
-Cry_Sunflora:
-	musicheader 3, 5, Cry_Sunflora_Ch5
-	musicheader 1, 6, Cry_Sunflora_Ch6
-	musicheader 1, 8, Cry_Sunflora_Ch8
+Cry_Breloom:
+	musicheader 3, 5, Cry_Breloom_Ch5
+	musicheader 1, 6, Cry_Breloom_Ch6
+	musicheader 1, 8, Cry_Breloom_Ch8
 
 Cry_Ampharos:
 	musicheader 3, 5, Cry_Ampharos_Ch5
@@ -392,7 +392,7 @@ Cry_Raikou_Ch8:
 	noise C_,  1, $d2, $4f
 	endchannel
 
-Cry_Hoothoot_Ch5:
+Cry_Vigoroth_Ch5:
 	sound_duty 2, 1, 2, 1
 	sound __,  5, $78, $0650
 	sound __,  5, $f8, $0660
@@ -404,7 +404,7 @@ Cry_Hoothoot_Ch5:
 	sound __,  5, $f1, $0674
 	endchannel
 
-Cry_Hoothoot_Ch6:
+Cry_Vigoroth_Ch6:
 	sound_duty 2, 0, 2, 0
 .loop1
 	sound __,  3, $a1, $0600
@@ -416,7 +416,7 @@ Cry_Hoothoot_Ch6:
 	sound __,  5, $91, $0638
 	endchannel
 
-Cry_Hoothoot_Ch8:
+Cry_Vigoroth_Ch8:
 	noise __,  2, $68, $36
 	noise C_,  1, $88, $6a
 	noise __,  2, $98, $5e
@@ -643,7 +643,7 @@ Cry_Blaziken_Ch8:
 Cry_Natu_Ch5:
 	sound_duty 2, 3, 1, 3
 Cry_Mantine_branch_f32e9:
-Cry_Sunflora_branch_f32e9:
+Cry_Breloom_branch_f32e9:
 	sound __,  5, $f8, $07b1
 	sound __,  5, $f8, $07b0
 	sound __,  5, $48, $07af
@@ -655,7 +655,7 @@ Cry_Mantine_branch_f32f5:
 
 Cry_Mantine_branch_f3302:
 Cry_Natu_Ch6:
-Cry_Sunflora_Ch6:
+Cry_Breloom_Ch6:
 	sound_duty 2, 0, 3, 3
 	sound __,  5, $f8, $07b2
 	sound __,  5, $f8, $07b1
@@ -668,7 +668,7 @@ Cry_Mantine_branch_f3310:
 
 Cry_Mantine_branch_f331d:
 Cry_Natu_Ch8:
-Cry_Sunflora_Ch8:
+Cry_Breloom_Ch8:
 	noise __,  5, $88, $5
 	noise __,  5, $88, $4
 	noise __,  5, $38, $3
@@ -683,9 +683,9 @@ Cry_Teddiursa_Ch8:
 	noise __,  9, $a1, $5a
 	endchannel
 
-Cry_Sunflora_Ch5:
+Cry_Breloom_Ch5:
 	dutycycle $0
-	jumpchannel Cry_Sunflora_branch_f32e9
+	jumpchannel Cry_Breloom_branch_f32e9
 
 Cry_Mantine_Ch5:
 	dutycycle $0

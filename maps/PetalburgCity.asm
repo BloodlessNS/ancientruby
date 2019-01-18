@@ -291,6 +291,15 @@ MovementData_StoppedByNPC10:
 	step RIGHT
 	step DOWN
 	step_end
+	
+PetalburgHiddenRareCandy:
+	hiddenitem RARE_CANDY, EVENT_PETALBURG_HIDDEN_RARE_CANDY
+	
+PetalburgCityMaxRevive:
+	itemball MAX_REVIVE
+	
+PetalburgCityEther:
+	itemball ETHER
 
 PetalburgCity_MapEvents:
 	db 0, 0 ; filler
@@ -307,14 +316,16 @@ PetalburgCity_MapEvents:
 	coord_event  7, 10, SCENE_DEFAULT, StoppedByNPC2
 	coord_event  7, 11, SCENE_DEFAULT, StoppedByNPC3
 
-	db 3 ; bg events
+	db 4 ; bg events
 	bg_event  14,  15, BGEVENT_READ, PetalburgCitySign
 	bg_event  15,  9, BGEVENT_READ, PetalburgGymSign
 	bg_event  7,  8, BGEVENT_READ, WallysHouseSign
+	bg_event  9,  25, BGEVENT_ITEM, PetalburgHiddenRareCandy
 
-	db 4 ; object events
+	db 6 ; object events
 	object_event 20,  8, SPRITE_GENTLEMAN, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgCityGentlemanScript, -1
 	object_event 14,  16, SPRITE_TEACHER, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, WallyGoneScript, EVENT_DUDE_TALKED_TO_YOU
 	object_event 4,  10, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1	
 	object_event 7,  19, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 0, 1, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgCityCooltrainerMScript, -1
-	
+	object_event  18,  2, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgCityMaxRevive, EVENT_PETALBURG_MAX_REVIVE
+	object_event  2,  24, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgCityEther, EVENT_PETALBURG_ETHER

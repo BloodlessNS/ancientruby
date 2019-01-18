@@ -1,5 +1,5 @@
 	const_def 2 ; object constants
-	const ILEXFOREST_FARFETCHD
+	const ILEXFOREST_SLAKOTH
 	const ILEXFOREST_YOUNGSTER1
 	const ILEXFOREST_BLACK_BELT
 	const ILEXFOREST_ROCKER
@@ -20,7 +20,7 @@ IlexForest_MapScripts:
 .FarfetchdCallback:
 	checkevent EVENT_GOT_HM01_CUT
 	iftrue .Static
-	copybytetovar wFarfetchdPosition
+	copybytetovar wSlakothPosition
 	ifequal  1, .PositionOne
 	ifequal  2, .PositionTwo
 	ifequal  3, .PositionThree
@@ -35,59 +35,59 @@ IlexForest_MapScripts:
 	return
 
 .PositionOne:
-	moveobject ILEXFOREST_FARFETCHD, 14, 31
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 14, 31
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionTwo:
-	moveobject ILEXFOREST_FARFETCHD, 15, 25
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 15, 25
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionThree:
-	moveobject ILEXFOREST_FARFETCHD, 20, 24
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 20, 24
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionFour:
-	moveobject ILEXFOREST_FARFETCHD, 29, 22
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 29, 22
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionFive:
-	moveobject ILEXFOREST_FARFETCHD, 28, 31
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 28, 31
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionSix:
-	moveobject ILEXFOREST_FARFETCHD, 24, 35
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 24, 35
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionSeven:
-	moveobject ILEXFOREST_FARFETCHD, 22, 31
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 22, 31
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionEight:
-	moveobject ILEXFOREST_FARFETCHD, 15, 29
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 15, 29
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionNine:
-	moveobject ILEXFOREST_FARFETCHD, 10, 35
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 10, 35
+	appear ILEXFOREST_SLAKOTH
 	return
 
 .PositionTen:
-	moveobject ILEXFOREST_FARFETCHD, 6, 28
-	appear ILEXFOREST_FARFETCHD
+	moveobject ILEXFOREST_SLAKOTH, 6, 28
+	appear ILEXFOREST_SLAKOTH
 	return
 
 IlexForestCharcoalApprenticeScript:
 	faceplayer
 	opentext
-	checkevent EVENT_HERDED_FARFETCHD
+	checkevent EVENT_HERDED_SLAKOTH
 	iftrue .DoneFarfetchd
 	writetext UnknownText_0x6ef5c
 	waitbutton
@@ -101,7 +101,7 @@ IlexForestCharcoalApprenticeScript:
 	end
 
 IlexForestFarfetchdScript:
-	copybytetovar wFarfetchdPosition
+	copybytetovar wSlakothPosition
 	ifequal  1, .Position1
 	ifequal  2, .Position2
 	ifequal  3, .Position3
@@ -119,68 +119,68 @@ IlexForestFarfetchdScript:
 	writetext Text_ItsTheMissingPokemon
 	buttonsound
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry SLAKOTH
 	waitbutton
 	closetext
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos1_Pos2
-	moveobject ILEXFOREST_FARFETCHD, 15, 25
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 2
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos1_Pos2
+	moveobject ILEXFOREST_SLAKOTH, 15, 25
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 2
 	end
 
 .Position2:
 	scall .CryAndCheckFacing
 	ifequal DOWN, .Position2_Down
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos2_Pos3
-	moveobject ILEXFOREST_FARFETCHD, 20, 24
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 3
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos2_Pos3
+	moveobject ILEXFOREST_SLAKOTH, 20, 24
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 3
 	end
 
 .Position2_Down:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos2_Pos8
-	moveobject ILEXFOREST_FARFETCHD, 15, 29
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 8
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos2_Pos8
+	moveobject ILEXFOREST_SLAKOTH, 15, 29
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 8
 	end
 
 .Position3:
 	scall .CryAndCheckFacing
 	ifequal LEFT, .Position3_Left
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos3_Pos4
-	moveobject ILEXFOREST_FARFETCHD, 29, 22
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 4
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos3_Pos4
+	moveobject ILEXFOREST_SLAKOTH, 29, 22
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 4
 	end
 
 .Position3_Left:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos3_Pos2
-	moveobject ILEXFOREST_FARFETCHD, 15, 25
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 2
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos3_Pos2
+	moveobject ILEXFOREST_SLAKOTH, 15, 25
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 2
 	end
 
 .Position4:
 	scall .CryAndCheckFacing
 	ifequal UP, .Position4_Up
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos4_Pos5
-	moveobject ILEXFOREST_FARFETCHD, 28, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 5
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos4_Pos5
+	moveobject ILEXFOREST_SLAKOTH, 28, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 5
 	end
 
 .Position4_Up:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos4_Pos3
-	moveobject ILEXFOREST_FARFETCHD, 20, 24
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 3
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos4_Pos3
+	moveobject ILEXFOREST_SLAKOTH, 20, 24
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 3
 	end
 
 .Position5:
@@ -188,80 +188,80 @@ IlexForestFarfetchdScript:
 	ifequal UP, .Position5_Up
 	ifequal LEFT, .Position5_Left
 	ifequal RIGHT, .Position5_Right
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos5_Pos6
-	moveobject ILEXFOREST_FARFETCHD, 24, 35
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 6
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos5_Pos6
+	moveobject ILEXFOREST_SLAKOTH, 24, 35
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 6
 	end
 
 .Position5_Left:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetchd_Pos5_Pos7
-	moveobject ILEXFOREST_FARFETCHD, 22, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 7
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetchd_Pos5_Pos7
+	moveobject ILEXFOREST_SLAKOTH, 22, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 7
 	end
 
 .Position5_Up:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos5_Pos4_Up
-	moveobject ILEXFOREST_FARFETCHD, 29, 22
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 4
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos5_Pos4_Up
+	moveobject ILEXFOREST_SLAKOTH, 29, 22
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 4
 	end
 
 .Position5_Right:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos5_Pos4_Right
-	moveobject ILEXFOREST_FARFETCHD, 29, 22
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 4
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos5_Pos4_Right
+	moveobject ILEXFOREST_SLAKOTH, 29, 22
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 4
 	end
 
 .Position6:
 	scall .CryAndCheckFacing
 	ifequal RIGHT, .Position6_Right
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos6_Pos7
-	moveobject ILEXFOREST_FARFETCHD, 22, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 7
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos6_Pos7
+	moveobject ILEXFOREST_SLAKOTH, 22, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 7
 	end
 
 .Position6_Right:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos6_Pos5
-	moveobject ILEXFOREST_FARFETCHD, 28, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 5
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos6_Pos5
+	moveobject ILEXFOREST_SLAKOTH, 28, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 5
 	end
 
 .Position7:
 	scall .CryAndCheckFacing
 	ifequal DOWN, .Position7_Down
 	ifequal LEFT, .Position7_Left
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos7_Pos8
-	moveobject ILEXFOREST_FARFETCHD, 15, 29
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 8
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos7_Pos8
+	moveobject ILEXFOREST_SLAKOTH, 15, 29
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 8
 	end
 
 .Position7_Left:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos7_Pos6
-	moveobject ILEXFOREST_FARFETCHD, 24, 35
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 6
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos7_Pos6
+	moveobject ILEXFOREST_SLAKOTH, 24, 35
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 6
 	end
 
 .Position7_Down:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos7_Pos5
-	moveobject ILEXFOREST_FARFETCHD, 28, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 5
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos7_Pos5
+	moveobject ILEXFOREST_SLAKOTH, 28, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 5
 	end
 
 .Position8:
@@ -269,65 +269,65 @@ IlexForestFarfetchdScript:
 	ifequal UP, .Position8_Up
 	ifequal LEFT, .Position8_Left
 	ifequal RIGHT, .Position8_Right
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos8_Pos9
-	moveobject ILEXFOREST_FARFETCHD, 10, 35
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 9
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos8_Pos9
+	moveobject ILEXFOREST_SLAKOTH, 10, 35
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 9
 	end
 
 .Position8_Right:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos8_Pos7
-	moveobject ILEXFOREST_FARFETCHD, 22, 31
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 7
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos8_Pos7
+	moveobject ILEXFOREST_SLAKOTH, 22, 31
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 7
 	end
 
 .Position8_Up:
 .Position8_Left:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos8_Pos2
-	moveobject ILEXFOREST_FARFETCHD, 15, 25
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 2
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos8_Pos2
+	moveobject ILEXFOREST_SLAKOTH, 15, 25
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 2
 	end
 
 .Position9:
 	scall .CryAndCheckFacing
 	ifequal DOWN, .Position9_Down
 	ifequal RIGHT, .Position9_Right
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos9_Pos10
-	moveobject ILEXFOREST_FARFETCHD, 6, 28
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 10
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos9_Pos10
+	moveobject ILEXFOREST_SLAKOTH, 6, 28
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 10
 	appear ILEXFOREST_BLACK_BELT
 	setevent EVENT_CHARCOAL_KILN_BOSS
-	setevent EVENT_HERDED_FARFETCHD
+	setevent EVENT_HERDED_SLAKOTH
 	end
 
 .Position9_Right:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos9_Pos8_Right
-	moveobject ILEXFOREST_FARFETCHD, 15, 29
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 8
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos9_Pos8_Right
+	moveobject ILEXFOREST_SLAKOTH, 15, 29
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 8
 	end
 
 .Position9_Down:
-	applymovement ILEXFOREST_FARFETCHD, MovementData_Farfetched_Pos9_Pos8_Down
-	moveobject ILEXFOREST_FARFETCHD, 15, 29
-	disappear ILEXFOREST_FARFETCHD
-	appear ILEXFOREST_FARFETCHD
-	loadvar wFarfetchdPosition, 8
+	applymovement ILEXFOREST_SLAKOTH, MovementData_Farfetched_Pos9_Pos8_Down
+	moveobject ILEXFOREST_SLAKOTH, 15, 29
+	disappear ILEXFOREST_SLAKOTH
+	appear ILEXFOREST_SLAKOTH
+	loadvar wSlakothPosition, 8
 	end
 
 .Position10:
 	faceplayer
 	opentext
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry SLAKOTH
 	waitbutton
 	closetext
 	end
@@ -336,7 +336,7 @@ IlexForestFarfetchdScript:
 	faceplayer
 	opentext
 	writetext Text_Kwaaaa
-	cry FARFETCH_D
+	cry SLAKOTH
 	waitbutton
 	closetext
 	checkcode VAR_FACING
@@ -354,10 +354,10 @@ IlexForestCharcoalMasterScript:
 	writetext Text_CharcoalMasterOutro
 	waitbutton
 	closetext
-	setevent EVENT_ILEX_FOREST_FARFETCHD
+	setevent EVENT_ILEX_FOREST_SLAKOTH
 	setevent EVENT_ILEX_FOREST_APPRENTICE
 	setevent EVENT_ILEX_FOREST_CHARCOAL_MASTER
-	clearevent EVENT_CHARCOAL_KILN_FARFETCH_D
+	clearevent EVENT_CHARCOAL_KILN_SLAKOTH
 	clearevent EVENT_CHARCOAL_KILN_APPRENTICE
 	clearevent EVENT_CHARCOAL_KILN_BOSS
 	end
@@ -953,7 +953,7 @@ IlexForest_MapEvents:
 	bg_event  8, 22, BGEVENT_UP, IlexForestShrineScript
 
 	db 11 ; object events
-	object_event 14, 31, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IlexForestFarfetchdScript, EVENT_ILEX_FOREST_FARFETCHD
+	object_event 14, 31, SPRITE_BIRD, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_SCRIPT, 0, IlexForestFarfetchdScript, EVENT_ILEX_FOREST_SLAKOTH
 	object_event  7, 28, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalApprenticeScript, EVENT_ILEX_FOREST_APPRENTICE
 	object_event  5, 28, SPRITE_BLACK_BELT, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestCharcoalMasterScript, EVENT_ILEX_FOREST_CHARCOAL_MASTER
 	object_event 15, 14, SPRITE_ROCKER, SPRITEMOVEDATA_STANDING_RIGHT, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, IlexForestHeadbuttGuyScript, -1

@@ -83,7 +83,7 @@ MonMenuIcons:
 	db ICON_RALTS    ; KIRLIA
 	db ICON_VOLTORB     ; MAGNEMITE
 	db ICON_VOLTORB     ; MAGNETON
-	db ICON_BIRD        ; FARFETCH_D
+	db ICON_BIRD        ; SLAKOTH
 	db ICON_BIRD        ; DODUO
 	db ICON_BIRD        ; DODRIO
 	db ICON_LAPRAS      ; SEEL
@@ -163,8 +163,8 @@ MonMenuIcons:
 	db ICON_MONSTER     ; SWAMPERT
 	db ICON_FOX         ; ZIGZAGOON
 	db ICON_FOX         ; LINOONE
-	db ICON_BIRD        ; HOOTHOOT
-	db ICON_BIRD        ; NOCTOWL
+	db ICON_BIRD        ; VIGOROTH
+	db ICON_BIRD        ; SLAKING
 	db ICON_BUG         ; LEDYBA
 	db ICON_BUG         ; LEDIAN
 	db ICON_BUG         ; SPINARAK
@@ -191,8 +191,8 @@ MonMenuIcons:
 	db ICON_ODDISH      ; SKIPLOOM
 	db ICON_ODDISH      ; JUMPLUFF
 	db ICON_MONSTER     ; AIPOM
-	db ICON_ODDISH      ; SUNKERN
-	db ICON_ODDISH      ; SUNFLORA
+	db ICON_ODDISH      ; SHROOMISH
+	db ICON_ODDISH      ; BRELOOM
 	db ICON_BUG         ; YANMA
 	db ICON_MONSTER     ; WOOPER
 	db ICON_MONSTER     ; QUAGSIRE

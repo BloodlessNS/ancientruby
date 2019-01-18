@@ -15,8 +15,8 @@ NewPokedexOrder:
 	db PIDGEOT
 	db TAILLOW
 	db SWELLOW
-	db HOOTHOOT
-	db NOCTOWL
+	db VIGOROTH
+	db SLAKING
 	db POOCHYENA
 	db MIGHTYENA
 	db ZIGZAGOON
@@ -102,8 +102,8 @@ NewPokedexOrder:
 	db NIDORINO
 	db NIDOKING
 	db YANMA
-	db SUNKERN
-	db SUNFLORA
+	db SHROOMISH
+	db BRELOOM
 	db SEEDOT
 	db NUZLEAF
 	db SUDOWOODO
@@ -158,7 +158,7 @@ NewPokedexOrder:
 	db ELECTABUZZ
 	db MR__MIME
 	db SMEARGLE
-	db FARFETCH_D
+	db SLAKOTH
 	db NATU
 	db XATU
 	db QWILFISH

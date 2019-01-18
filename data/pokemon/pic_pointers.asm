@@ -166,8 +166,8 @@ PokemonPicPointers::
 	dba_pic MagnemiteBackpic
 	dba_pic MagnetonFrontpic
 	dba_pic MagnetonBackpic
-	dba_pic FarfetchDFrontpic
-	dba_pic FarfetchDBackpic
+	dba_pic SlakothFrontpic
+	dba_pic SlakothBackpic
 	dba_pic DoduoFrontpic
 	dba_pic DoduoBackpic
 	dba_pic DodrioFrontpic
@@ -326,10 +326,10 @@ PokemonPicPointers::
 	dba_pic ZigzagoonBackpic
 	dba_pic LinooneFrontpic
 	dba_pic LinooneBackpic
-	dba_pic HoothootFrontpic
-	dba_pic HoothootBackpic
-	dba_pic NoctowlFrontpic
-	dba_pic NoctowlBackpic
+	dba_pic VigorothFrontpic
+	dba_pic VigorothBackpic
+	dba_pic SlakingFrontpic
+	dba_pic SlakingBackpic
 	dba_pic LedybaFrontpic
 	dba_pic LedybaBackpic
 	dba_pic LedianFrontpic
@@ -382,10 +382,10 @@ PokemonPicPointers::
 	dba_pic JumpluffBackpic
 	dba_pic AipomFrontpic
 	dba_pic AipomBackpic
-	dba_pic SunkernFrontpic
-	dba_pic SunkernBackpic
-	dba_pic SunfloraFrontpic
-	dba_pic SunfloraBackpic
+	dba_pic ShroomishFrontpic
+	dba_pic ShroomishBackpic
+	dba_pic BreloomFrontpic
+	dba_pic BreloomBackpic
 	dba_pic YanmaFrontpic
 	dba_pic YanmaBackpic
 	dba_pic WooperFrontpic

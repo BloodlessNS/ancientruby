@@ -11,8 +11,8 @@ MarshtompFrames:
 SwampertFrames:
 ZigzagoonFrames:
 LinooneFrames:
-HoothootFrames:
-NoctowlFrames:
+VigorothFrames:
+SlakingFrames:
 LedybaFrames:
 LedianFrames:
 SpinarakFrames:
@@ -39,8 +39,8 @@ HoppipFrames:
 SkiploomFrames:
 JumpluffFrames:
 AipomFrames:
-SunkernFrames:
-SunfloraFrames:
+ShroomishFrames:
+BreloomFrames:
 YanmaFrames:
 WooperFrames:
 QuagsireFrames:

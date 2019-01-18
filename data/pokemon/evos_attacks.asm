@@ -1126,16 +1126,16 @@ endc
 	db 53, ZAP_CANNON
 	db 0 ; no more level-up moves
 
-FarfetchDEvosAttacks:
+SlakothEvosAttacks:
+	db EVOLVE_LEVEL, 18, VIGOROTH
 	db 0 ; no more evolutions
-	db 1, PECK
-	db 7, SAND_ATTACK
-	db 13, LEER
-	db 19, FURY_ATTACK
-	db 25, SWORDS_DANCE
-	db 31, AGILITY
-	db 37, SLASH
-	db 44, FALSE_SWIPE
+	db 1, SCRATCH
+	db 1, HYPNOSIS
+	db 7, ENCORE
+	db 13, RECOVER
+	db 25, AMNESIA
+	db 31, COUNTER
+	db 43, FLAIL
 	db 0 ; no more level-up moves
 
 DoduoEvosAttacks:
@@ -2244,33 +2244,37 @@ LinooneEvosAttacks:
 	db 48, AMNESIA
 	db 0 ; no more level-up moves
 
-HoothootEvosAttacks:
-	db EVOLVE_LEVEL, 20, NOCTOWL
+VigorothEvosAttacks:
+	db EVOLVE_LEVEL, 36, SLAKING
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 6, FORESIGHT
-	db 11, PECK
-	db 16, HYPNOSIS
-	db 22, REFLECT
-	db 28, TAKE_DOWN
-	db 34, CONFUSION
-	db 48, DREAM_EATER
+	db 1, SCRATCH
+	db 1, ENCORE
+	db 1, FOCUS_ENERGY
+	db 1, HYPNOSIS
+	db 7, ENCORE
+	db 13, RECOVER
+	db 19, FURY_SWIPES
+	db 25, AMNESIA
+	db 31, SLASH
+	db 37, COUNTER
+	db 43, FLAIL
+	db 49, REVERSAL
 	db 0 ; no more level-up moves
 
-NoctowlEvosAttacks:
+SlakingEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, TACKLE
-	db 1, GROWL
-	db 1, FORESIGHT
-	db 1, PECK
-	db 6, FORESIGHT
-	db 11, PECK
-	db 16, HYPNOSIS
-	db 25, REFLECT
-	db 33, TAKE_DOWN
-	db 41, CONFUSION
-	db 57, DREAM_EATER
+	db 1, SCRATCH
+	db 1, RECOVER
+	db 1, FOCUS_ENERGY
+	db 1, HYPNOSIS
+	db 7, ENCORE
+	db 13, RECOVER
+	db 19, FURY_SWIPES
+	db 25, AMNESIA
+	db 31, SLASH
+	db 37, COUNTER
+	db 43, FLAIL
+	db 54, REVERSAL
 	db 0 ; no more level-up moves
 
 LedybaEvosAttacks:
@@ -2627,26 +2631,34 @@ AipomEvosAttacks:
 	db 46, AGILITY
 	db 0 ; no more level-up moves
 
-SunkernEvosAttacks:
-	db EVOLVE_ITEM, SUN_STONE, SUNFLORA
+ShroomishEvosAttacks:
+	db EVOLVE_LEVEL, 23, BRELOOM
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 4, GROWTH
-	db 10, MEGA_DRAIN
-	db 19, SUNNY_DAY
-	db 31, SYNTHESIS
-	db 46, GIGA_DRAIN
+	db 4, TACKLE
+	db 7, STUN_SPORE
+	db 10, LEECH_SEED
+	db 16, MEGA_DRAIN
+	db 22, HEADBUTT
+	db 28, POISONPOWDER
+	db 36, GROWTH
+	db 45, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
-SunfloraEvosAttacks:
+BreloomEvosAttacks:
 	db 0 ; no more evolutions
 	db 1, ABSORB
-	db 1, POUND
-	db 4, GROWTH
-	db 10, RAZOR_LEAF
-	db 19, SUNNY_DAY
-	db 31, PETAL_DANCE
-	db 46, SOLARBEAM
+	db 1, LEECH_SEED
+	db 1, STUN_SPORE
+	db 1, TACKLE
+	db 4, TACKLE
+	db 7, STUN_SPORE
+	db 10, LEECH_SEED
+	db 16, MEGA_DRAIN
+	db 22, HEADBUTT
+	db 28, COUNTER
+	db 36, GROWTH
+	db 54, GIGA_DRAIN
 	db 0 ; no more level-up moves
 
 YanmaEvosAttacks:

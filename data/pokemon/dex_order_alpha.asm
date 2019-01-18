@@ -58,7 +58,7 @@ AlphabeticalPokedexOrder:
 	db ESPEON
 	db SEEDOT
 	db NUZLEAF
-	db FARFETCH_D
+	db SLAKOTH
 	db SWELLOW
 	db SWAMPERT
 	db FLAAFFY
@@ -86,7 +86,7 @@ AlphabeticalPokedexOrder:
 	db HITMONLEE
 	db HITMONTOP
 	db HO_OH
-	db HOOTHOOT
+	db VIGOROTH
 	db HOPPIP
 	db HORSEA
 	db HOUNDOOM
@@ -147,7 +147,7 @@ AlphabeticalPokedexOrder:
 	db NIDORINA
 	db NIDORINO
 	db NINETALES
-	db NOCTOWL
+	db SLAKING
 	db OCTILLERY
 	db ODDISH
 	db OMANYTE
@@ -216,8 +216,8 @@ AlphabeticalPokedexOrder:
 	db STEELIX
 	db SUDOWOODO
 	db SUICUNE
-	db SUNFLORA
-	db SUNKERN
+	db BRELOOM
+	db SHROOMISH
 	db SWINUB
 	db SHIFTRY
 	db TAUROS

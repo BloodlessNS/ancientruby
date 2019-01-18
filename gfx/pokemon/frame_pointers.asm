@@ -81,7 +81,7 @@ FramesPointers:
 	dw KirliaFrames
 	dw MagnemiteFrames
 	dw MagnetonFrames
-	dw FarfetchDFrames
+	dw SlakothFrames
 	dw DoduoFrames
 	dw DodrioFrames
 	dw SeelFrames
@@ -161,8 +161,8 @@ FramesPointers:
 	dw SwampertFrames
 	dw ZigzagoonFrames
 	dw LinooneFrames
-	dw HoothootFrames
-	dw NoctowlFrames
+	dw VigorothFrames
+	dw SlakingFrames
 	dw LedybaFrames
 	dw LedianFrames
 	dw SpinarakFrames
@@ -189,8 +189,8 @@ FramesPointers:
 	dw SkiploomFrames
 	dw JumpluffFrames
 	dw AipomFrames
-	dw SunkernFrames
-	dw SunfloraFrames
+	dw ShroomishFrames
+	dw BreloomFrames
 	dw YanmaFrames
 	dw WooperFrames
 	dw QuagsireFrames
