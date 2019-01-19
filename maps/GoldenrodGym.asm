@@ -32,15 +32,12 @@ GoldenrodGymWhitneyScript:
 	startbattle
 	reloadmapafterbattle
 	setevent EVENT_BEAT_WHITNEY
-	setevent EVENT_MADE_WHITNEY_CRY
 	setscene SCENE_GOLDENRODGYM_WHITNEY_STOPS_CRYING
 	setevent EVENT_BEAT_BEAUTY_VICTORIA
 	setevent EVENT_BEAT_BEAUTY_SAMANTHA
 	setevent EVENT_BEAT_LASS_BRIDGET
 .FightDone:
 	opentext
-	checkevent EVENT_MADE_WHITNEY_CRY
-	iffalse .StoppedCrying
 	writetext WhitneyYouMeanieText
 	waitbutton
 	closetext
@@ -99,7 +96,6 @@ WhitneyCriesScript:
 	closetext
 	applymovement GOLDENRODGYM_LASS2, BridgetWalksAwayMovement
 	setscene SCENE_GOLDENRODGYM_NOTHING
-	clearevent EVENT_MADE_WHITNEY_CRY
 	end
 
 TrainerLassBridget:

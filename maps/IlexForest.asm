@@ -87,8 +87,6 @@ IlexForest_MapScripts:
 IlexForestCharcoalApprenticeScript:
 	faceplayer
 	opentext
-	checkevent EVENT_HERDED_SLAKOTH
-	iftrue .DoneFarfetchd
 	writetext UnknownText_0x6ef5c
 	waitbutton
 	closetext
@@ -304,7 +302,6 @@ IlexForestFarfetchdScript:
 	loadvar wSlakothPosition, 10
 	appear ILEXFOREST_BLACK_BELT
 	setevent EVENT_CHARCOAL_KILN_BOSS
-	setevent EVENT_HERDED_SLAKOTH
 	end
 
 .Position9_Right:

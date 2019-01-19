@@ -13,8 +13,6 @@ CianwoodPharmacy_MapScripts:
 CianwoodPharmacist:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_SECRETPOTION_FROM_PHARMACY
-	iftrue .Mart
 	checkevent EVENT_JASMINE_EXPLAINED_AMPHYS_SICKNESS
 	iffalse .Mart
 	writetext PharmacistGiveSecretpotionText
@@ -24,7 +22,6 @@ CianwoodPharmacist:
 	playsound SFX_KEY_ITEM
 	waitsfx
 	itemnotify
-	setevent EVENT_GOT_SECRETPOTION_FROM_PHARMACY
 	writetext PharmacistDescribeSecretpotionText
 	waitbutton
 	closetext

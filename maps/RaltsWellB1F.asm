@@ -53,7 +53,6 @@ TrainerGruntM1:
 	writetext KurtLeaveRaltsWellText
 	waitbutton
 	closetext
-	setevent EVENT_CLEARED_RALTS_WELL
 	variablesprite SPRITE_AZALEA_ROCKET, SPRITE_SILVER
 	clearevent EVENT_ILEX_FOREST_APPRENTICE
 	clearevent EVENT_ILEX_FOREST_SLAKOTH
