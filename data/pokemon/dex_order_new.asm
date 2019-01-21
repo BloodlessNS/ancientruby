@@ -19,9 +19,9 @@ NewPokedexOrder:
 	db BEAUTIFLY
 	db CASCOON
 	db DUSTOX
-	db PIDGEY             ;LOTAD
-	db PIDGEOTTO          ;LOMBRE 
-	db PIDGEOT            ;LUDICOLO
+	db LOTAD
+	db LOMBRE
+	db LUDICOLO
 	db SEEDOT
 	db NUZLEAF
 	db SHIFTRY
@@ -31,8 +31,8 @@ NewPokedexOrder:
 	db PELIPPER
 	db RALTS
 	db KIRLIA
-	db DROWZEE            ;GARDEVOIR
-	db HYPNO              ;GALLADE
+	db GARDEVOIR            ;GARDEVOIR
+	db GALLADE              ;GALLADE
 	db SURSKIT
 	db MASQUERAIN
 	db SHROOMISH
@@ -55,7 +55,7 @@ NewPokedexOrder:
 	db SEAKING
 	db MAGIKARP
 	db GYARADOS
-	db SLOWKING
+	db AZURILL
 	db MARILL
 	db AZUMARILL
 	db GEODUDE
@@ -82,7 +82,6 @@ NewPokedexOrder:
 	db SANDSLASH
 	db DUNSPARCE
 	db AMPHAROS
-	db WOOPER
 	db QUAGSIRE
 	db GASTLY
 	db HAUNTER
@@ -194,6 +193,7 @@ NewPokedexOrder:
 	db SWINUB
 	db PILOSWINE
 	db TEDDIURSA
+	db SLOWKING
 	db URSARING
 	db PHANPY
 	db DONPHAN

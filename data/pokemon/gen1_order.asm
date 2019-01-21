@@ -34,7 +34,7 @@ Pokered_MonIndices:
 	db GROWLITHE
 	db ONIX
 	db SWELLOW
-	db PIDGEY
+	db LOTAD
 	db RALTS
 	db KADABRA
 	db GRAVELER
@@ -46,7 +46,7 @@ Pokered_MonIndices:
 	db ARBOK
 	db MASQUERAIN
 	db PSYDUCK
-	db DROWZEE
+	db GARDEVOIR
 	db GOLEM
 	db HERACROSS ; MISSINGNO.
 	db MAGMAR
@@ -127,7 +127,7 @@ Pokered_MonIndices:
 	db MACHAMP
 	db DONPHAN ; MISSINGNO.
 	db GOLDUCK
-	db HYPNO
+	db GALLADE
 	db GOLBAT
 	db MEWTWO
 	db SNORLAX
@@ -148,8 +148,8 @@ Pokered_MonIndices:
 	db HAUNTER
 	db ABRA
 	db ALAKAZAM
-	db PIDGEOTTO
-	db PIDGEOT
+	db LOMBRE
+	db LUDICOLO
 	db STARMIE
 	db BULBASAUR
 	db VENUSAUR
@@ -232,7 +232,7 @@ Pokered_MonIndices:
 	db SHROOMISH
 	db BRELOOM
 	db YANMA
-	db WOOPER
+	db AZURILL
 	db QUAGSIRE
 	db ESPEON
 	db UMBREON

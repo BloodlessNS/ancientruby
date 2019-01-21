@@ -14,7 +14,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
-	dw PidgeyEggMoves
+	dw LotadEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw PoochyenaEggMoves
@@ -94,7 +94,7 @@ EggMovePointers::
 	dw NoEggMoves
 	dw NoEggMoves
 	dw OnixEggMoves
-	dw DrowzeeEggMoves
+	dw GardevoirEggMoves
 	dw NoEggMoves
 	dw KrabbyEggMoves
 	dw NoEggMoves
@@ -196,7 +196,7 @@ endc
 	dw NoEggMoves
 	dw NoEggMoves
 	dw YanmaEggMoves
-	dw WooperEggMoves
+	dw AzurillEggMoves
 	dw NoEggMoves
 	dw NoEggMoves
 	dw NoEggMoves

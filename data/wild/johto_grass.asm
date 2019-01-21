@@ -332,7 +332,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_M
 	db 12, NIDORAN_F
 	db 14, LEDYBA
-	db 13, PIDGEY
+	db 13, LOTAD
 	db 10, WURMPLE
 	db 10, WEEDLE
 	db 10, WEEDLE
@@ -340,7 +340,7 @@ JohtoGrassWildMons:
 	db 12, NIDORAN_F
 	db 12, NIDORAN_M
 	db 14, SHROOMISH
-	db 13, PIDGEY
+	db 13, LOTAD
 	db 10, WURMPLE
 	db 10, WEEDLE
 	db 10, WEEDLE
@@ -376,7 +376,7 @@ JohtoGrassWildMons:
 	db 22, NATU
 	db 18, NATU
 	db 24, NATU
-	db 22, WOOPER
+	db 22, AZURILL
 	db 22, QUAGSIRE
 	db 22, QUAGSIRE
 
@@ -428,7 +428,7 @@ JohtoGrassWildMons:
 	; nite
 	db 6, GEODUDE
 	db 6, POOCHYENA
-	db 5, WOOPER
+	db 5, AZURILL
 	db 4, POOCHYENA
 	db 7, ZUBAT
 	db 6, ONIX
@@ -455,7 +455,7 @@ JohtoGrassWildMons:
 	; nite
 	db 8, GEODUDE
 	db 6, ZUBAT
-	db 8, WOOPER
+	db 8, AZURILL
 	db 8, ONIX
 	db 6, POOCHYENA
 	db 8, POOCHYENA
@@ -549,7 +549,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, SILCOON
 	db 7, CASCOON
-	db 7, PIDGEY
+	db 7, LOTAD
 	db 6, SURSKIT
 	db 6, SURSKIT
 	; day
@@ -557,7 +557,7 @@ JohtoGrassWildMons:
 	db 5, WEEDLE
 	db 7, SILCOON
 	db 7, CASCOON
-	db 7, PIDGEY
+	db 7, LOTAD
 	db 6, SURSKIT
 	db 6, SURSKIT
 	; nite
@@ -1192,7 +1192,32 @@ JohtoGrassWildMons:
 	
 	map_id ROUTE_102
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
+if DEF(_SAPPHIRE)
 	; morn
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, LOTAD
+	db 3, POOCHYENA
+	db 4, RALTS
+	db 3, SURSKIT
+	; day
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, LOTAD
+	db 3, POOCHYENA
+	db 4, RALTS
+	db 3, SURSKIT
+	; nite
+	db 3, ZIGZAGOON
+	db 3, WURMPLE
+	db 4, ZIGZAGOON
+	db 3, LOTAD
+	db 3, POOCHYENA
+	db 4, RALTS
+	db 3, SURSKIT
+else
 	db 3, ZIGZAGOON
 	db 3, WURMPLE
 	db 4, ZIGZAGOON
@@ -1216,6 +1241,7 @@ JohtoGrassWildMons:
 	db 3, POOCHYENA
 	db 4, RALTS
 	db 3, SURSKIT
+endc
 	
 	map_id ROUTE_103
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
@@ -1304,15 +1330,15 @@ JohtoGrassWildMons:
 	db 3, LEDYBA
 	db 3, WURMPLE
 	db 4, WURMPLE
-	db 4, PIDGEY
+	db 4, LOTAD
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 4, HOPPIP
 	; day
-	db 3, PIDGEY
+	db 3, LOTAD
 	db 3, WURMPLE
 	db 4, WURMPLE
-	db 4, PIDGEY
+	db 4, LOTAD
 	db 3, WEEDLE
 	db 4, HOPPIP
 	db 4, HOPPIP
@@ -1331,15 +1357,15 @@ JohtoGrassWildMons:
 	db 4, LEDYBA
 	db 4, WURMPLE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
+	db 5, LOTAD
 	db 4, WEEDLE
 	db 5, HOPPIP
 	db 5, HOPPIP
 	; day
-	db 4, PIDGEY
+	db 4, LOTAD
 	db 4, WURMPLE
 	db 5, BELLSPROUT
-	db 5, PIDGEY
+	db 5, LOTAD
 	db 4, WEEDLE
 	db 5, HOPPIP
 	db 5, HOPPIP
@@ -1357,7 +1383,7 @@ JohtoGrassWildMons:
 	; morn
 	db 10, SNUBBULL
 	db 11, POOCHYENA
-	db 12, PIDGEY
+	db 12, LOTAD
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
@@ -1365,13 +1391,13 @@ JohtoGrassWildMons:
 	; day
 	db 10, SNUBBULL
 	db 11, POOCHYENA
-	db 12, PIDGEY
+	db 12, LOTAD
 	db 10, ABRA
 	db 12, JIGGLYPUFF
 	db 10, DITTO
 	db 10, DITTO
 	; nite
-	db 12, DROWZEE
+	db 12, GARDEVOIR
 	db 11, POOCHYENA
 	db 12, VIGOROTH
 	db 10, ABRA

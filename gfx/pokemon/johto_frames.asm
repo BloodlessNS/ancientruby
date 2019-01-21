@@ -42,7 +42,7 @@ AipomFrames:
 ShroomishFrames:
 BreloomFrames:
 YanmaFrames:
-WooperFrames:
+AzurillFrames:
 QuagsireFrames:
 EspeonFrames:
 UmbreonFrames:

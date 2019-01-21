@@ -34,9 +34,9 @@
 	const WEEDLE     ; 0d
 	const CASCOON     ; 0e
 	const DUSTOX   ; 0f
-	const PIDGEY     ; 10
-	const PIDGEOTTO  ; 11
-	const PIDGEOT    ; 12
+	const LOTAD     ; 10
+	const LOMBRE  ; 11
+	const LUDICOLO    ; 12
 	const POOCHYENA    ; 13
 	const MIGHTYENA   ; 14
 	const TAILLOW    ; 15
@@ -114,8 +114,8 @@
 	const HAUNTER    ; 5d
 	const GENGAR     ; 5e
 	const ONIX       ; 5f
-	const DROWZEE    ; 60
-	const HYPNO      ; 61
+	const GARDEVOIR    ; 60
+	const GALLADE      ; 61
 	const KRABBY     ; 62
 	const KINGLER    ; 63
 	const VOLTORB    ; 64
@@ -213,7 +213,7 @@ JOHTO_POKEMON EQU const_value
 	const SHROOMISH    ; bf
 	const BRELOOM   ; c0
 	const YANMA      ; c1
-	const WOOPER     ; c2
+	const AZURILL     ; c2
 	const QUAGSIRE   ; c3
 	const ESPEON     ; c4
 	const UMBREON    ; c5

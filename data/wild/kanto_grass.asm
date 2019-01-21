@@ -169,17 +169,17 @@ KantoGrassWildMons:
 	; morn
 	db 3, WURMPLE
 	db 3, LEDYBA
-	db 5, PIDGEY
+	db 5, LOTAD
 	db 7, BEAUTIFLY
 	db 7, LEDIAN
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; day
 	db 3, WURMPLE
-	db 3, PIDGEY
-	db 5, PIDGEY
+	db 3, LOTAD
+	db 5, LOTAD
 	db 7, BEAUTIFLY
-	db 7, PIDGEOTTO
+	db 7, LOMBRE
 	db 4, PIKACHU
 	db 4, PIKACHU
 	; nite
@@ -194,17 +194,17 @@ KantoGrassWildMons:
 	map_id ROUTE_5
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
-	db 13, PIDGEY
+	db 13, LOTAD
 	db 13, SNUBBULL
-	db 15, PIDGEOTTO
+	db 15, LOMBRE
 	db 12, ABRA
 	db 14, JIGGLYPUFF
 	db 14, ABRA
 	db 14, ABRA
 	; day
-	db 13, PIDGEY
+	db 13, LOTAD
 	db 13, SNUBBULL
-	db 15, PIDGEOTTO
+	db 15, LOMBRE
 	db 12, ABRA
 	db 14, JIGGLYPUFF
 	db 14, ABRA
@@ -238,7 +238,7 @@ KantoGrassWildMons:
 	db 15, GRANBULL
 	; nite
 	db 13, MEOWTH
-	db 13, DROWZEE
+	db 13, GARDEVOIR
 	db 14, MAGNEMITE
 	db 15, PSYDUCK
 	db 12, JIGGLYPUFF
@@ -276,7 +276,7 @@ KantoGrassWildMons:
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, LOMBRE
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
@@ -284,7 +284,7 @@ KantoGrassWildMons:
 	db 18, KADABRA
 	; day
 	db 17, SNUBBULL
-	db 19, PIDGEOTTO
+	db 19, LOMBRE
 	db 16, ABRA
 	db 17, GROWLITHE
 	db 16, JIGGLYPUFF
@@ -305,7 +305,7 @@ KantoGrassWildMons:
 	db 14, HOPPIP
 	db 13, MIGHTYENA
 	db 15, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 16, LOMBRE
 	db 16, POOCHYENA
 	db 16, HOPPIP
 	db 16, HOPPIP
@@ -313,25 +313,25 @@ KantoGrassWildMons:
 	db 14, HOPPIP
 	db 13, MIGHTYENA
 	db 15, MAGNEMITE
-	db 16, PIDGEOTTO
+	db 16, LOMBRE
 	db 16, POOCHYENA
 	db 16, HOPPIP
 	db 16, HOPPIP
 	; nite
-	db 14, DROWZEE
+	db 14, GARDEVOIR
 	db 13, MEOWTH
 	db 15, MAGNEMITE
 	db 16, SLAKING
 	db 16, MIGHTYENA
-	db 16, HYPNO
-	db 16, HYPNO
+	db 16, GALLADE
+	db 16, GALLADE
 
 	map_id ROUTE_13
 	db 10 percent, 10 percent, 10 percent ; encounter rates: morn/day/nite
 	; morn
 	db 23, NIDORINO
 	db 23, NIDORINA
-	db 25, PIDGEOTTO
+	db 25, LOMBRE
 	db 25, HOPPIP
 	db 27, HOPPIP
 	db 27, HOPPIP
@@ -339,7 +339,7 @@ KantoGrassWildMons:
 	; day
 	db 23, NIDORINO
 	db 23, NIDORINA
-	db 25, PIDGEOTTO
+	db 25, LOMBRE
 	db 25, HOPPIP
 	db 27, HOPPIP
 	db 27, HOPPIP
@@ -358,7 +358,7 @@ KantoGrassWildMons:
 	; morn
 	db 26, NIDORINO
 	db 26, NIDORINA
-	db 28, PIDGEOTTO
+	db 28, LOMBRE
 	db 28, HOPPIP
 	db 30, SKIPLOOM
 	db 30, SKIPLOOM
@@ -366,7 +366,7 @@ KantoGrassWildMons:
 	; day
 	db 26, NIDORINO
 	db 26, NIDORINA
-	db 28, PIDGEOTTO
+	db 28, LOMBRE
 	db 28, HOPPIP
 	db 30, SKIPLOOM
 	db 30, SKIPLOOM
@@ -385,7 +385,7 @@ KantoGrassWildMons:
 	; morn
 	db 23, NIDORINO
 	db 23, NIDORINA
-	db 25, PIDGEOTTO
+	db 25, LOMBRE
 	db 25, HOPPIP
 	db 27, HOPPIP
 	db 27, HOPPIP
@@ -393,7 +393,7 @@ KantoGrassWildMons:
 	; day
 	db 23, NIDORINO
 	db 23, NIDORINA
-	db 25, PIDGEOTTO
+	db 25, LOMBRE
 	db 25, HOPPIP
 	db 27, HOPPIP
 	db 27, HOPPIP

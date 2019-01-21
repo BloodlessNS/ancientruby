@@ -14,9 +14,9 @@ AnimationPointers:
 	dw WeedleAnimation
 	dw CascoonAnimation
 	dw DustoxAnimation
-	dw PidgeyAnimation
-	dw PidgeottoAnimation
-	dw PidgeotAnimation
+	dw LotadAnimation
+	dw LombreAnimation
+	dw LudicoloAnimation
 	dw PoochyenaAnimation
 	dw MightyenaAnimation
 	dw TaillowAnimation
@@ -94,8 +94,8 @@ AnimationPointers:
 	dw HaunterAnimation
 	dw GengarAnimation
 	dw OnixAnimation
-	dw DrowzeeAnimation
-	dw HypnoAnimation
+	dw GardevoirAnimation
+	dw GalladeAnimation
 	dw KrabbyAnimation
 	dw KinglerAnimation
 	dw VoltorbAnimation
@@ -192,7 +192,7 @@ AnimationPointers:
 	dw ShroomishAnimation
 	dw BreloomAnimation
 	dw YanmaAnimation
-	dw WooperAnimation
+	dw AzurillAnimation
 	dw QuagsireAnimation
 	dw EspeonAnimation
 	dw UmbreonAnimation

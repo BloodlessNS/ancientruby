@@ -14,9 +14,9 @@ FramesPointers:
 	dw WeedleFrames
 	dw CascoonFrames
 	dw DustoxFrames
-	dw PidgeyFrames
-	dw PidgeottoFrames
-	dw PidgeotFrames
+	dw LotadFrames
+	dw LombreFrames
+	dw LudicoloFrames
 	dw PoochyenaFrames
 	dw MightyenaFrames
 	dw TaillowFrames
@@ -94,8 +94,8 @@ FramesPointers:
 	dw HaunterFrames
 	dw GengarFrames
 	dw OnixFrames
-	dw DrowzeeFrames
-	dw HypnoFrames
+	dw GardevoirFrames
+	dw GalladeFrames
 	dw KrabbyFrames
 	dw KinglerFrames
 	dw VoltorbFrames
@@ -192,7 +192,7 @@ FramesPointers:
 	dw ShroomishFrames
 	dw BreloomFrames
 	dw YanmaFrames
-	dw WooperFrames
+	dw AzurillFrames
 	dw QuagsireFrames
 	dw EspeonFrames
 	dw UmbreonFrames

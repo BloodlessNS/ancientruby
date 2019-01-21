@@ -32,12 +32,12 @@ PokemonPicPointers::
 	dba_pic CascoonBackpic
 	dba_pic DustoxFrontpic
 	dba_pic DustoxBackpic
-	dba_pic PidgeyFrontpic
-	dba_pic PidgeyBackpic
-	dba_pic PidgeottoFrontpic
-	dba_pic PidgeottoBackpic
-	dba_pic PidgeotFrontpic
-	dba_pic PidgeotBackpic
+	dba_pic LotadFrontpic
+	dba_pic LotadBackpic
+	dba_pic LombreFrontpic
+	dba_pic LombreBackpic
+	dba_pic LudicoloFrontpic
+	dba_pic LudicoloBackpic
 	dba_pic PoochyenaFrontpic
 	dba_pic PoochyenaBackpic
 	dba_pic MightyenaFrontpic
@@ -192,10 +192,10 @@ PokemonPicPointers::
 	dba_pic GengarBackpic
 	dba_pic OnixFrontpic
 	dba_pic OnixBackpic
-	dba_pic DrowzeeFrontpic
-	dba_pic DrowzeeBackpic
-	dba_pic HypnoFrontpic
-	dba_pic HypnoBackpic
+	dba_pic GardevoirFrontpic
+	dba_pic GardevoirBackpic
+	dba_pic GalladeFrontpic
+	dba_pic GalladeBackpic
 	dba_pic KrabbyFrontpic
 	dba_pic KrabbyBackpic
 	dba_pic KinglerFrontpic
@@ -388,8 +388,8 @@ PokemonPicPointers::
 	dba_pic BreloomBackpic
 	dba_pic YanmaFrontpic
 	dba_pic YanmaBackpic
-	dba_pic WooperFrontpic
-	dba_pic WooperBackpic
+	dba_pic AzurillFrontpic
+	dba_pic AzurillBackpic
 	dba_pic QuagsireFrontpic
 	dba_pic QuagsireBackpic
 	dba_pic EspeonFrontpic

@@ -42,7 +42,7 @@ SquirtleEggMoves:
 	db FLAIL
 	db -1 ; end
 
-PidgeyEggMoves:
+LotadEggMoves:
 	db PURSUIT
 	db FAINT_ATTACK
 	db FORESIGHT
@@ -309,7 +309,7 @@ OnixEggMoves:
 	db FLAIL
 	db -1 ; end
 
-DrowzeeEggMoves:
+GardevoirEggMoves:
 	db LIGHT_SCREEN
 	db BARRIER
 	db -1 ; end
@@ -638,7 +638,7 @@ YanmaEggMoves:
 	db LEECH_LIFE
 	db -1 ; end
 
-WooperEggMoves:
+AzurillEggMoves:
 	db BODY_SLAM
 	db ANCIENTPOWER
 	db SAFEGUARD

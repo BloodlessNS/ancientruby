@@ -67,10 +67,10 @@ Cry_Ledyba:
 	musicheader 1, 6, Cry_Ledyba_Ch6
 	musicheader 1, 8, Cry_Ledyba_Ch8
 
-Cry_Wooper:
-	musicheader 3, 5, Cry_Wooper_Ch5
-	musicheader 1, 6, Cry_Wooper_Ch6
-	musicheader 1, 8, Cry_Wooper_Ch8
+Cry_Azurill:
+	musicheader 3, 5, Cry_Azurill_Ch5
+	musicheader 1, 6, Cry_Azurill_Ch6
+	musicheader 1, 8, Cry_Azurill_Ch8
 
 Cry_Donphan:
 	musicheader 3, 5, Cry_Donphan_Ch5
@@ -560,7 +560,7 @@ Cry_Ledyba_Ch8:
 	noise __,  5, $87, $0
 	endchannel
 
-Cry_Wooper_Ch5:
+Cry_Azurill_Ch5:
 Cry_Donphan_Ch5:
 	dutycycle $2
 	sound __,  3, $99, $0718
@@ -571,7 +571,7 @@ Cry_Donphan_Ch5:
 	sound __,  9, $0, 0
 	endchannel
 
-Cry_Wooper_Ch6:
+Cry_Azurill_Ch6:
 Cry_Donphan_Ch6:
 	sound_duty 3, 1, 0, 0
 	sound __,  3, $b9, $0738
@@ -582,7 +582,7 @@ Cry_Donphan_Ch6:
 	sound __,  9, $0, 0
 	endchannel
 
-Cry_Wooper_Ch8:
+Cry_Azurill_Ch8:
 	noise __,  3, $5b, $4
 	noise __,  5, $68, $13
 	noise __,  9, $68, $20
@@ -892,15 +892,15 @@ Cry_Seel:
 	musicheader 1, 6, Cry_Seel_Ch6
 	musicheader 1, 8, Cry_Seel_Ch8
 
-Cry_Drowzee:
-	musicheader 3, 5, Cry_Drowzee_Ch5
-	musicheader 1, 6, Cry_Drowzee_Ch6
-	musicheader 1, 8, Cry_Drowzee_Ch8
+Cry_Gardevoir:
+	musicheader 3, 5, Cry_Gardevoir_Ch5
+	musicheader 1, 6, Cry_Gardevoir_Ch6
+	musicheader 1, 8, Cry_Gardevoir_Ch8
 
-Cry_Pidgey:
-	musicheader 3, 5, Cry_Pidgey_Ch5
-	musicheader 1, 6, Cry_Pidgey_Ch6
-	musicheader 1, 8, Cry_Pidgey_Ch8
+Cry_Lotad:
+	musicheader 3, 5, Cry_Lotad_Ch5
+	musicheader 1, 6, Cry_Lotad_Ch6
+	musicheader 1, 8, Cry_Lotad_Ch8
 
 Cry_Bulbasaur:
 	musicheader 3, 5, Cry_Bulbasaur_Ch5
@@ -927,10 +927,10 @@ Cry_Blastoise:
 	musicheader 1, 6, Cry_Blastoise_Ch6
 	musicheader 1, 8, Cry_Blastoise_Ch8
 
-Cry_Pidgeotto:
-	musicheader 3, 5, Cry_Pidgeotto_Ch5
-	musicheader 1, 6, Cry_Pidgeotto_Ch6
-	musicheader 1, 8, Cry_Pidgeotto_Ch8
+Cry_Lombre:
+	musicheader 3, 5, Cry_Lombre_Ch5
+	musicheader 1, 6, Cry_Lombre_Ch6
+	musicheader 1, 8, Cry_Lombre_Ch8
 
 Cry_Weedle:
 	musicheader 3, 5, Cry_Weedle_Ch5
@@ -1302,7 +1302,7 @@ Cry_Nidoran_M_Ch8:
 	noise __,  9, $81, $1c
 	endchannel
 
-Cry_Pidgey_Ch5:
+Cry_Lotad_Ch5:
 	sound_duty 1, 1, 2, 2
 	sound __,  5, $e1, $0700
 	sound __,  5, $f2, $0780
@@ -1310,7 +1310,7 @@ Cry_Pidgey_Ch5:
 	sound __,  9, $e1, $0600
 	endchannel
 
-Cry_Pidgey_Ch6:
+Cry_Lotad_Ch6:
 	sound_duty 2, 2, 0, 0
 	sound __,  5, $b1, $06e1
 	sound __,  4, $c2, $06e1
@@ -1318,7 +1318,7 @@ Cry_Pidgey_Ch6:
 	sound __,  9, $b1, $05e1
 	endchannel
 
-Cry_Pidgey_Ch8:
+Cry_Lotad_Ch8:
 	noise __,  3, $61, $32
 	noise __,  3, $61, $21
 	noise __,  9, $61, $11
@@ -1459,7 +1459,7 @@ Cry_Ralts_Ch6:
 Cry_Ralts_Ch8:
 	endchannel
 
-Cry_Drowzee_Ch5:
+Cry_Gardevoir_Ch5:
 	sound_duty 0, 2, 0, 2
 	sound __,  6, $f2, $0650
 	sound __, 10, $d1, $0660
@@ -1467,10 +1467,10 @@ Cry_Drowzee_Ch5:
 	sound __, 10, $c1, $0622
 	sound __,  6, $f2, $0610
 	sound __,  7, $d1, $0620
-	loopchannel 2, Cry_Drowzee_Ch5
+	loopchannel 2, Cry_Gardevoir_Ch5
 	endchannel
 
-Cry_Drowzee_Ch6:
+Cry_Gardevoir_Ch6:
 	sound_duty 0, 0, 0, 1
 	sound __,  5, $8, 0
 	sound __,  6, $f2, $0651
@@ -1485,7 +1485,7 @@ Cry_Drowzee_Ch6:
 	sound __,  5, $d1, $0621
 	endchannel
 
-Cry_Drowzee_Ch8:
+Cry_Gardevoir_Ch8:
 	noise __,  7, $d2, $1c
 	noise __, 10, $b1, $2c
 	noise __,  9, $c2, $2c
@@ -1721,21 +1721,21 @@ Cry_Blastoise_Ch8:
 	noise __,  9, $a1, $5c
 	endchannel
 
-Cry_Pidgeotto_Ch5:
+Cry_Lombre_Ch5:
 	sound_duty 0, 0, 3, 3
 	sound __,  9, $e4, $0790
 	sound __, 16, $f5, $07c0
 	sound __,  9, $d1, $07d8
 	endchannel
 
-Cry_Pidgeotto_Ch6:
+Cry_Lombre_Ch6:
 	sound_duty 1, 1, 2, 2
 	sound __, 11, $c4, $0771
 	sound __, 16, $b6, $07a2
 	sound __,  9, $a1, $07b7
 	endchannel
 
-Cry_Pidgeotto_Ch8:
+Cry_Lombre_Ch8:
 	noise __,  9, $e4, $4c
 	noise __, 15, $c4, $3c
 	noise __,  9, $d1, $2c

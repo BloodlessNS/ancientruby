@@ -16,9 +16,9 @@ EvosAttacksPointers::
 	dw WeedleEvosAttacks
 	dw CascoonEvosAttacks
 	dw DustoxEvosAttacks
-	dw PidgeyEvosAttacks
-	dw PidgeottoEvosAttacks
-	dw PidgeotEvosAttacks
+	dw LotadEvosAttacks
+	dw LombreEvosAttacks
+	dw LudicoloEvosAttacks
 	dw PoochyenaEvosAttacks
 	dw MightyenaEvosAttacks
 	dw TaillowEvosAttacks
@@ -96,8 +96,8 @@ EvosAttacksPointers::
 	dw HaunterEvosAttacks
 	dw GengarEvosAttacks
 	dw OnixEvosAttacks
-	dw DrowzeeEvosAttacks
-	dw HypnoEvosAttacks
+	dw GardevoirEvosAttacks
+	dw GalladeEvosAttacks
 	dw KrabbyEvosAttacks
 	dw KinglerEvosAttacks
 	dw VoltorbEvosAttacks
@@ -194,7 +194,7 @@ EvosAttacksPointers::
 	dw ShroomishEvosAttacks
 	dw BreloomEvosAttacks
 	dw YanmaEvosAttacks
-	dw WooperEvosAttacks
+	dw AzurillEvosAttacks
 	dw QuagsireEvosAttacks
 	dw EspeonEvosAttacks
 	dw UmbreonEvosAttacks

@@ -16,9 +16,9 @@ KantoMonSpecials:
 	db  20 ; WEEDLE
 	db  25 ; CASCOON
 	db  45 ; DUSTOX
-	db  35 ; PIDGEY
-	db  50 ; PIDGEOTTO
-	db  70 ; PIDGEOT
+	db  35 ; LOTAD
+	db  50 ; LOMBRE
+	db  70 ; LUDICOLO
 	db  25 ; POOCHYENA
 	db  50 ; MIGHTYENA
 	db  31 ; TAILLOW
@@ -96,8 +96,8 @@ KantoMonSpecials:
 	db 115 ; HAUNTER
 	db 130 ; GENGAR
 	db  30 ; ONIX
-	db  90 ; DROWZEE
-	db 115 ; HYPNO
+	db  90 ; GARDEVOIR
+	db 115 ; GALLADE
 	db  25 ; KRABBY
 	db  50 ; KINGLER
 	db  55 ; VOLTORB

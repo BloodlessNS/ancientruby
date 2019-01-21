@@ -15,9 +15,9 @@ PokedexDataPointerTable:
 	dw WeedlePokedexEntry
 	dw CascoonPokedexEntry
 	dw DustoxPokedexEntry
-	dw PidgeyPokedexEntry
-	dw PidgeottoPokedexEntry
-	dw PidgeotPokedexEntry
+	dw LotadPokedexEntry
+	dw LombrePokedexEntry
+	dw LudicoloPokedexEntry
 	dw PoochyenaPokedexEntry
 	dw MightyenaPokedexEntry
 	dw TaillowPokedexEntry
@@ -95,8 +95,8 @@ PokedexDataPointerTable:
 	dw HaunterPokedexEntry
 	dw GengarPokedexEntry
 	dw OnixPokedexEntry
-	dw DrowzeePokedexEntry
-	dw HypnoPokedexEntry
+	dw GardevoirPokedexEntry
+	dw GalladePokedexEntry
 	dw KrabbyPokedexEntry
 	dw KinglerPokedexEntry
 	dw VoltorbPokedexEntry
@@ -193,7 +193,7 @@ PokedexDataPointerTable:
 	dw ShroomishPokedexEntry
 	dw BreloomPokedexEntry
 	dw YanmaPokedexEntry
-	dw WooperPokedexEntry
+	dw AzurillPokedexEntry
 	dw QuagsirePokedexEntry
 	dw EspeonPokedexEntry
 	dw UmbreonPokedexEntry

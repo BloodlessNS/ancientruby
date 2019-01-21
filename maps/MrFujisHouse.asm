@@ -35,7 +35,6 @@ MrFujisNidorino:
 MrFujisPidgey:
 	opentext
 	writetext MrFujisPidgeyText
-	cry PIDGEY
 	waitbutton
 	closetext
 	end

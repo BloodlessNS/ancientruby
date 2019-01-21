@@ -656,7 +656,7 @@ OakSpeech:
 	call RotateThreePalettesRight
 	call ClearTileMap
 
-	ld a, WOOPER
+	ld a, AZURILL
 	ld [wCurSpecies], a
 	ld [wCurPartySpecies], a
 	call GetBaseData
@@ -716,7 +716,7 @@ OakText1:
 OakText2:
 	text_jump _OakText2
 	start_asm
-	ld a, WOOPER
+	ld a, AZURILL
 	call PlayMonCry
 	call WaitSFX
 	ld hl, OakText3

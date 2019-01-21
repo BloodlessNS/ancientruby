@@ -141,6 +141,7 @@ MomScript:
 	end
 	
 MachokeScript:
+	cry MACHOKE
 	jumptext MachokeText
 
 TVScript:

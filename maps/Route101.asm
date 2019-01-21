@@ -136,6 +136,7 @@ Route101BirchScript:
 	db "CANCEL@"
 	
 .ElmAttackFinish:
+	cry POOCHYENA
 	loadwildmon POOCHYENA, 2
 	startbattle
 	reloadmapafterbattle

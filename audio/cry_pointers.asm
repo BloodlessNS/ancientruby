@@ -12,14 +12,14 @@ Cries:
 	dba Cry_Nidoqueen
 	dba Cry_Diglett
 	dba Cry_Seel
-	dba Cry_Drowzee
-	dba Cry_Pidgey
+	dba Cry_Gardevoir
+	dba Cry_Lotad
 	dba Cry_Bulbasaur
 	dba Cry_Taillow
 	dba Cry_Rhydon
 	dba Cry_Golem
 	dba Cry_Blastoise
-	dba Cry_Pidgeotto
+	dba Cry_Lombre
 	dba Cry_Weedle
 	dba Cry_Wurmple
 	dba Cry_Ekans
@@ -55,7 +55,7 @@ Cries:
 	dba Cry_Slugma
 	dba Cry_Ledyba
 	dba Cry_Entei
-	dba Cry_Wooper
+	dba Cry_Azurill
 	dba Cry_Mantine
 	dba Cry_Blaziken
 	dba Cry_Natu

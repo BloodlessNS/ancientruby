@@ -46,7 +46,7 @@ AlphabeticalPokedexOrder:
 	db DRAGONAIR
 	db DRAGONITE
 	db DRATINI
-	db DROWZEE
+	db GARDEVOIR
 	db DUGTRIO
 	db DUNSPARCE
 	db EEVEE
@@ -91,7 +91,7 @@ AlphabeticalPokedexOrder:
 	db HORSEA
 	db HOUNDOOM
 	db HOUNDOUR
-	db HYPNO
+	db GALLADE
 	db IGGLYBUFF
 	db IVYSAUR
 	db JIGGLYPUFF
@@ -158,9 +158,9 @@ AlphabeticalPokedexOrder:
 	db PERSIAN
 	db PHANPY
 	db PICHU
-	db PIDGEOT
-	db PIDGEOTTO
-	db PIDGEY
+	db LUDICOLO
+	db LOMBRE
+	db LOTAD
 	db PIKACHU
 	db PILOSWINE
 	db PINECO
@@ -247,7 +247,7 @@ AlphabeticalPokedexOrder:
 	db WEEZING
 	db WIGGLYTUFF
 	db WOBBUFFET
-	db WOOPER
+	db AZURILL
 	db XATU
 	db YANMA
 	db ZAPDOS

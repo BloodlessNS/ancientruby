@@ -15,14 +15,14 @@
 	const CRY_NIDOQUEEN
 	const CRY_DIGLETT
 	const CRY_SEEL
-	const CRY_DROWZEE
-	const CRY_PIDGEY
+	const CRY_GARDEVOIR
+	const CRY_LOTAD
 	const CRY_BULBASAUR
 	const CRY_TAILLOW
 	const CRY_RHYDON
 	const CRY_GOLEM
 	const CRY_BLASTOISE
-	const CRY_PIDGEOTTO
+	const CRY_LOMBRE
 	const CRY_WEEDLE
 	const CRY_WURMPLE
 	const CRY_EKANS
@@ -60,7 +60,7 @@
 	const CRY_SLUGMA
 	const CRY_LEDYBA
 	const CRY_ENTEI
-	const CRY_WOOPER
+	const CRY_AZURILL
 	const CRY_MANTINE
 	const CRY_BLAZIKEN
 	const CRY_NATU

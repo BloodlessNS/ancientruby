@@ -14,9 +14,9 @@ BitmasksPointers:
 	dw WeedleBitmasks
 	dw CascoonBitmasks
 	dw DustoxBitmasks
-	dw PidgeyBitmasks
-	dw PidgeottoBitmasks
-	dw PidgeotBitmasks
+	dw LotadBitmasks
+	dw LombreBitmasks
+	dw LudicoloBitmasks
 	dw PoochyenaBitmasks
 	dw MightyenaBitmasks
 	dw TaillowBitmasks
@@ -94,8 +94,8 @@ BitmasksPointers:
 	dw HaunterBitmasks
 	dw GengarBitmasks
 	dw OnixBitmasks
-	dw DrowzeeBitmasks
-	dw HypnoBitmasks
+	dw GardevoirBitmasks
+	dw GalladeBitmasks
 	dw KrabbyBitmasks
 	dw KinglerBitmasks
 	dw VoltorbBitmasks
@@ -192,7 +192,7 @@ BitmasksPointers:
 	dw ShroomishBitmasks
 	dw BreloomBitmasks
 	dw YanmaBitmasks
-	dw WooperBitmasks
+	dw AzurillBitmasks
 	dw QuagsireBitmasks
 	dw EspeonBitmasks
 	dw UmbreonBitmasks

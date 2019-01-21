@@ -4,19 +4,19 @@ JohtoWaterWildMons:
 
 	map_id RUINS_OF_ALPH_OUTSIDE
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, AZURILL
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_1F
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, AZURILL
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 
 	map_id UNION_CAVE_B1F
 	db 2 percent ; encounter rate
-	db 15, WOOPER
+	db 15, AZURILL
 	db 20, QUAGSIRE
 	db 15, QUAGSIRE
 

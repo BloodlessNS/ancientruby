@@ -15,9 +15,9 @@ BeautiflyFrames:
 WeedleFrames:
 CascoonFrames:
 DustoxFrames:
-PidgeyFrames:
-PidgeottoFrames:
-PidgeotFrames:
+LotadFrames:
+LombreFrames:
+LudicoloFrames:
 PoochyenaFrames:
 MightyenaFrames:
 TaillowFrames:
@@ -95,8 +95,8 @@ GastlyFrames:
 HaunterFrames:
 GengarFrames:
 OnixFrames:
-DrowzeeFrames:
-HypnoFrames:
+GardevoirFrames:
+GalladeFrames:
 KrabbyFrames:
 KinglerFrames:
 VoltorbFrames:

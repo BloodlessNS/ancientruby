@@ -13,9 +13,9 @@ BeautiflyBitmasks:
 WeedleBitmasks:
 CascoonBitmasks:
 DustoxBitmasks:
-PidgeyBitmasks:
-PidgeottoBitmasks:
-PidgeotBitmasks:
+LotadBitmasks:
+LombreBitmasks:
+LudicoloBitmasks:
 PoochyenaBitmasks:
 MightyenaBitmasks:
 TaillowBitmasks:
@@ -93,8 +93,8 @@ GastlyBitmasks:
 HaunterBitmasks:
 GengarBitmasks:
 OnixBitmasks:
-DrowzeeBitmasks:
-HypnoBitmasks:
+GardevoirBitmasks:
+GalladeBitmasks:
 KrabbyBitmasks:
 KinglerBitmasks:
 VoltorbBitmasks:
@@ -191,7 +191,7 @@ AipomBitmasks:
 ShroomishBitmasks:
 BreloomBitmasks:
 YanmaBitmasks:
-WooperBitmasks:
+AzurillBitmasks:
 QuagsireBitmasks:
 EspeonBitmasks:
 UmbreonBitmasks:
