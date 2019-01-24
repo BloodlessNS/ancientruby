@@ -330,6 +330,8 @@ WRAMX 2
 	"Pic Animations"
 WRAMX 3
 	"Battle Tower RAM"
+WRAMX 4
+	"Surrounding Data"
 WRAMX 5
 	"GBC Video"
 	org $d300

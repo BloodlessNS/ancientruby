@@ -19,8 +19,10 @@ Route102_MapScripts:
 	end
 	
 .CatchTutorial:
-	moveobject ROUTE102_WALLY, 5, 5
-	appear ROUTE102_WALLY
+	priorityjump Route102CatchTutorial
+	end
+	
+Route102CatchTutorial:
 	turnobject PLAYER, RIGHT
 	pause 30
 	turnobject ROUTE102_WALLY, LEFT
@@ -34,7 +36,6 @@ Route102_MapScripts:
 	closetext
 	loadwildmon RALTS, 5
 	catchtutorial BATTLETYPE_TUTORIAL
-	reloadmapafterbattle
 	opentext
 	writetext Route102WallyText2
 	waitbutton
@@ -43,7 +44,6 @@ Route102_MapScripts:
 	waitbutton
 	closetext
 	setscene SCENE_ROUTE102_NOTHING
-	clearevent EVENT_DUDE_TALKED_TO_YOU
 	setmapscene PETALBURG_GYM, SCENE_PETALBURGGYM_CATCH_TUTORIAL
 	warp PETALBURG_GYM, 3, 4
 	end
@@ -285,4 +285,4 @@ Route102_MapEvents:
 	object_event  22,  13, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_BROWN, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherRick, -1
 	object_event  17, 5, SPRITE_YOUNGSTER, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 2, TrainerYoungsterAllen, -1
 	object_event  8, 6, SPRITE_LASS, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerLassTiana, -1
-	object_event  5, 21, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_DOWN, 1, -1, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassTiana, EVENT_LEARNED_TO_CATCH_POKEMON
+	object_event  5, 5, SPRITE_WALLY, SPRITEMOVEDATA_STANDING_DOWN, 1, -1, 1, -1, PAL_NPC_GREEN, OBJECTTYPE_TRAINER, 3, TrainerLassTiana, EVENT_DUDE_TALKED_TO_YOU

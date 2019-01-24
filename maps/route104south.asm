@@ -6,6 +6,8 @@
 	const ROUTE104SOUTH_YOUNGSTER
 	const ROUTE104SOUTH_COOLTRAINERM2
 	const ROUTE104SOUTH_FISHER
+	const ROUTE104SOUTH_RICHBOY
+	const ROUTE104SOUTH_YOUNGSTER2
 
 Route104South_MapScripts:
 	db 0 ; scene scripts
@@ -32,6 +34,28 @@ Route104SouthCooltrainerMScript:
 	
 Route104SouthFisherScript:
 	jumptext Route104SouthFisherText
+	
+TrainerRichBoyWinston:
+	trainer RICH_BOY, WINSTON, EVENT_BEAT_RICHBOY_WINSTON, RichBoyWinstonSeenText, RichBoyWinstonBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext RichBoyWinstonAfterText
+	waitbutton
+	closetext
+	end
+	
+TrainerYoungsterBilly:
+	trainer YOUNGSTER, BILLY, EVENT_BEAT_YOUNGSTER_BILLY, YoungsterBillySeenText, YoungsterBillyBeatenText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext YoungsterBillyAfterText
+	waitbutton
+	closetext
+	end
 	
 Route104SouthSignText:
 	text "ROUTE 104"
@@ -103,6 +127,50 @@ Route104SouthFisherText:
 	cont "of the sea?"
 	done
 	
+RichBoyWinstonSeenText:
+	text "oh, sure, I'll"
+	line "accept your"
+	cont "challenge."
+	
+	para "I have a lot of"
+	line "money."
+	done
+	
+RichBoyWinstonBeatenText:
+	text "Why couldn't I"
+	line "win?"
+	done
+	
+RichBoyWinstonAfterText:
+	text "There are some"
+	line "things money can't"
+	cont "buy."
+	
+	para "That's #MON…"
+	done
+	
+YoungsterBillySeenText:
+	text "Leaving footprints"
+	line "in thr sand is so"
+	cont "fun!"
+	done
+	
+YoungsterBillyBeatenText:
+	text "Waah! I got sand"
+	line "in my runners!"
+	
+	para "They're all"
+	line "gritty!"
+	done
+	
+YoungsterBillyAfterText:
+	text "I want to leave my"
+	line "footprints in the"
+	cont "sand everywhere,"
+	cont "but the disappear"
+	cont "quickly…"
+	done
+	
 Route104SouthPokeball:
 	itemball POKE_BALL
 	
@@ -129,7 +197,7 @@ Route104South_MapEvents:
 	bg_event  12,  35, BGEVENT_ITEM, Route104SouthHiddenAntidote
 	bg_event  14,  15, BGEVENT_READ, BrineysCottageSign
 
-	db 7 ; object events
+	db 9 ; object events
 	object_event 36,  24, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_DOWN, 1, 0, -1, -1, PAL_NPC_GREEN, OBJECTTYPE_SCRIPT, 0, WallyAlphaEndScript, -1
 	object_event  21,  17, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, Route104SouthPokeball, EVENT_ROUTE104SOUTH_POKEBALL
 	object_event 18,  14, SPRITE_COOLTRAINER_F, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route104SouthCooltrainerFScript, -1
@@ -137,4 +205,6 @@ Route104South_MapEvents:
 	object_event 20,  25, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route104SouthYoungsterScript, -1
 	object_event 21,  35, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_STANDING_UP, 1, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route104SouthCooltrainerMScript, -1
 	object_event 10,  24, SPRITE_FISHER, SPRITEMOVEDATA_STANDING_LEFT, 1, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route104SouthFisherScript, -1
+	object_event 9,  9, SPRITE_ROCKER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 1, TrainerRichBoyWinston, -1
+	object_event 16,  32, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerYoungsterBilly, -1
 	

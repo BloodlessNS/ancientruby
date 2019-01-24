@@ -108,7 +108,7 @@ KRIS EQU __enum__
 	const ERIKA1
 
 	trainerclass YOUNGSTER ; 16
-	const JOEY1
+	const BILLY
 	const MIKEY
 	const ALLEN
 	const GORDON
@@ -133,7 +133,7 @@ KRIS EQU __enum__
 	const TOMMY
 	const DUDLEY
 	const JOE
-	const BILLY
+	const BILLY2
 	const CHAD1
 	const NATE
 	const RICKY
@@ -700,5 +700,8 @@ KRIS EQU __enum__
 
 	trainerclass MYSTICALMAN ; 43
 	const EUSINE
+	
+	trainerclass RICH_BOY ; 44
+	const WINSTON
 
 NUM_TRAINER_CLASSES EQU __enum__

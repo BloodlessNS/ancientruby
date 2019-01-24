@@ -716,6 +716,7 @@ SECTION "Pics 19", ROMX
 ZigzagoonBackpic:      INCBIN "gfx/pokemon/zigzagoon/back.2bpp.lz"
 RivalKrisPic:          INCBIN "gfx/trainers/kris.2bpp.lz"
 RivalChrisPic:         INCBIN "gfx/trainers/Chris.2bpp.lz"
+RichboyPic:            INCBIN "gfx/trainers/rich_boy.2bpp.lz"
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
 ; but entries for their banks exist in FixPicBank (see engine/gfx/load_pics.asm).

@@ -1,8 +1,7 @@
 tileset: MACRO
-	dba \1GFX, \1Meta, \1Coll
+	dba \1GFX, \1Meta, \1Coll, \1Attr
 	dw \1Anim
-	dw NULL
-	dw \1PalMap
+	
 ENDM
 
 ; Associated data:

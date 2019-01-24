@@ -98,7 +98,7 @@ ItemNames::
 	db "WHT APRICORN@"
 	db "BLACKBELT@"
 	db "BLK APRICORN@"
-	db "TERU-SAMA@"
+	db "DAWN STONE@"
 	db "PNK APRICORN@"
 	db "BLACKGLASSES@"
 	db "SLOWPOKETAIL@"

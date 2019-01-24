@@ -35,6 +35,7 @@ PetalburgGymCatchTutorialFinish:
 	setevent EVENT_LEARNED_TO_CATCH_POKEMON
 	setevent EVENT_DUDE_TALKED_TO_YOU
 	setevent EVENT_COP_IN_ELMS_LAB
+	end
 	
 PetalburgGymWallyScript:
 	checkevent EVENT_LEARNED_TO_CATCH_POKEMON
@@ -65,6 +66,7 @@ PetalburgGymWallyScript:
 	waitbutton
 	closetext
 	setmapscene ROUTE_102, SCENE_ROUTE102_CATCH_TUTORIAL
+	clearevent EVENT_DUDE_TALKED_TO_YOU
 	warp ROUTE_102, 4, 5
 	end
 	

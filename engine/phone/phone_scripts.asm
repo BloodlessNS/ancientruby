@@ -605,7 +605,6 @@ ReenaWantsBattle:
 ; Joey
 
 JoeyPhoneScript1:
-	trainertotext YOUNGSTER, JOEY1, MEM_BUFFER_0
 	checkflag ENGINE_JOEY
 	iftrue .WantsBattle
 	farscall PhoneScript_AnswerPhone_Male
@@ -625,7 +624,6 @@ JoeyPhoneScript1:
 	farjump UnknownScript_0xa0a4b
 
 JoeyPhoneScript2:
-	trainertotext YOUNGSTER, JOEY1, MEM_BUFFER_0
 	farscall PhoneScript_GreetPhone_Male
 	checkflag ENGINE_JOEY
 	iftrue .Generic

@@ -1074,7 +1074,7 @@ RaltsEvosAttacks:
 
 KirliaEvosAttacks:
 	db EVOLVE_LEVEL, 30, GARDEVOIR
-	db EVOLVE_ITEM, MOON_STONE, GALLADE
+	db EVOLVE_ITEM, DAWN_STONE, GALLADE
 	db 0 ; no more evolutions
 	db 1, CURSE
 	db 1, TACKLE

@@ -321,6 +321,7 @@ LittlerootGroupSprites:
 	db SPRITE_LASS
 	db SPRITE_CLERK
 	db SPRITE_BAG
+	db SPRITE_ROCKER
 	db SPRITE_POKE_BALL
 	db SPRITE_FRUIT_TREE
 	db 0 ; end
