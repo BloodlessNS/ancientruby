@@ -125,7 +125,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; 7c
 	tilecoll WALL, WALL, WALL, WALL ; 7d
 	tilecoll WARP_CARPET_UP, WARP_CARPET_UP, FLOOR, FLOOR ; 7e
-	tilecoll WALL, WALL, DOOR, DOOR ; 7f
+	tilecoll WALL, WALL, WALL, DOOR ; 7f
 	tilecoll TALL_GRASS, TALL_GRASS, WALL, WALL ; 80
 	tilecoll WATER, WATER, WATER, BUOY ; 81
 	tilecoll BUOY, BUOY, WATER, WATER ; 82

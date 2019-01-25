@@ -32,7 +32,12 @@ TrainerPicPointers::
 	dba_pic CooltrainerfPic
 	dba_pic BeautyPic
 	dba_pic PokemaniacPic
-	dba_pic GruntmPic
+if DEF(_SAPPHIRE)
+	dba_pic AquaGruntMalePic
+else
+	dba_pic MagmaGruntMalePic
+endc
+
 	dba_pic GentlemanPic
 	dba_pic SkierPic
 	dba_pic TeacherPic

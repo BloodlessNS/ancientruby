@@ -40,6 +40,7 @@ MapGroupPointers::
 	dw MapGroup_Cianwood    ; 22
 	dw MapGroup_Viridian    ; 23
 	dw MapGroup_Littleroot     ; 24
+	dw MapGroup_Rustboro
 	dw MapGroup_Saffron     ; 25
 	dw MapGroup_Cherrygrove ; 26
 
@@ -348,8 +349,9 @@ MapGroup_Littleroot:
 	map RivalsRoom, TILESET_PLAYERS_ROOM, INDOOR, LITTLEROOT_TOWN, MUSIC_LITTLEROOT_TOWN, FALSE, PALETTE_DAY, FISHGROUP_SHORE
 	map PetalburgGym, TILESET_LAB, INDOOR, PETALBURG_CITY, MUSIC_GYM, TRUE, PALETTE_DAY, FISHGROUP_SHORE
 	map Route104South, TILESET_JOHTO, ROUTE, ROUTE_104, MUSIC_ROUTE_103, FALSE, PALETTE_AUTO, FISHGROUP_SHORE
+	
+MapGroup_Rustboro:
 	map PetalburgWoods, TILESET_FOREST, ROUTE, ROUTE_104, MUSIC_UNION_CAVE, FALSE, PALETTE_AUTO, FISHGROUP_POND
-
 
 MapGroup_Saffron:
 	map Route5, TILESET_KANTO, ROUTE, ROUTE_5, MUSIC_ROUTE_3, FALSE, PALETTE_AUTO, FISHGROUP_SHORE

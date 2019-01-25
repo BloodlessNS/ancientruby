@@ -364,7 +364,11 @@ WingullBackpic:     INCBIN "gfx/pokemon/wingull/back.2bpp.lz"
 ZubatBackpic:        INCBIN "gfx/pokemon/zubat/back.2bpp.lz"
 TeddiursaFrontpic:   INCBIN "gfx/pokemon/teddiursa/front.animated.2bpp.lz"
 CuboneBackpic:       INCBIN "gfx/pokemon/cubone/back.2bpp.lz"
-GruntmPic:           INCBIN "gfx/trainers/grunt_m.2bpp.lz"
+if DEF(_SAPPHIRE)
+AquaGruntMalePic:      INCBIN "gfx/trainers/aqua_grunt.2bpp.lz"
+else
+MagmaGruntMalePic:     INCBIN "gfx/trainers/magma_grunt.2bpp.lz"
+endc
 GloomBackpic:        INCBIN "gfx/pokemon/gloom/back.2bpp.lz"
 MagcargoBackpic:     INCBIN "gfx/pokemon/magcargo/back.2bpp.lz"
 KabutopsBackpic:     INCBIN "gfx/pokemon/kabutops/back.2bpp.lz"

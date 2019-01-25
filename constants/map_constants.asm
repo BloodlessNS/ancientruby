@@ -344,7 +344,9 @@ ENDM
 	map_const RIVALS_ROOM,                                  4,  3 ; 25
 	map_const PETALBURG_GYM,                                4,  4 ; 26
 	map_const ROUTE_104_SOUTH,                             16, 20 ; 27
-	map_const PETALBURG_WOODS,                             20, 19 ; 28
+	
+	newgroup
+	map_const PETALBURG_WOODS,                             20, 19 ; 1
 
 	newgroup                                                      ; 25
 

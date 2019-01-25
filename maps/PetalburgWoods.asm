@@ -5,6 +5,7 @@
 	const PETALBURGWOODS_GREATBALL
 	const PETALBURGWOODS_XATTACK
 	const PETALBURGWOODS_COOLTRAINER_M
+	const PETALBURGWOODS_GRUNT
 
 PetalburgWoods_MapScripts:
 	db 0 ; scene scripts
@@ -46,6 +47,17 @@ PetalburgWoodsGreatBall:
 	
 PetalburgWoodsXAttack:
 	itemball X_ATTACK
+	
+TrainerGruntM1:
+	trainer GRUNTM, GRUNTM_1, EVENT_BEAT_ROCKET_GRUNTM_1, PetalburgWoodsTrainerTipText, PetalburgWoodsTrainerTipText, 0, .Script
+	
+.Script:
+	endifjustbattled
+	opentext
+	writetext PetalburgWoodsTrainerTipText
+	waitbutton
+	closetext
+	end
 	
 PetalburgWoodsTrainerTipText:
 	text "TRAINER TIPS"
@@ -131,10 +143,11 @@ PetalburgWoods_MapEvents:
 	bg_event 24,  2, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom1
 	bg_event 34,  23, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom2
 
-	db 6 ; object events
+	db 7 ; object events
 	object_event  2,  22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsParlyzHeal, EVENT_PETALBURGWOODS_PARLYZHEAL
 	object_event 11,  16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsYoungsterScript, -1
 	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsEther, EVENT_PETALBURGWOODS_ETHER
 	object_event  37,  6, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsGreatBall, EVENT_PETALBURGWOODS_GREATBALL
 	object_event  31,  16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsXAttack, EVENT_PETALBURGWOODS_XATTACK
 	object_event 27,  30, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsCooltrainerMScript, -1
+	object_event 22,  16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_TRAINER, 3, TrainerGruntM1, -1

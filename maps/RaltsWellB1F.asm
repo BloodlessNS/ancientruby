@@ -28,46 +28,6 @@ TrainerGruntM29:
 	closetext
 	end
 
-TrainerGruntM1:
-	trainer GRUNTM, GRUNTM_1, EVENT_BEAT_ROCKET_GRUNTM_1, GruntM1SeenText, GruntM1BeatenText, 0, .Script
-
-.Script:
-	opentext
-	writetext TrainerGruntM1WhenTalkText
-	waitbutton
-	closetext
-	special FadeBlackQuickly
-	special ReloadSpritesNoPalettes
-	disappear RALTSWELLB1F_ROCKET1
-	disappear RALTSWELLB1F_ROCKET2
-	disappear RALTSWELLB1F_ROCKET3
-	disappear RALTSWELLB1F_ROCKET_GIRL
-	pause 15
-	special FadeInQuickly
-	disappear RALTSWELLB1F_KURT
-	moveobject RALTSWELLB1F_KURT, 11, 6
-	appear RALTSWELLB1F_KURT
-	applymovement RALTSWELLB1F_KURT, KurtRaltsWellVictoryMovementData
-	turnobject PLAYER, RIGHT
-	opentext
-	writetext KurtLeaveRaltsWellText
-	waitbutton
-	closetext
-	variablesprite SPRITE_AZALEA_ROCKET, SPRITE_SILVER
-	clearevent EVENT_ILEX_FOREST_APPRENTICE
-	clearevent EVENT_ILEX_FOREST_SLAKOTH
-	setevent EVENT_CHARCOAL_KILN_SLAKOTH
-	setevent EVENT_CHARCOAL_KILN_APPRENTICE
-	setevent EVENT_RALTS_WELL_RALTSS
-	setevent EVENT_RALTS_WELL_KURT
-	clearevent EVENT_AZALEA_TOWN_RALTSS
-	clearevent EVENT_KURTS_HOUSE_RALTS
-	clearevent EVENT_KURTS_HOUSE_KURT_1
-	special FadeOutPalettes
-	special HealParty
-	pause 15
-	end
-
 TrainerGruntM2:
 	trainer GRUNTM, GRUNTM_2, EVENT_BEAT_ROCKET_GRUNTM_2, GruntM2SeenText, GruntM2BeatenText, 0, .Script
 

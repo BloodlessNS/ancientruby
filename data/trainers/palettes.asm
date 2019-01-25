@@ -34,7 +34,11 @@ INCLUDE "gfx/trainers/cooltrainer_m.pal"
 INCLUDE "gfx/trainers/cooltrainer_f.pal"
 INCLUDE "gfx/trainers/beauty.pal"
 INCLUDE "gfx/trainers/pokemaniac.pal"
-INCLUDE "gfx/trainers/grunt_m.pal"
+if DEF(_SAPPHIRE)
+INCLUDE "gfx/trainers/aqua_grunt.pal"
+else
+INCLUDE "gfx/trainers/magma_grunt.pal"
+endc
 INCLUDE "gfx/trainers/gentleman.pal"
 INCLUDE "gfx/trainers/skier.pal"
 INCLUDE "gfx/trainers/teacher.pal"

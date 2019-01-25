@@ -27,6 +27,7 @@ OutdoorSprites:
 	dw CianwoodGroupSprites
 	dw ViridianGroupSprites
 	dw LittlerootGroupSprites
+	dw RustboroGroupSprites
 	dw SaffronGroupSprites
 	dw CherrygroveGroupSprites
 
@@ -307,6 +308,26 @@ IndigoGroupSprites:
 	db SPRITE_BOULDER
 
 LittlerootGroupSprites:
+	db SPRITE_OLIVINE_RIVAL
+	db SPRITE_TEACHER
+	db SPRITE_FISHER
+	db SPRITE_BUG_CATCHER
+	db SPRITE_WALLY
+	db SPRITE_COOLTRAINER_F
+	db SPRITE_COOLTRAINER_M
+	db SPRITE_YOUNGSTER
+	db SPRITE_GENTLEMAN
+	; limit of 9 walking sprites
+	db SPRITE_SCIENTIST
+	db SPRITE_LASS
+	db SPRITE_CLERK
+	db SPRITE_BAG
+	db SPRITE_ROCKER
+	db SPRITE_POKE_BALL
+	db SPRITE_FRUIT_TREE
+	db 0 ; end
+	
+RustboroGroupSprites:
 	db SPRITE_OLIVINE_RIVAL
 	db SPRITE_TEACHER
 	db SPRITE_FISHER
