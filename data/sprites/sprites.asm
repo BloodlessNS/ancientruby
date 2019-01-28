@@ -58,7 +58,11 @@ OverworldSprites:
 	overworld_sprite SwimmerGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
 	overworld_sprite BigSnorlaxSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite SurfingPikachuSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
-	overworld_sprite RocketSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
+if DEF(_SAPPHIRE)
+	overworld_sprite GruntSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BLUE
+else
+	overworld_sprite GruntSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED
+endc
 	overworld_sprite RocketGirlSpriteGFX, 12, WALKING_SPRITE, PAL_OW_BROWN
 	overworld_sprite NurseSpriteGFX, 12, STANDING_SPRITE, PAL_OW_RED
 	overworld_sprite LinkReceptionistSpriteGFX, 12, WALKING_SPRITE, PAL_OW_RED

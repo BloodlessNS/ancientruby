@@ -56,7 +56,11 @@ SwimmerGuySpriteGFX::          INCBIN "gfx/sprites/swimmer_guy.2bpp"
 SwimmerGirlSpriteGFX::         INCBIN "gfx/sprites/swimmer_girl.2bpp"
 BigSnorlaxSpriteGFX::          INCBIN "gfx/sprites/big_snorlax.2bpp"
 SurfingPikachuSpriteGFX::      INCBIN "gfx/sprites/surfing_pikachu.2bpp"
-RocketSpriteGFX::              INCBIN "gfx/sprites/rocket.2bpp"
+if DEF(_SAPPHIRE)
+GruntSpriteGFX::               INCBIN "gfx/sprites/aqua.2bpp"
+else
+GruntSpriteGFX::               INCBIN "gfx/sprites/magma.2bpp"
+endc
 RocketGirlSpriteGFX::          INCBIN "gfx/sprites/rocket_girl.2bpp"
 NurseSpriteGFX::               INCBIN "gfx/sprites/nurse.2bpp"
 LinkReceptionistSpriteGFX::    INCBIN "gfx/sprites/link_receptionist.2bpp"

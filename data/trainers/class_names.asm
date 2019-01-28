@@ -30,7 +30,11 @@ TrainerClassNames::
 	db "COOLTRAINER@"
 	db "BEAUTY@"
 	db "#MANIAC@"
-	db "ROCKET@"
+if DEF(_SAPPHIRE)
+	db "AQUA@"
+else
+	db "MAGMA@"
+endc
 	db "GENTLEMAN@"
 	db "SKIER@"
 	db "TEACHER@"
@@ -50,11 +54,19 @@ TrainerClassNames::
 	db "FIREBREATHER@"
 	db "JUGGLER@"
 	db "BLACKBELT@"
-	db "ROCKET@"
+if DEF(_SAPPHIRE)
+	db "AQUA@"
+else
+	db "MAGMA@"
+endc
 	db "PSYCHIC@"
 	db "PICNICKER@"
 	db "CAMPER@"
-	db "ROCKET@"
+if DEF(_SAPPHIRE)
+	db "AQUA@"
+else
+	db "MAGMA@"
+endc
 	db "SAGE@"
 	db "MEDIUM@"
 	db "BOARDER@"
@@ -65,6 +77,10 @@ TrainerClassNames::
 	db "<PKMN> TRAINER@"
 	db "LEADER@"
 	db "OFFICER@"
-	db "ROCKET@"
+if DEF(_SAPPHIRE)
+	db "AQUA@"
+else
+	db "MAGMA@"
+endc
 	db "MYSTICALMAN@"
 	db "RICH BOY@"

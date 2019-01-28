@@ -1247,7 +1247,7 @@ PokemaniacGroup:
 GruntMGroup:
 	; GRUNTM (1)
 	db "GRUNT@", TRAINERTYPE_NORMAL
-	db 14, KOFFING
+	db 9, POOCHYENA
 	db -1 ; end
 
 	; GRUNTM (2)
