@@ -1,7 +1,7 @@
 	const_def 2 ; object constants
 	const CELADONMANSION1F_GRANNY
 	const CELADONMANSION1F_GROWLITHE1
-	const CELADONMANSION1F_CLEFAIRY
+	const CELADONMANSION1F_NINJASK
 	const CELADONMANSION1F_GROWLITHE2
 
 CeladonMansion1F_MapScripts:
@@ -20,10 +20,9 @@ CeladonMansion1FMeowth:
 	closetext
 	end
 
-CeladonMansion1FClefairy:
+CeladonMansion1FNinjask:
 	opentext
-	writetext CeladonMansion1FClefairyText
-	cry CLEFAIRY
+	writetext CeladonMansion1FNinjaskText
 	waitbutton
 	closetext
 	end
@@ -57,8 +56,8 @@ CeladonMansion1FMeowthText:
 	text "MEOWTH: Meow!"
 	done
 
-CeladonMansion1FClefairyText:
-	text "CLEFAIRY: Clef"
+CeladonMansion1FNinjaskText:
+	text "NINJASK: Clef"
 	line "cleff!"
 	done
 
@@ -92,5 +91,5 @@ CeladonMansion1F_MapEvents:
 	db 4 ; object events
 	object_event  1,  5, SPRITE_GRANNY, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansionManager, -1
 	object_event  2,  6, SPRITE_GROWLITHE, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1FMeowth, -1
-	object_event  3,  4, SPRITE_CLEFAIRY, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1FClefairy, -1
+	object_event  3,  4, SPRITE_NINJASK, SPRITEMOVEDATA_POKEMON, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, CeladonMansion1FNinjask, -1
 	object_event  4,  4, SPRITE_GROWLITHE, SPRITEMOVEDATA_POKEMON, 2, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, CeladonMansion1FNidoranF, -1

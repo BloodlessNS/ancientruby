@@ -37,24 +37,24 @@ KantoGrassWildMons:
 	db 8, SANDSHREW
 	db 12, SURSKIT
 	db 10, GEODUDE
-	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, NINJASK
+	db 8, NINJASK
 	; day
 	db 6, ZUBAT
 	db 8, GEODUDE
 	db 8, SANDSHREW
 	db 12, SURSKIT
 	db 10, GEODUDE
-	db 8, CLEFAIRY
-	db 8, CLEFAIRY
+	db 8, NINJASK
+	db 8, NINJASK
 	; nite
 	db 6, ZUBAT
 	db 8, GEODUDE
-	db 8, CLEFAIRY
+	db 8, NINJASK
 	db 12, SURSKIT
 	db 10, GEODUDE
-	db 12, CLEFAIRY
-	db 12, CLEFAIRY
+	db 12, NINJASK
+	db 12, NINJASK
 
 	map_id ROCK_TUNNEL_1F
 	db 6 percent, 6 percent, 6 percent ; encounter rates: morn/day/nite

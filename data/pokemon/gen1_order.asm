@@ -2,7 +2,7 @@ Pokered_MonIndices:
 	db RHYDON
 	db KANGASKHAN
 	db NIDORAN_M
-	db CLEFAIRY
+	db NINJASK
 	db TAILLOW
 	db VOLTORB
 	db NIDOKING
@@ -140,7 +140,7 @@ Pokered_MonIndices:
 	db PELIPPER
 	db TYROGUE ; MISSINGNO.
 	db ELECTRODE
-	db CLEFABLE
+	db SHEDINJA
 	db WEEZING
 	db PERSIAN
 	db MAROWAK

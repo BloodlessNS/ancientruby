@@ -70,10 +70,10 @@ PokemonPicPointers::
 	dba_pic NidorinoBackpic
 	dba_pic NidokingFrontpic
 	dba_pic NidokingBackpic
-	dba_pic ClefairyFrontpic
-	dba_pic ClefairyBackpic
-	dba_pic ClefableFrontpic
-	dba_pic ClefableBackpic
+	dba_pic NinjaskFrontpic
+	dba_pic NinjaskBackpic
+	dba_pic ShedinjaFrontpic
+	dba_pic ShedinjaBackpic
 	dba_pic VulpixFrontpic
 	dba_pic VulpixBackpic
 	dba_pic NinetalesFrontpic

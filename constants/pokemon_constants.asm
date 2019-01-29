@@ -53,8 +53,8 @@
 	const NIDORAN_M  ; 20
 	const NIDORINO   ; 21
 	const NIDOKING   ; 22
-	const CLEFAIRY   ; 23
-	const CLEFABLE   ; 24
+	const NINJASK   ; 23
+	const SHEDINJA   ; 24
 	const VULPIX     ; 25
 	const NINETALES  ; 26
 	const JIGGLYPUFF ; 27
@@ -192,7 +192,7 @@ JOHTO_POKEMON EQU const_value
 	const CHINCHOU   ; aa
 	const LANTURN    ; ab
 	const PICHU      ; ac
-	const CLEFFA     ; ad
+	const NINCADA     ; ad
 	const IGGLYBUFF  ; ae
 	const TOGEPI     ; af
 	const TOGETIC    ; b0

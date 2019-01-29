@@ -44,8 +44,8 @@ NewPokedexOrder:
 	db KADABRA
 	db ALAKAZAM
 	db NINCADA             ;NINCADA
-	db CLEFAIRY           ;NINJASK
-	db CLEFABLE           ;SHEDINJA
+	db NINJASK           ;NINJASK
+	db SHEDINJA           ;SHEDINJA
 	db WEEDLE             ;WHISMUR
 	db LEDYBA             ;LOUDRED
 	db LEDIAN             ;EXPLOUD

@@ -35,8 +35,8 @@ KantoMonSpecials:
 	db  40 ; NIDORAN_M
 	db  55 ; NIDORINO
 	db  75 ; NIDOKING
-	db  60 ; CLEFAIRY
-	db  85 ; CLEFABLE
+	db  60 ; NINJASK
+	db  85 ; SHEDINJA
 	db  65 ; VULPIX
 	db 100 ; NINETALES
 	db  25 ; JIGGLYPUFF

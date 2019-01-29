@@ -22,8 +22,7 @@ MountMoonSquare_MapScripts:
 	disappear MOUNTMOONSQUARE_ROCK
 	return
 
-ClefairyDance:
-	checkflag ENGINE_MT_MOON_SQUARE_CLEFAIRY
+NinjaskDance:
 	iftrue .NoDancing
 	checkcode VAR_WEEKDAY
 	ifnotequal MONDAY, .NoDancing
@@ -35,38 +34,30 @@ ClefairyDance:
 	pause 15
 	appear MOUNTMOONSQUARE_ROCK
 	turnobject MOUNTMOONSQUARE_FAIRY1, RIGHT
-	cry CLEFAIRY
 	waitsfx
 	pause 30
 	follow MOUNTMOONSQUARE_FAIRY1, MOUNTMOONSQUARE_FAIRY2
-	cry CLEFAIRY
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep1
-	cry CLEFAIRY
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep2
-	cry CLEFAIRY
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep3
-	cry CLEFAIRY
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep4
-	cry CLEFAIRY
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep5
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep1
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep2
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep3
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep4
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep5
 	stopfollow
-	applymovement MOUNTMOONSQUARE_FAIRY2, ClefairyDanceStep6
+	applymovement MOUNTMOONSQUARE_FAIRY2, NinjaskDanceStep6
 	follow MOUNTMOONSQUARE_FAIRY1, MOUNTMOONSQUARE_FAIRY2
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyDanceStep7
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskDanceStep7
 	stopfollow
 	turnobject MOUNTMOONSQUARE_FAIRY1, DOWN
 	pause 10
 	showemote EMOTE_SHOCK, MOUNTMOONSQUARE_FAIRY1, 15
 	turnobject MOUNTMOONSQUARE_FAIRY1, DOWN
-	cry CLEFAIRY
 	pause 15
 	follow MOUNTMOONSQUARE_FAIRY1, MOUNTMOONSQUARE_FAIRY2
-	applymovement MOUNTMOONSQUARE_FAIRY1, ClefairyFleeMovement
+	applymovement MOUNTMOONSQUARE_FAIRY1, NinjaskFleeMovement
 	disappear MOUNTMOONSQUARE_FAIRY1
 	disappear MOUNTMOONSQUARE_FAIRY2
 	stopfollow
 	clearevent EVENT_MOUNT_MOON_SQUARE_HIDDEN_MOON_STONE
-	setflag ENGINE_MT_MOON_SQUARE_CLEFAIRY
 	end
 
 .NoDancing:
@@ -85,38 +76,38 @@ PlayerWalksUpToDancingClefairies:
 	step UP
 	step_end
 
-ClefairyDanceStep1:
+NinjaskDanceStep1:
 	slow_step DOWN
 	slow_jump_step DOWN
 	step_end
 
-ClefairyDanceStep2:
+NinjaskDanceStep2:
 	slow_jump_step RIGHT
 	step_end
 
-ClefairyDanceStep3:
+NinjaskDanceStep3:
 	slow_step UP
 	slow_jump_step UP
 	step_end
 
-ClefairyDanceStep4:
+NinjaskDanceStep4:
 	slow_jump_step LEFT
 	step_end
 
-ClefairyDanceStep5:
+NinjaskDanceStep5:
 	slow_step DOWN
 	slow_jump_step DOWN
 	step_end
 
-ClefairyDanceStep6:
+NinjaskDanceStep6:
 	slow_step DOWN
 	step_end
 
-ClefairyDanceStep7:
+NinjaskDanceStep7:
 	slow_step RIGHT
 	step_end
 
-ClefairyFleeMovement:
+NinjaskFleeMovement:
 	step RIGHT
 	step RIGHT
 	step RIGHT
@@ -139,13 +130,13 @@ MountMoonSquare_MapEvents:
 	warp_event 13,  7, MOUNT_MOON_GIFT_SHOP, 1
 
 	db 1 ; coord events
-	coord_event  7, 11, SCENE_DEFAULT, ClefairyDance
+	coord_event  7, 11, SCENE_DEFAULT, NinjaskDance
 
 	db 2 ; bg events
 	bg_event  7,  7, BGEVENT_ITEM, MountMoonSquareHiddenMoonStone
 	bg_event 17,  7, BGEVENT_READ, DontLitterSign
 
 	db 3 ; object events
-	object_event  6,  6, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MT_MOON_SQUARE_CLEFAIRY
-	object_event  7,  6, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, EVENT_MT_MOON_SQUARE_CLEFAIRY
+	object_event  6,  6, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
+	object_event  7,  6, SPRITE_FAIRY, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ObjectEvent, -1
 	object_event  7,  7, SPRITE_ROCK, SPRITEMOVEDATA_SMASHABLE_ROCK, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, MtMoonSquareRock, EVENT_MT_MOON_SQUARE_ROCK

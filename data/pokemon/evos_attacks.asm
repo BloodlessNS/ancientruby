@@ -464,27 +464,36 @@ NidokingEvosAttacks:
 	db 23, THRASH
 	db 0 ; no more level-up moves
 
-ClefairyEvosAttacks:
-	db EVOLVE_ITEM, MOON_STONE, CLEFABLE
+NinjaskEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, POUND
-	db 1, GROWL
-	db 4, ENCORE
-	db 8, SING
-	db 13, DOUBLESLAP
-	db 19, MINIMIZE
-	db 26, DEFENSE_CURL
-	db 34, METRONOME
-	db 43, MOONLIGHT
-	db 53, LIGHT_SCREEN
+	db 1, HARDEN
+	db 1, LEECH_LIFE
+	db 1, SAND_ATTACK
+	db 1, SCRATCH
+	db 5, LEECH_LIFE
+	db 9, SAND_ATTACK
+	db 14, FURY_SWIPES
+	db 19, MIND_READER
+	db 20, DOUBLE_TEAM
+	db 23, SCREECH
+	db 25, SWORDS_DANCE
+	db 31, SLASH
+	db 38, AGILITY
+	db 45, BATON_PASS
 	db 0 ; no more level-up moves
 
-ClefableEvosAttacks:
+ShedinjaEvosAttacks:
 	db 0 ; no more evolutions
-	db 1, SING
-	db 1, DOUBLESLAP
-	db 1, METRONOME
-	db 1, MOONLIGHT
+	db 1, HARDEN
+	db 1, SCRATCH
+	db 5, LEECH_LIFE
+	db 9, SAND_ATTACK
+	db 14, FURY_SWIPES
+	db 19, MIND_READER
+	db 25, SPITE
+	db 31, CONFUSE_RAY
+	db 38, SHADOW_BALL
+	db 45, CURSE
 	db 0 ; no more level-up moves
 
 VulpixEvosAttacks:
@@ -2397,13 +2406,18 @@ PichuEvosAttacks:
 	db 0 ; no more level-up moves
 
 NincadaEvosAttacks:
-	db EVOLVE_HAPPINESS, TR_ANYTIME, CLEFAIRY
+	db EVOLVE_LEVELTIME, 20 , TR_MORNDAY, NINJASK
+	db EVOLVE_LEVELTIME, 20 , TR_NITE, SHEDINJA
 	db 0 ; no more evolutions
-	db 1, POUND
-	db 1, CHARM
-	db 4, ENCORE
-	db 8, SING
-	db 13, SWEET_KISS
+	db 1, HARDEN
+	db 1, SCRATCH
+	db 5, LEECH_LIFE
+	db 9, SAND_ATTACK
+	db 14, FURY_SWIPES
+	db 19, MIND_READER
+	db 25, FALSE_SWIPE
+	db 38, METAL_CLAW
+	db 45, DIG
 	db 0 ; no more level-up moves
 
 IgglybuffEvosAttacks:

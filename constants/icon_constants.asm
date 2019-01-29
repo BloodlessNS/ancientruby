@@ -9,7 +9,7 @@
 	const ICON_FISH
 	const ICON_BIRD
 	const ICON_MONSTER
-	const ICON_CLEFAIRY
+	const ICON_NINJASK
 	const ICON_ODDISH
 	const ICON_BUG
 	const ICON_GHOST

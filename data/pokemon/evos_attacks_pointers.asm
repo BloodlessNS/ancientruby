@@ -35,8 +35,8 @@ EvosAttacksPointers::
 	dw NidoranMEvosAttacks
 	dw NidorinoEvosAttacks
 	dw NidokingEvosAttacks
-	dw ClefairyEvosAttacks
-	dw ClefableEvosAttacks
+	dw NinjaskEvosAttacks
+	dw ShedinjaEvosAttacks
 	dw VulpixEvosAttacks
 	dw NinetalesEvosAttacks
 	dw JigglypuffEvosAttacks

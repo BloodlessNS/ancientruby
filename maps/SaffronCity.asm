@@ -125,7 +125,7 @@ SaffronCityLass1Text_ReturnedMachinePart:
 
 	para "She said she lost"
 	line "her favorite #"
-	cont "DOLL--CLEFAIRY."
+	cont "DOLL--NINJASK."
 	done
 
 SaffronCityPokefanMText:

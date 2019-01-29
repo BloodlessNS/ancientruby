@@ -9,7 +9,7 @@ IconPointers:
 	dw FishIcon
 	dw BirdIcon
 	dw MonsterIcon
-	dw ClefairyIcon
+	dw NinjaskIcon
 	dw OddishIcon
 	dw BugIcon
 	dw GhostIcon

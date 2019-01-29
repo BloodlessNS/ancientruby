@@ -27,8 +27,8 @@ AlphabeticalPokedexOrder:
 	db CHARMELEON
 	db TREECKO
 	db CHINCHOU
-	db CLEFABLE
-	db CLEFAIRY
+	db SHEDINJA
+	db NINJASK
 	db NINCADA
 	db PELIPPER
 	db CORSOLA

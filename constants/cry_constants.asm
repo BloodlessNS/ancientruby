@@ -27,7 +27,7 @@
 	const CRY_WURMPLE
 	const CRY_EKANS
 	const CRY_SWELLOW
-	const CRY_CLEFAIRY
+	const CRY_NINJASK
 	const CRY_VENONAT
 	const CRY_LAPRAS
 	const CRY_SILCOON
@@ -56,7 +56,7 @@
 	const CRY_TREECKO
 	const CRY_MUDKIP
 	const CRY_GLIGAR
-	const CRY_CLEFFA
+	const CRY_NINCADA
 	const CRY_SLUGMA
 	const CRY_LEDYBA
 	const CRY_ENTEI

@@ -1,17 +1,17 @@
-	db CLEFABLE ; 036
+	db SHEDINJA ; 036
 
-	db  95,  70,  73,  60,  85,  90
+	db  31,  90,  45,  40,  30,  30
 	;   hp  atk  def  spd  sat  sdf
 
-	db NORMAL, NORMAL ; type
-	db 25 ; catch rate
-	db 129 ; base exp
+	db BUG, GHOST ; type
+	db 45 ; catch rate
+	db 95 ; base exp
 	db MYSTERYBERRY, MOON_STONE ; items
-	db GENDER_F75 ; gender ratio
+	db GENDER_F50 ; gender ratio
 	db 100 ; unknown 1
-	db 10 ; step cycles to hatch
+	db 15 ; step cycles to hatch
 	db 5 ; unknown 2
-	INCBIN "gfx/pokemon/clefable/front.dimensions"
+	INCBIN "gfx/pokemon/shedinja/front.dimensions"
 	db 0, 0, 0, 0 ; padding
 	db GROWTH_FAST ; growth rate
 	dn EGG_FAIRY, EGG_FAIRY ; egg groups

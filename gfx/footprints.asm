@@ -84,8 +84,8 @@ INCBIN "gfx/footprints/nidoran_m.1bpp",  footprint_bottom
 ; 033-040 top halves
 INCBIN "gfx/footprints/nidorino.1bpp",   footprint_top
 INCBIN "gfx/footprints/nidoking.1bpp",   footprint_top
-INCBIN "gfx/footprints/clefairy.1bpp",   footprint_top
-INCBIN "gfx/footprints/clefable.1bpp",   footprint_top
+INCBIN "gfx/footprints/ninjask.1bpp",   footprint_top
+INCBIN "gfx/footprints/shedinja.1bpp",   footprint_top
 INCBIN "gfx/footprints/vulpix.1bpp",     footprint_top
 INCBIN "gfx/footprints/ninetales.1bpp",  footprint_top
 INCBIN "gfx/footprints/jigglypuff.1bpp", footprint_top
@@ -93,8 +93,8 @@ INCBIN "gfx/footprints/wigglytuff.1bpp", footprint_top
 ; 033-040 bottom halves
 INCBIN "gfx/footprints/nidorino.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/nidoking.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/clefairy.1bpp",   footprint_bottom
-INCBIN "gfx/footprints/clefable.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/ninjask.1bpp",   footprint_bottom
+INCBIN "gfx/footprints/shedinja.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/vulpix.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/ninetales.1bpp",  footprint_bottom
 INCBIN "gfx/footprints/jigglypuff.1bpp", footprint_bottom
@@ -392,7 +392,7 @@ INCBIN "gfx/footprints/crobat.1bpp",     footprint_top
 INCBIN "gfx/footprints/chinchou.1bpp",   footprint_top
 INCBIN "gfx/footprints/lanturn.1bpp",    footprint_top
 INCBIN "gfx/footprints/pichu.1bpp",      footprint_top
-INCBIN "gfx/footprints/cleffa.1bpp",     footprint_top
+INCBIN "gfx/footprints/nincada.1bpp",     footprint_top
 INCBIN "gfx/footprints/igglybuff.1bpp",  footprint_top
 INCBIN "gfx/footprints/togepi.1bpp",     footprint_top
 INCBIN "gfx/footprints/togetic.1bpp",    footprint_top
@@ -401,7 +401,7 @@ INCBIN "gfx/footprints/crobat.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/chinchou.1bpp",   footprint_bottom
 INCBIN "gfx/footprints/lanturn.1bpp",    footprint_bottom
 INCBIN "gfx/footprints/pichu.1bpp",      footprint_bottom
-INCBIN "gfx/footprints/cleffa.1bpp",     footprint_bottom
+INCBIN "gfx/footprints/nincada.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/igglybuff.1bpp",  footprint_bottom
 INCBIN "gfx/footprints/togepi.1bpp",     footprint_bottom
 INCBIN "gfx/footprints/togetic.1bpp",    footprint_bottom
