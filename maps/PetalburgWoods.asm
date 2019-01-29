@@ -71,6 +71,17 @@ TrainerBugCatcherLyle:
 	closetext
 	end
 	
+TrainerBugCatcherJames:
+	trainer BUG_CATCHER, JAMES, EVENT_BEAT_BUG_CATCHER_JAMES, BugCatcherJamesSeenText, BugCatcherJamesBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherJamesAfterText
+	waitbutton
+	closetext
+	end
+	
 PetalburgWoodsTrainerTipText:
 	text "TRAINER TIPS"
 	
@@ -158,6 +169,25 @@ BugCatcherLyleAfterText:
 	para "Now I'm out of"
 	line "# BALLS."
 	done
+	
+BugCatcherJamesSeenText:
+	text "If you take BUG"
+	line "#MON to school,"
+	cont "you get to be"
+	cont "instantly popular!"
+	done
+	
+BugCatcherJamesBeatenText:
+	text "I can't be popular"
+	line "if I lose."
+	done
+	
+BugCatcherJamesAfterText:
+	text "If you have BUG"
+	line "#MON, people"
+	cont "respect you for"
+	cont "it."
+	done
 
 PetalburgWoods_MapEvents:
 	db 0, 0 ; filler
@@ -178,7 +208,7 @@ PetalburgWoods_MapEvents:
 	bg_event 24,  2, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom1
 	bg_event 34,  23, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom2
 
-	db 8 ; object events
+	db 9 ; object events
 	object_event  2,  22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsParlyzHeal, EVENT_PETALBURGWOODS_PARLYZHEAL
 	object_event 11,  16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsYoungsterScript, -1
 	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsEther, EVENT_PETALBURGWOODS_ETHER
@@ -187,3 +217,4 @@ PetalburgWoods_MapEvents:
 	object_event 27,  30, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsCooltrainerMScript, -1
 	object_event 22,  16, SPRITE_GRUNT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM1, -1
 	object_event 5,  28, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherLyle, -1
+	object_event 2,  10, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, 0, OBJECTTYPE_TRAINER, 4, TrainerBugCatcherJames, -1

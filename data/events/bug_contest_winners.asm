@@ -2,7 +2,6 @@ BugContestantPointers:
 ; there are NUM_BUG_CONTESTANTS + 1 entries
 	dw BugContestant_BugCatcherRick ; this reverts back to the player
 	dw BugContestant_BugCatcherRick
-	dw BugContestant_BugCatcherEd
 	dw BugContestant_CooltrainerMNick
 	dw BugContestant_PokefanMWilliam
 	dw BugContestant_BugCatcherBenny
@@ -23,12 +22,6 @@ BugContestant_BugCatcherRick:
 	dbw CASCOON,     300
 	dbw SILCOON,    285
 	dbw WURMPLE,   226
-
-BugContestant_BugCatcherEd:
-	db BUG_CATCHER, ED
-	dbw BEAUTIFLY, 286
-	dbw BEAUTIFLY, 251
-	dbw WURMPLE,   237
 
 BugContestant_CooltrainerMNick:
 	db COOLTRAINERM, NICK

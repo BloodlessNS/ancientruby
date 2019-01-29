@@ -329,7 +329,7 @@ KRIS EQU __enum__
 	trainerclass BUG_CATCHER ; 24
 	const RICK
 	const LYLE
-	const ED
+	const JAMES
 	const WADE1
 	const BUG_CATCHER_BENNY
 	const AL
@@ -393,7 +393,7 @@ KRIS EQU __enum__
 	const RICK1
 	const CAMERON
 	const SETH
-	const JAMES
+	const JAMES1
 	const LEWIS
 	const PARKER
 

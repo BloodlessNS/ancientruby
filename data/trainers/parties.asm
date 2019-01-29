@@ -1517,10 +1517,8 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (3)
-	db "ED@", TRAINERTYPE_NORMAL
-	db 30, DUSTOX
-	db 30, DUSTOX
-	db 30, DUSTOX
+	db "JAMES@", TRAINERTYPE_NORMAL
+	db 8, NINCADA
 	db -1 ; end
 
 	; BUG_CATCHER (4)
