@@ -177,7 +177,7 @@ PokemonCries::
 	mon_cry CRY_TORCHIC,   $3c9,  $140 ; CHINCHOU
 	mon_cry CRY_TORCHIC,   $2d0,  $110 ; LANTURN
 	mon_cry CRY_PICHU,       $000,  $140 ; PICHU
-	mon_cry CRY_CLEFFA,      $061,  $091 ; CLEFFA
+	mon_cry CRY_NINCADA,      $061,  $091 ; NINCADA
 	mon_cry CRY_TREECKO,   $0e8,  $0e8 ; IGGLYBUFF
 	mon_cry CRY_TOGEPI,      $010,  $100 ; TOGEPI
 	mon_cry CRY_TOGETIC,     $03b,  $038 ; TOGETIC
@@ -186,14 +186,14 @@ PokemonCries::
 	mon_cry CRY_MAREEP,      $022,  $0d8 ; MAREEP
 	mon_cry CRY_MAREEP,     -$007,  $180 ; FLAAFFY
 	mon_cry CRY_AMPHAROS,   -$07c,  $0e8 ; AMPHAROS
-	mon_cry CRY_CLEFFA,      $084,  $150 ; BELLOSSOM
+	mon_cry CRY_NINCADA,      $084,  $150 ; BELLOSSOM
 	mon_cry CRY_MARILL,      $11b,  $120 ; MARILL
 	mon_cry CRY_MARILL,      $0b6,  $180 ; AZUMARILL
-	mon_cry CRY_CLEFFA,      $f40,  $180 ; SUDOWOODO
-	mon_cry CRY_CLEFFA,     -$2a3,  $1c8 ; POLITOED
-	mon_cry CRY_CLEFFA,      $03b,  $0c8 ; HOPPIP
-	mon_cry CRY_CLEFFA,      $027,  $138 ; SKIPLOOM
-	mon_cry CRY_CLEFFA,      $000,  $180 ; JUMPLUFF
+	mon_cry CRY_NINCADA,      $f40,  $180 ; SUDOWOODO
+	mon_cry CRY_NINCADA,     -$2a3,  $1c8 ; POLITOED
+	mon_cry CRY_NINCADA,      $03b,  $0c8 ; HOPPIP
+	mon_cry CRY_NINCADA,      $027,  $138 ; SKIPLOOM
+	mon_cry CRY_NINCADA,      $000,  $180 ; JUMPLUFF
 	mon_cry CRY_AIPOM,      -$051,  $0e8 ; AIPOM
 	mon_cry CRY_MARILL,      $12b,  $0b8 ; SHROOMISH
 	mon_cry CRY_BRELOOM,   -$020,  $180 ; BRELOOM

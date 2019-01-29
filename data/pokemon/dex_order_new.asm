@@ -31,8 +31,8 @@ NewPokedexOrder:
 	db PELIPPER
 	db RALTS
 	db KIRLIA
-	db GARDEVOIR            ;GARDEVOIR
-	db GALLADE              ;GALLADE
+	db GARDEVOIR
+	db GALLADE
 	db SURSKIT
 	db MASQUERAIN
 	db SHROOMISH
@@ -43,7 +43,7 @@ NewPokedexOrder:
 	db ABRA
 	db KADABRA
 	db ALAKAZAM
-	db CLEFFA             ;NINCADA
+	db NINCADA             ;NINCADA
 	db CLEFAIRY           ;NINJASK
 	db CLEFABLE           ;SHEDINJA
 	db WEEDLE             ;WHISMUR

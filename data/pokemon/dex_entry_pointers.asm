@@ -172,7 +172,7 @@ PokedexDataPointerTable:
 	dw ChinchouPokedexEntry
 	dw LanturnPokedexEntry
 	dw PichuPokedexEntry
-	dw CleffaPokedexEntry
+	dw NincadaPokedexEntry
 	dw IgglybuffPokedexEntry
 	dw TogepiPokedexEntry
 	dw TogeticPokedexEntry

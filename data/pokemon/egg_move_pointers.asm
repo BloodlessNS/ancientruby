@@ -175,7 +175,7 @@ endc
 	dw ChinchouEggMoves
 	dw NoEggMoves
 	dw PichuEggMoves
-	dw CleffaEggMoves
+	dw NincadaEggMoves
 	dw IgglybuffEggMoves
 	dw TogepiEggMoves
 	dw NoEggMoves

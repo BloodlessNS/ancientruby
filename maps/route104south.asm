@@ -86,7 +86,7 @@ Route104SouthTeaherText:
 	cont "#MON."
 	
 	para "You should throw"
-	line "#BALLS only at"
+	line "# BALLS only at"
 	cont "wild #MON."
 	done
 	
@@ -151,7 +151,7 @@ RichBoyWinstonAfterText:
 	
 YoungsterBillySeenText:
 	text "Leaving footprints"
-	line "in thr sand is so"
+	line "in the sand is so"
 	cont "fun!"
 	done
 	
@@ -167,7 +167,7 @@ YoungsterBillyAfterText:
 	text "I want to leave my"
 	line "footprints in the"
 	cont "sand everywhere,"
-	cont "but the disappear"
+	cont "but they disappear"
 	cont "quickly…"
 	done
 	

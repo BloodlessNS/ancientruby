@@ -6,6 +6,7 @@
 	const PETALBURGWOODS_XATTACK
 	const PETALBURGWOODS_COOLTRAINER_M
 	const PETALBURGWOODS_GRUNT
+	const PETALBURGWOODS_BUGCATCHERLYLE
 
 PetalburgWoods_MapScripts:
 	db 0 ; scene scripts
@@ -55,6 +56,17 @@ TrainerGruntM1:
 	endifjustbattled
 	opentext
 	writetext PetalburgWoodsTrainerTipText
+	waitbutton
+	closetext
+	end
+	
+TrainerBugCatcherLyle:
+	trainer BUG_CATCHER, LYLE, EVENT_BEAT_BUG_CATCHER_LYLE, BugCatcherLyleSeenText, BugCatcherLyleBeatenText, 0, .Script
+
+.Script:
+	endifjustbattled
+	opentext
+	writetext BugCatcherLyleAfterText
 	waitbutton
 	closetext
 	end
@@ -123,6 +135,29 @@ PetalburgWoodsCooltrainerMText:
 	line "always check where"
 	cont "I'm walking."
 	done
+	
+BugCatcherLyleSeenText:
+	text "I caught a whole"
+	line "bunch of #MON!"
+	
+	para "Go, go, go!"
+	line "My BUG #MON"
+	cont "team!"
+	done
+	
+BugCatcherLyleBeatenText:
+	text "I have all these"
+	line "#MON but I"
+	cont "couldn't win…"
+	done
+	
+BugCatcherLyleAfterText:
+	text "I caught a bunch"
+	line "of #MON."
+	
+	para "Now I'm out of"
+	line "# BALLS."
+	done
 
 PetalburgWoods_MapEvents:
 	db 0, 0 ; filler
@@ -143,7 +178,7 @@ PetalburgWoods_MapEvents:
 	bg_event 24,  2, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom1
 	bg_event 34,  23, BGEVENT_ITEM, PetalburgWoodsHiddenTinyMushroom2
 
-	db 7 ; object events
+	db 8 ; object events
 	object_event  2,  22, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsParlyzHeal, EVENT_PETALBURGWOODS_PARLYZHEAL
 	object_event 11,  16, SPRITE_YOUNGSTER, SPRITEMOVEDATA_WALK_UP_DOWN, 0, 2, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsYoungsterScript, -1
 	object_event  2,  4, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsEther, EVENT_PETALBURGWOODS_ETHER
@@ -151,3 +186,4 @@ PetalburgWoods_MapEvents:
 	object_event  31,  16, SPRITE_POKE_BALL, SPRITEMOVEDATA_STILL, 0, 0, -1, -1, 0, OBJECTTYPE_ITEMBALL, 0, PetalburgWoodsXAttack, EVENT_PETALBURGWOODS_XATTACK
 	object_event 27,  30, SPRITE_COOLTRAINER_M, SPRITEMOVEDATA_WANDER, 0, 1, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, PetalburgWoodsCooltrainerMScript, -1
 	object_event 22,  16, SPRITE_GRUNT, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerGruntM1, -1
+	object_event 5,  28, SPRITE_BUG_CATCHER, SPRITEMOVEDATA_SPINRANDOM_SLOW, 1, -1, 1, -1, 0, OBJECTTYPE_TRAINER, 3, TrainerBugCatcherLyle, -1

@@ -211,7 +211,7 @@ Pokered_MonIndices:
 	db CHINCHOU
 	db LANTURN
 	db PICHU
-	db CLEFFA
+	db NINCADA
 	db IGGLYBUFF
 	db TOGEPI
 	db TOGETIC

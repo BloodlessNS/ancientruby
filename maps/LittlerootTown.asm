@@ -194,7 +194,7 @@ Text_StoreItemsTip:
 	done
 	
 Text_BusyProfBirch:
-	text "PROF.BIRCH spends"
+	text "PROF. BIRCH spends"
 	line "days in his LAB"
 	cont "studying, then"
 	cont "he'll suddenly go"

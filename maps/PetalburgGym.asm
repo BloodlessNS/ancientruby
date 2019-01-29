@@ -142,7 +142,7 @@ PetalburgGymText_NormanText2:
 	
 PetalburgGymText_NormanText3:
 	text "Hm, I'll give you"
-	line "a #BALL, too."
+	line "a # BALL, too."
 	
 	para "Go for it!"
 	done

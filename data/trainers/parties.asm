@@ -1507,9 +1507,13 @@ BugCatcherGroup:
 	db -1 ; end
 
 	; BUG_CATCHER (2)
-	db "ROB@", TRAINERTYPE_NORMAL
-	db 32, DUSTOX
-	db 32, BEAUTIFLY
+	db "LYLE@", TRAINERTYPE_NORMAL
+	db  3, WURMPLE
+	db  3, WURMPLE
+	db  3, WURMPLE
+	db  3, WURMPLE
+	db  3, WURMPLE
+	db  3, WURMPLE
 	db -1 ; end
 
 	; BUG_CATCHER (3)
@@ -3489,6 +3493,6 @@ MysticalmanGroup:
 	
 RichBoyGroup:
 	; RICH_BOY (1)
-	db "WISTON@", TRAINERTYPE_ITEM
+	db "WINSTON@", TRAINERTYPE_ITEM
 	db 7, ZIGZAGOON, NUGGET
 	db -1 ; end

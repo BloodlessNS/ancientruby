@@ -172,7 +172,7 @@ BirchHelpText2:
 	para "Please! Help!"
 	
 	para "In my bag there's"
-	line "a #BALL!"
+	line "a # BALL!"
 	done
 	
 BirchHelpText3:
