@@ -74,7 +74,7 @@ LittlerootTown_YoungsterStopsYouScene3:
 	iftrue .Done
 	turnobject PLAYER, LEFT
 	opentext
-	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_ELM
+	variablesprite SPRITE_RIVAL, SPRITE_ELM
 	special LoadUsedSpritesGFX
 	writetext Text_BirchAttack
 	waitbutton

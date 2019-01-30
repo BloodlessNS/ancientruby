@@ -452,4 +452,5 @@ ENDM
 	map_attributes RivalsRoom, RIVALS_ROOM, $00, 0
 	map_attributes PetalburgGym, PETALBURG_GYM, $00, 0
 	map_attributes PetalburgWoods, PETALBURG_WOODS, $00, 0
+	map_attributes WallysHouse, WALLYS_HOUSE, $00, 0
 	

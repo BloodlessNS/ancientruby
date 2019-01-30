@@ -159,6 +159,11 @@ SCENE_FINISHED EQU 1
 	const_def 1
 	const SCENE_WALK_IN_TO_HOUSE
 	
+; wOldaleTownSceneID
+	const_def
+	const SCENE_OLDALETOWN_NOTHING        ; 0
+	const SCENE_OLDALETOWN_STOPPED_BY_RIVAL ; 1
+	
 ; wRoute102SceneID
 	const_def
 	const SCENE_ROUTE102_NOTHING        ; 0

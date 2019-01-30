@@ -71,7 +71,7 @@ MeetMomScript:
 	
 .Female:
 	writetext MomText_RoomsUpstairs
-	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_CHRIS
+	variablesprite SPRITE_RIVAL, SPRITE_CHRIS
 	special LoadUsedSpritesGFX
 	waitbutton
 	closetext

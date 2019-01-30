@@ -105,7 +105,9 @@ Route103RivalScript:
 	disappear ROUTE103_RIVAL
 	setevent EVENT_RIVAL_ROUTE_103
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
+	setmapscene OLDALE_TOWN, SCENE_OLDALETOWN_STOPPED_BY_RIVAL
 	clearevent EVENT_COP_IN_ELMS_LAB
+	clearevent EVENT_RIVAL_OLDALE_TOWN
 	special HealParty
 	playmapmusic
 	end
@@ -122,7 +124,9 @@ Route103RivalScript:
 	disappear ROUTE103_RIVAL
 	setevent EVENT_RIVAL_ROUTE_103
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
+	setmapscene OLDALE_TOWN, SCENE_OLDALETOWN_STOPPED_BY_RIVAL
 	clearevent EVENT_COP_IN_ELMS_LAB
+	clearevent EVENT_RIVAL_OLDALE_TOWN
 	special HealParty
 	playmapmusic
 	end
@@ -132,6 +136,7 @@ BelowRival:
 	disappear ROUTE103_RIVAL
 	setevent EVENT_RIVAL_ROUTE_103
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
+	setmapscene OLDALE_TOWN, SCENE_OLDALETOWN_STOPPED_BY_RIVAL
 	clearevent EVENT_COP_IN_ELMS_LAB
 	special HealParty
 	playmapmusic
@@ -302,5 +307,5 @@ Route103_MapEvents:
 
 	db 2 ; object events
 	object_event 18,  8, SPRITE_FISHER, SPRITEMOVEDATA_WANDER, 1, -1, 1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, Route103FisherScript, -1
-	object_event 10,  2, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route103RivalScript, EVENT_RIVAL_ROUTE_103
+	object_event 10,  2, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, Route103RivalScript, EVENT_RIVAL_ROUTE_103
 	

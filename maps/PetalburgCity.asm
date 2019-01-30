@@ -304,12 +304,13 @@ PetalburgCityEther:
 PetalburgCity_MapEvents:
 	db 0, 0 ; filler
 
-	db 5 ; warp events
+	db 6 ; warp events
 	warp_event  19, 21, PETALBURG_HOUSE_1, 1
 	warp_event  9, 17, PETALBURG_HOUSE_2, 1
 	warp_event  17, 15, PETALBURG_POKECENTER_1F, 2
 	warp_event  23, 11, PETALBURG_MART, 1
 	warp_event  13, 7, PETALBURG_GYM, 1
+	warp_event  5, 5, WALLYS_HOUSE, 1
 	
 	db 3 ; coord events
 	coord_event  7, 9, SCENE_DEFAULT, StoppedByNPC

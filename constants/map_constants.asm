@@ -347,6 +347,7 @@ ENDM
 	
 	newgroup
 	map_const PETALBURG_WOODS,                             20, 19 ; 1
+	map_const WALLYS_HOUSE,                                 4,  4 ; 2
 
 	newgroup                                                      ; 25
 

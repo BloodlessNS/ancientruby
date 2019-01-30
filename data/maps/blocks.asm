@@ -829,3 +829,6 @@ Route104South_Blocks:
 PetalburgWoods_Blocks:
 	INCBIN "maps/PetalburgWoods.ablk"
 	
+WallysHouse_Blocks:
+	INCBIN "maps/WallysHouse.ablk"
+	

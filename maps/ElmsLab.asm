@@ -74,12 +74,12 @@ ElmsLab_MapScripts:
 	special LoadUsedSpritesGFX
 	checkflag ENGINE_PLAYER_IS_FEMALE
 	iftrue .Female
-	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_KRIS
+	variablesprite SPRITE_RIVAL, SPRITE_KRIS
 	special LoadUsedSpritesGFX
 	end
 	
 .Female
-	variablesprite SPRITE_OLIVINE_RIVAL, SPRITE_CHRIS
+	variablesprite SPRITE_RIVAL, SPRITE_CHRIS
 	special LoadUsedSpritesGFX
 	end
 
@@ -1264,4 +1264,4 @@ ElmsLab_MapEvents:
 	db 3 ; object events
 	object_event  4,  2, SPRITE_ELM, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, 0, OBJECTTYPE_SCRIPT, 0, ProfElmScript, EVENT_AFTER_ATTACK
 	object_event  2,  9, SPRITE_SCIENTIST, SPRITEMOVEDATA_SPINRANDOM_SLOW, 0, 0, -1, -1, PAL_NPC_BLUE, OBJECTTYPE_SCRIPT, 0, ElmsAideScript, EVENT_ELMS_AIDE_IN_LAB
-	object_event  5,  2, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB
+	object_event  5,  2, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_DOWN, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, CopScript, EVENT_COP_IN_ELMS_LAB

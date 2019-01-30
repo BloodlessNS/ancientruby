@@ -273,5 +273,5 @@ RivalsRoom_MapEvents:
 	bg_event  4,  1, BGEVENT_READ, RivalsGamecube
 
 	db 1 ; object events
-	object_event  6,  2, SPRITE_OLIVINE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RivalScript_MeetRival, EVENT_MET_RIVAL
+	object_event  6,  2, SPRITE_RIVAL, SPRITEMOVEDATA_STANDING_UP, 0, 0, -1, -1, PAL_NPC_RED, OBJECTTYPE_SCRIPT, 0, RivalScript_MeetRival, EVENT_MET_RIVAL
 	
