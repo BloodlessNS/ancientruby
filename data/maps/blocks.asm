@@ -832,3 +832,6 @@ PetalburgWoods_Blocks:
 WallysHouse_Blocks:
 	INCBIN "maps/WallysHouse.ablk"
 	
+BrineysCabin_Blocks:
+	INCBIN "maps/BrineysCabin.ablk"
+	

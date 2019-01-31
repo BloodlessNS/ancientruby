@@ -348,6 +348,7 @@ ENDM
 	newgroup
 	map_const PETALBURG_WOODS,                             20, 19 ; 1
 	map_const WALLYS_HOUSE,                                 4,  4 ; 2
+	map_const BRINEYS_CABIN,                                5,  4 ; 3
 
 	newgroup                                                      ; 25
 
@@ -366,7 +367,7 @@ ENDM
 	map_const ROUTE_5_UNDERGROUND_PATH_ENTRANCE,            4,  4 ; 13
 	map_const ROUTE_5_SAFFRON_GATE,                         5,  4 ; 14
 	map_const ROUTE_5_CLEANSE_TAG_HOUSE,                    4,  4 ; 15
-	map_const LITTLEROOT_TOWN_INTRO,                             10, 10 ; 11
+	map_const LITTLEROOT_TOWN_INTRO,                       10, 10 ; 11
 
 	newgroup                                                      ; 26
 

@@ -183,11 +183,12 @@ Route104SouthHiddenAntidote:
 Route104South_MapEvents:
 	db 0, 0 ; filler
 
-	db 4 ; warp events
+	db 5 ; warp events
 	warp_event  8, 4, PETALBURG_WOODS, 1
 	warp_event  9, 4, PETALBURG_WOODS, 2
 	warp_event  24, 6, PETALBURG_WOODS, 3
 	warp_event  25, 6, PETALBURG_WOODS, 4
+	warp_event  11, 15, BRINEYS_CABIN, 1
 
 	db 0 ; coord events
 
