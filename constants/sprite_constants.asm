@@ -106,6 +106,7 @@
 	const SPRITE_STANDING_YOUNGSTER	; 66
 	const SPRITE_BAG
 	const SPRITE_POOCHYENA
+	const SPRITE_DEVON_EMPLOYEE
 
 ; SpriteMons indexes (see data/sprites/sprite_mons.asm)
 	const_def $80

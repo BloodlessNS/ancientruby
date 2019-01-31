@@ -2592,6 +2592,7 @@ wRoute101SceneID::                                db
 wPetalburgCitySceneID::                           db
 wRoute102SceneID::                                db
 wPetalburgGymSceneID::                            db
+wPetalburgWoodsSceneID::                          db
 
 	ds 49
 

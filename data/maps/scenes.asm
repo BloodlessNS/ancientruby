@@ -72,4 +72,5 @@ MapScenes::
 	scene_var PETALBURG_CITY,                              wPetalburgCitySceneID
 	scene_var ROUTE_102,                                   wRoute102SceneID
 	scene_var PETALBURG_GYM,                               wPetalburgGymSceneID
+	scene_var PETALBURG_WOODS,                             wPetalburgWoodsSceneID
 	db -1

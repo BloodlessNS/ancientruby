@@ -114,3 +114,4 @@ endc
 	overworld_sprite StandingYoungsterSpriteGFX, 12, STANDING_SPRITE, PAL_OW_BLUE
 	overworld_sprite BagSpriteGFX, 4, STILL_SPRITE, PAL_OW_ROCK
 	overworld_sprite PoochyenaSpriteGFX, 12, WALKING_SPRITE, PAL_OW_SILVER
+	overworld_sprite DevonEmployeeSpriteGFX, 12, WALKING_SPRITE, PAL_OW_GREEN

@@ -116,3 +116,4 @@ BagSpriteGFX::                 INCBIN "gfx/sprites/bag.2bpp"
 SECTION "Sprites 3", ROMX
 
 PoochyenaSpriteGFX::           INCBIN "gfx/sprites/poochyena.2bpp"
+DevonEmployeeSpriteGFX::       INCBIN "gfx/sprites/devonemployee.2bpp"

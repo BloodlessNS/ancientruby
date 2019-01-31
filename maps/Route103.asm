@@ -138,6 +138,7 @@ BelowRival:
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_MEET_OFFICER
 	setmapscene OLDALE_TOWN, SCENE_OLDALETOWN_STOPPED_BY_RIVAL
 	clearevent EVENT_COP_IN_ELMS_LAB
+	clearevent EVENT_RIVAL_OLDALE_TOWN
 	special HealParty
 	playmapmusic
 	end
