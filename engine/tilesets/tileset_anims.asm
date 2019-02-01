@@ -76,7 +76,7 @@ TilesetForestAnim:
 	dw NULL,  DoneTileAnimation
 
 TilesetJohtoAnim:
-	dw vTiles2 tile $16, AnimateWaterTile
+	dw RSEWaterFrames, AnimateRSEWaterTiles
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
 	dw NULL,  WaitTileAnimation
@@ -459,6 +459,56 @@ AnimateWaterTile:
 
 WaterTileFrames:
 	INCBIN "gfx/tilesets/water/water.2bpp"
+	
+AnimateRSEWaterTiles:
+; Draw two RSE water tiles for the current frame in VRAM tile at de.
+; based on AnimateWhirlpoolTiles, but with 8 frames
+
+; Struct:
+;     VRAM address
+;    Address of the first tile
+
+; Does two tiles at a time.
+
+; Save sp in bc (see WriteTile).
+    ld hl, sp+$0
+    ld b, h
+    ld c, l
+
+; de = VRAM address
+    ld l, e
+    ld h, d
+    ld e, [hl]
+    inc hl
+    ld d, [hl]
+    inc hl
+; Tile address is now at hl.
+
+; Get the tile for this frame.
+    ld a, [wTileAnimationTimer]
+    and %111 ; 8 frames x2
+    swap a  ; * 16 bytes per tile
+    sla a   ; * 2 tiles
+
+    add [hl]
+    inc hl
+    ld h, [hl]
+    ld l, a
+    ld a, 0
+    adc h
+    ld h, a
+
+; Stack now points to the desired frame.
+    ld sp, hl
+
+    ld l, e
+    ld h, d
+
+    jp WriteTwoTiles
+
+RSEWaterFrames: dw vTiles2 tile $16, RSEWaterTiles
+
+RSEWaterTiles: INCBIN "gfx/tilesets/water/water.2bpp"
 
 ForestTreeLeftAnimation:
 	ld hl, sp+0
@@ -834,6 +884,7 @@ WriteTile:
 	inc hl
 	ld [hl], d
 
+_FinishWritingSecondTile:
 rept 7
 	pop de
 	inc hl
@@ -847,6 +898,28 @@ endr
 	ld l, c
 	ld sp, hl
 	ret
+; fc6d7
+
+
+WriteTwoTiles:
+; Write two 8x8 tile ($20 bytes) from sp to hl.
+
+; Warning: sp is saved in bc so we can abuse pop.
+; sp is restored to address bc. Save sp in bc before calling.
+
+	pop de
+	ld [hl], e
+	inc hl
+	ld [hl], d
+
+rept 8
+	pop de
+	inc hl
+	ld [hl], e
+	inc hl
+	ld [hl], d
+endr
+	jr _FinishWritingSecondTile
 
 TileAnimationPalette:
 ; Transition between color values 0-2 for color 0 in palette 3.
