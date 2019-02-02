@@ -148,9 +148,7 @@ Init::
 
 	ld a, [hCGB]
 	and a
-	jr z, .no_double_speed
-	call NormalSpeed
-.no_double_speed
+	call nz, DoubleSpeed
 
 	xor a
 	ld [rIF], a

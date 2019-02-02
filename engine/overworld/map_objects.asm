@@ -2611,7 +2611,7 @@ _SetFlagsForMovement_2::
 	res 5, [hl]
 	ret
 
-Function58b9::
+ReleaseAllMapObjects::
 	push bc
 	ld bc, wObjectStructs
 	xor a
