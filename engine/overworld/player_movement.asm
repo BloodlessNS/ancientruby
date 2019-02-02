@@ -277,6 +277,8 @@ DoPlayerMovement::
 	jr nc, .ice
 
 ; Downhill riding is slower when not moving down.
+	call .RunCheck
+	jr z, .fast
 	call .BikeCheck
 	jr nz, .walk
 
@@ -300,9 +302,6 @@ DoPlayerMovement::
 	ret
 
 .walk
-	ld a, [wCurInput]
-	and B_BUTTON
-	jr nz, .run
 	ld a, STEP_WALK
 	call .DoStep
 	scf
@@ -311,17 +310,6 @@ DoPlayerMovement::
 .ice
 	ld a, STEP_ICE
 	call .DoStep
-	scf
-	ret
-
-.run
-	ld a, STEP_RUN
-	call .DoStep
-	push af
-	ld a, [wWalkingDirection]
-	cp STANDING
-	call nz, CheckTrainerRun
-	pop af
 	scf
 	ret
 
@@ -487,7 +475,6 @@ DoPlayerMovement::
 	dw .TurningStep
 	dw .BackJumpStep
 	dw .FinishFacing
-	dw .RunStep
 
 .SlowStep:
 	slow_step DOWN
@@ -529,11 +516,6 @@ DoPlayerMovement::
 	db $80 + UP
 	db $80 + LEFT
 	db $80 + RIGHT
-.RunStep
-	run_step DOWN
-	run_step UP
-	run_step LEFT
-	run_step RIGHT
 
 .StandInPlace:
 	ld a, 0
@@ -754,6 +736,15 @@ DoPlayerMovement::
 	cp PLAYER_SKATE
 	ret
 
+.RunCheck:
+	ld a, [wPlayerState]
+	cp PLAYER_NORMAL
+	ret nz
+	ldh a, [hJoypadDown]
+	and B_BUTTON
+	cp B_BUTTON
+	ret
+
 .CheckWalkable:
 ; Return 0 if tile a is land. Otherwise, return carry.
 
@@ -825,13 +816,6 @@ CheckStandingOnIce::
 .not_ice
 	and a
 	ret
-
-CheckTrainerRun:
-; Check if any trainer on the map sees the player.
-
-; Skip the player object.
-	ld a, 1
-	ld de, wMapObjects + OBJECT_LENGTH
 
 .loop
 

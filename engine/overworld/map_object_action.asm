@@ -16,8 +16,7 @@ ObjectActionPairPointers:
 	dw SetFacingBigDoll,               SetFacingBigDoll
 	dw SetFacingBoulderDust,           SetFacingStanding
 	dw SetFacingGrassShake,            SetFacingStanding
-	dw SetFacingSkyfall,               SetFacingCurrent
-	dw SetFacingRunAction,             SetFacingCurrent        ; PERSON_ACTION_RUN
+	dw SetFacingSkyfall,               SetFacingCurrent 
 
 SetFacingStanding:
 	ld hl, OBJECT_FACING_STEP
@@ -284,26 +283,5 @@ SetFacingGrassShake:
 	inc a ; FACING_GRASS_2
 
 .ok
-	ld [hl], a
-	ret
-
-SetFacingRunAction:
-	ld hl, OBJECT_FLAGS1
-	add hl, bc
-	bit SLIDING_F, [hl]
-	jp nz, SetFacingCurrent
-
-	ld hl, OBJECT_STEP_FRAME
-	add hl, bc
-	inc [hl]
-	ld a, [hl]
-	rrca
-	rrca
-	and %11
-	ld d, a
-	call GetSpriteDirection
-	or d
-	ld hl, OBJECT_FACING_STEP
-	add hl, bc
 	ld [hl], a
 	ret

@@ -244,10 +244,3 @@ ENDM
 skyfall_top: MACRO
 	db movement_skyfall_top
 ENDM
-
-	enum movement_run_step
-run_step: macro
-	db movement_run_step + \1 ; $5a
-	endm
-
-__enum__ = __enum__ + 3
