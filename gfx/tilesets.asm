@@ -39,12 +39,6 @@ INCLUDE "data/tilesets/ice_path_collision.asm"
 TilesetPlayersRoomGFX:
 INCBIN "gfx/tilesets/players_room.2bpp.lz"
 
-TilesetPlayersRoomMeta:
-INCBIN "data/tilesets/players_room_metatiles.bin"
-
-TilesetPlayersRoomColl:
-INCLUDE "data/tilesets/players_room_collision.asm"
-
 
 SECTION "Tileset Data 2", ROMX
 
@@ -461,3 +455,9 @@ INCBIN "data/tilesets/aerodactyl_word_room_attributes.bin"
 
 TilesetMovingTruckAttr:
 INCBIN "data/tilesets/moving_truck_attributes.bin"
+
+TilesetPlayersRoomMeta:
+INCBIN "data/tilesets/players_room_metatiles.bin"
+
+TilesetPlayersRoomColl:
+INCLUDE "data/tilesets/players_room_collision.asm"

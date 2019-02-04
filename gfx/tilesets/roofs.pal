@@ -96,7 +96,7 @@
 
 ; group 24 (Littleroot)
 	RGB 29,16,13, 24,06,08 ; morn/day
-	RGB 19,08,07, 14,03,04 ; nite
+	RGB 17,09,07, 14,03,04 ; nite
 
 ; group 25 (Saffron)
 	RGB 31,26,00, 31,15,00 ; morn/day
