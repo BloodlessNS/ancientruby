@@ -14,6 +14,7 @@ Route101_MapScripts:
 Route101_BirchAttack:
 	checkevent EVENT_GOT_A_POKEMON_FROM_ELM
 	iftrue .End
+	playmusic MUSIC_HELP
 	opentext
 	writetext BirchHelpText
 	waitbutton
@@ -93,6 +94,7 @@ Route101BirchScript:
 	givepoke TREECKO, 5
 	setevent EVENT_GOT_TREECKO_FROM_ELM
 	playsound SFX_CAUGHT_MON
+	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
 	jump .ElmAttackFinish
@@ -105,6 +107,7 @@ Route101BirchScript:
 	givepoke TORCHIC, 5
 	setevent EVENT_GOT_TORCHIC_FROM_ELM
 	playsound SFX_CAUGHT_MON
+	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
 	jump .ElmAttackFinish
@@ -117,6 +120,7 @@ Route101BirchScript:
 	givepoke MUDKIP, 5
 	setevent EVENT_GOT_MUDKIP_FROM_ELM
 	playsound SFX_CAUGHT_MON
+	waitsfx
 	setevent EVENT_GOT_A_POKEMON_FROM_ELM
 	closetext
 	jump .ElmAttackFinish
@@ -140,6 +144,7 @@ Route101BirchScript:
 	loadwildmon POOCHYENA, 2
 	startbattle
 	reloadmapafterbattle
+	playmapmusic
 	disappear ROUTE101_POOCHYENA
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_CANT_LEAVE
 	applymovement ROUTE101_BIRCH, Movement_BirchAttack4

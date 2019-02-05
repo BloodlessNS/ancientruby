@@ -108,3 +108,5 @@ Music:
 	dba Music_OldaleTown	
 	dba Music_Route103
 	dba Music_PetalburgCity
+	dba Music_Help
+	dba Music_PokemonMart

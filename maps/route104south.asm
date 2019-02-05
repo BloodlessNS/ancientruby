@@ -128,7 +128,7 @@ Route104SouthFisherText:
 	done
 	
 RichBoyWinstonSeenText:
-	text "oh, sure, I'll"
+	text "Oh, sure, I'll"
 	line "accept your"
 	cont "challenge."
 	

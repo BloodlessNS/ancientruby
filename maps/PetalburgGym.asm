@@ -25,7 +25,7 @@ PetalburgGymCatchTutorialFinish:
 	writetext PetalburgGymText_WallyTextCaughtPoke
 	waitbutton
 	closetext
-	applymovement PETALBURGGYM_WALLY2, Movement_PetalburgGymWally2
+	applymovement PETALBURGGYM_WALLY2, Movement_PetalburgGymWally5
 	disappear PETALBURGGYM_WALLY2
 	opentext
 	writetext PetalburgGymText_NormanTextCaughtPoke2
@@ -48,6 +48,12 @@ PetalburgGymWallyScript:
 	moveobject PETALBURGGYM_WALLY, 3, 7
 	appear PETALBURGGYM_WALLY
 	applymovement PETALBURGGYM_WALLY, Movement_PetalburgGymWally
+	pause 15
+	applymovement PETALBURGGYM_WALLY, Movement_PetalburgGymWally2
+	pause 15
+	applymovement PETALBURGGYM_WALLY, Movement_PetalburgGymWally3
+	pause 15
+	applymovement PETALBURGGYM_WALLY, Movement_PetalburgGymWally4
 	turnobject PETALBURGGYM_NORMAN, RIGHT
 	turnobject PLAYER, RIGHT
 	opentext
@@ -241,14 +247,25 @@ PetalburgGymText_NormanTextAfter:
 	
 Movement_PetalburgGymWally:
 	slow_step UP
-	step UP
-	step RIGHT
+	step_end
+	
+Movement_PetalburgGymWally2:
+	slow_step UP
+	step_end
+	
+Movement_PetalburgGymWally3:
+	turn_head RIGHT
+	slow_step RIGHT
+	step_end
+	
+Movement_PetalburgGymWally4:
+	turn_head UP
 	slow_step UP
 	step UP
 	turn_head LEFT
 	step_end
 	
-Movement_PetalburgGymWally2:
+Movement_PetalburgGymWally5:
 	step DOWN
 	step DOWN
 	step DOWN

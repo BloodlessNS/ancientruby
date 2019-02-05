@@ -108,6 +108,8 @@
 	const MUSIC_OLDALE_TOWN                  ; 66
 	const MUSIC_ROUTE_103                    ; 67
 	const MUSIC_PETALBURG_CITY               ; 68
+	const MUSIC_HELP                         ; 69
+	const MUSIC_POKEMON_MART                 ; 6a
 
 ; GetMapMusic picks music for this value (see home/map.asm)
 MUSIC_MAHOGANY_MART EQU $64

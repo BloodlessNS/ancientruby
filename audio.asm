@@ -145,6 +145,8 @@ INCLUDE "audio/music/hoennwildbattle.asm"
 INCLUDE "audio/music/hoenntrainerbattle.asm"
 INCLUDE "audio/music/birchslab.asm"
 INCLUDE "audio/music/route123.asm"
+INCLUDE "audio/music/help.asm"
+INCLUDE "audio/music/pokemonmart.asm"
 
 
 SECTION "Sound Effects", ROMX
