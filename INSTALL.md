@@ -16,16 +16,21 @@ cd rgbds
 sudo make install
 cd ..
 
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/BloodlessNS/ancientruby
+cd ancientruby
 ```
 
-To build **pokecrystal.gbc**:
+To build **ancientruby.gbc**:
 
 ```bash
 make
 ```
 
+To build **ancientsapphire.gbc**:
+
+```bash
+make ancientsapphire
+```
 
 ## Mac
 
@@ -39,14 +44,20 @@ cd rgbds
 sudo make install
 cd ..
 
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/BloodlessNS/ancientruby
+cd ancientruby
 ```
 
-To build **pokecrystal.gbc**:
+To build **ancientruby.gbc**:
 
 ```bash
 make
+```
+
+To build **ancientsapphire.gbc**:
+
+```bash
+make ancientsapphire
 ```
 
 
@@ -67,18 +78,18 @@ Then download [**rgbds**](https://github.com/rednex/rgbds/releases/): the latest
 In the **Cygwin terminal**, enter these commands:
 
 ```bash
-git clone https://github.com/pret/pokecrystal
-cd pokecrystal
+git clone https://github.com/BloodlessNS/ancientruby
+cd ancientruby
 ```
 
-To build **pokecrystal.gbc**:
+To build **ancientruby.gbc**:
 
 ```bash
 make
 ```
 
-To build **pokecrystal11.gbc**:
+To build **ancientsapphire.gbc**:
 
 ```bash
-make crystal11
+make ancientsapphire
 ```

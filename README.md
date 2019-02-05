@@ -1,44 +1,13 @@
-# Pokémon Crystal [![Build Status][travis-badge]][travis]
+# Pokémon Ancient Ruby/Sapphire
 
-This is a disassembly of Pokémon Crystal.
+This is a custom Pokémon game based on [the Pokémon Crystal disassembly](https://github.com/pret/pokecrystal).
 
-It builds the following ROMs:
-
-- Pokemon - Crystal Version (UE) (V1.0) [C][!].gbc `sha1: f4cd194bdee0d04ca4eac29e09b8e4e9d818c133`
-- Pokemon - Crystal Version (UE) (V1.1) [C][!].gbc `sha1: f2f52230b536214ef7c9924f483392993e226cfb`
-
+The goal of this project is to build a realistic recreation of the GBA titles Pokémon Ruby and Sapphire on the GBC using custom devamps of the art and music of the original games.
+Inspired by the rmxp game [Pokémon Ancient Emerald](https://www.pokecommunity.com/showthread.php?t=296411) by Pia Carrot, which in turn was inspired the Silver hack
+Pokemon Ancient Emerald(http://www.romhack.me/ancientemerald/) by Melash this version of the hack began art production around 2015 and began official work on mapping and scripting
+January 2018.
 To set up the repository, see [INSTALL.md](INSTALL.md).
 
-## See also
+## Discord Server
 
-- [**FAQ**](FAQ.md)
-- [**Documentation**](docs/)
-- [**Wiki**][wiki] (includes [tutorials][tutorials])
-- **Discord:** [pret][discord]
-- **IRC:** [freenode#pret][irc]
-
-Other disassembly projects:
-
-- [**Pokémon Red/Blue**][pokered]
-- [**Pokémon Yellow**][pokeyellow]
-- [**Pokémon Gold**][pokegold]
-- [**Pokémon Pinball**][pokepinball]
-- [**Pokémon TCG**][poketcg]
-- [**Pokémon Ruby**][pokeruby]
-- [**Pokémon Fire Red**][pokefirered]
-- [**Pokémon Emerald**][pokeemerald]
-
-[pokered]: https://github.com/pret/pokered
-[pokeyellow]: https://github.com/pret/pokeyellow
-[pokegold]: https://github.com/pret/pokegold
-[pokepinball]: https://github.com/pret/pokepinball
-[poketcg]: https://github.com/pret/poketcg
-[pokeruby]: https://github.com/pret/pokeruby
-[pokefirered]: https://github.com/pret/pokefirered
-[pokeemerald]: https://github.com/pret/pokeemerald
-[wiki]: https://github.com/pret/pokecrystal/wiki
-[tutorials]: https://github.com/pret/pokecrystal/wiki/Tutorials
-[discord]: https://discord.gg/cJxDDVP
-[irc]: https://kiwiirc.com/client/irc.freenode.net/?#pret
-[travis]: https://travis-ci.org/pret/pokecrystal
-[travis-badge]: https://travis-ci.org/pret/pokecrystal.svg?branch=master
+[discord]: (https://discord.gg/xvtnejK)
