@@ -835,3 +835,6 @@ WallysHouse_Blocks:
 BrineysCabin_Blocks:
 	INCBIN "maps/BrineysCabin.ablk"
 	
+Route105_Blocks:
+	INCBIN "maps/Route105.ablk"
+	

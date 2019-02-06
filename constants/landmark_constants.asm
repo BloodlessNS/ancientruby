@@ -10,6 +10,7 @@
 	const ROUTE_103         ; 02
 	const PETALBURG_CITY
 	const ROUTE_104         ; 02
+	const ROUTE_105
 	const CHERRYGROVE_CITY  ; 03
 	const ROUTE_30          ; 04
 	const ROUTE_31          ; 05

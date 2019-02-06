@@ -176,7 +176,7 @@
 	tilecoll WALL, WALL, WALL, WALL ; af
 	tilecoll FLOOR, WALL, FLOOR, WALL ; b0
 	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; b1
-	tilecoll FLOOR, FLOOR, FLOOR, FLOOR ; b2
+	tilecoll FLOOR, WALL, FLOOR, FLOOR ; b2
 	tilecoll TALL_GRASS, TALL_GRASS, TALL_GRASS, TALL_GRASS ; b3
 	tilecoll TALL_GRASS, TALL_GRASS, TALL_GRASS, FLOOR ; b4
 	tilecoll WATER, WATER, WATER, WATER ; b5

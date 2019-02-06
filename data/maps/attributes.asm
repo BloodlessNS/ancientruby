@@ -89,8 +89,12 @@ ENDM
 	connection west, Route104South, ROUTE_104_SOUTH, 1, 8, 8
 	connection east, Route102, ROUTE_102, 5, 1, 6
 	
-	map_attributes Route104South, ROUTE_104_SOUTH, $00, EAST
+	map_attributes Route104South, ROUTE_104_SOUTH, $00, SOUTH | EAST
+	connection south, Route105, ROUTE_105, 0, 0, 16
 	connection east, PetalburgCity, PETALBURG_CITY, 8, 1, 8
+	
+	map_attributes Route105, ROUTE_105, $00, NORTH
+	connection north, Route104South, ROUTE_104_SOUTH, 0, 0, 16
 	
 	map_attributes CherrygroveCity, CHERRYGROVE_CITY, $35, NORTH
 	connection north, Route30, ROUTE_30, 5, 0, 10

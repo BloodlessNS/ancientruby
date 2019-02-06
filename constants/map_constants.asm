@@ -349,6 +349,7 @@ ENDM
 	map_const PETALBURG_WOODS,                             20, 19 ; 1
 	map_const WALLYS_HOUSE,                                 4,  4 ; 2
 	map_const BRINEYS_CABIN,                                5,  4 ; 3
+	map_const ROUTE_105,                                   16, 35 ; 4
 
 	newgroup                                                      ; 25
 

@@ -2810,6 +2810,7 @@ LoadTownMapGFX:
 
 JohtoMap:
 INCBIN "gfx/pokegear/johto.bin"
+	db $ff
 
 KantoMap:
 INCBIN "gfx/pokegear/kanto.bin"

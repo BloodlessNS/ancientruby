@@ -115,7 +115,7 @@ endc
 	setlasttalked ROUTE103_RIVAL
 	loadtrainer GRUNTM, GRUNTM_1,
 	startbattle
-	dontrestartmapmusic
+	playmapmusic
 	reloadmapafterbattle
 	applymovement PETALBURGWOODS_GRUNT, MovementData_GruntM3
 	opentext

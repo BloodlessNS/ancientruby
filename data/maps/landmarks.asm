@@ -7,38 +7,14 @@ ENDM
 Landmarks:
 ; entries correspond to constants/landmark_constants.asm
 	dbbw       0,   0, SpecialMapName
-	landmark 44,  100, LittlerootTownName
-	landmark 44,   92,  Route101Name
-	landmark 44,   84, OldaleTownName
-	landmark 36,   84,  Route102Name
-	landmark 44,   78,  Route103Name
-	landmark 44,   70, PetalburgCityName
-	landmark 44,   62,  Route104Name
-	landmark 100, 100, CherrygroveCityName
-	landmark 100,  80, Route30Name
-	landmark  96,  60, Route31Name
-	landmark  85,  58, SproutTowerName
-	landmark  76,  76, RuinsOfAlphName
-	landmark  84, 124, UnionCaveName
-	landmark  70, 122, RaltsWellName
-	landmark  52, 120, IlexForestName
-	landmark  52, 112, Route34Name
-	landmark  52,  92, GoldenrodCityName
-	landmark  50,  92, RadioTowerName
-	landmark  52,  60, NationalParkName
-	landmark  70,  42, TinTowerName
-	landmark  66,  42, BurnedTowerName
-	landmark  38,  62, LighthouseName
-	landmark  28,  56, BattleTowerName
-	landmark  28,  64, Route40Name
-	landmark  28,  92, WhirlIslandsName
-	landmark  28, 100, Route41Name
-	landmark  20, 100, CianwoodCityName
-	landmark  84,  44, MtMortarName
-	landmark 130,  38, IcePathName
-	landmark 132,  36, DragonsDenName
-	landmark 112,  72, DarkCaveName
-	landmark 148,  68, SilverCaveName
+	landmark 44,  116, LittlerootTownName
+	landmark 44,   108,  Route101Name
+	landmark 44,   100, OldaleTownName
+	landmark 36,   100,  Route102Name
+	landmark 44,   94,  Route103Name
+	landmark 28,   100, PetalburgCityName
+	landmark 20,   100,  Route104Name
+	landmark 20,   108,  Route105Name
 	landmark  52,  76, ViridianCityName
 	landmark  52,  64, Route2Name
 	landmark  76,  52, MtMoonName
@@ -78,22 +54,7 @@ Route102Name:        db "ROUTE 102@"
 Route103Name:        db "ROUTE 103@"
 PetalburgCityName:   db "PETALBURG¯CITY@"
 Route104Name:        db "ROUTE 104@"
-CherrygroveCityName: db "CHERRYGROVE¯CITY@"
-GoldenrodCityName:   db "GOLDENROD¯CITY@"
-CianwoodCityName:    db "CIANWOOD¯CITY@"
-SilverCaveName:      db "SILVER CAVE@"
-SproutTowerName:     db "SPROUT¯TOWER@"
-RuinsOfAlphName:     db "RUINS¯OF ALPH@"
-UnionCaveName:       db "UNION CAVE@"
-RaltsWellName:    db "RALTS¯WELL@"
-RadioTowerName:      db "RADIO TOWER@"
-NationalParkName:    db "NATIONAL¯PARK@"
-TinTowerName:        db "TIN TOWER@"
-LighthouseName:      db "LIGHTHOUSE@"
-WhirlIslandsName:    db "WHIRL¯ISLANDS@"
-MtMortarName:        db "MT.MORTAR@"
-DragonsDenName:      db "DRAGON'S¯DEN@"
-IcePathName:         db "ICE PATH@"
+Route105Name:        db "ROUTE 105@"
 NotApplicableName:   db "N/A@" ; "オバケやしき" ("HAUNTED HOUSE") in Japanese
 ViridianCityName:    db "VIRIDIAN¯CITY@"
 LavenderTownName:    db "LAVENDER¯TOWN@"
@@ -127,14 +88,6 @@ Route22Name:         db "ROUTE 22@"
 Route23Name:         db "ROUTE 23@"
 Route28Name:         db "ROUTE 28@"
 Route29Name:         db "ROUTE 29@"
-Route30Name:         db "ROUTE 30@"
-Route31Name:         db "ROUTE 31@"
-Route34Name:         db "ROUTE 34@"
-Route40Name:         db "ROUTE 40@"
-Route41Name:         db "ROUTE 41@"
-DarkCaveName:        db "DARK CAVE@"
-IlexForestName:      db "ILEX¯FOREST@"
-BurnedTowerName:     db "BURNED¯TOWER@"
 FastShipName:        db "FAST SHIP@"
 ViridianForestName:  db "VIRIDIAN¯FOREST@"
 DiglettsCaveName:    db "DIGLETT'S¯CAVE@"
