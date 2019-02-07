@@ -267,7 +267,7 @@ Route103RivalText_YouWon:
 	para "You might be able"
 	line "to befriend any"
 	cont "kind of #MON"
-	cont "easily"
+	cont "easily."
 	
 	para "Well, it's time to"
 	line "head back to the"

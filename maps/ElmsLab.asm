@@ -377,8 +377,8 @@ AideScript_ReceiveTheBalls:
 ElmsAideScript:
 	faceplayer
 	opentext
-	checkevent EVENT_GOT_TOGEPI_EGG_FROM_ELMS_AIDE
-	iftrue AideScript_AfterTheft
+	checkevent EVENT_MET_RIVAL
+	iffalse AideScript_AfterTheft
 	writetext AideText_AlwaysBusy
 	waitbutton
 	closetext
@@ -925,17 +925,36 @@ ElmText_CallYou:
 	done
 
 AideText_AfterTheft:
-	text "…sigh… That"
-	line "stolen #MON."
+	text "Hunh?"
+	line "PROF. BIRCH?"
 
-	para "I wonder how it's"
-	line "doing."
+	para "The PROF's away on"
+	line "fieldwork."
 
-	para "They say a #MON"
-	line "raised by a bad"
+	para "Ergo, he isn't"
+	line "here."
 
-	para "person turns bad"
-	line "itself."
+	para "Oh, let me explain"
+	line "what fieldwork is."
+	
+	para "It is to study"
+	line "things in the"
+	cont "natural"
+	cont "environment, like"
+	cont "fields and"
+	cont "mountains, instead"
+	cont "of a laborotory."
+	
+	para "The PROF isn't one"
+	line "for doing desk"
+	cont "work."
+	
+	para "He's the type of"
+	line "person who would"
+	cont "rather go outside"
+	cont "and experience"
+	cont "things than read"
+	cont "about them here."
 	done
 
 ElmGiveMasterBallText1:
@@ -1021,7 +1040,7 @@ AideText_AlwaysBusy:
 	cont "#MON."
 	
 	para "The PROF enjoys"
-	line "<RIVAL>'s help,"
+	line "<RIVAL>s help,"
 	cont "too."
 	
 	para "There's a lot of"
@@ -1098,7 +1117,7 @@ ElmsLabOfficerText2:
 	
 ElmsLabOfficerText3:
 	text "<RIVAL>: Oh,"
-	line "<PLAYER> You got a"
+	line "<PLAYER>, you got a"
 	cont "#DEX, too!"
 	
 	para "That's great! Just"

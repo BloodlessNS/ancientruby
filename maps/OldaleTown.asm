@@ -250,7 +250,7 @@ OldaleTownSignText:
 	
 OldaleTownText_RivalHurryMale:
 	text "<RIVAL>: <PLAYER>!"
-	line "Over Here!"
+	line "Over here!"
 	cont "Let's hurry home!"
 	done
 	

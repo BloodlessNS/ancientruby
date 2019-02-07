@@ -140,10 +140,31 @@ Route101BirchScript:
 	db "CANCEL@"
 	
 .ElmAttackFinish:
+	winlosstext PoochyenaWinText, PoochyenaLossText
+	setlasttalked ROUTE101_BIRCH
 	cry POOCHYENA
 	loadwildmon POOCHYENA, 2
+	writecode VAR_BATTLETYPE, BATTLETYPE_CANLOSE
 	startbattle
-	reloadmapafterbattle
+	reloadmap
+	iftrue .Aftervictorious
+	jump .AfterYourDefeat
+	
+.Aftervictorious:
+	playmapmusic
+	disappear ROUTE101_POOCHYENA
+	setmapscene ELMS_LAB, SCENE_ELMSLAB_CANT_LEAVE
+	applymovement ROUTE101_BIRCH, Movement_BirchAttack4
+	opentext
+	turnobject PLAYER, LEFT
+	writetext BirchSavedText
+	waitbutton
+	closetext
+	clearevent EVENT_AFTER_ATTACK
+	warp ELMS_LAB, 4, 3
+	end
+	
+.AfterYourDefeat:
 	playmapmusic
 	disappear ROUTE101_POOCHYENA
 	setmapscene ELMS_LAB, SCENE_ELMSLAB_CANT_LEAVE
@@ -245,6 +266,14 @@ Text_PokeCentreTip:
 	line "CENTRE in OLDALE"
 	cont "TOWN right close"
 	cont "by."
+	done
+	
+PoochyenaWinText:
+	text "POOCHYENA FLED."
+	done
+	
+PoochyenaLossText:
+	text "POOCHYENA FLED."
 	done
 	
 Route101SignText:
