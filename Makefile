@@ -138,7 +138,6 @@ gfx/pokemon/%/front.animated.2bpp: gfx/pokemon/%/front.2bpp gfx/pokemon/%/front.
 gfx/pokemon/%/front.animated.tilemap: gfx/pokemon/%/front.2bpp gfx/pokemon/%/front.dimensions
 	tools/pokemon_animation_graphics -t $@ $^
 
-
 ### Misc file-specific graphics rules
 
 gfx/new_game/shrink1.2bpp: rgbgfx += -h
@@ -221,8 +220,7 @@ gfx/mobile/mobile_splash.2bpp: tools/gfx += --remove-duplicates --remove-xflip
 gfx/mobile/pichu_animated.2bpp: tools/gfx += --trim-whitespace
 
 gfx/unknown/unknown_egg.2bpp: rgbgfx += -h
-
-
+	
 ### Catch-all graphics rules
 
 %.bin: ;

@@ -74,11 +74,12 @@ LittlerootTown_YoungsterStopsYouScene3:
 	iftrue .Done
 	turnobject PLAYER, LEFT
 	opentext
+	writetext Text_BirchAttack
 	variablesprite SPRITE_RIVAL, SPRITE_ELM
 	special LoadUsedSpritesGFX
-	writetext Text_BirchAttack
 	waitbutton
 	closetext
+	applymovement PLAYER, Movement_PlayerApproachesBirch
 .Done
 	end
 	
@@ -148,6 +149,10 @@ Movement_YoungsterBringsYouBack2_NBT:
 	step LEFT
 	step LEFT
 	turn_head RIGHT
+	step_end
+
+Movement_PlayerApproachesBirch:
+	step UP
 	step_end
 	
 Text_TallMon:

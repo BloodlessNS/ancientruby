@@ -79,7 +79,6 @@ MeetMomScript:
 	jump .Finish
 
 .Finish:
-	special RestartMapMusic
 	end
 
 MeetMomTalkedScript:
@@ -141,9 +140,13 @@ MomScript:
 	end
 	
 MachokeScript:
+	opentext
+	writetext MachokeText
 	cry MACHOKE
-	jumptext MachokeText
-
+	waitbutton
+	closetext
+	end
+	
 TVScript:
 	jumptext TVText
 
@@ -200,20 +203,18 @@ SetClockScript:
 	applymovement PLAYER, SetClockMovement
 .Done
 	end
-	
+
 WalkToHouseTvMovement:
-	step DOWN
-	step DOWN
-	step DOWN
-	step LEFT
-	step LEFT
-	step LEFT
-	step LEFT
+	big_step DOWN
+	big_step DOWN
+	big_step DOWN
+	big_step LEFT
+	big_step LEFT
+	big_step LEFT
 	step_end
 	
 WalkToHouseTvMovement2:
 	step LEFT
-	turn_head RIGHT
 	turn_head RIGHT
 	step_end
 	

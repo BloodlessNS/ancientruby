@@ -159,6 +159,11 @@ SCENE_FINISHED EQU 1
 	const_def 1
 	const SCENE_WALK_IN_TO_HOUSE
 	
+;wMovingTruckSceneID
+	const_def 1
+	const SCENE_MOVINGTRUCK_NOTHING    ; 0
+	const SCENE_MOVINGTRUCK_MOVING     ; 1   
+
 ; wOldaleTownSceneID
 	const_def
 	const SCENE_OLDALETOWN_NOTHING        ; 0

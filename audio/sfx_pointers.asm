@@ -208,3 +208,6 @@ SFX:
 	dba Sfx_TwoPcBeeps
 	dba Sfx_4NoteDitty
 	dba Sfx_Twinkle
+; Ancient Ruby
+	dba Sfx_Truck
+	

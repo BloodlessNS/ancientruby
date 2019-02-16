@@ -61,6 +61,7 @@ LoadSGBLayoutCGB:
 	dw _CGB_TrainerOrMonFrontpicPals
 	dw _CGB_MysteryGift
 	dw _CGB1e
+	dw _CGB_BirchMonScene
 
 _CGB_BattleGrayscale:
 	ld hl, PalPacket_BattleGrayscale + 1
@@ -979,3 +980,26 @@ _CGB_MysteryGift:
 
 .Palettes:
 INCLUDE "gfx/mystery_gift/mystery_gift.pal"
+
+_CGB_BirchMonScene:
+	ld hl, .Palettes
+	ld de, wBGPals1
+	ld bc, 2 palettes
+	ld a, BANK(wBGPals1)
+	call FarCopyWRAM
+	call WipeAttrMap
+	call ApplyPals
+	hlcoord 0, 0, wAttrMap
+	lb bc, 9, 19
+	ld a, $1 ; bag
+	call FillBoxCGB
+	hlcoord 0, 20, wAttrMap
+	lb bc, 3, 22
+	ld a, $2 ; balls
+	call FillBoxCGB
+	call ApplyAttrMap
+	ret
+	
+.Palettes:
+INCLUDE "gfx/bag_select/bag_select.pal"
+	
