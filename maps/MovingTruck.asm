@@ -1,7 +1,9 @@
 	const_def 2 ; object constants
 	
 MovingTruck_MapScripts:
-	db 0 ; scene scripts
+	db 2 ; scene scripts
+	scene_script .Scene0     ; SCENE_MOVING
+	scene_script .DummyScene ; SCENE_NOTHING
 
 	db 1 ; callbacks
 	callback MAPCALLBACK_NEWMAP, .InitializeRoom
@@ -17,6 +19,25 @@ MovingTruck_MapScripts:
 .SkipInitialization:
 	return
 
+.Scene0:
+	priorityjump .TruckMoving
+	setscene SCENE_NOTHING
+	end
+
+.DummyScene:
+	end
+	
+.TruckMoving:
+	playsound SFX_TRUCK
+	earthquake 60
+	waitsfx
+	pause 20
+	playsound SFX_ENTER_DOOR
+	changeblock 4, 2, $07
+	changeblock 4, 0, $08
+	reloadmappart
+	waitsfx
+	end
 
 MovingTruck_MapEvents:
 	db 0, 0 ; filler

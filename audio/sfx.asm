@@ -379,6 +379,9 @@ Sfx_Elevator:
 	musicheader 1, 7, Sfx_Elevator_Ch7
 	musicheader 1, 8, Sfx_Elevator_Ch8
 
+Sfx_Truck:
+	musicheader 1, 5, Sfx_Truck_Ch5
+	
 Sfx_DexFanfare5079:
 Sfx_LevelUp:
 	musicheader 4, 5, Sfx_DexFanfare5079_Ch5
@@ -5032,4 +5035,12 @@ Sfx_GlassTing2_Ch5:
 Sfx_GlassTing2_Ch6:
 	dutycycle $2
 	sound C_,  1, $d1, $07dd
+	endchannel
+
+Sfx_Truck_Ch5:
+	dutycycle $2
+	soundinput $5a
+.loop
+	sound __,  3, $f1, $0300
+	loopchannel 48, .loop
 	endchannel

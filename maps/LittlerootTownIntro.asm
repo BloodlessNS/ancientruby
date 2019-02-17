@@ -16,6 +16,8 @@ LittlerootTownIntro_MapScripts:
 	return
 	
 WalkInToHouse:
+	pause 30
+	warpsound
 	appear LITTLEROOTTOWNINTRO_MOM
 	applymovement LITTLEROOTTOWNINTRO_MOM, MovementData_Mom
 	opentext
@@ -24,6 +26,7 @@ WalkInToHouse:
 	closetext
 	turnobject LITTLEROOTTOWNINTRO_MOM, UP
 	applymovement LITTLEROOTTOWNINTRO_MOM, MovementData_Mom2
+	warpsound
 	disappear LITTLEROOTTOWNINTRO_MOM
 	turnobject PLAYER, UP
 	applymovement PLAYER, LittleRootTown_WalkInToHouseMovement
@@ -62,20 +65,20 @@ MomText_Intro:
 	
 MovementData_Mom:
 	slow_step DOWN
-	slow_step RIGHT
-	slow_step DOWN
+	step RIGHT
+	step DOWN
 	turn_head LEFT
 	step_end
 	
 MovementData_Mom2:
-	slow_step UP
-	slow_step LEFT
+	step UP
+	step LEFT
 	slow_step UP
 	step_end
 	
 LittleRootTown_WalkInToHouseMovement:
 	step UP
-	step UP
+	slow_step UP
 	step_end
 
 LittlerootTownIntro_MapEvents:

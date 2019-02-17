@@ -41,16 +41,18 @@ PlayersClockScript:
 	blackoutmod PLAYERS_HOUSE_2F
 	opentext
 	writetext ClockSet
+	waitbutton
 	appear PLAYERSHOUSE2F_MOM
+	warpsound
 	setevent EVENT_CLOCK_SET
 	setevent EVENT_DAD_ON_TV
-	waitbutton
 	applymovement PLAYERSHOUSE2F_MOM, WalkToPlayerMovement
 	turnobject PLAYER, RIGHT
 	writetext MomText
 	waitbutton
 	closetext
 	applymovement PLAYERSHOUSE2F_MOM, MomLeaveMovement
+	warpsound
 	disappear PLAYERSHOUSE2F_MOM
 	closetext
 .Done
@@ -73,13 +75,13 @@ PlayersHousePCScript:
 	end
 	
 WalkToPlayerMovement:
-	step DOWN
+	slow_step DOWN
 	step LEFT
 	step_end
 	
 MomLeaveMovement:
 	step RIGHT
-	step UP
+	slow_step UP
 	step_end
 
 PlayersNotesText:
