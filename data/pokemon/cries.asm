@@ -156,15 +156,15 @@ PokemonCries::
 	mon_cry CRY_BULBASAUR,   $03c,  $140 ; DRAGONITE
 	mon_cry CRY_SURSKIT,       $099,  $17f ; MEWTWO
 	mon_cry CRY_SURSKIT,       $0ee,  $17f ; MEW
-	mon_cry CRY_TREECKO,  -$010,  $0b0 ; TREECKO
-	mon_cry CRY_TREECKO,  -$022,  $120 ; GROVYLE
-	mon_cry CRY_TREECKO,  -$0b7,  $200 ; SCEPTILE
-	mon_cry CRY_TORCHIC,   $347,  $080 ; TORCHIC
-	mon_cry CRY_TORCHIC,   $321,  $120 ; COMBUSKEN
-	mon_cry CRY_BLAZIKEN,  $f00,  $0d4 ; BLAZIKEN
-	mon_cry CRY_MUDKIP,    $46c,  $0e8 ; MUDKIP
-	mon_cry CRY_MUDKIP,    $440,  $110 ; MARSHTOMP
-	mon_cry CRY_MUDKIP,    $3fc,  $180 ; SWAMPERT
+	mon_cry $100, 0, $100 ; TREECKO
+	mon_cry $101, 0, $100 ; GROVYLE
+	mon_cry $102, 0, $100 ; SCEPTILE
+	mon_cry $103, 0, $100 ; TORCHIC
+	mon_cry $104, 0, $100 ; COMBUSKEN
+	mon_cry $105, 0, $100 ; BLAZIKEN
+	mon_cry $106, 0, $100 ; MUDKIP
+	mon_cry $107, 0, $100 ; MARSHTOMP
+	mon_cry $108, 0, $100 ; SWAMPERT
 	mon_cry CRY_ZIGZAGOON,     $08a,  $0b8 ; ZIGZAGOON
 	mon_cry CRY_ZIGZAGOON,     $06b,  $102 ; LINOONE
 	mon_cry CRY_VIGOROTH,    $091,  $0d8 ; VIGOROTH

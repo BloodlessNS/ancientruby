@@ -82,6 +82,11 @@ MusicOff:
 _UpdateSound::
 ; called once per frame
 	; no use updating audio if it's not playing
+	ld	a,[SamplePlaying]
+	and	a
+	jr	z,.continue
+	ret
+.continue
 	ld a, [wMusicPlaying]
 	and a
 	ret z
@@ -2375,7 +2380,15 @@ _PlayCry::
 	add hl, de
 	add hl, de
 	add hl, de
-
+	
+	; check if current cry is a sample
+	dec	d
+	jr	nz,.notsample
+.sample
+	call	PlaySample
+	jr	.end
+	
+.notsample
 	ld a, [hli]
 	ld [wMusicBank], a
 
@@ -2392,7 +2405,7 @@ _PlayCry::
 
 ; For each channel:
 	inc a
-.loop
+.loop2
 	push af
 	call LoadChannel
 
@@ -2450,7 +2463,7 @@ _PlayCry::
 .next
 	pop af
 	dec a
-	jr nz, .loop
+	jr nz, .loop2
 
 ; Cries play at max volume, so we save the current volume for later.
 	ld a, [wLastVolume]
