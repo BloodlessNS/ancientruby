@@ -3,8 +3,8 @@
 ; ================================================================
 
 Sample:		macro
-	dw	\1,\2
-	db	\3
+	dw	\1,\1End-\1
+	db	Bank(\1)
 	endm
 
 section "Sample RAM",wram0
@@ -75,14 +75,21 @@ Timer::
 section "Sample player",romx
 
 _PlaySample:
-	ld	c,low(rNR51)
-	ld	a,$ff
+	ld	c,low(rNR52)
+	xor	a
+	ld	[c],a
+	or	%10000000
 	ld	[c],a
 	dec	c
-	ld	a,$77
+	or	%01111111
 	ld	[c],a
-	ld	a,$20
+	dec	c
+	xor	%10001000
+	ld	[c],a
+	
+	ld	a,%00100000
 	ldh	[rNR32],a
+	
 	ld	hl,SampleTable
 	add	hl,de
 	add	hl,de
@@ -191,15 +198,30 @@ _DoSample:
 ; ================================================================
 
 SampleTable:
-	Sample	Sample_Treecko,		Sample_TreeckoEnd-Sample_Treecko,		Bank(Sample_Treecko)
-	Sample	Sample_Grovyle,		Sample_GrovyleEnd-Sample_Grovyle,		Bank(Sample_Grovyle)
-	Sample	Sample_Sceptile,	Sample_SceptileEnd-Sample_Sceptile,		Bank(Sample_Sceptile)
-	Sample	Sample_Torchic,		Sample_TorchicEnd-Sample_Torchic,		Bank(Sample_Torchic)
-	Sample	Sample_Combusken,	Sample_CombuskenEnd-Sample_Combusken,	Bank(Sample_Combusken)
-	Sample	Sample_Blaziken,	Sample_BlazikenEnd-Sample_Blaziken,		Bank(Sample_Blaziken)
-	Sample	Sample_Mudkip,		Sample_MudkipEnd-Sample_Mudkip,			Bank(Sample_Mudkip)
-	Sample	Sample_Marshtomp,	Sample_MarshtompEnd-Sample_Marshtomp,	Bank(Sample_Marshtomp)
-	Sample	Sample_Swampert,	Sample_SwampertEnd-Sample_Swampert,		Bank(Sample_Swampert)
+	Sample	Sample_Treecko
+	Sample	Sample_Grovyle
+	Sample	Sample_Sceptile
+	Sample	Sample_Torchic
+	Sample	Sample_Combusken
+	Sample	Sample_Blaziken
+	Sample	Sample_Mudkip
+	Sample	Sample_Marshtomp
+	Sample	Sample_Swampert
+	Sample	Sample_Poochyena
+	Sample	Sample_Mightyena
+	Sample	Sample_Zigzagoon
+	Sample	Sample_Linoone
+	Sample	Sample_Wurmple
+	Sample	Sample_Silcoon
+	Sample	Sample_Beautifly
+	Sample	Sample_Cascoon
+	Sample	Sample_Dustox
+	Sample	Sample_Lotad
+	Sample	Sample_Lombre
+	Sample	Sample_Ludicolo
+	Sample	Sample_Seedot
+	Sample	Sample_Nuzleaf
+	Sample	Sample_Shiftry
 
 section	"Sample bank 1",romx
 Sample_Treecko:		incbin	"audio/samples/treecko.pcm"
@@ -230,3 +252,51 @@ Sample_MarshtompEnd
 section "Sample bank 3",romx
 Sample_Swampert:	incbin	"audio/samples/swampert.pcm"
 Sample_SwampertEnd
+
+Sample_Poochyena:	incbin	"audio/samples/poochyena.pcm"
+Sample_PoochyenaEnd
+
+Sample_Mightyena:	incbin	"audio/samples/mightyena.pcm"
+Sample_MightyenaEnd
+
+Sample_Zigzagoon:	incbin	"audio/samples/zigzagoon.pcm"
+Sample_ZigzagoonEnd
+; ================
+section "Sample bank 4",romx
+Sample_Linoone:		incbin	"audio/samples/linoone.pcm"
+Sample_LinooneEnd
+
+Sample_Wurmple:		incbin	"audio/samples/wurmple.pcm"
+Sample_WurmpleEnd
+
+Sample_Silcoon:		incbin	"audio/samples/silcoon.pcm"
+Sample_SilcoonEnd
+
+Sample_Beautifly:	incbin	"audio/samples/beautifly.pcm"
+Sample_BeautiflyEnd
+
+Sample_Cascoon:		incbin	"audio/samples/cascoon.pcm"
+Sample_CascoonEnd
+; ================
+section "Sample bank 5",romx
+Sample_Dustox:		incbin	"audio/samples/dustox.pcm"
+Sample_DustoxEnd
+
+Sample_Lotad:		incbin	"audio/samples/lotad.pcm"
+Sample_LotadEnd
+
+Sample_Lombre:		incbin	"audio/samples/lombre.pcm"
+Sample_LombreEnd
+
+Sample_Ludicolo:	incbin	"audio/samples/ludicolo.pcm"
+Sample_LudicoloEnd
+
+Sample_Seedot:		incbin	"audio/samples/seedot.pcm"
+Sample_SeedotEnd
+
+Sample_Nuzleaf:		incbin	"audio/samples/nuzleaf.pcm"
+Sample_NuzleafEnd
+; ================
+section "Sample bank 6",romx
+Sample_Shiftry:		incbin	"audio/samples/shiftry.pcm"
+Sample_ShiftryEnd

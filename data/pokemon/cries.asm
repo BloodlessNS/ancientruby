@@ -14,17 +14,17 @@ PokemonCries::
 	mon_cry CRY_SQUIRTLE,    $060,  $0c0 ; SQUIRTLE
 	mon_cry CRY_SQUIRTLE,    $020,  $0c0 ; WARTORTLE
 	mon_cry CRY_BLASTOISE,   $000,  $100 ; BLASTOISE
-	mon_cry CRY_WURMPLE,    $080,  $0a0 ; WURMPLE
-	mon_cry CRY_SILCOON,     $0cc,  $081 ; SILCOON
-	mon_cry CRY_WURMPLE,    $077,  $0c0 ; BEAUTIFLY
+	mon_cry $10d, 0, $100 ; WURMPLE
+	mon_cry $10e, 0, $100 ; SILCOON
+	mon_cry $10f, 0, $100 ; BEAUTIFLY
 	mon_cry CRY_WEEDLE,      $0ee,  $081 ; WEEDLE
-	mon_cry CRY_BLASTOISE,   $0ff,  $081 ; CASCOON
-	mon_cry CRY_BLASTOISE,   $060,  $100 ; DUSTOX
-	mon_cry CRY_LOTAD,      $0df,  $084 ; LOTAD
-	mon_cry CRY_LOMBRE,   $028,  $140 ; LOMBRE
-	mon_cry CRY_LOMBRE,   $011,  $17f ; LUDICOLO
-	mon_cry CRY_POOCHYENA,     $000,  $100 ; POOCHYENA
-	mon_cry CRY_POOCHYENA,     $020,  $17f ; MIGHTYENA
+	mon_cry	$110, 0, $100 ; CASCOON
+	mon_cry $111, 0, $100 ; DUSTOX
+	mon_cry $112, 0, $100 ; LOTAD
+	mon_cry $113, 0, $100 ; LOMBRE
+	mon_cry $114, 0, $100 ; LUDICOLO
+	mon_cry $109, 0, $100 ; POOCHYENA
+	mon_cry $10a, 0, $100 ; MIGHTYENA
 	mon_cry CRY_TAILLOW,     $000,  $100 ; TAILLOW
 	mon_cry CRY_SWELLOW,      $040,  $120 ; SWELLOW
 	mon_cry CRY_EKANS,       $012,  $0c0 ; EKANS
@@ -106,8 +106,8 @@ PokemonCries::
 	mon_cry CRY_KRABBY,      $0ee,  $160 ; KINGLER
 	mon_cry CRY_VOLTORB,     $0ed,  $100 ; VOLTORB
 	mon_cry CRY_VOLTORB,     $0a8,  $110 ; ELECTRODE
-	mon_cry CRY_DIGLETT,     $000,  $100 ; SEEDOT
-	mon_cry CRY_GARDEVOIR,     $000,  $100 ; NUZLEAF
+	mon_cry $115, 0, $100 ; SEEDOT
+	mon_cry $116, 0, $100 ; NUZLEAF
 	mon_cry CRY_NINJASK,    $000,  $100 ; CUBONE
 	mon_cry CRY_ODDISH,      $04f,  $0e0 ; MAROWAK
 	mon_cry CRY_GOLEM,       $080,  $140 ; HITMONLEE
@@ -118,7 +118,7 @@ PokemonCries::
 	mon_cry CRY_CHARMANDER,  $000,  $100 ; RHYHORN
 	mon_cry CRY_RHYDON,      $000,  $100 ; RHYDON
 	mon_cry CRY_LOMBRE,   $00a,  $140 ; CHANSEY
-	mon_cry CRY_GOLEM,       $000,  $100 ; SHIFTRY
+	mon_cry $117, 0, $100 ; SHIFTRY
 	mon_cry CRY_KANGASKHAN,  $000,  $100 ; KANGASKHAN
 	mon_cry CRY_NINJASK,    $099,  $090 ; HORSEA
 	mon_cry CRY_NINJASK,    $03c,  $081 ; SEADRA
@@ -165,8 +165,8 @@ PokemonCries::
 	mon_cry $106, 0, $100 ; MUDKIP
 	mon_cry $107, 0, $100 ; MARSHTOMP
 	mon_cry $108, 0, $100 ; SWAMPERT
-	mon_cry CRY_ZIGZAGOON,     $08a,  $0b8 ; ZIGZAGOON
-	mon_cry CRY_ZIGZAGOON,     $06b,  $102 ; LINOONE
+	mon_cry $10b, 0, $100 ; ZIGZAGOON
+	mon_cry $10c, 0, $100 ; LINOONE
 	mon_cry CRY_VIGOROTH,    $091,  $0d8 ; VIGOROTH
 	mon_cry CRY_VIGOROTH,    $000,  $1a0 ; SLAKING
 	mon_cry CRY_LEDYBA,      $000,  $0de ; LEDYBA

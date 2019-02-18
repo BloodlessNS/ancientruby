@@ -142,7 +142,7 @@ KabutopsFrontpic:    INCBIN "gfx/pokemon/kabutops/front.animated.2bpp.lz"
 AmpharosFrontpic:    INCBIN "gfx/pokemon/ampharos/front.animated.2bpp.lz"
 NidorinaFrontpic:    INCBIN "gfx/pokemon/nidorina/front.animated.2bpp.lz"
 FlareonFrontpic:     INCBIN "gfx/pokemon/flareon/front.animated.2bpp.lz"
-SlakothFrontpic:   INCBIN "gfx/pokemon/SLAKOTH/front.animated.2bpp.lz"
+SlakothFrontpic:   INCBIN "gfx/pokemon/slakoth/front.animated.2bpp.lz"
 VileplumeFrontpic:   INCBIN "gfx/pokemon/vileplume/front.animated.2bpp.lz"
 GrovyleFrontpic:     INCBIN "gfx/pokemon/grovyle/front.animated.2bpp.lz"
 MagmarFrontpic:      INCBIN "gfx/pokemon/magmar/front.animated.2bpp.lz"
@@ -719,7 +719,7 @@ SECTION "Pics 19", ROMX
 
 ZigzagoonBackpic:      INCBIN "gfx/pokemon/zigzagoon/back.2bpp.lz"
 RivalKrisPic:          INCBIN "gfx/trainers/kris.2bpp.lz"
-RivalChrisPic:         INCBIN "gfx/trainers/Chris.2bpp.lz"
+RivalChrisPic:         INCBIN "gfx/trainers/chris.2bpp.lz"
 RichboyPic:            INCBIN "gfx/trainers/rich_boy.2bpp.lz"
 
 ; Sections "Pics 20" to "Pics 24" are not used for any graphics,
