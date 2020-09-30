@@ -402,7 +402,7 @@ MomScript2Text:
 	cont "here, too?"
 	done
 
-MachokeText
+MachokeText:
 	text "Gyao, gyoa gyaoh…"
 	done
 

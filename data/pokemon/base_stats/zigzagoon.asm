@@ -1,6 +1,6 @@
 	db ZIGZAGOON ; 161
 
-	db  35,  46,  34,  20,  35,  45
+	db  38,  30,  41,  60,  30,  41
 	;   hp  atk  def  spd  sat  sdf
 
 	db NORMAL, NORMAL ; type

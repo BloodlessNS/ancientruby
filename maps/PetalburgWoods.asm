@@ -113,7 +113,7 @@ endc
 	waitbutton
 	winlosstext PetalburgWoodsGruntM1WinText, PetalburgWoodsGruntM1LossText
 	setlasttalked ROUTE103_RIVAL
-	loadtrainer GRUNTM, GRUNTM_1,
+	loadtrainer GRUNTM, GRUNTM_1
 	startbattle
 	playmapmusic
 	reloadmapafterbattle
@@ -192,7 +192,7 @@ endc
 	waitbutton
 	winlosstext PetalburgWoodsGruntM1WinText, PetalburgWoodsGruntM1LossText
 	setlasttalked ROUTE103_RIVAL
-	loadtrainer GRUNTM, GRUNTM_1,
+	loadtrainer GRUNTM, GRUNTM_1
 	startbattle
 	dontrestartmapmusic
 	reloadmapafterbattle
